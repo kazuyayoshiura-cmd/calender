@@ -1,0 +1,4 @@
+Lucide icons (assets/icons/lucide.json) - ISC License, Copyright (c) Lucide Contributors. https://lucide.dev
+Simple Icons (assets/icons/simple-icons.json) - CC0 1.0. Brand logos are trademarks of their respective owners. https://simpleicons.org
+Azure Architecture Icons (assets/icons/azure) - Copyright Microsoft. See azure/NOTICE.txt for terms.
+Material Symbols (assets/icons/material.json) - Apache License 2.0, Copyright Google. https://fonts.google.com/icons
