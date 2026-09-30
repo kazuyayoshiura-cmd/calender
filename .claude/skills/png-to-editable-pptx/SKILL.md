@@ -82,6 +82,12 @@ Principles that matter for editability and fidelity:
   preview's fallback fonts are wider than many fonts used in AI-generated slide images. If a label
   still overflows, shrink that level's size slightly rather than letting it wrap.
 - Corners: measure radius on a zoomed crop; small radii stay small.
+- Shadows: none by default. Add `shadow` only when it carries intent in the source — e.g. one
+  card lifted to stand out from its siblings, a modal/popup floating over content, or a design
+  system where every card clearly has the same drop shadow. The soft glow, blur and haze around
+  boxes in AI-generated slide images is rendering noise, not a design decision: reproduce it as a
+  flat fill and a crisp border instead. When unsure, leave it off — a shadow is easy for the user
+  to add, and tedious to remove from 100+ objects.
 - Name objects and group per logical unit (a layer row, a badge + label) so the Selection Pane is usable.
 
 ### 4. Preview, compare, fix

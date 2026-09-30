@@ -39,6 +39,9 @@ process band), `triangle`, `diamond`, `hexagon`, `parallelogram`, `can` (cylinde
  "shadow": {"blur_px": 6, "dist_px": 2, "alpha": 0.2}}
 ```
 
+- `shadow`: **omit by default** — the builder emits no shadow (theme effects are stripped from every
+  object). Add it only when the source uses a shadow on purpose (see SKILL.md "Shadows").
+
 - `fill`: `"#hex"`, `null` (no fill), or gradient `{"gradient": [["#DCE9F8", 0], ["#FFFFFF", 100]], "angle": 0}` (angle 0 = left→right, 90 = top→bottom).
 - `line`: omit or `null` for no outline. `dash`: `solid | dash | dot | sysDash | lgDash | dashDot`.
 - `radius_px` (roundRect): measured corner radius in pixels. Measure it — do not guess big.

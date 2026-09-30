@@ -360,6 +360,10 @@ class Builder:
                 slide.background.fill.fore_color.rgb = self.rgb(bg)
             for el in sd["elements"]:
                 self.add(_ShapeSink(slide.shapes, slide), el)
+            # No theme effects anywhere (connectors/freeforms/pictures included): shadows exist
+            # only where a spec element asks for one via an explicit effectLst.
+            for eref in slide._element.iter(qn("a:effectRef")):  # noqa: SLF001
+                eref.set("idx", "0")
             if sd.get("notes"):
                 slide.notes_slide.notes_text_frame.text = sd["notes"]
         self.prs.save(out)
