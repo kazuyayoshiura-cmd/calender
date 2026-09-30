@@ -1,0 +1,1216 @@
+{
+ "source_size": [
+  1672,
+  941
+ ],
+ "font": "Meiryo",
+ "background": "#FFFFFF",
+ "elements": [
+  {
+   "type": "roundRect",
+   "box": [
+    20,
+    10,
+    166,
+    58
+   ],
+   "fill": "#0E2E63",
+   "line": null,
+   "text": "図6-2",
+   "size_px": 30,
+   "bold": true,
+   "color": "#FFFFFF",
+   "radius_px": 6
+  },
+  {
+   "type": "text",
+   "box": [
+    206,
+    6,
+    1440,
+    66
+   ],
+   "text": "更新反映フロー（共有サーバー／CSV更新 → 画面反映）",
+   "size_px": 40,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    18,
+    92,
+    250,
+    344
+   ],
+   "fill": "#FFFFFF",
+   "line": {
+    "color": "#C8D9EC",
+    "width_px": 1.5
+   },
+   "radius_px": 8
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    28,
+    102,
+    230,
+    72
+   ],
+   "fill": "#DDEEFB",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "text",
+   "box": [
+    52,
+    104,
+    206,
+    68
+   ],
+   "paras": [
+    [
+     {
+      "text": "共有サーバー／",
+      "size_px": 18.5,
+      "bold": true
+     }
+    ],
+    [
+     {
+      "text": "CSV更新",
+      "size_px": 18.5,
+      "bold": true
+     }
+    ]
+   ],
+   "color": "#1F3A6E",
+   "align": "c",
+   "valign": "m",
+   "line_pitch_px": 28
+  },
+  {
+   "type": "ellipse",
+   "box": [
+    18.0,
+    90.0,
+    44,
+    44
+   ],
+   "fill": "#12398A",
+   "line": null,
+   "text": "1",
+   "size_px": 24,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "text",
+   "box": [
+    34,
+    328,
+    226,
+    104
+   ],
+   "text": "共有サーバーのファイル\u000bまたはCSVが更新される",
+   "size_px": 16,
+   "color": "#1E2A44",
+   "valign": "t",
+   "bullet": true,
+   "bullet_indent_px": 16,
+   "line_pitch_px": 25
+  },
+  {
+   "type": "rightArrow",
+   "box": [
+    270,
+    242,
+    24,
+    28
+   ],
+   "fill": "#1F6FD1",
+   "line": null
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    296,
+    92,
+    250,
+    344
+   ],
+   "fill": "#FFFFFF",
+   "line": {
+    "color": "#C8D9EC",
+    "width_px": 1.5
+   },
+   "radius_px": 8
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    306,
+    102,
+    230,
+    72
+   ],
+   "fill": "#DDEEFB",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "text",
+   "box": [
+    330,
+    104,
+    206,
+    68
+   ],
+   "paras": [
+    [
+     {
+      "text": "差分検知",
+      "size_px": 18.5,
+      "bold": true
+     }
+    ],
+    [
+     {
+      "text": "（ハッシュ・更新日）",
+      "size_px": 17,
+      "bold": true
+     }
+    ]
+   ],
+   "color": "#1F3A6E",
+   "align": "c",
+   "valign": "m",
+   "line_pitch_px": 28
+  },
+  {
+   "type": "ellipse",
+   "box": [
+    296.0,
+    90.0,
+    44,
+    44
+   ],
+   "fill": "#12398A",
+   "line": null,
+   "text": "2",
+   "size_px": 24,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "text",
+   "box": [
+    312,
+    328,
+    226,
+    104
+   ],
+   "text": "ファイルハッシュの比較\n更新日・件数等の差分を\u000b検知",
+   "size_px": 16,
+   "color": "#1E2A44",
+   "valign": "t",
+   "bullet": true,
+   "bullet_indent_px": 16,
+   "line_pitch_px": 25
+  },
+  {
+   "type": "rightArrow",
+   "box": [
+    548,
+    242,
+    24,
+    28
+   ],
+   "fill": "#1F6FD1",
+   "line": null
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    574,
+    92,
+    250,
+    344
+   ],
+   "fill": "#FFFFFF",
+   "line": {
+    "color": "#C8D9EC",
+    "width_px": 1.5
+   },
+   "radius_px": 8
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    584,
+    102,
+    230,
+    72
+   ],
+   "fill": "#DDEEFB",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "text",
+   "box": [
+    608,
+    104,
+    206,
+    68
+   ],
+   "paras": [
+    [
+     {
+      "text": "新版を取込・",
+      "size_px": 18.5,
+      "bold": true
+     }
+    ],
+    [
+     {
+      "text": "索引追加",
+      "size_px": 18.5,
+      "bold": true
+     }
+    ]
+   ],
+   "color": "#1F3A6E",
+   "align": "c",
+   "valign": "m",
+   "line_pitch_px": 28
+  },
+  {
+   "type": "ellipse",
+   "box": [
+    574.0,
+    90.0,
+    44,
+    44
+   ],
+   "fill": "#12398A",
+   "line": null,
+   "text": "3",
+   "size_px": 24,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "text",
+   "box": [
+    590,
+    328,
+    226,
+    104
+   ],
+   "text": "更新されたファイル／\u000bCSVを取込み\n検索用の索引に追加",
+   "size_px": 16,
+   "color": "#1E2A44",
+   "valign": "t",
+   "bullet": true,
+   "bullet_indent_px": 16,
+   "line_pitch_px": 25
+  },
+  {
+   "type": "rightArrow",
+   "box": [
+    826,
+    242,
+    24,
+    28
+   ],
+   "fill": "#1F6FD1",
+   "line": null
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    852,
+    92,
+    250,
+    344
+   ],
+   "fill": "#FFFFFF",
+   "line": {
+    "color": "#C8D9EC",
+    "width_px": 1.5
+   },
+   "radius_px": 8
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    862,
+    102,
+    230,
+    72
+   ],
+   "fill": "#DDEEFB",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "text",
+   "box": [
+    886,
+    104,
+    206,
+    68
+   ],
+   "paras": [
+    [
+     {
+      "text": "版テーブル更新",
+      "size_px": 18.5,
+      "bold": true
+     }
+    ],
+    [
+     {
+      "text": "（新版 latest、旧版 old）",
+      "size_px": 15.5,
+      "bold": true
+     }
+    ]
+   ],
+   "color": "#1F3A6E",
+   "align": "c",
+   "valign": "m",
+   "line_pitch_px": 28
+  },
+  {
+   "type": "ellipse",
+   "box": [
+    852.0,
+    90.0,
+    44,
+    44
+   ],
+   "fill": "#12398A",
+   "line": null,
+   "text": "4",
+   "size_px": 24,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "rightArrow",
+   "box": [
+    1104,
+    242,
+    24,
+    28
+   ],
+   "fill": "#1F6FD1",
+   "line": null
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    1130,
+    92,
+    250,
+    344
+   ],
+   "fill": "#FFFFFF",
+   "line": {
+    "color": "#C8D9EC",
+    "width_px": 1.5
+   },
+   "radius_px": 8
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    1140,
+    102,
+    230,
+    72
+   ],
+   "fill": "#DDEEFB",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "text",
+   "box": [
+    1164,
+    104,
+    206,
+    68
+   ],
+   "paras": [
+    [
+     {
+      "text": "索引切替・",
+      "size_px": 18.5,
+      "bold": true
+     }
+    ],
+    [
+     {
+      "text": "最終取込日時を記録",
+      "size_px": 18.5,
+      "bold": true
+     }
+    ]
+   ],
+   "color": "#1F3A6E",
+   "align": "c",
+   "valign": "m",
+   "line_pitch_px": 28
+  },
+  {
+   "type": "ellipse",
+   "box": [
+    1130.0,
+    90.0,
+    44,
+    44
+   ],
+   "fill": "#12398A",
+   "line": null,
+   "text": "5",
+   "size_px": 24,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "text",
+   "box": [
+    1146,
+    328,
+    226,
+    104
+   ],
+   "text": "検索索引を最新版に切替\n最終取込日時を記録\u000b（ログに保存）",
+   "size_px": 16,
+   "color": "#1E2A44",
+   "valign": "t",
+   "bullet": true,
+   "bullet_indent_px": 16,
+   "line_pitch_px": 25
+  },
+  {
+   "type": "rightArrow",
+   "box": [
+    1382,
+    242,
+    24,
+    28
+   ],
+   "fill": "#1F6FD1",
+   "line": null
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    1408,
+    92,
+    250,
+    344
+   ],
+   "fill": "#FFFFFF",
+   "line": {
+    "color": "#C8D9EC",
+    "width_px": 1.5
+   },
+   "radius_px": 8
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    1418,
+    102,
+    230,
+    72
+   ],
+   "fill": "#DDEEFB",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "text",
+   "box": [
+    1442,
+    104,
+    206,
+    68
+   ],
+   "paras": [
+    [
+     {
+      "text": "画面に最終取込日時",
+      "size_px": 18.5,
+      "bold": true
+     }
+    ],
+    [
+     {
+      "text": "を常に表示",
+      "size_px": 18.5,
+      "bold": true
+     }
+    ]
+   ],
+   "color": "#1F3A6E",
+   "align": "c",
+   "valign": "m",
+   "line_pitch_px": 28
+  },
+  {
+   "type": "ellipse",
+   "box": [
+    1408.0,
+    90.0,
+    44,
+    44
+   ],
+   "fill": "#12398A",
+   "line": null,
+   "text": "6",
+   "size_px": 24,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "text",
+   "box": [
+    1424,
+    328,
+    226,
+    104
+   ],
+   "text": "検索画面や詳細画面に\u000b最終取込日時を常に表示\u000b（ユーザーが確認可能）",
+   "size_px": 16,
+   "color": "#1E2A44",
+   "valign": "t",
+   "bullet": true,
+   "bullet_indent_px": 16,
+   "line_pitch_px": 25
+  },
+  {
+   "type": "icon",
+   "icon": "azure:storage-sync-services",
+   "box": [
+    78,
+    192,
+    128,
+    124
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "icon",
+   "icon": "azure:search",
+   "box": [
+    366,
+    196,
+    112,
+    112
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "icon",
+   "icon": "azure:files",
+   "box": [
+    640,
+    192,
+    120,
+    120
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "icon",
+   "icon": "azure:update-management-center",
+   "box": [
+    1202,
+    192,
+    108,
+    108
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "can",
+   "box": [
+    878,
+    188,
+    198,
+    76
+   ],
+   "fill": "#1F63C8",
+   "line": null,
+   "text": "版テーブル",
+   "size_px": 19,
+   "bold": true,
+   "color": "#FFFFFF",
+   "adj": [
+    0.35
+   ],
+   "inset_px": [
+    0,
+    18,
+    0,
+    0
+   ]
+  },
+  {
+   "type": "table",
+   "box": [
+    878,
+    268,
+    198,
+    96
+   ],
+   "col_widths_px": [
+    74,
+    50,
+    74
+   ],
+   "row_heights_px": [
+    32,
+    32,
+    32
+   ],
+   "cells": [
+    [
+     {
+      "text": "文書番号",
+      "bold": true,
+      "fill": "#E6EEF8",
+      "color": "#1F3A6E"
+     },
+     {
+      "text": "REV",
+      "bold": true,
+      "fill": "#E6EEF8",
+      "color": "#1F3A6E"
+     },
+     {
+      "text": "状態",
+      "bold": true,
+      "fill": "#E6EEF8",
+      "color": "#1F3A6E"
+     }
+    ],
+    [
+     "JP-001",
+     "A",
+     {
+      "text": "old",
+      "color": "#7A838F"
+     }
+    ],
+    [
+     "JP-001",
+     "B",
+     {
+      "text": "latest",
+      "bold": true,
+      "color": "#1F5FD0",
+      "fill": "#DCEBFA"
+     }
+    ]
+   ],
+   "size_px": 14,
+   "align": "c",
+   "color": "#1E2A44",
+   "border": {
+    "color": "#C9D6E6",
+    "width_px": 1
+   },
+   "cell_pad_px": 3
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    1438,
+    192,
+    190,
+    118
+   ],
+   "fill": "#FFFFFF",
+   "line": {
+    "color": "#0E2E63",
+    "width_px": 6
+   },
+   "radius_px": 6
+  },
+  {
+   "type": "rect",
+   "box": [
+    1521.0,
+    310,
+    24,
+    16
+   ],
+   "fill": "#0E2E63",
+   "line": null
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    1483.0,
+    324,
+    100,
+    8
+   ],
+   "fill": "#0E2E63",
+   "line": null,
+   "radius_px": 3
+  },
+  {
+   "type": "icon",
+   "icon": "azure:file",
+   "box": [
+    1452,
+    216,
+    50,
+    60
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "text",
+   "box": [
+    1508,
+    208,
+    116,
+    86
+   ],
+   "paras": [
+    [
+     {
+      "text": "最終取込日時",
+      "size_px": 13,
+      "bold": true
+     }
+    ],
+    [
+     {
+      "text": "2026/07/02",
+      "size_px": 14,
+      "bold": true
+     }
+    ],
+    [
+     {
+      "text": "18:22",
+      "size_px": 14,
+      "bold": true
+     }
+    ]
+   ],
+   "color": "#0E2E63",
+   "align": "l",
+   "valign": "m",
+   "line_pitch_px": 24
+  },
+  {
+   "type": "downArrow",
+   "box": [
+    961.0,
+    440,
+    32,
+    28
+   ],
+   "fill": "#1F6FD1",
+   "line": null
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    842,
+    466,
+    814,
+    170
+   ],
+   "fill": "#F6F8FB",
+   "line": {
+    "color": "#D3DCE6",
+    "width_px": 1.5
+   },
+   "radius_px": 8
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    842,
+    466,
+    814,
+    50
+   ],
+   "fill": "#E6EAF0",
+   "line": null,
+   "radius_px": 8
+  },
+  {
+   "type": "ellipse",
+   "box": [
+    854.0,
+    469.0,
+    44,
+    44
+   ],
+   "fill": "#4A5563",
+   "line": null,
+   "text": "7",
+   "size_px": 24,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "text",
+   "box": [
+    910,
+    466,
+    700,
+    50
+   ],
+   "text": "旧版は削除しない → 旧版保持",
+   "size_px": 22,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "icon",
+   "icon": "azure:versions",
+   "box": [
+    934,
+    534,
+    84,
+    84
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    1026,
+    538,
+    90,
+    78
+   ],
+   "fill": "#0E2E63",
+   "line": null,
+   "text": "旧版\n(old)",
+   "size_px": 19,
+   "bold": true,
+   "color": "#FFFFFF",
+   "line_pitch_px": 28,
+   "radius_px": 6
+  },
+  {
+   "type": "text",
+   "box": [
+    1176,
+    530,
+    464,
+    100
+   ],
+   "text": "過去の版（旧版）は削除せずに保持\n参照・比較・トレーサビリティのために維持\n必要に応じて画面上で旧版も参照可能",
+   "size_px": 18,
+   "color": "#1E2A44",
+   "valign": "t",
+   "bullet": true,
+   "bullet_indent_px": 18,
+   "line_pitch_px": 30
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    16,
+    656,
+    1640,
+    160
+   ],
+   "fill": "#F2F7FD",
+   "line": {
+    "color": "#C8D9EC",
+    "width_px": 1.5
+   },
+   "radius_px": 8
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    16,
+    656,
+    204,
+    160
+   ],
+   "fill": "#0E3F82",
+   "line": null,
+   "text": "最新の考え方\n（注意）",
+   "size_px": 23,
+   "bold": true,
+   "color": "#FFFFFF",
+   "line_pitch_px": 36,
+   "radius_px": 8
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    246,
+    668,
+    216,
+    62
+   ],
+   "fill": "#2A8FE8",
+   "line": null,
+   "paras": [
+    [
+     {
+      "text": "取込済み最新",
+      "size_px": 19,
+      "bold": true
+     }
+    ],
+    [
+     {
+      "text": "（本システムの最新）",
+      "size_px": 13.5,
+      "bold": true
+     }
+    ]
+   ],
+   "color": "#FFFFFF",
+   "line_pitch_px": 24,
+   "radius_px": 6
+  },
+  {
+   "type": "icon",
+   "icon": "azure:sql-database",
+   "box": [
+    318,
+    738,
+    70,
+    70
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    478,
+    668,
+    368,
+    138
+   ],
+   "fill": "#FFFFFF",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "text",
+   "box": [
+    492,
+    674,
+    350,
+    30
+   ],
+   "paras": [
+    [
+     {
+      "text": "（本システムの最新）",
+      "size_px": 18,
+      "bold": true
+     }
+    ]
+   ],
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "text",
+   "box": [
+    494,
+    708,
+    350,
+    94
+   ],
+   "text": "本システムに取込み済みの中での最新版\n検索・参照の対象となる\n画面に表示する最終取込日時時点の最新",
+   "size_px": 15.5,
+   "color": "#1E2A44",
+   "valign": "t",
+   "bullet": true,
+   "bullet_indent_px": 14,
+   "line_pitch_px": 26
+  },
+  {
+   "type": "text",
+   "box": [
+    856,
+    700,
+    80,
+    80
+   ],
+   "text": "≠",
+   "size_px": 56,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "c",
+   "valign": "m"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    946,
+    668,
+    232,
+    62
+   ],
+   "fill": "#6B7684",
+   "line": null,
+   "paras": [
+    [
+     {
+      "text": "元システム最新",
+      "size_px": 19,
+      "bold": true
+     }
+    ],
+    [
+     {
+      "text": "（共有サーバー上の最新）",
+      "size_px": 13.5,
+      "bold": true
+     }
+    ]
+   ],
+   "color": "#FFFFFF",
+   "line_pitch_px": 24,
+   "radius_px": 6
+  },
+  {
+   "type": "icon",
+   "icon": "azure:storage-sync-services",
+   "box": [
+    1026,
+    738,
+    72,
+    70
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    1194,
+    668,
+    450,
+    138
+   ],
+   "fill": "#FFFFFF",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "text",
+   "box": [
+    1208,
+    674,
+    430,
+    30
+   ],
+   "paras": [
+    [
+     {
+      "text": "（共有サーバー上の最新）",
+      "size_px": 18,
+      "bold": true
+     }
+    ]
+   ],
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "text",
+   "box": [
+    1210,
+    708,
+    430,
+    94
+   ],
+   "text": "共有サーバー上に存在する最新版\n本システムにまだ取込みされていない可能性がある\n両者は一致しない場合がある（更新直後など）",
+   "size_px": 15.5,
+   "color": "#1E2A44",
+   "valign": "t",
+   "bullet": true,
+   "bullet_indent_px": 14,
+   "line_pitch_px": 26
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    16,
+    832,
+    1640,
+    94
+   ],
+   "fill": "#FDECEC",
+   "line": {
+    "color": "#E05050",
+    "width_px": 2
+   },
+   "radius_px": 8
+  },
+  {
+   "type": "icon",
+   "icon": "material:warning-fill",
+   "box": [
+    36,
+    846.0,
+    66,
+    66
+   ],
+   "color": "#E02020"
+  },
+  {
+   "type": "text",
+   "box": [
+    116,
+    832,
+    1530,
+    94
+   ],
+   "paras": [
+    [
+     {
+      "text": "取込済みの最新（本システムの最新）と、元システムの最新（共有サーバー上の最新）は異なる場合があります。",
+      "size_px": 21,
+      "bold": true
+     }
+    ],
+    [
+     {
+      "text": "検索・参照の際は、画面に表示される「最終取込日時」を必ず確認してください。",
+      "size_px": 21,
+      "bold": true
+     }
+    ]
+   ],
+   "color": "#D42A2A",
+   "align": "l",
+   "valign": "m",
+   "line_pitch_px": 36
+  }
+ ]
+}

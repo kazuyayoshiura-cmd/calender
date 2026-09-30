@@ -1,0 +1,1465 @@
+{
+ "source_size": [
+  1672,
+  941
+ ],
+ "font": "Meiryo",
+ "background": "#FFFFFF",
+ "elements": [
+  {
+   "type": "rect",
+   "box": [
+    0,
+    16,
+    14,
+    80
+   ],
+   "fill": "#294D78",
+   "line": null
+  },
+  {
+   "type": "text",
+   "box": [
+    40,
+    8,
+    760,
+    62
+   ],
+   "text": "Gate 1で何を見極めるか",
+   "size_px": 48,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "text",
+   "box": [
+    42,
+    64,
+    700,
+    38
+   ],
+   "text": "実データで検索成立性を確認する",
+   "size_px": 28,
+   "bold": false,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "image",
+   "path": "logo.png",
+   "box": [
+    1552,
+    16,
+    100,
+    32
+   ],
+   "name": "logo"
+  },
+  {
+   "type": "rect",
+   "box": [
+    30,
+    117,
+    1615,
+    79
+   ],
+   "fill": "#E7F3FD",
+   "line": null
+  },
+  {
+   "type": "rect",
+   "box": [
+    42,
+    123,
+    172,
+    64
+   ],
+   "fill": "#0D3B71",
+   "line": null,
+   "text": "キーメッセージ",
+   "size_px": 19,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "text",
+   "box": [
+    238,
+    124,
+    1400,
+    64
+   ],
+   "text": "代表的な業務質問から必要な情報・元データ・結合キーを逆算し、実データで「正しく検索・回答できる状態を作れるか」を確認する。\n不足や矛盾がある場合は、補正・対象制限で成立するのか、PoCの前提自体を見直す必要があるのかまで判断する。",
+   "size_px": 20,
+   "bold": false,
+   "color": "#1F2F4F",
+   "align": "l",
+   "valign": "m",
+   "line_pitch_px": 30
+  },
+  {
+   "type": "rect",
+   "box": [
+    30,
+    258,
+    678,
+    648
+   ],
+   "fill": "#FFFFFF",
+   "line": {
+    "color": "#D6E0EC",
+    "width_px": 1.2
+   }
+  },
+  {
+   "type": "rect",
+   "box": [
+    30,
+    214,
+    678,
+    44
+   ],
+   "fill": "#1B3F72",
+   "line": null
+  },
+  {
+   "type": "text",
+   "box": [
+    52,
+    214,
+    640,
+    44
+   ],
+   "text": "①  Gate 1で見る5つの観点",
+   "size_px": 24,
+   "bold": true,
+   "color": "#FFFFFF",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    44,
+    272,
+    646,
+    462
+   ],
+   "fill": "#FFFFFF",
+   "line": {
+    "color": "#C9D6E6",
+    "width_px": 1.2
+   },
+   "radius_px": 4
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    46,
+    272,
+    158,
+    32
+   ],
+   "fill": "#3E6FA8",
+   "line": null,
+   "text": "1～4：成立条件",
+   "size_px": 16,
+   "bold": true,
+   "color": "#FFFFFF",
+   "radius_px": 3
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    52,
+    306,
+    628,
+    92
+   ],
+   "fill": "#EBF5FE",
+   "line": null,
+   "radius_px": 2
+  },
+  {
+   "type": "ellipse",
+   "box": [
+    62.0,
+    316.0,
+    40,
+    40
+   ],
+   "fill": "#1B3F72",
+   "line": null,
+   "text": "1",
+   "size_px": 22,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "text",
+   "box": [
+    126,
+    312,
+    540,
+    34
+   ],
+   "text": "必要情報の充足性",
+   "size_px": 21,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "text",
+   "box": [
+    122,
+    344,
+    556,
+    54
+   ],
+   "text": "回答に必要な情報が実データ内に存在するか\n例：作業工程、部品、WPS、文書、REV、発効日、FROM/THRU",
+   "size_px": 16.5,
+   "color": "#1F2F4F",
+   "valign": "t",
+   "bullet": true,
+   "line_pitch_px": 25,
+   "para_space_px": 0,
+   "bullet_indent_px": 20
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    52,
+    410,
+    628,
+    94
+   ],
+   "fill": "#EBF5FE",
+   "line": null,
+   "radius_px": 2
+  },
+  {
+   "type": "ellipse",
+   "box": [
+    62.0,
+    420.0,
+    40,
+    40
+   ],
+   "fill": "#1B3F72",
+   "line": null,
+   "text": "2",
+   "size_px": 22,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "text",
+   "box": [
+    126,
+    416,
+    540,
+    34
+   ],
+   "text": "関係性・結合の成立性",
+   "size_px": 21,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "text",
+   "box": [
+    122,
+    448,
+    556,
+    54
+   ],
+   "text": "正しいキー・条件・粒度で紐付けられるか\n例：部品⇔工程⇔WPS⇔図面、JOIN重複、部品番号だけで足りるか",
+   "size_px": 16.5,
+   "color": "#1F2F4F",
+   "valign": "t",
+   "bullet": true,
+   "line_pitch_px": 25,
+   "para_space_px": 0,
+   "bullet_indent_px": 20
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    52,
+    518,
+    628,
+    96
+   ],
+   "fill": "#EBF5FE",
+   "line": null,
+   "radius_px": 2
+  },
+  {
+   "type": "ellipse",
+   "box": [
+    62.0,
+    528.0,
+    40,
+    40
+   ],
+   "fill": "#1B3F72",
+   "line": null,
+   "text": "3",
+   "size_px": 22,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "text",
+   "box": [
+    126,
+    524,
+    540,
+    34
+   ],
+   "text": "版・適用の判定可能性",
+   "size_px": 21,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "text",
+   "box": [
+    122,
+    556,
+    556,
+    54
+   ],
+   "text": "最新版・適用対象を判断できるか\n例：REV、発効日、号機、適用/非適用/判定不能",
+   "size_px": 16.5,
+   "color": "#1F2F4F",
+   "valign": "t",
+   "bullet": true,
+   "line_pitch_px": 25,
+   "para_space_px": 0,
+   "bullet_indent_px": 20
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    52,
+    626,
+    628,
+    96
+   ],
+   "fill": "#EBF5FE",
+   "line": null,
+   "radius_px": 2
+  },
+  {
+   "type": "ellipse",
+   "box": [
+    62.0,
+    636.0,
+    40,
+    40
+   ],
+   "fill": "#1B3F72",
+   "line": null,
+   "text": "4",
+   "size_px": 22,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "text",
+   "box": [
+    126,
+    632,
+    540,
+    34
+   ],
+   "text": "抽出・トレーサビリティの成立性",
+   "size_px": 21,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "text",
+   "box": [
+    122,
+    664,
+    556,
+    54
+   ],
+   "text": "文書から正しく抽出し、原本へ戻れるか\n例：見出し、ページ、シート/セル、文書番号、元ファイルパス",
+   "size_px": 16.5,
+   "color": "#1F2F4F",
+   "valign": "t",
+   "bullet": true,
+   "line_pitch_px": 25,
+   "para_space_px": 0,
+   "bullet_indent_px": 20
+  },
+  {
+   "type": "downArrow",
+   "box": [
+    334,
+    732,
+    38,
+    30
+   ],
+   "fill": "#7A8BA0",
+   "line": null
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    44,
+    758,
+    646,
+    146
+   ],
+   "fill": "#FFFFFF",
+   "line": {
+    "color": "#C9D6E6",
+    "width_px": 1.2
+   },
+   "radius_px": 4
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    46,
+    758,
+    134,
+    30
+   ],
+   "fill": "#3E6FA8",
+   "line": null,
+   "text": "5：総合確認",
+   "size_px": 16,
+   "bold": true,
+   "color": "#FFFFFF",
+   "radius_px": 3
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    52,
+    788,
+    628,
+    108
+   ],
+   "fill": "#EBF5FE",
+   "line": null,
+   "radius_px": 2
+  },
+  {
+   "type": "ellipse",
+   "box": [
+    62.0,
+    798.0,
+    40,
+    40
+   ],
+   "fill": "#1B3F72",
+   "line": null,
+   "text": "5",
+   "size_px": 22,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "text",
+   "box": [
+    124,
+    796,
+    540,
+    32
+   ],
+   "text": "検索単位として成立するか",
+   "size_px": 21,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "text",
+   "box": [
+    124,
+    828,
+    560,
+    66
+   ],
+   "text": "①～④を満たしたうえで、1件だけを見れば「何についての、\u000bどの工程で、何をする情報で、どの版・対象に使えるか」が分かり、\u000bかつ元データまで辿れるか。",
+   "size_px": 17,
+   "bold": false,
+   "color": "#1F2F4F",
+   "align": "l",
+   "valign": "t",
+   "line_pitch_px": 23
+  },
+  {
+   "type": "rect",
+   "box": [
+    726,
+    258,
+    919,
+    648
+   ],
+   "fill": "#FFFFFF",
+   "line": {
+    "color": "#D6E0EC",
+    "width_px": 1.2
+   }
+  },
+  {
+   "type": "rect",
+   "box": [
+    726,
+    214,
+    919,
+    44
+   ],
+   "fill": "#1B3F72",
+   "line": null
+  },
+  {
+   "type": "text",
+   "box": [
+    748,
+    214,
+    880,
+    44
+   ],
+   "text": "②  Gate 1をどう進めるか",
+   "size_px": 24,
+   "bold": true,
+   "color": "#FFFFFF",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    746,
+    275,
+    108,
+    48
+   ],
+   "fill": "#DDEBF8",
+   "line": null,
+   "text": "STEP 1",
+   "size_px": 19,
+   "bold": true,
+   "color": "#1F3A6E",
+   "radius_px": 2
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    862,
+    268,
+    768,
+    92
+   ],
+   "fill": "#FFFFFF",
+   "line": {
+    "color": "#D0DBE8",
+    "width_px": 1.2
+   },
+   "radius_px": 3
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    746,
+    386,
+    108,
+    48
+   ],
+   "fill": "#DDEBF8",
+   "line": null,
+   "text": "STEP 2",
+   "size_px": 19,
+   "bold": true,
+   "color": "#1F3A6E",
+   "radius_px": 2
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    862,
+    384,
+    768,
+    88
+   ],
+   "fill": "#FFFFFF",
+   "line": {
+    "color": "#D0DBE8",
+    "width_px": 1.2
+   },
+   "radius_px": 3
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    746,
+    500,
+    108,
+    48
+   ],
+   "fill": "#DDEBF8",
+   "line": null,
+   "text": "STEP 3",
+   "size_px": 19,
+   "bold": true,
+   "color": "#1F3A6E",
+   "radius_px": 2
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    862,
+    498,
+    768,
+    142
+   ],
+   "fill": "#FFFFFF",
+   "line": {
+    "color": "#D0DBE8",
+    "width_px": 1.2
+   },
+   "radius_px": 3
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    746,
+    670,
+    108,
+    48
+   ],
+   "fill": "#DDEBF8",
+   "line": null,
+   "text": "STEP 4",
+   "size_px": 19,
+   "bold": true,
+   "color": "#1F3A6E",
+   "radius_px": 2
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    862,
+    668,
+    768,
+    74
+   ],
+   "fill": "#FFFFFF",
+   "line": {
+    "color": "#D0DBE8",
+    "width_px": 1.2
+   },
+   "radius_px": 3
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    746,
+    767,
+    108,
+    48
+   ],
+   "fill": "#DDEBF8",
+   "line": null,
+   "text": "STEP 5",
+   "size_px": 19,
+   "bold": true,
+   "color": "#1F3A6E",
+   "radius_px": 2
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    862,
+    765,
+    768,
+    132
+   ],
+   "fill": "#FFFFFF",
+   "line": {
+    "color": "#D0DBE8",
+    "width_px": 1.2
+   },
+   "radius_px": 3
+  },
+  {
+   "type": "downArrow",
+   "box": [
+    1161,
+    363,
+    26,
+    20
+   ],
+   "fill": "#7A8BA0",
+   "line": null
+  },
+  {
+   "type": "downArrow",
+   "box": [
+    1161,
+    474,
+    26,
+    20
+   ],
+   "fill": "#7A8BA0",
+   "line": null
+  },
+  {
+   "type": "downArrow",
+   "box": [
+    1161,
+    642,
+    26,
+    20
+   ],
+   "fill": "#7A8BA0",
+   "line": null
+  },
+  {
+   "type": "downArrow",
+   "box": [
+    1161,
+    744,
+    26,
+    20
+   ],
+   "fill": "#7A8BA0",
+   "line": null
+  },
+  {
+   "type": "text",
+   "box": [
+    876,
+    274,
+    420,
+    34
+   ],
+   "text": "代表質問を選ぶ",
+   "size_px": 22,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "text",
+   "box": [
+    876,
+    308,
+    420,
+    30
+   ],
+   "text": "UC1・UC2から20～30問程度を先行選定",
+   "size_px": 18,
+   "bold": false,
+   "color": "#1F2F4F",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    1306,
+    272,
+    316,
+    84
+   ],
+   "fill": "#F0F4F9",
+   "line": null,
+   "radius_px": 3
+  },
+  {
+   "type": "text",
+   "box": [
+    1322,
+    274,
+    100,
+    22
+   ],
+   "text": "（例）",
+   "size_px": 16,
+   "bold": false,
+   "color": "#1F2F4F",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "text",
+   "box": [
+    1326,
+    294,
+    290,
+    60
+   ],
+   "text": "部品AのTOSを確認したい\n類似工程を探したい\n該当箇所と最新版を確認したい",
+   "size_px": 15,
+   "color": "#1F2F4F",
+   "valign": "t",
+   "bullet": true,
+   "line_pitch_px": 20,
+   "para_space_px": 0,
+   "bullet_indent_px": 20
+  },
+  {
+   "type": "text",
+   "box": [
+    876,
+    389,
+    420,
+    34
+   ],
+   "text": "必要データを逆算する",
+   "size_px": 22,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "text",
+   "box": [
+    876,
+    423,
+    440,
+    30
+   ],
+   "text": "必要情報 → 元データ → 結合キー → 検索単位",
+   "size_px": 18,
+   "bold": false,
+   "color": "#1F2F4F",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    1306,
+    388,
+    316,
+    80
+   ],
+   "fill": "#F0F4F9",
+   "line": null,
+   "radius_px": 3
+  },
+  {
+   "type": "text",
+   "box": [
+    1322,
+    394,
+    100,
+    24
+   ],
+   "text": "（例）",
+   "size_px": 16,
+   "bold": false,
+   "color": "#1F2F4F",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "text",
+   "box": [
+    1316,
+    418,
+    304,
+    46
+   ],
+   "text": "部品AのTOS → 作業内容・工程・WPS・履歴\n→ 作業工程/部品/WPS/履歴 → TOS検索単位",
+   "size_px": 13.5,
+   "bold": false,
+   "color": "#1F2F4F",
+   "align": "l",
+   "valign": "m",
+   "line_pitch_px": 22
+  },
+  {
+   "type": "text",
+   "box": [
+    876,
+    503,
+    440,
+    34
+   ],
+   "text": "実データで成立条件を確認する",
+   "size_px": 22,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "text",
+   "box": [
+    1330,
+    506,
+    284,
+    28
+   ],
+   "text": "※左の①～④をここで確認",
+   "size_px": 16,
+   "bold": false,
+   "color": "#1F5FB8",
+   "align": "r",
+   "valign": "m"
+  },
+  {
+   "type": "rect",
+   "box": [
+    874,
+    541,
+    360,
+    32
+   ],
+   "fill": "#DDEBF8",
+   "line": null,
+   "text": "N-PLUS",
+   "size_px": 17,
+   "bold": true,
+   "color": "#1F3A6E"
+  },
+  {
+   "type": "rect",
+   "box": [
+    874,
+    573,
+    360,
+    58
+   ],
+   "fill": "#FFFFFF",
+   "line": {
+    "color": "#D0DBE8",
+    "width_px": 1.2
+   }
+  },
+  {
+   "type": "ellipse",
+   "box": [
+    888.0,
+    588.0,
+    26,
+    26
+   ],
+   "fill": "#1B3F72",
+   "line": null,
+   "text": "1",
+   "size_px": 15,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "text",
+   "box": [
+    918,
+    588,
+    70,
+    26
+   ],
+   "text": "必要情報",
+   "size_px": 15,
+   "bold": false,
+   "color": "#1F2F4F",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     990,
+     601
+    ],
+    [
+     1006,
+     601
+    ]
+   ],
+   "color": "#4A5C78",
+   "width_px": 1.4,
+   "head_size": "sm"
+  },
+  {
+   "type": "ellipse",
+   "box": [
+    1012.0,
+    588.0,
+    26,
+    26
+   ],
+   "fill": "#1B3F72",
+   "line": null,
+   "text": "2",
+   "size_px": 15,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "text",
+   "box": [
+    1042,
+    588,
+    56,
+    26
+   ],
+   "text": "紐付け",
+   "size_px": 15,
+   "bold": false,
+   "color": "#1F2F4F",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     1100,
+     601
+    ],
+    [
+     1116,
+     601
+    ]
+   ],
+   "color": "#4A5C78",
+   "width_px": 1.4,
+   "head_size": "sm"
+  },
+  {
+   "type": "ellipse",
+   "box": [
+    1122.0,
+    588.0,
+    26,
+    26
+   ],
+   "fill": "#1B3F72",
+   "line": null,
+   "text": "3",
+   "size_px": 15,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "text",
+   "box": [
+    1152,
+    588,
+    70,
+    26
+   ],
+   "text": "版・適用",
+   "size_px": 15,
+   "bold": false,
+   "color": "#1F2F4F",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "rect",
+   "box": [
+    1246,
+    541,
+    376,
+    32
+   ],
+   "fill": "#DDEBF8",
+   "line": null,
+   "text": "共有文書",
+   "size_px": 17,
+   "bold": true,
+   "color": "#1F3A6E"
+  },
+  {
+   "type": "rect",
+   "box": [
+    1246,
+    573,
+    376,
+    58
+   ],
+   "fill": "#FFFFFF",
+   "line": {
+    "color": "#D0DBE8",
+    "width_px": 1.2
+   }
+  },
+  {
+   "type": "ellipse",
+   "box": [
+    1260.0,
+    588.0,
+    26,
+    26
+   ],
+   "fill": "#1B3F72",
+   "line": null,
+   "text": "1",
+   "size_px": 15,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "text",
+   "box": [
+    1290,
+    588,
+    70,
+    26
+   ],
+   "text": "必要情報",
+   "size_px": 15,
+   "bold": false,
+   "color": "#1F2F4F",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     1362,
+     601
+    ],
+    [
+     1378,
+     601
+    ]
+   ],
+   "color": "#4A5C78",
+   "width_px": 1.4,
+   "head_size": "sm"
+  },
+  {
+   "type": "ellipse",
+   "box": [
+    1384.0,
+    588.0,
+    26,
+    26
+   ],
+   "fill": "#1B3F72",
+   "line": null,
+   "text": "4",
+   "size_px": 15,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "text",
+   "box": [
+    1414,
+    588,
+    84,
+    26
+   ],
+   "text": "抽出・追跡",
+   "size_px": 15,
+   "bold": false,
+   "color": "#1F2F4F",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     1500,
+     601
+    ],
+    [
+     1516,
+     601
+    ]
+   ],
+   "color": "#4A5C78",
+   "width_px": 1.4,
+   "head_size": "sm"
+  },
+  {
+   "type": "ellipse",
+   "box": [
+    1522.0,
+    588.0,
+    26,
+    26
+   ],
+   "fill": "#1B3F72",
+   "line": null,
+   "text": "3",
+   "size_px": 15,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "text",
+   "box": [
+    1552,
+    588,
+    70,
+    26
+   ],
+   "text": "版・適用",
+   "size_px": 15,
+   "bold": false,
+   "color": "#1F2F4F",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "text",
+   "box": [
+    876,
+    672,
+    480,
+    34
+   ],
+   "text": "検索単位として成立するか確認する",
+   "size_px": 22,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "text",
+   "box": [
+    1350,
+    675,
+    264,
+    28
+   ],
+   "text": "※左の⑤をここで確認",
+   "size_px": 16,
+   "bold": false,
+   "color": "#1F5FB8",
+   "align": "r",
+   "valign": "m"
+  },
+  {
+   "type": "text",
+   "box": [
+    872,
+    706,
+    756,
+    28
+   ],
+   "text": "・必要な文脈が揃うか  ／  根拠が揃うか  ／  元データまで辿れるか  ／  欠損を無理に補完していないか",
+   "size_px": 16,
+   "bold": false,
+   "color": "#1F2F4F",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "text",
+   "box": [
+    874,
+    768,
+    200,
+    32
+   ],
+   "text": "判定",
+   "size_px": 22,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "rect",
+   "box": [
+    874,
+    802,
+    238,
+    86
+   ],
+   "fill": "#F7FBF9",
+   "line": {
+    "color": "#E3E7EC",
+    "width_px": 1.2
+   }
+  },
+  {
+   "type": "rect",
+   "box": [
+    874,
+    802,
+    238,
+    32
+   ],
+   "fill": "#D6EFE2",
+   "line": null,
+   "text": "成立",
+   "size_px": 18,
+   "bold": true,
+   "color": "#1E7A4A"
+  },
+  {
+   "type": "text",
+   "box": [
+    874,
+    836,
+    238,
+    50
+   ],
+   "text": "必要情報が存在し、\n結合キーで根拠まで到達できる",
+   "size_px": 15.5,
+   "bold": false,
+   "color": "#1F2F4F",
+   "align": "c",
+   "valign": "m",
+   "line_pitch_px": 23
+  },
+  {
+   "type": "rect",
+   "box": [
+    1126,
+    802,
+    246,
+    86
+   ],
+   "fill": "#FFFCF6",
+   "line": {
+    "color": "#E3E7EC",
+    "width_px": 1.2
+   }
+  },
+  {
+   "type": "rect",
+   "box": [
+    1126,
+    802,
+    246,
+    32
+   ],
+   "fill": "#FDF0D5",
+   "line": null,
+   "text": "条件付き成立",
+   "size_px": 18,
+   "bold": true,
+   "color": "#8A6212"
+  },
+  {
+   "type": "text",
+   "box": [
+    1126,
+    836,
+    246,
+    50
+   ],
+   "text": "補正・除外・追加提供・\n対象制限で評価可能",
+   "size_px": 15.5,
+   "bold": false,
+   "color": "#1F2F4F",
+   "align": "c",
+   "valign": "m",
+   "line_pitch_px": 23
+  },
+  {
+   "type": "rect",
+   "box": [
+    1384,
+    802,
+    238,
+    86
+   ],
+   "fill": "#FFF8F9",
+   "line": {
+    "color": "#E3E7EC",
+    "width_px": 1.2
+   }
+  },
+  {
+   "type": "rect",
+   "box": [
+    1384,
+    802,
+    238,
+    32
+   ],
+   "fill": "#FBE1E5",
+   "line": null,
+   "text": "不成立",
+   "size_px": 18,
+   "bold": true,
+   "color": "#A03040"
+  },
+  {
+   "type": "text",
+   "box": [
+    1384,
+    836,
+    238,
+    50
+   ],
+   "text": "必須情報がなく、\n要求自体を評価できない",
+   "size_px": 15.5,
+   "bold": false,
+   "color": "#1F2F4F",
+   "align": "c",
+   "valign": "m",
+   "line_pitch_px": 23
+  },
+  {
+   "type": "rect",
+   "box": [
+    30,
+    912,
+    1568,
+    26
+   ],
+   "fill": "#EEF2F7",
+   "line": null
+  },
+  {
+   "type": "text",
+   "box": [
+    42,
+    912,
+    1540,
+    26
+   ],
+   "text": "補足：診断後は、元データ欠損・矛盾などの「データ起因」と、抽出・結合・検索・生成などの「方式起因」を切り分け、改善対象を特定する。",
+   "size_px": 15.5,
+   "bold": false,
+   "color": "#1F2F4F",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "text",
+   "box": [
+    1604,
+    912,
+    40,
+    26
+   ],
+   "text": "8",
+   "size_px": 14,
+   "bold": false,
+   "color": "#6B7385",
+   "align": "r",
+   "valign": "m"
+  }
+ ]
+}

@@ -1,0 +1,852 @@
+{
+ "source_size": [
+  1672,
+  941
+ ],
+ "font": "Meiryo",
+ "background": "#FFFFFF",
+ "elements": [
+  {
+   "type": "roundRect",
+   "box": [
+    20,
+    10,
+    166,
+    58
+   ],
+   "fill": "#0E2E63",
+   "line": null,
+   "text": "図6-1",
+   "size_px": 30,
+   "bold": true,
+   "color": "#FFFFFF",
+   "radius_px": 6
+  },
+  {
+   "type": "text",
+   "box": [
+    206,
+    6,
+    1440,
+    66
+   ],
+   "text": "版の新しさ × 対象への適用 による判定",
+   "size_px": 40,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     252,
+     740
+    ],
+    [
+     252,
+     84
+    ]
+   ],
+   "color": "#0E2E63",
+   "width_px": 3,
+   "head": "end"
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     252,
+     740
+    ],
+    [
+     1644,
+     740
+    ]
+   ],
+   "color": "#0E2E63",
+   "width_px": 3,
+   "head": "end"
+  },
+  {
+   "type": "line",
+   "points": [
+    [
+     940,
+     88
+    ],
+    [
+     940,
+     736
+    ]
+   ],
+   "color": "#8FA3BF",
+   "width_px": 1.2,
+   "dash": "dash"
+  },
+  {
+   "type": "line",
+   "points": [
+    [
+     264,
+     414
+    ],
+    [
+     1632,
+     414
+    ]
+   ],
+   "color": "#8FA3BF",
+   "width_px": 1.2,
+   "dash": "dash"
+  },
+  {
+   "type": "text",
+   "box": [
+    36,
+    124,
+    210,
+    72
+   ],
+   "paras": [
+    [
+     {
+      "text": "適用確認",
+      "size_px": 25,
+      "bold": true,
+      "color": "#1F3A6E"
+     }
+    ],
+    [
+     {
+      "text": "（対象に適用可能）",
+      "size_px": 19
+     }
+    ]
+   ],
+   "color": "#1E2A44",
+   "align": "c",
+   "valign": "m",
+   "line_pitch_px": 34
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    42,
+    348,
+    188,
+    106
+   ],
+   "fill": "#0E2E63",
+   "line": null,
+   "text": "対象への\n適用",
+   "size_px": 27,
+   "bold": true,
+   "color": "#FFFFFF",
+   "line_pitch_px": 38,
+   "radius_px": 8
+  },
+  {
+   "type": "text",
+   "box": [
+    36,
+    610,
+    210,
+    104
+   ],
+   "paras": [
+    [
+     {
+      "text": "適用不明",
+      "size_px": 25,
+      "bold": true,
+      "color": "#1F3A6E"
+     }
+    ],
+    [
+     {
+      "text": "（対象への適用性",
+      "size_px": 19
+     }
+    ],
+    [
+     {
+      "text": "が未確認）",
+      "size_px": 19
+     }
+    ]
+   ],
+   "color": "#1E2A44",
+   "align": "c",
+   "valign": "m",
+   "line_pitch_px": 32
+  },
+  {
+   "type": "text",
+   "box": [
+    290,
+    752,
+    140,
+    66
+   ],
+   "paras": [
+    [
+     {
+      "text": "旧",
+      "size_px": 25,
+      "bold": true,
+      "color": "#1F3A6E"
+     }
+    ],
+    [
+     {
+      "text": "（古い版）",
+      "size_px": 19
+     }
+    ]
+   ],
+   "color": "#1E2A44",
+   "align": "c",
+   "valign": "m",
+   "line_pitch_px": 32
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    800,
+    758,
+    280,
+    68
+   ],
+   "fill": "#0E2E63",
+   "line": null,
+   "text": "版の新しさ",
+   "size_px": 28,
+   "bold": true,
+   "color": "#FFFFFF",
+   "radius_px": 8
+  },
+  {
+   "type": "text",
+   "box": [
+    1440,
+    752,
+    160,
+    66
+   ],
+   "paras": [
+    [
+     {
+      "text": "最新",
+      "size_px": 25,
+      "bold": true,
+      "color": "#1F3A6E"
+     }
+    ],
+    [
+     {
+      "text": "（新しい版）",
+      "size_px": 19
+     }
+    ]
+   ],
+   "color": "#1E2A44",
+   "align": "c",
+   "valign": "m",
+   "line_pitch_px": 32
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    268,
+    96,
+    670,
+    306
+   ],
+   "fill": "#EAF3FC",
+   "line": {
+    "color": "#C4D6EA",
+    "width_px": 1.2
+   },
+   "radius_px": 10
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    290,
+    114,
+    318,
+    62
+   ],
+   "fill": "#1E7BE0",
+   "line": null,
+   "text": "旧版・参照用",
+   "size_px": 32,
+   "bold": true,
+   "color": "#FFFFFF",
+   "radius_px": 8
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    628,
+    120,
+    120,
+    48
+   ],
+   "fill": "#FFFFFF",
+   "line": {
+    "color": "#C9D3DF",
+    "width_px": 1.2
+   },
+   "text": "断定可",
+   "size_px": 19,
+   "bold": true,
+   "color": "#1F3A6E",
+   "radius_px": 6
+  },
+  {
+   "type": "ellipse",
+   "box": [
+    750,
+    186,
+    42,
+    42
+   ],
+   "fill": "#2E8CF0",
+   "line": {
+    "color": "#FFFFFF",
+    "width_px": 3
+   }
+  },
+  {
+   "type": "text",
+   "box": [
+    800,
+    180,
+    140,
+    56
+   ],
+   "paras": [
+    [
+     {
+      "text": "候補B",
+      "size_px": 20,
+      "bold": true,
+      "color": "#1F3A6E"
+     }
+    ],
+    [
+     {
+      "text": "（旧版・適用確認）",
+      "size_px": 13.5,
+      "bold": true
+     }
+    ]
+   ],
+   "color": "#1E2A44",
+   "align": "l",
+   "valign": "m",
+   "line_pitch_px": 26
+  },
+  {
+   "type": "text",
+   "box": [
+    292,
+    192,
+    620,
+    200
+   ],
+   "valign": "t",
+   "color": "#1E2A44",
+   "bullet": true,
+   "bullet_indent_px": 24,
+   "line_pitch_px": 31,
+   "para_space_px": 6,
+   "paras": [
+    [
+     {
+      "text": "表示ラベル：旧版・参照用",
+      "size_px": 20,
+      "bold": true
+     }
+    ],
+    [
+     {
+      "text": "ユーザーに提示する文言：",
+      "size_px": 20,
+      "bold": true
+     },
+     {
+      "text": "\u000b「この情報は旧版ですが、対象に適用可能です。\u000b　必要に応じて最新版も確認してください。」",
+      "size_px": 20
+     }
+    ],
+    [
+     {
+      "text": "断定可否：適用可、ただし最新版ではない\u000bことを明示",
+      "size_px": 20,
+      "bold": true
+     }
+    ]
+   ]
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    950,
+    96,
+    670,
+    306
+   ],
+   "fill": "#DDEBF9",
+   "line": {
+    "color": "#C4D6EA",
+    "width_px": 1.2
+   },
+   "radius_px": 10
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    972,
+    114,
+    238,
+    62
+   ],
+   "fill": "#0E3A7A",
+   "line": null,
+   "text": "推奨候補",
+   "size_px": 32,
+   "bold": true,
+   "color": "#FFFFFF",
+   "radius_px": 8
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    1220,
+    120,
+    120,
+    48
+   ],
+   "fill": "#FFFFFF",
+   "line": {
+    "color": "#C9D3DF",
+    "width_px": 1.2
+   },
+   "text": "断定可",
+   "size_px": 19,
+   "bold": true,
+   "color": "#1F3A6E",
+   "radius_px": 6
+  },
+  {
+   "type": "ellipse",
+   "box": [
+    1432,
+    186,
+    42,
+    42
+   ],
+   "fill": "#0E2A8A",
+   "line": {
+    "color": "#FFFFFF",
+    "width_px": 3
+   }
+  },
+  {
+   "type": "text",
+   "box": [
+    1482,
+    180,
+    140,
+    56
+   ],
+   "paras": [
+    [
+     {
+      "text": "候補A",
+      "size_px": 20,
+      "bold": true,
+      "color": "#1F3A6E"
+     }
+    ],
+    [
+     {
+      "text": "（最新・適用確認）",
+      "size_px": 13.5,
+      "bold": true
+     }
+    ]
+   ],
+   "color": "#1E2A44",
+   "align": "l",
+   "valign": "m",
+   "line_pitch_px": 26
+  },
+  {
+   "type": "text",
+   "box": [
+    974,
+    192,
+    620,
+    200
+   ],
+   "valign": "t",
+   "color": "#1E2A44",
+   "bullet": true,
+   "bullet_indent_px": 24,
+   "line_pitch_px": 31,
+   "para_space_px": 6,
+   "paras": [
+    [
+     {
+      "text": "表示ラベル：推奨候補",
+      "size_px": 20,
+      "bold": true
+     }
+    ],
+    [
+     {
+      "text": "ユーザーに提示する文言：",
+      "size_px": 20,
+      "bold": true
+     },
+     {
+      "text": "\u000b「最新版であり、対象に適用可能です。\u000b　優先的にご確認ください。」",
+      "size_px": 20
+     }
+    ],
+    [
+     {
+      "text": "断定可否：最新版かつ適用可と断定可能",
+      "size_px": 20,
+      "bold": true
+     }
+    ]
+   ]
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    268,
+    424,
+    670,
+    306
+   ],
+   "fill": "#EEF0F3",
+   "line": {
+    "color": "#C4D6EA",
+    "width_px": 1.2
+   },
+   "radius_px": 10
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    290,
+    442,
+    238,
+    62
+   ],
+   "fill": "#4A5563",
+   "line": null,
+   "text": "保留",
+   "size_px": 32,
+   "bold": true,
+   "color": "#FFFFFF",
+   "radius_px": 8
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    538,
+    448,
+    120,
+    48
+   ],
+   "fill": "#FFFFFF",
+   "line": {
+    "color": "#C9D3DF",
+    "width_px": 1.2
+   },
+   "text": "断定不可",
+   "size_px": 19,
+   "bold": true,
+   "color": "#1F3A6E",
+   "radius_px": 6
+  },
+  {
+   "type": "ellipse",
+   "box": [
+    750,
+    514,
+    42,
+    42
+   ],
+   "fill": "#7A838F",
+   "line": {
+    "color": "#FFFFFF",
+    "width_px": 3
+   }
+  },
+  {
+   "type": "text",
+   "box": [
+    800,
+    508,
+    140,
+    56
+   ],
+   "paras": [
+    [
+     {
+      "text": "候補D",
+      "size_px": 20,
+      "bold": true,
+      "color": "#1F3A6E"
+     }
+    ],
+    [
+     {
+      "text": "（旧版・適用不明）",
+      "size_px": 13.5,
+      "bold": true
+     }
+    ]
+   ],
+   "color": "#1E2A44",
+   "align": "l",
+   "valign": "m",
+   "line_pitch_px": 26
+  },
+  {
+   "type": "text",
+   "box": [
+    292,
+    520,
+    620,
+    200
+   ],
+   "valign": "t",
+   "color": "#1E2A44",
+   "bullet": true,
+   "bullet_indent_px": 24,
+   "line_pitch_px": 31,
+   "para_space_px": 6,
+   "paras": [
+    [
+     {
+      "text": "表示ラベル：保留",
+      "size_px": 20,
+      "bold": true
+     }
+    ],
+    [
+     {
+      "text": "ユーザーに提示する文言：",
+      "size_px": 20,
+      "bold": true
+     },
+     {
+      "text": "\u000b「旧版であり、対象への適用性も未確認です。\u000b　追加の情報を確認してください。」",
+      "size_px": 20
+     }
+    ],
+    [
+     {
+      "text": "断定可否：最新版ではない、適用可否も不明\u000bのため断定不可",
+      "size_px": 20,
+      "bold": true
+     }
+    ]
+   ]
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    950,
+    424,
+    670,
+    306
+   ],
+   "fill": "#E8F4FC",
+   "line": {
+    "color": "#C4D6EA",
+    "width_px": 1.2
+   },
+   "radius_px": 10
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    972,
+    442,
+    318,
+    62
+   ],
+   "fill": "#22A7F0",
+   "line": null,
+   "text": "適用未確認",
+   "size_px": 32,
+   "bold": true,
+   "color": "#FFFFFF",
+   "radius_px": 8
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    1310,
+    448,
+    120,
+    48
+   ],
+   "fill": "#FFFFFF",
+   "line": {
+    "color": "#C9D3DF",
+    "width_px": 1.2
+   },
+   "text": "断定不可",
+   "size_px": 19,
+   "bold": true,
+   "color": "#1F3A6E",
+   "radius_px": 6
+  },
+  {
+   "type": "ellipse",
+   "box": [
+    1432,
+    514,
+    42,
+    42
+   ],
+   "fill": "#2AAEF2",
+   "line": {
+    "color": "#FFFFFF",
+    "width_px": 3
+   }
+  },
+  {
+   "type": "text",
+   "box": [
+    1482,
+    508,
+    140,
+    56
+   ],
+   "paras": [
+    [
+     {
+      "text": "候補C",
+      "size_px": 20,
+      "bold": true,
+      "color": "#1F3A6E"
+     }
+    ],
+    [
+     {
+      "text": "（最新・適用不明）",
+      "size_px": 13.5,
+      "bold": true
+     }
+    ]
+   ],
+   "color": "#1E2A44",
+   "align": "l",
+   "valign": "m",
+   "line_pitch_px": 26
+  },
+  {
+   "type": "text",
+   "box": [
+    974,
+    520,
+    620,
+    200
+   ],
+   "valign": "t",
+   "color": "#1E2A44",
+   "bullet": true,
+   "bullet_indent_px": 24,
+   "line_pitch_px": 31,
+   "para_space_px": 6,
+   "paras": [
+    [
+     {
+      "text": "表示ラベル：適用未確認",
+      "size_px": 20,
+      "bold": true
+     }
+    ],
+    [
+     {
+      "text": "ユーザーに提示する文言：",
+      "size_px": 20,
+      "bold": true
+     },
+     {
+      "text": "\u000b「最新版ですが、対象への適用性は未確認です。\u000b　適用範囲や条件を確認してください。」",
+      "size_px": 20
+     }
+    ],
+    [
+     {
+      "text": "断定可否：最新版であることのみ確認可能、\u000b適用可否は断定不可",
+      "size_px": 20,
+      "bold": true
+     }
+    ]
+   ]
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    40,
+    842,
+    1592,
+    84
+   ],
+   "fill": "#FDECEC",
+   "line": {
+    "color": "#E05050",
+    "width_px": 2
+   },
+   "radius_px": 8
+  },
+  {
+   "type": "icon",
+   "icon": "material:warning-fill",
+   "box": [
+    60,
+    851.0,
+    66,
+    66
+   ],
+   "color": "#E02020"
+  },
+  {
+   "type": "text",
+   "box": [
+    140,
+    842,
+    1482,
+    84
+   ],
+   "paras": [
+    [
+     {
+      "text": "版の新しさと対象への適用は別の判定です。情報が欠損している場合でも、最新版であると断定しないこと。",
+      "size_px": 25,
+      "bold": true
+     }
+    ]
+   ],
+   "color": "#D42A2A",
+   "align": "l",
+   "valign": "m",
+   "line_pitch_px": 36
+  }
+ ]
+}

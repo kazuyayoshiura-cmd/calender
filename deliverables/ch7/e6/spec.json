@@ -1,0 +1,1371 @@
+{
+ "source_size": [
+  1672,
+  941
+ ],
+ "font": "Meiryo",
+ "background": "#FFFFFF",
+ "elements": [
+  {
+   "type": "text",
+   "box": [
+    24,
+    4,
+    1640,
+    60
+   ],
+   "text": "図7-3　キャッシュ設計と無効化条件",
+   "size_px": 38,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "text",
+   "box": [
+    24,
+    66,
+    1640,
+    66
+   ],
+   "text": "検索の高速化と負荷抑制のために、レイヤーごとにキャッシュを設ける。データ更新時は適切に無効化し、キャッシュ利用時でも\n版・適用は必ず再判定することで、誤った最新版・適用結果の提示を防ぐ。",
+   "size_px": 21,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m",
+   "line_pitch_px": 32
+  },
+  {
+   "type": "homePlate",
+   "box": [
+    150,
+    152,
+    246,
+    58
+   ],
+   "point_px": 18,
+   "fill": "#0E3F82",
+   "line": {
+    "color": "#FFFFFF",
+    "width_px": 3
+   },
+   "paras": [
+    [
+     {
+      "text": "① 質問解釈",
+      "size_px": 17,
+      "bold": true
+     }
+    ],
+    [
+     {
+      "text": "（IN）",
+      "size_px": 16,
+      "bold": true
+     }
+    ]
+   ],
+   "color": "#FFFFFF",
+   "line_pitch_px": 23,
+   "inset_px": [
+    14,
+    0,
+    8,
+    0
+   ]
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    160,
+    216,
+    210,
+    58
+   ],
+   "fill": "#EEF3F9",
+   "line": null,
+   "text": "質問の意図・条件・\n検索対象を構造化",
+   "size_px": 15.5,
+   "bold": true,
+   "color": "#1E2A44",
+   "line_pitch_px": 24,
+   "radius_px": 4
+  },
+  {
+   "type": "chevron",
+   "box": [
+    380,
+    152,
+    246,
+    58
+   ],
+   "point_px": 18,
+   "fill": "#0E3F82",
+   "line": {
+    "color": "#FFFFFF",
+    "width_px": 3
+   },
+   "paras": [
+    [
+     {
+      "text": "② 検索",
+      "size_px": 17,
+      "bold": true
+     }
+    ],
+    [
+     {
+      "text": "（SQ / FT / VS）",
+      "size_px": 16,
+      "bold": true
+     }
+    ]
+   ],
+   "color": "#FFFFFF",
+   "line_pitch_px": 23,
+   "inset_px": [
+    14,
+    0,
+    8,
+    0
+   ]
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    390,
+    216,
+    210,
+    58
+   ],
+   "fill": "#EEF3F9",
+   "line": null,
+   "text": "構造化・全文・ベクトル\n検索で候補を取得",
+   "size_px": 15.5,
+   "bold": true,
+   "color": "#1E2A44",
+   "line_pitch_px": 24,
+   "radius_px": 4
+  },
+  {
+   "type": "chevron",
+   "box": [
+    610,
+    152,
+    246,
+    58
+   ],
+   "point_px": 18,
+   "fill": "#0E3F82",
+   "line": {
+    "color": "#FFFFFF",
+    "width_px": 3
+   },
+   "paras": [
+    [
+     {
+      "text": "③ 版・適用判定",
+      "size_px": 17,
+      "bold": true
+     }
+    ],
+    [
+     {
+      "text": "（VA）",
+      "size_px": 16,
+      "bold": true
+     }
+    ]
+   ],
+   "color": "#FFFFFF",
+   "line_pitch_px": 23,
+   "inset_px": [
+    14,
+    0,
+    8,
+    0
+   ]
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    620,
+    216,
+    210,
+    58
+   ],
+   "fill": "#EEF3F9",
+   "line": null,
+   "text": "REV・発効日・適用範囲\nに基づき判定",
+   "size_px": 15.5,
+   "bold": true,
+   "color": "#1E2A44",
+   "line_pitch_px": 24,
+   "radius_px": 4
+  },
+  {
+   "type": "chevron",
+   "box": [
+    840,
+    152,
+    246,
+    58
+   ],
+   "point_px": 18,
+   "fill": "#0E3F82",
+   "line": {
+    "color": "#FFFFFF",
+    "width_px": 3
+   },
+   "paras": [
+    [
+     {
+      "text": "④ 埋め込み生成",
+      "size_px": 17,
+      "bold": true
+     }
+    ],
+    [
+     {
+      "text": "（EMB）",
+      "size_px": 16,
+      "bold": true
+     }
+    ]
+   ],
+   "color": "#FFFFFF",
+   "line_pitch_px": 23,
+   "inset_px": [
+    14,
+    0,
+    8,
+    0
+   ]
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    850,
+    216,
+    210,
+    58
+   ],
+   "fill": "#EEF3F9",
+   "line": null,
+   "text": "文書・質問の\nベクトル化",
+   "size_px": 15.5,
+   "bold": true,
+   "color": "#1E2A44",
+   "line_pitch_px": 24,
+   "radius_px": 4
+  },
+  {
+   "type": "chevron",
+   "box": [
+    1070,
+    152,
+    246,
+    58
+   ],
+   "point_px": 18,
+   "fill": "#0E3F82",
+   "line": {
+    "color": "#FFFFFF",
+    "width_px": 3
+   },
+   "paras": [
+    [
+     {
+      "text": "⑤ 意味解析",
+      "size_px": 17,
+      "bold": true
+     }
+    ],
+    [
+     {
+      "text": "（任意）",
+      "size_px": 16,
+      "bold": true
+     }
+    ]
+   ],
+   "color": "#FFFFFF",
+   "line_pitch_px": 23,
+   "inset_px": [
+    14,
+    0,
+    8,
+    0
+   ]
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    1080,
+    216,
+    210,
+    58
+   ],
+   "fill": "#EEF3F9",
+   "line": null,
+   "text": "類似質問・意図クラスタ\nによる高速化",
+   "size_px": 15.5,
+   "bold": true,
+   "color": "#1E2A44",
+   "line_pitch_px": 24,
+   "radius_px": 4
+  },
+  {
+   "type": "chevron",
+   "box": [
+    1300,
+    152,
+    246,
+    58
+   ],
+   "point_px": 18,
+   "fill": "#0E3F82",
+   "line": {
+    "color": "#FFFFFF",
+    "width_px": 3
+   },
+   "paras": [
+    [
+     {
+      "text": "⑥ 結果生成",
+      "size_px": 17,
+      "bold": true
+     }
+    ],
+    [
+     {
+      "text": "（EV）",
+      "size_px": 16,
+      "bold": true
+     }
+    ]
+   ],
+   "color": "#FFFFFF",
+   "line_pitch_px": 23,
+   "inset_px": [
+    14,
+    0,
+    8,
+    0
+   ]
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    1310,
+    216,
+    210,
+    58
+   ],
+   "fill": "#EEF3F9",
+   "line": null,
+   "text": "根拠付きの\n回答を生成",
+   "size_px": 15.5,
+   "bold": true,
+   "color": "#1E2A44",
+   "line_pitch_px": 24,
+   "radius_px": 4
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    16,
+    202,
+    118,
+    178
+   ],
+   "fill": "#E6F1FB",
+   "line": null,
+   "radius_px": 8
+  },
+  {
+   "type": "icon",
+   "icon": "azure:users",
+   "box": [
+    48,
+    226,
+    54,
+    58
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "text",
+   "box": [
+    16,
+    292,
+    118,
+    60
+   ],
+   "text": "ユーザー\n質問",
+   "size_px": 18,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "c",
+   "valign": "m",
+   "line_pitch_px": 28
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    1552,
+    202,
+    108,
+    178
+   ],
+   "fill": "#E6F1FB",
+   "line": null,
+   "radius_px": 8
+  },
+  {
+   "type": "icon",
+   "icon": "azure:file",
+   "box": [
+    1580,
+    226,
+    52,
+    58
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "text",
+   "box": [
+    1552,
+    292,
+    108,
+    60
+   ],
+   "text": "回答\n（根拠付き）",
+   "size_px": 17,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "c",
+   "valign": "m",
+   "line_pitch_px": 28
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    154,
+    288,
+    222,
+    138
+   ],
+   "fill": "#DDEBF8",
+   "line": {
+    "color": "#9DBBE0",
+    "width_px": 1.2
+   },
+   "radius_px": 6
+  },
+  {
+   "type": "icon",
+   "icon": "azure:cache-redis",
+   "box": [
+    164,
+    298,
+    38,
+    38
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "text",
+   "box": [
+    206,
+    294,
+    166,
+    48
+   ],
+   "text": "質問解釈キャッシュ",
+   "size_px": 17,
+   "bold": true,
+   "color": "#1356B0",
+   "align": "l",
+   "valign": "m",
+   "line_pitch_px": 22
+  },
+  {
+   "type": "text",
+   "box": [
+    168,
+    346,
+    202,
+    74
+   ],
+   "text": "質問文の正規化結果\nルーティング結果\n検索条件（構造化）",
+   "size_px": 14.5,
+   "color": "#1E2A44",
+   "valign": "t",
+   "bullet": true,
+   "bullet_indent_px": 14,
+   "line_pitch_px": 23
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    384,
+    288,
+    222,
+    138
+   ],
+   "fill": "#DDEBF8",
+   "line": {
+    "color": "#9DBBE0",
+    "width_px": 1.2
+   },
+   "radius_px": 6
+  },
+  {
+   "type": "icon",
+   "icon": "azure:cache-redis",
+   "box": [
+    394,
+    298,
+    38,
+    38
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "text",
+   "box": [
+    436,
+    294,
+    166,
+    48
+   ],
+   "text": "検索結果キャッシュ",
+   "size_px": 17,
+   "bold": true,
+   "color": "#1356B0",
+   "align": "l",
+   "valign": "m",
+   "line_pitch_px": 22
+  },
+  {
+   "type": "text",
+   "box": [
+    398,
+    346,
+    202,
+    74
+   ],
+   "text": "検索クエリ（構造化）\n各検索方式の上位候補\nリランキング結果",
+   "size_px": 14.5,
+   "color": "#1E2A44",
+   "valign": "t",
+   "bullet": true,
+   "bullet_indent_px": 14,
+   "line_pitch_px": 23
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    844,
+    288,
+    222,
+    138
+   ],
+   "fill": "#DDEBF8",
+   "line": {
+    "color": "#9DBBE0",
+    "width_px": 1.2
+   },
+   "radius_px": 6
+  },
+  {
+   "type": "icon",
+   "icon": "azure:cache-redis",
+   "box": [
+    854,
+    298,
+    38,
+    38
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "text",
+   "box": [
+    896,
+    294,
+    166,
+    48
+   ],
+   "text": "Embedding\u000bキャッシュ",
+   "size_px": 16,
+   "bold": true,
+   "color": "#1356B0",
+   "align": "l",
+   "valign": "m",
+   "line_pitch_px": 22
+  },
+  {
+   "type": "text",
+   "box": [
+    858,
+    346,
+    202,
+    74
+   ],
+   "text": "テキストの埋め込みベクトル\n文書チャンクのベクトル",
+   "size_px": 14.5,
+   "color": "#1E2A44",
+   "valign": "t",
+   "bullet": true,
+   "bullet_indent_px": 14,
+   "line_pitch_px": 23
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    1074,
+    288,
+    222,
+    138
+   ],
+   "fill": "#DDEBF8",
+   "line": {
+    "color": "#9DBBE0",
+    "width_px": 1.2
+   },
+   "radius_px": 6
+  },
+  {
+   "type": "icon",
+   "icon": "azure:cache-redis",
+   "box": [
+    1084,
+    298,
+    38,
+    38
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "text",
+   "box": [
+    1126,
+    294,
+    166,
+    48
+   ],
+   "paras": [
+    [
+     {
+      "text": "意味キャッシュ",
+      "size_px": 17,
+      "bold": true
+     }
+    ],
+    [
+     {
+      "text": "（オプション）",
+      "size_px": 14,
+      "bold": true
+     }
+    ]
+   ],
+   "color": "#1356B0",
+   "align": "l",
+   "valign": "m",
+   "line_pitch_px": 22
+  },
+  {
+   "type": "text",
+   "box": [
+    1088,
+    346,
+    202,
+    74
+   ],
+   "text": "質問の意味クラスタ\n類似質問のマッピング",
+   "size_px": 14.5,
+   "color": "#1E2A44",
+   "valign": "t",
+   "bullet": true,
+   "bullet_indent_px": 14,
+   "line_pitch_px": 23
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     134,
+     322
+    ],
+    [
+     154,
+     322
+    ]
+   ],
+   "color": "#1F3A6E",
+   "width_px": 2.5,
+   "head": "end"
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     376,
+     322
+    ],
+    [
+     384,
+     322
+    ]
+   ],
+   "color": "#1F3A6E",
+   "width_px": 2.5,
+   "head": "end"
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     606,
+     322
+    ],
+    [
+     725.0,
+     322
+    ],
+    [
+     725.0,
+     276
+    ]
+   ],
+   "color": "#1F3A6E",
+   "width_px": 2.5,
+   "head": "end"
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     765.0,
+     276
+    ],
+    [
+     765.0,
+     322
+    ],
+    [
+     844,
+     322
+    ]
+   ],
+   "color": "#1F3A6E",
+   "width_px": 2.5,
+   "head": "end"
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     1066,
+     322
+    ],
+    [
+     1074,
+     322
+    ]
+   ],
+   "color": "#1F3A6E",
+   "width_px": 2.5,
+   "head": "end"
+  },
+  {
+   "type": "line",
+   "points": [
+    [
+     1296,
+     322
+    ],
+    [
+     1415.0,
+     322
+    ]
+   ],
+   "color": "#1F3A6E",
+   "width_px": 2.5
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     1415.0,
+     322
+    ],
+    [
+     1415.0,
+     276
+    ]
+   ],
+   "color": "#1F3A6E",
+   "width_px": 2.5,
+   "head": "end"
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     1415.0,
+     322
+    ],
+    [
+     1552,
+     322
+    ]
+   ],
+   "color": "#1F3A6E",
+   "width_px": 2.5,
+   "head": "end"
+  },
+  {
+   "type": "table",
+   "box": [
+    16,
+    440,
+    1644,
+    356
+   ],
+   "col_widths_px": [
+    338,
+    330,
+    316,
+    332,
+    328
+   ],
+   "row_heights_px": [
+    40,
+    76,
+    82,
+    82,
+    76
+   ],
+   "cells": [
+    [
+     {
+      "text": "キャッシュ種別",
+      "fill": "#0E3F82",
+      "color": "#FFFFFF",
+      "bold": true,
+      "size_px": 19,
+      "align": "c"
+     },
+     {
+      "text": "キャッシュ対象",
+      "fill": "#0E3F82",
+      "color": "#FFFFFF",
+      "bold": true,
+      "size_px": 19,
+      "align": "c"
+     },
+     {
+      "text": "主なキー（例）",
+      "fill": "#0E3F82",
+      "color": "#FFFFFF",
+      "bold": true,
+      "size_px": 19,
+      "align": "c"
+     },
+     {
+      "text": "無効化条件",
+      "fill": "#0E3F82",
+      "color": "#FFFFFF",
+      "bold": true,
+      "size_px": 19,
+      "align": "c"
+     },
+     {
+      "text": "備考",
+      "fill": "#0E3F82",
+      "color": "#FFFFFF",
+      "bold": true,
+      "size_px": 19,
+      "align": "c"
+     }
+    ],
+    [
+     {
+      "paras": [
+       [
+        {
+         "text": "質問解釈キャッシュ",
+         "size_px": 18.5,
+         "bold": true
+        }
+       ]
+      ],
+      "color": "#1F3A6E",
+      "fill": "#E6F1FB",
+      "align": "l",
+      "line_pitch_px": 26,
+      "inset_px": [
+       86,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "bullet": true,
+      "bullet_indent_px": 16,
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "valign": "m",
+      "line_pitch_px": 24,
+      "inset_px": [
+       20,
+       2,
+       4,
+       2
+      ],
+      "text": "質問の正規化結果\n検索対象・意図・検索条件\nルーティング結果",
+      "fill": "#F3F7FB"
+     },
+     {
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "valign": "m",
+      "line_pitch_px": 24,
+      "inset_px": [
+       16,
+       2,
+       4,
+       2
+      ],
+      "text": "正規化質問文字列\n＋設定版（プロンプト）",
+      "fill": "#F3F7FB"
+     },
+     {
+      "bullet": true,
+      "bullet_indent_px": 16,
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "valign": "m",
+      "line_pitch_px": 24,
+      "inset_px": [
+       20,
+       2,
+       4,
+       2
+      ],
+      "text": "設定版の変更\n用語辞書版の変更",
+      "fill": "#F3F7FB"
+     },
+     {
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "valign": "m",
+      "line_pitch_px": 24,
+      "inset_px": [
+       16,
+       2,
+       4,
+       2
+      ],
+      "text": "同一質問の再利用で\nLLM呼び出しを削減",
+      "fill": "#F3F7FB"
+     }
+    ],
+    [
+     {
+      "paras": [
+       [
+        {
+         "text": "検索結果キャッシュ",
+         "size_px": 18.5,
+         "bold": true
+        }
+       ]
+      ],
+      "color": "#1F3A6E",
+      "fill": "#E6F1FB",
+      "align": "l",
+      "line_pitch_px": 26,
+      "inset_px": [
+       86,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "bullet": true,
+      "bullet_indent_px": 16,
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "valign": "m",
+      "line_pitch_px": 24,
+      "inset_px": [
+       20,
+       2,
+       4,
+       2
+      ],
+      "text": "各検索方式の上位候補\nリランキング後の候補",
+      "fill": "#FFFFFF"
+     },
+     {
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "valign": "m",
+      "line_pitch_px": 24,
+      "inset_px": [
+       16,
+       2,
+       4,
+       2
+      ],
+      "text": "構造化クエリ／検索語\n＋検索方式\n＋データ版（data_version）",
+      "fill": "#FFFFFF"
+     },
+     {
+      "bullet": true,
+      "bullet_indent_px": 16,
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "valign": "m",
+      "line_pitch_px": 24,
+      "inset_px": [
+       20,
+       2,
+       4,
+       2
+      ],
+      "text": "データ版の更新\n検索設定版の変更\nインデックス再構築時",
+      "fill": "#FFFFFF"
+     },
+     {
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "valign": "m",
+      "line_pitch_px": 24,
+      "inset_px": [
+       16,
+       2,
+       4,
+       2
+      ],
+      "text": "キャッシュヒット時も\n版・適用は必ず再判定する",
+      "fill": "#FFFFFF"
+     }
+    ],
+    [
+     {
+      "paras": [
+       [
+        {
+         "text": "Embeddingキャッシュ",
+         "size_px": 18.5,
+         "bold": true
+        }
+       ]
+      ],
+      "color": "#1F3A6E",
+      "fill": "#E6F1FB",
+      "align": "l",
+      "line_pitch_px": 26,
+      "inset_px": [
+       86,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "bullet": true,
+      "bullet_indent_px": 16,
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "valign": "m",
+      "line_pitch_px": 24,
+      "inset_px": [
+       20,
+       2,
+       4,
+       2
+      ],
+      "text": "テキストの埋め込みベクトル\n文書チャンクのベクトル",
+      "fill": "#F3F7FB"
+     },
+     {
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "valign": "m",
+      "line_pitch_px": 24,
+      "inset_px": [
+       16,
+       2,
+       4,
+       2
+      ],
+      "text": "テキストのハッシュ\n＋モデル版（Embeddingモデル）",
+      "fill": "#F3F7FB"
+     },
+     {
+      "bullet": true,
+      "bullet_indent_px": 16,
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "valign": "m",
+      "line_pitch_px": 24,
+      "inset_px": [
+       20,
+       2,
+       4,
+       2
+      ],
+      "text": "モデル版の変更\n埋め込みモデルの差し替え時は\u000bインデックスの再生成が必要",
+      "fill": "#F3F7FB"
+     },
+     {
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "valign": "m",
+      "line_pitch_px": 24,
+      "inset_px": [
+       16,
+       2,
+       4,
+       2
+      ],
+      "text": "同一テキストの再埋め込みを削減",
+      "fill": "#F3F7FB"
+     }
+    ],
+    [
+     {
+      "paras": [
+       [
+        {
+         "text": "意味キャッシュ",
+         "size_px": 18.5,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（オプション）",
+         "size_px": 15
+        }
+       ]
+      ],
+      "color": "#1F3A6E",
+      "fill": "#E6F1FB",
+      "align": "l",
+      "line_pitch_px": 26,
+      "inset_px": [
+       86,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "bullet": true,
+      "bullet_indent_px": 16,
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "valign": "m",
+      "line_pitch_px": 24,
+      "inset_px": [
+       20,
+       2,
+       4,
+       2
+      ],
+      "text": "質問の意味クラスタ\n類似質問のマッピング",
+      "fill": "#FFFFFF"
+     },
+     {
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "valign": "m",
+      "line_pitch_px": 24,
+      "inset_px": [
+       16,
+       2,
+       4,
+       2
+      ],
+      "text": "質問の埋め込みベクトル\n＋モデル版（Embeddingモデル）",
+      "fill": "#FFFFFF"
+     },
+     {
+      "bullet": true,
+      "bullet_indent_px": 16,
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "valign": "m",
+      "line_pitch_px": 24,
+      "inset_px": [
+       20,
+       2,
+       4,
+       2
+      ],
+      "text": "モデル版の変更\n辞書版の変更",
+      "fill": "#FFFFFF"
+     },
+     {
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "valign": "m",
+      "line_pitch_px": 24,
+      "inset_px": [
+       16,
+       2,
+       4,
+       2
+      ],
+      "text": "頻出質問の定型化・類似質問提示\nなどで利用",
+      "fill": "#FFFFFF"
+     }
+    ]
+   ],
+   "border": {
+    "color": "#FFFFFF",
+    "width_px": 3
+   },
+   "name": "cache-table"
+  },
+  {
+   "type": "icon",
+   "icon": "azure:language",
+   "box": [
+    34,
+    495.0,
+    46,
+    46
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "icon",
+   "icon": "azure:search",
+   "box": [
+    34,
+    574.0,
+    46,
+    46
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "icon",
+   "icon": "azure:cognitive-services",
+   "box": [
+    34,
+    656.0,
+    46,
+    46
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "icon",
+   "icon": "azure:language-understanding",
+   "box": [
+    34,
+    735.0,
+    46,
+    46
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    16,
+    810,
+    338,
+    120
+   ],
+   "fill": "#E6F1FB",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "icon",
+   "icon": "azure:app-configuration",
+   "box": [
+    38,
+    844,
+    54,
+    54
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "text",
+   "box": [
+    108,
+    810,
+    240,
+    120
+   ],
+   "text": "共通ルール・補足",
+   "size_px": 20,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    360,
+    810,
+    1300,
+    120
+   ],
+   "fill": "#F3F7FB",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "text",
+   "box": [
+    380,
+    816,
+    1270,
+    108
+   ],
+   "size_px": 15.5,
+   "color": "#1E2A44",
+   "valign": "m",
+   "bullet": true,
+   "bullet_indent_px": 16,
+   "line_pitch_px": 25,
+   "text": "キャッシュの有効期限（TTL）を設定し、一定期間で自動的に再取得する。\ndata_version（データ版）、設定版、モデル版、辞書版のいずれかが更新された場合は、該当キャッシュを無効化する。\nキャッシュを利用して取得した候補であっても、版・適用判定（VA）は必ず再実行する（古い結果を最新版・適用ありと誤って提示しないため）。\n生成文そのものは原則キャッシュしない（最新データ・設定を常に反映するため）。"
+  }
+ ]
+}

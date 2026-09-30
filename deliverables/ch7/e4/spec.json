@@ -1,0 +1,1068 @@
+{
+ "source_size": [
+  1672,
+  941
+ ],
+ "font": "Meiryo",
+ "background": "#FFFFFF",
+ "elements": [
+  {
+   "type": "text",
+   "box": [
+    24,
+    4,
+    1640,
+    62
+   ],
+   "text": "表7-2　ログに残す項目（再現性・F-07評価・再評価に利用）",
+   "size_px": 38,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "table",
+   "box": [
+    16,
+    70,
+    1644,
+    869.9999999999999
+   ],
+   "col_widths_px": [
+    452,
+    654,
+    538
+   ],
+   "row_heights_px": [
+    40,
+    63.84615384615385,
+    63.84615384615385,
+    63.84615384615385,
+    63.84615384615385,
+    63.84615384615385,
+    63.84615384615385,
+    63.84615384615385,
+    63.84615384615385,
+    63.84615384615385,
+    63.84615384615385,
+    63.84615384615385,
+    63.84615384615385,
+    63.84615384615385
+   ],
+   "cells": [
+    [
+     {
+      "paras": [
+       [
+        {
+         "text": "ログ項目",
+         "size_px": 20,
+         "bold": true
+        }
+       ]
+      ],
+      "fill": "#0E3F82",
+      "color": "#FFFFFF",
+      "align": "c"
+     },
+     {
+      "paras": [
+       [
+        {
+         "text": "目的（何のために記録するか）",
+         "size_px": 20,
+         "bold": true
+        }
+       ]
+      ],
+      "fill": "#0E3F82",
+      "color": "#FFFFFF",
+      "align": "c"
+     },
+     {
+      "paras": [
+       [
+        {
+         "text": "利用タイミング（どの場面で使うか）",
+         "size_px": 20,
+         "bold": true
+        }
+       ]
+      ],
+      "fill": "#0E3F82",
+      "color": "#FFFFFF",
+      "align": "c"
+     }
+    ],
+    [
+     {
+      "paras": [
+       [
+        {
+         "text": "request_id",
+         "size_px": 19,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（一意のリクエストID）",
+         "size_px": 14
+        }
+       ]
+      ],
+      "color": "#1F3A6E",
+      "fill": "#EAF3FC",
+      "align": "l",
+      "line_pitch_px": 25.53846153846154,
+      "inset_px": [
+       96,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "text": "1つの質問処理を一意に識別する\n関連するログ（検索・生成・検証等）を紐付ける",
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "fill": "#EAF3FC",
+      "align": "l",
+      "valign": "m",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 24.556213017751478,
+      "inset_px": [
+       24,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "text": "再現調査、障害対応時の追跡\nF-07評価時のケース管理",
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "fill": "#EAF3FC",
+      "align": "l",
+      "valign": "m",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 24.556213017751478,
+      "inset_px": [
+       24,
+       2,
+       6,
+       2
+      ]
+     }
+    ],
+    [
+     {
+      "paras": [
+       [
+        {
+         "text": "質問",
+         "size_px": 19,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（ユーザーの入力文）",
+         "size_px": 14
+        }
+       ]
+      ],
+      "color": "#1F3A6E",
+      "fill": "#FFFFFF",
+      "align": "l",
+      "line_pitch_px": 25.53846153846154,
+      "inset_px": [
+       96,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "text": "利用者の意図・文脈を確認する\n評価時に元の質問を再現する",
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "fill": "#FFFFFF",
+      "align": "l",
+      "valign": "m",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 24.556213017751478,
+      "inset_px": [
+       24,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "text": "F-07評価（正答・許容回答の判定）\n再評価時の入力再現",
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "fill": "#FFFFFF",
+      "align": "l",
+      "valign": "m",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 24.556213017751478,
+      "inset_px": [
+       24,
+       2,
+       6,
+       2
+      ]
+     }
+    ],
+    [
+     {
+      "paras": [
+       [
+        {
+         "text": "正規化後条件",
+         "size_px": 19,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（構造化条件JSON）",
+         "size_px": 14
+        }
+       ]
+      ],
+      "color": "#1F3A6E",
+      "fill": "#EAF3FC",
+      "align": "l",
+      "line_pitch_px": 25.53846153846154,
+      "inset_px": [
+       96,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "text": "LLMで抽出・正規化した検索条件を記録する\n検索の再現性・妥当性を検証する",
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "fill": "#EAF3FC",
+      "align": "l",
+      "valign": "m",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 24.556213017751478,
+      "inset_px": [
+       24,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "text": "検索結果が適切かの分析\n再評価時に同一条件での再実行",
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "fill": "#EAF3FC",
+      "align": "l",
+      "valign": "m",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 24.556213017751478,
+      "inset_px": [
+       24,
+       2,
+       6,
+       2
+      ]
+     }
+    ],
+    [
+     {
+      "paras": [
+       [
+        {
+         "text": "ルーティング",
+         "size_px": 19,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（対象データ・検索対象の振り分け）",
+         "size_px": 14
+        }
+       ]
+      ],
+      "color": "#1F3A6E",
+      "fill": "#FFFFFF",
+      "align": "l",
+      "line_pitch_px": 25.53846153846154,
+      "inset_px": [
+       96,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "text": "どのデータソース・検索方式に振り分けたかを記録する\n検索戦略の妥当性を検証する",
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "fill": "#FFFFFF",
+      "align": "l",
+      "valign": "m",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 24.556213017751478,
+      "inset_px": [
+       24,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "text": "回答品質の分析（誤ったルーティングの特定）\n検索最適化の改善検討",
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "fill": "#FFFFFF",
+      "align": "l",
+      "valign": "m",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 24.556213017751478,
+      "inset_px": [
+       24,
+       2,
+       6,
+       2
+      ]
+     }
+    ],
+    [
+     {
+      "paras": [
+       [
+        {
+         "text": "モード別検索結果",
+         "size_px": 19,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（SQL・全文・ベクトル・RRF）",
+         "size_px": 14
+        }
+       ]
+      ],
+      "color": "#1F3A6E",
+      "fill": "#EAF3FC",
+      "align": "l",
+      "line_pitch_px": 25.53846153846154,
+      "inset_px": [
+       96,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "text": "各検索モードの取得候補・スコア・件数を記録する\n最終候補の根拠となる検索過程を再現する",
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "fill": "#EAF3FC",
+      "align": "l",
+      "valign": "m",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 24.556213017751478,
+      "inset_px": [
+       24,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "text": "F-07評価（検索精度・候補妥当性の確認）\n再評価時に同一条件での検索再実行・比較",
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "fill": "#EAF3FC",
+      "align": "l",
+      "valign": "m",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 24.556213017751478,
+      "inset_px": [
+       24,
+       2,
+       6,
+       2
+      ]
+     }
+    ],
+    [
+     {
+      "paras": [
+       [
+        {
+         "text": "版判定",
+         "size_px": 19,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（版・適用範囲の判定結果）",
+         "size_px": 14
+        }
+       ]
+      ],
+      "color": "#1F3A6E",
+      "fill": "#FFFFFF",
+      "align": "l",
+      "line_pitch_px": 25.53846153846154,
+      "inset_px": [
+       96,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "text": "候補データの版の新旧・適用範囲判定の結果を記録する\n旧版・適用外の排除や警告の妥当性を確認する",
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "fill": "#FFFFFF",
+      "align": "l",
+      "valign": "m",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 24.556213017751478,
+      "inset_px": [
+       24,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "text": "誤った版判定の原因分析\nF-07評価（根拠の正確性確認）",
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "fill": "#FFFFFF",
+      "align": "l",
+      "valign": "m",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 24.556213017751478,
+      "inset_px": [
+       24,
+       2,
+       6,
+       2
+      ]
+     }
+    ],
+    [
+     {
+      "paras": [
+       [
+        {
+         "text": "生成文",
+         "size_px": 19,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（LLMの出力結果）",
+         "size_px": 14
+        }
+       ]
+      ],
+      "color": "#1F3A6E",
+      "fill": "#EAF3FC",
+      "align": "l",
+      "line_pitch_px": 25.53846153846154,
+      "inset_px": [
+       96,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "text": "最終的にユーザーへ提示した説明文を記録する\n回答品質の評価・改善に利用する",
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "fill": "#EAF3FC",
+      "align": "l",
+      "valign": "m",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 24.556213017751478,
+      "inset_px": [
+       24,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "text": "F-07評価（正答・根拠提示率の確認）\n再評価時の出力再現・比較",
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "fill": "#EAF3FC",
+      "align": "l",
+      "valign": "m",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 24.556213017751478,
+      "inset_px": [
+       24,
+       2,
+       6,
+       2
+      ]
+     }
+    ],
+    [
+     {
+      "paras": [
+       [
+        {
+         "text": "根拠ID",
+         "size_px": 19,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（参照したevidenceのID一覧）",
+         "size_px": 14
+        }
+       ]
+      ],
+      "color": "#1F3A6E",
+      "fill": "#FFFFFF",
+      "align": "l",
+      "line_pitch_px": 25.53846153846154,
+      "inset_px": [
+       96,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "text": "生成文で使用した根拠の参照IDを記録する\n根拠付き回答の妥当性・トレーサビリティを確保する",
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "fill": "#FFFFFF",
+      "align": "l",
+      "valign": "m",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 24.556213017751478,
+      "inset_px": [
+       24,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "text": "F-07評価（根拠提示率・正確性の確認）\nユーザーからの問い合わせ対応",
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "fill": "#FFFFFF",
+      "align": "l",
+      "valign": "m",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 24.556213017751478,
+      "inset_px": [
+       24,
+       2,
+       6,
+       2
+      ]
+     }
+    ],
+    [
+     {
+      "paras": [
+       [
+        {
+         "text": "処理時間",
+         "size_px": 19,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（各処理の所要時間）",
+         "size_px": 14
+        }
+       ]
+      ],
+      "color": "#1F3A6E",
+      "fill": "#EAF3FC",
+      "align": "l",
+      "line_pitch_px": 25.53846153846154,
+      "inset_px": [
+       96,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "text": "API全体および各処理（検索・生成・検証等）の時間を記録する\n応答性能の評価・ボトルネック分析に利用する",
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "fill": "#EAF3FC",
+      "align": "l",
+      "valign": "m",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 24.556213017751478,
+      "inset_px": [
+       24,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "text": "F-07評価（応答時間の確認）\n性能改善の検討",
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "fill": "#EAF3FC",
+      "align": "l",
+      "valign": "m",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 24.556213017751478,
+      "inset_px": [
+       24,
+       2,
+       6,
+       2
+      ]
+     }
+    ],
+    [
+     {
+      "paras": [
+       [
+        {
+         "text": "データ版",
+         "size_px": 19,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（データソースの版・更新日時）",
+         "size_px": 14
+        }
+       ]
+      ],
+      "color": "#1F3A6E",
+      "fill": "#FFFFFF",
+      "align": "l",
+      "line_pitch_px": 25.53846153846154,
+      "inset_px": [
+       96,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "text": "検索対象データの版・更新日時を記録する\n評価時と再評価時で同一データを使用できるようにする",
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "fill": "#FFFFFF",
+      "align": "l",
+      "valign": "m",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 24.556213017751478,
+      "inset_px": [
+       24,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "text": "再評価時の環境再現\n回答差異の原因分析（データ更新の影響確認）",
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "fill": "#FFFFFF",
+      "align": "l",
+      "valign": "m",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 24.556213017751478,
+      "inset_px": [
+       24,
+       2,
+       6,
+       2
+      ]
+     }
+    ],
+    [
+     {
+      "paras": [
+       [
+        {
+         "text": "設定版",
+         "size_px": 19,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（プロンプト・パラメータの版）",
+         "size_px": 14
+        }
+       ]
+      ],
+      "color": "#1F3A6E",
+      "fill": "#EAF3FC",
+      "align": "l",
+      "line_pitch_px": 25.53846153846154,
+      "inset_px": [
+       96,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "text": "使用したプロンプト・検索パラメータ等の設定版を記録する\n設定変更による回答差異を分析する",
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "fill": "#EAF3FC",
+      "align": "l",
+      "valign": "m",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 24.556213017751478,
+      "inset_px": [
+       24,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "text": "再評価時の設定再現\nA/B比較や改善効果の検証",
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "fill": "#EAF3FC",
+      "align": "l",
+      "valign": "m",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 24.556213017751478,
+      "inset_px": [
+       24,
+       2,
+       6,
+       2
+      ]
+     }
+    ],
+    [
+     {
+      "paras": [
+       [
+        {
+         "text": "モデル版",
+         "size_px": 19,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（LLM・Embedding・Rerankerの版）",
+         "size_px": 14
+        }
+       ]
+      ],
+      "color": "#1F3A6E",
+      "fill": "#FFFFFF",
+      "align": "l",
+      "line_pitch_px": 25.53846153846154,
+      "inset_px": [
+       96,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "text": "使用したAIモデルの種類・バージョンを記録する\nモデル差による回答差異を検証する",
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "fill": "#FFFFFF",
+      "align": "l",
+      "valign": "m",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 24.556213017751478,
+      "inset_px": [
+       24,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "text": "再評価時の環境再現\nモデル更新時の影響分析",
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "fill": "#FFFFFF",
+      "align": "l",
+      "valign": "m",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 24.556213017751478,
+      "inset_px": [
+       24,
+       2,
+       6,
+       2
+      ]
+     }
+    ],
+    [
+     {
+      "paras": [
+       [
+        {
+         "text": "辞書版",
+         "size_px": 19,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（用語辞書・同義語辞書の版）",
+         "size_px": 14
+        }
+       ]
+      ],
+      "color": "#1F3A6E",
+      "fill": "#EAF3FC",
+      "align": "l",
+      "line_pitch_px": 25.53846153846154,
+      "inset_px": [
+       96,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "text": "業務用語辞書・同義語辞書の版を記録する\n辞書更新による検索・正規化への影響を分析する",
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "fill": "#EAF3FC",
+      "align": "l",
+      "valign": "m",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 24.556213017751478,
+      "inset_px": [
+       24,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "text": "再評価時の環境再現\n検索精度の改善効果検証",
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "fill": "#EAF3FC",
+      "align": "l",
+      "valign": "m",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 24.556213017751478,
+      "inset_px": [
+       24,
+       2,
+       6,
+       2
+      ]
+     }
+    ]
+   ],
+   "border": {
+    "color": "#D6E1EE",
+    "width_px": 1.5
+   },
+   "name": "table"
+  },
+  {
+   "type": "icon",
+   "icon": "azure:templates",
+   "box": [
+    36,
+    117.0,
+    49.84615384615385,
+    49.84615384615385
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "icon",
+   "icon": "azure:language",
+   "box": [
+    36,
+    180.84615384615384,
+    49.84615384615385,
+    49.84615384615385
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "icon",
+   "icon": "azure:file",
+   "box": [
+    36,
+    244.69230769230768,
+    49.84615384615385,
+    49.84615384615385
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "icon",
+   "icon": "azure:workflow",
+   "box": [
+    36,
+    308.53846153846155,
+    49.84615384615385,
+    49.84615384615385
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "icon",
+   "icon": "azure:search",
+   "box": [
+    36,
+    372.3846153846154,
+    49.84615384615385,
+    49.84615384615385
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "icon",
+   "icon": "azure:versions",
+   "box": [
+    36,
+    436.2307692307693,
+    49.84615384615385,
+    49.84615384615385
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "icon",
+   "icon": "azure:azure-openai",
+   "box": [
+    36,
+    500.07692307692315,
+    49.84615384615385,
+    49.84615384615385
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "icon",
+   "icon": "azure:private-link",
+   "box": [
+    36,
+    563.923076923077,
+    49.84615384615385,
+    49.84615384615385
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "icon",
+   "icon": "azure:recent",
+   "box": [
+    36,
+    627.7692307692308,
+    49.84615384615385,
+    49.84615384615385
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "icon",
+   "icon": "azure:sql-database",
+   "box": [
+    36,
+    691.6153846153846,
+    49.84615384615385,
+    49.84615384615385
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "icon",
+   "icon": "azure:app-configuration",
+   "box": [
+    36,
+    755.4615384615385,
+    49.84615384615385,
+    49.84615384615385
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "icon",
+   "icon": "azure:machine-learning",
+   "box": [
+    36,
+    819.3076923076923,
+    49.84615384615385,
+    49.84615384615385
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "icon",
+   "icon": "azure:activity-log",
+   "box": [
+    36,
+    883.1538461538461,
+    49.84615384615385,
+    49.84615384615385
+   ],
+   "color": "#1F3F7A"
+  }
+ ]
+}

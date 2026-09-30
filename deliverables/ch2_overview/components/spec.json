@@ -1,0 +1,1088 @@
+{
+ "source_size": [
+  1672,
+  941
+ ],
+ "font": "Meiryo",
+ "background": "#FFFFFF",
+ "elements": [
+  {
+   "type": "text",
+   "box": [
+    20,
+    4,
+    540,
+    50
+   ],
+   "text": "表2-1　コンポーネント一覧",
+   "size_px": 40,
+   "bold": true,
+   "color": "#0B1F4F",
+   "name": "title"
+  },
+  {
+   "type": "table",
+   "box": [
+    17,
+    58,
+    1640,
+    877
+   ],
+   "col_widths_px": [
+    255,
+    392,
+    578,
+    415
+   ],
+   "row_heights_px": [
+    43,
+    81,
+    80,
+    72,
+    101,
+    66,
+    67,
+    79,
+    80,
+    74,
+    61,
+    73
+   ],
+   "cells": [
+    [
+     {
+      "text": "レイヤ",
+      "fill": "#00275F",
+      "color": "#FFFFFF",
+      "bold": true,
+      "size_px": 20,
+      "align": "c"
+     },
+     {
+      "text": "コンポーネント",
+      "fill": "#00275F",
+      "color": "#FFFFFF",
+      "bold": true,
+      "size_px": 20,
+      "align": "c"
+     },
+     {
+      "text": "役割",
+      "fill": "#00275F",
+      "color": "#FFFFFF",
+      "bold": true,
+      "size_px": 20,
+      "align": "c"
+     },
+     {
+      "text": "代表技術・製品",
+      "fill": "#00275F",
+      "color": "#FFFFFF",
+      "bold": true,
+      "size_px": 20,
+      "align": "c"
+     }
+    ],
+    [
+     {
+      "span": [
+       1,
+       1
+      ],
+      "fill": "#00418F",
+      "color": "#FFFFFF",
+      "align": "l",
+      "inset_px": [
+       72,
+       2,
+       1,
+       2
+      ],
+      "paras": [
+       [
+        {
+         "text": "利用者・対話",
+         "size_px": 19,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（生産技術部員）",
+         "size_px": 19,
+         "bold": true
+        }
+       ]
+      ],
+      "line_pitch_px": 29
+     },
+     {
+      "fill": "#F5FAFE",
+      "align": "l",
+      "inset_px": [
+       120,
+       2,
+       4,
+       2
+      ],
+      "color": "#0B2350",
+      "line_pitch_px": 26,
+      "paras": [
+       [
+        {
+         "text": "Webブラウザ",
+         "size_px": 20,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（チャットUI）",
+         "size_px": 18,
+         "color": "#2A3F66"
+        }
+       ]
+      ]
+     },
+     {
+      "fill": "#F5FAFE",
+      "align": "l",
+      "inset_px": [
+       20,
+       2,
+       4,
+       2
+      ],
+      "color": "#0B2350",
+      "size_px": 15.5,
+      "text": "•  生産技術部員が自然言語や確定キーで質問\n•  回答結果（テーブル・要約・関連文書・リンク）を閲覧\n•  認証後、社内ネットワークからアクセス",
+      "line_pitch_px": 22.5
+     },
+     {
+      "fill": "#F5FAFE",
+      "align": "l",
+      "inset_px": [
+       24,
+       2,
+       4,
+       2
+      ],
+      "color": "#0B2350",
+      "size_px": 18,
+      "text": "Edge / Chrome 等\n（社内クライアントPCのWebブラウザ）",
+      "line_pitch_px": 25
+     }
+    ],
+    [
+     {
+      "span": [
+       2,
+       1
+      ],
+      "fill": "#4EAAF4",
+      "color": "#FFFFFF",
+      "align": "l",
+      "inset_px": [
+       72,
+       2,
+       1,
+       2
+      ],
+      "paras": [
+       [
+        {
+         "text": "オーケストレーション",
+         "size_px": 17,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（部員が触る層）",
+         "size_px": 16.5,
+         "bold": true
+        }
+       ]
+      ],
+      "line_pitch_px": 29
+     },
+     {
+      "fill": "#F5FAFE",
+      "align": "l",
+      "inset_px": [
+       120,
+       2,
+       4,
+       2
+      ],
+      "color": "#0B2350",
+      "line_pitch_px": 26,
+      "paras": [
+       [
+        {
+         "text": "Dify CE",
+         "size_px": 20,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（チャットUI／ワークフロー）",
+         "size_px": 18,
+         "color": "#2A3F66"
+        }
+       ]
+      ]
+     },
+     {
+      "fill": "#F5FAFE",
+      "align": "l",
+      "inset_px": [
+       20,
+       2,
+       4,
+       2
+      ],
+      "color": "#0B2350",
+      "size_px": 15.5,
+      "text": "•  チャットUIの提供\n•  ワークフローDSLによる処理フローの定義（分岐・文言・表示項目）\n•  検索APIをOpenAPIで呼び出し、結果を表示",
+      "line_pitch_px": 22.5
+     },
+     {
+      "fill": "#F5FAFE",
+      "align": "l",
+      "inset_px": [
+       24,
+       2,
+       4,
+       2
+      ],
+      "color": "#0B2350",
+      "size_px": 18,
+      "text": "Dify Community Edition\n（Docker）",
+      "line_pitch_px": 25
+     }
+    ],
+    [
+     null,
+     {
+      "fill": "#F5FAFE",
+      "align": "l",
+      "inset_px": [
+       120,
+       2,
+       4,
+       2
+      ],
+      "color": "#0B2350",
+      "line_pitch_px": 26,
+      "paras": [
+       [
+        {
+         "text": "DifyのDSL・設定管理",
+         "size_px": 20,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（Git）",
+         "size_px": 18,
+         "color": "#2A3F66"
+        }
+       ]
+      ]
+     },
+     {
+      "fill": "#F5FAFE",
+      "align": "l",
+      "inset_px": [
+       20,
+       2,
+       4,
+       2
+      ],
+      "color": "#0B2350",
+      "size_px": 15.5,
+      "text": "•  ワークフローのテンプレート管理・バージョン管理\n•  変更履歴・差分・レビュー・ロールバック",
+      "line_pitch_px": 22.5
+     },
+     {
+      "fill": "#F5FAFE",
+      "align": "l",
+      "inset_px": [
+       24,
+       2,
+       4,
+       2
+      ],
+      "color": "#0B2350",
+      "size_px": 18,
+      "text": "Git（社内Gitサーバ）\nDify Export/Import（DSL YAML）",
+      "line_pitch_px": 25
+     }
+    ],
+    [
+     {
+      "span": [
+       2,
+       1
+      ],
+      "fill": "#5DADEB",
+      "color": "#FFFFFF",
+      "align": "l",
+      "inset_px": [
+       72,
+       2,
+       1,
+       2
+      ],
+      "paras": [
+       [
+        {
+         "text": "ドメインAPI・検索",
+         "size_px": 17,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（開発者が守る層）",
+         "size_px": 16.5,
+         "bold": true
+        }
+       ]
+      ],
+      "line_pitch_px": 29
+     },
+     {
+      "fill": "#F5FAFE",
+      "align": "l",
+      "inset_px": [
+       120,
+       2,
+       4,
+       2
+      ],
+      "color": "#0B2350",
+      "line_pitch_px": 26,
+      "paras": [
+       [
+        {
+         "text": "検索API",
+         "size_px": 20,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（FastAPI）",
+         "size_px": 18,
+         "color": "#2A3F66"
+        }
+       ]
+      ]
+     },
+     {
+      "fill": "#F5FAFE",
+      "align": "l",
+      "inset_px": [
+       20,
+       2,
+       4,
+       2
+      ],
+      "color": "#0B2350",
+      "size_px": 15.5,
+      "text": "•  質問解釈（LLMによる抽出＋コード検証）\n•  用語辞書・正規化・ルーティング\n•  構造化検索（SQL）・全文検索（BM25）・ベクトル検索\n•  RRFによる結果統合・必須条件フィルタ・版・適用判定・根拠アセンブリ",
+      "line_pitch_px": 22.5
+     },
+     {
+      "fill": "#F5FAFE",
+      "align": "l",
+      "inset_px": [
+       24,
+       2,
+       4,
+       2
+      ],
+      "color": "#0B2350",
+      "size_px": 18,
+      "text": "FastAPI（Docker）\nPython",
+      "line_pitch_px": 25
+     }
+    ],
+    [
+     null,
+     {
+      "fill": "#F5FAFE",
+      "align": "l",
+      "inset_px": [
+       120,
+       2,
+       4,
+       2
+      ],
+      "color": "#0B2350",
+      "line_pitch_px": 26,
+      "paras": [
+       [
+        {
+         "text": "用語辞書・正規化辞書",
+         "size_px": 20,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（ドメイン知識）",
+         "size_px": 18,
+         "color": "#2A3F66"
+        }
+       ]
+      ]
+     },
+     {
+      "fill": "#F5FAFE",
+      "align": "l",
+      "inset_px": [
+       20,
+       2,
+       4,
+       2
+      ],
+      "color": "#0B2350",
+      "size_px": 15.5,
+      "text": "•  社内用語・略語・部品番号・工程名等の正規化\n•  検索クエリの拡張・同義語処理",
+      "line_pitch_px": 22.5
+     },
+     {
+      "fill": "#F5FAFE",
+      "align": "l",
+      "inset_px": [
+       24,
+       2,
+       4,
+       2
+      ],
+      "color": "#0B2350",
+      "size_px": 18,
+      "text": "PostgreSQL（辞書テーブル）\n（または設定ファイル）",
+      "line_pitch_px": 25
+     }
+    ],
+    [
+     {
+      "span": [
+       3,
+       1
+      ],
+      "fill": "#D2EDFE",
+      "color": "#0B2350",
+      "align": "l",
+      "inset_px": [
+       72,
+       2,
+       1,
+       2
+      ],
+      "paras": [
+       [
+        {
+         "text": "データ",
+         "size_px": 22,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（検索基盤）",
+         "size_px": 20,
+         "bold": true
+        }
+       ]
+      ],
+      "line_pitch_px": 29
+     },
+     {
+      "fill": "#F3F9FE",
+      "align": "l",
+      "inset_px": [
+       120,
+       2,
+       4,
+       2
+      ],
+      "color": "#0B2350",
+      "line_pitch_px": 26,
+      "paras": [
+       [
+        {
+         "text": "PostgreSQL",
+         "size_px": 20,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（中間DB）",
+         "size_px": 18,
+         "color": "#2A3F66"
+        }
+       ]
+      ]
+     },
+     {
+      "fill": "#F3F9FE",
+      "align": "l",
+      "inset_px": [
+       20,
+       2,
+       4,
+       2
+      ],
+      "color": "#0B2350",
+      "size_px": 15.5,
+      "text": "•  N-PLUSの構造化データ（TOS検索単位・文書メタ・版・適用情報）\n•  用語辞書・正規化辞書・ログ・評価データ等の格納",
+      "line_pitch_px": 22.5
+     },
+     {
+      "fill": "#F3F9FE",
+      "align": "l",
+      "inset_px": [
+       24,
+       2,
+       4,
+       2
+      ],
+      "color": "#0B2350",
+      "size_px": 18,
+      "text": "PostgreSQL 16\n（Docker）",
+      "line_pitch_px": 25
+     }
+    ],
+    [
+     null,
+     {
+      "fill": "#F3F9FE",
+      "align": "l",
+      "inset_px": [
+       120,
+       2,
+       4,
+       2
+      ],
+      "color": "#0B2350",
+      "line_pitch_px": 26,
+      "paras": [
+       [
+        {
+         "text": "OpenSearch",
+         "size_px": 20,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（全文＋ベクトル検索）",
+         "size_px": 18,
+         "color": "#2A3F66"
+        }
+       ]
+      ]
+     },
+     {
+      "fill": "#F3F9FE",
+      "align": "l",
+      "inset_px": [
+       20,
+       2,
+       4,
+       2
+      ],
+      "color": "#0B2350",
+      "size_px": 15.5,
+      "text": "•  共有文書・技術資料の全文検索（BM25）\n•  文書チャンクのベクトル検索（Embedding）\n•  検索インデックス・メタデータの管理",
+      "line_pitch_px": 22.5
+     },
+     {
+      "fill": "#F3F9FE",
+      "align": "l",
+      "inset_px": [
+       24,
+       2,
+       4,
+       2
+      ],
+      "color": "#0B2350",
+      "size_px": 18,
+      "text": "OpenSearch 2.x\n（Docker）",
+      "line_pitch_px": 25
+     }
+    ],
+    [
+     null,
+     {
+      "fill": "#F3F9FE",
+      "align": "l",
+      "inset_px": [
+       120,
+       2,
+       4,
+       2
+      ],
+      "color": "#0B2350",
+      "line_pitch_px": 26,
+      "paras": [
+       [
+        {
+         "text": "文書抽出・チャンク",
+         "size_px": 20,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（取込バッチ）",
+         "size_px": 18,
+         "color": "#2A3F66"
+        }
+       ]
+      ]
+     },
+     {
+      "fill": "#F3F9FE",
+      "align": "l",
+      "inset_px": [
+       20,
+       2,
+       4,
+       2
+      ],
+      "color": "#0B2350",
+      "size_px": 15.5,
+      "text": "•  Word／Excel／PDFから本文・表を抽出\n•  見出し付きチャンクに分割・メタデータ付与\n•  N-PLUSのCSV（12表）をJOIN・コード変換・文脈化して取込",
+      "line_pitch_px": 22.5
+     },
+     {
+      "fill": "#F3F9FE",
+      "align": "l",
+      "inset_px": [
+       24,
+       2,
+       4,
+       2
+      ],
+      "color": "#0B2350",
+      "size_px": 18,
+      "text": "Docling / unstructured 等\nPython（バッチ処理）",
+      "line_pitch_px": 25
+     }
+    ],
+    [
+     {
+      "span": [
+       3,
+       1
+      ],
+      "fill": "#E4E5E5",
+      "color": "#0B2350",
+      "align": "l",
+      "inset_px": [
+       72,
+       2,
+       1,
+       2
+      ],
+      "paras": [
+       [
+        {
+         "text": "基盤",
+         "size_px": 22,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（モデル・インフラ・運用）",
+         "size_px": 12.5,
+         "bold": false
+        }
+       ]
+      ],
+      "line_pitch_px": 29
+     },
+     {
+      "fill": "#F5F6F8",
+      "align": "l",
+      "inset_px": [
+       120,
+       2,
+       4,
+       2
+      ],
+      "color": "#0B2350",
+      "line_pitch_px": 26,
+      "paras": [
+       [
+        {
+         "text": "LLM／Embedding／Reranker",
+         "size_px": 15.5,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（推論モデル）",
+         "size_px": 18,
+         "color": "#2A3F66"
+        }
+       ]
+      ]
+     },
+     {
+      "fill": "#F5F6F8",
+      "align": "l",
+      "inset_px": [
+       20,
+       2,
+       4,
+       2
+      ],
+      "color": "#0B2350",
+      "size_px": 15.5,
+      "text": "•  LLM：質問解釈・根拠付き説明生成\n•  Embedding：文書のベクトル化\n•  Reranker：検索結果の再ランキング（任意）",
+      "line_pitch_px": 22.5
+     },
+     {
+      "fill": "#F5F6F8",
+      "align": "l",
+      "inset_px": [
+       24,
+       2,
+       4,
+       2
+      ],
+      "color": "#0B2350",
+      "size_px": 16,
+      "text": "vLLM（aarch64）／llama.cpp\n日本製・オープンモデル 等\n（Docker）",
+      "line_pitch_px": 21
+     }
+    ],
+    [
+     null,
+     {
+      "fill": "#F5F6F8",
+      "align": "l",
+      "inset_px": [
+       120,
+       2,
+       4,
+       2
+      ],
+      "color": "#0B2350",
+      "line_pitch_px": 26,
+      "paras": [
+       [
+        {
+         "text": "NVIDIA DGX Spark",
+         "size_px": 20,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（実行環境）",
+         "size_px": 18,
+         "color": "#2A3F66"
+        }
+       ]
+      ]
+     },
+     {
+      "fill": "#F5F6F8",
+      "align": "l",
+      "inset_px": [
+       20,
+       2,
+       4,
+       2
+      ],
+      "color": "#0B2350",
+      "size_px": 15.5,
+      "text": "•  全コンポーネントのコンテナ実行基盤\n•  GPUによる推論・ベクトル化の高速実行\n•  外部通信遮断（社内ネットワーク内で完結）",
+      "line_pitch_px": 22.5
+     },
+     {
+      "fill": "#F5F6F8",
+      "align": "l",
+      "inset_px": [
+       24,
+       2,
+       4,
+       2
+      ],
+      "color": "#0B2350",
+      "size_px": 16,
+      "text": "NVIDIA DGX Spark\n（NVIDIA Grace Blackwell, 128GB 統合メモリ）\nDocker / NVIDIA Container Toolkit",
+      "line_pitch_px": 21
+     }
+    ],
+    [
+     null,
+     {
+      "fill": "#F5F6F8",
+      "align": "l",
+      "inset_px": [
+       120,
+       2,
+       4,
+       2
+      ],
+      "color": "#0B2350",
+      "line_pitch_px": 26,
+      "paras": [
+       [
+        {
+         "text": "ログ・評価データ",
+         "size_px": 20,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（運用・品質管理）",
+         "size_px": 18,
+         "color": "#2A3F66"
+        }
+       ]
+      ]
+     },
+     {
+      "fill": "#F5F6F8",
+      "align": "l",
+      "inset_px": [
+       20,
+       2,
+       4,
+       2
+      ],
+      "color": "#0B2350",
+      "size_px": 15.5,
+      "text": "•  利用ログ（質問・回答・クリック等）の記録\n•  評価用の正答・許容回答・必要根拠データの管理\n•  精度評価（RAGAS等）と改善に利用",
+      "line_pitch_px": 22.5
+     },
+     {
+      "fill": "#F5F6F8",
+      "align": "l",
+      "inset_px": [
+       24,
+       2,
+       4,
+       2
+      ],
+      "color": "#0B2350",
+      "size_px": 18,
+      "text": "PostgreSQL（ログ・評価テーブル）\nRAGAS＋自作スクリプト（Python）",
+      "line_pitch_px": 25
+     }
+    ]
+   ],
+   "border": {
+    "color": "#D3DEEB",
+    "width_px": 1.2
+   },
+   "name": "component-table"
+  },
+  {
+   "type": "icon",
+   "icon": "material:groups-fill",
+   "box": [
+    30,
+    113,
+    58,
+    58
+   ],
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "icon",
+   "icon": "material:sms-fill",
+   "box": [
+    30,
+    228,
+    58,
+    58
+   ],
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "icon",
+   "icon": "lucide:settings",
+   "box": [
+    30,
+    390,
+    58,
+    58
+   ],
+   "color": "#FFFFFF",
+   "stroke_width": 1.8
+  },
+  {
+   "type": "icon",
+   "icon": "lucide:database",
+   "box": [
+    30,
+    589,
+    58,
+    58
+   ],
+   "color": "#0E3A7A",
+   "stroke_width": 2
+  },
+  {
+   "type": "icon",
+   "icon": "lucide:server",
+   "box": [
+    30,
+    800,
+    58,
+    58
+   ],
+   "color": "#0E3A7A",
+   "stroke_width": 2
+  },
+  {
+   "type": "icon",
+   "icon": "lucide:laptop",
+   "box": [
+    300,
+    113.5,
+    56,
+    56
+   ],
+   "color": "#0E3A7A",
+   "stroke_width": 2.2
+  },
+  {
+   "type": "icon",
+   "icon": "lucide:workflow",
+   "box": [
+    300,
+    194.0,
+    56,
+    56
+   ],
+   "color": "#0E3A7A",
+   "stroke_width": 2.2
+  },
+  {
+   "type": "icon",
+   "icon": "lucide:file-text",
+   "box": [
+    300,
+    270.0,
+    56,
+    56
+   ],
+   "color": "#0E3A7A",
+   "stroke_width": 2.2
+  },
+  {
+   "type": "icon",
+   "icon": "lucide:settings",
+   "box": [
+    300,
+    356.5,
+    56,
+    56
+   ],
+   "color": "#0E3A7A",
+   "stroke_width": 2.2
+  },
+  {
+   "type": "icon",
+   "icon": "lucide:book-a",
+   "box": [
+    300,
+    440.0,
+    56,
+    56
+   ],
+   "color": "#0E3A7A",
+   "stroke_width": 2.2
+  },
+  {
+   "type": "icon",
+   "icon": "lucide:database",
+   "box": [
+    300,
+    506.5,
+    56,
+    56
+   ],
+   "color": "#0E3A7A",
+   "stroke_width": 2.2
+  },
+  {
+   "type": "icon",
+   "icon": "lucide:search",
+   "box": [
+    300,
+    579.5,
+    56,
+    56
+   ],
+   "color": "#0E3A7A",
+   "stroke_width": 2.2
+  },
+  {
+   "type": "icon",
+   "icon": "lucide:file-text",
+   "box": [
+    300,
+    659.0,
+    56,
+    56
+   ],
+   "color": "#0E3A7A",
+   "stroke_width": 2.2
+  },
+  {
+   "type": "icon",
+   "icon": "lucide:brain",
+   "box": [
+    300,
+    736.0,
+    56,
+    56
+   ],
+   "color": "#0E3A7A",
+   "stroke_width": 2.2
+  },
+  {
+   "type": "icon",
+   "icon": "lucide:server",
+   "box": [
+    300,
+    803.5,
+    56,
+    56
+   ],
+   "color": "#0E3A7A",
+   "stroke_width": 2.2
+  },
+  {
+   "type": "icon",
+   "icon": "lucide:clipboard-list",
+   "box": [
+    300,
+    870.5,
+    56,
+    56
+   ],
+   "color": "#0E3A7A",
+   "stroke_width": 2.2
+  }
+ ]
+}

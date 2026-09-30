@@ -1,0 +1,800 @@
+{
+ "source_size": [
+  1672,
+  941
+ ],
+ "font": "Meiryo",
+ "background": "#FFFFFF",
+ "elements": [
+  {
+   "type": "roundRect",
+   "box": [
+    14,
+    14,
+    136,
+    56
+   ],
+   "fill": "#0E2E63",
+   "line": null,
+   "text": "表 5-2",
+   "size_px": 28,
+   "bold": true,
+   "color": "#FFFFFF",
+   "radius_px": 4
+  },
+  {
+   "type": "text",
+   "box": [
+    176,
+    8,
+    900,
+    68
+   ],
+   "text": "単一方式の失敗パターンとハイブリッドでの補完",
+   "size_px": 40,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    1112,
+    14,
+    546,
+    60
+   ],
+   "fill": "#E3F0FB",
+   "line": null,
+   "text": "確定条件はコード、意味の拡張は検索",
+   "size_px": 24,
+   "bold": true,
+   "color": "#1F3A6E",
+   "radius_px": 8
+  },
+  {
+   "type": "table",
+   "box": [
+    14,
+    90,
+    1644,
+    850
+   ],
+   "col_widths_px": [
+    378,
+    604,
+    662
+   ],
+   "row_heights_px": [
+    64,
+    200,
+    200,
+    200,
+    186
+   ],
+   "cells": [
+    [
+     {
+      "paras": [
+       [
+        {
+         "text": "単一方式",
+         "size_px": 23,
+         "bold": true
+        },
+        {
+         "text": "",
+         "size_px": 20,
+         "bold": true
+        }
+       ]
+      ],
+      "fill": "#0E2E63",
+      "color": "#FFFFFF",
+      "align": "c"
+     },
+     {
+      "paras": [
+       [
+        {
+         "text": "起きる失敗",
+         "size_px": 23,
+         "bold": true
+        },
+        {
+         "text": "（取り逃しの典型例）",
+         "size_px": 20,
+         "bold": true
+        }
+       ]
+      ],
+      "fill": "#0E2E63",
+      "color": "#FFFFFF",
+      "align": "c"
+     },
+     {
+      "paras": [
+       [
+        {
+         "text": "ハイブリッドでの補完",
+         "size_px": 23,
+         "bold": true
+        },
+        {
+         "text": "（組み合わせによる解決）",
+         "size_px": 20,
+         "bold": true
+        }
+       ]
+      ],
+      "fill": "#0E2E63",
+      "color": "#FFFFFF",
+      "align": "c"
+     }
+    ],
+    [
+     {
+      "text": "",
+      "fill": "#EAF3FC"
+     },
+     {
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "size_px": 17.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "line_pitch_px": 28,
+      "valign": "t",
+      "text": "正式名称と異なる表現（略語・通称・旧称）で\u000bヒットしない\n関連する部品や工程の言い換え表現を拾えない\n人の記憶にある曖昧な表現では検索できない",
+      "fill": "#FFFFFF",
+      "inset_px": [
+       34,
+       64,
+       40,
+       4
+      ]
+     },
+     {
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "size_px": 17.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "line_pitch_px": 28,
+      "valign": "t",
+      "text": "キーワード一致（BM25）で表記揺れ・略語を拾う\n意味的に近い表現（ベクトル）で類似情報を候補に拡張\nコードでの確定検索を軸に、関連候補を幅広く提示",
+      "fill": "#EAF3FC",
+      "inset_px": [
+       50,
+       86,
+       8,
+       4
+      ]
+     }
+    ],
+    [
+     {
+      "text": "",
+      "fill": "#EAF3FC"
+     },
+     {
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "size_px": 17.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "line_pitch_px": 28,
+      "valign": "t",
+      "text": "同義語・表記揺れ（例：治具／治工具）でヒットしない\nキーワードが本文に無い関連情報を取り逃す\n文脈的に類似する内容（類似工程・類似事例）を拾えない",
+      "fill": "#FFFFFF",
+      "inset_px": [
+       34,
+       64,
+       40,
+       4
+      ]
+     },
+     {
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "size_px": 17.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "line_pitch_px": 28,
+      "valign": "t",
+      "text": "意味的な類似性に基づき、関連文書や類似事例を取得\nキーワードが異なる文書も候補に含める\nBM25 とベクトルの結果を RRF で統合し、網羅性を向上",
+      "fill": "#EAF3FC",
+      "inset_px": [
+       50,
+       86,
+       8,
+       4
+      ]
+     }
+    ],
+    [
+     {
+      "text": "",
+      "fill": "#EAF3FC"
+     },
+     {
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "size_px": 17.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "line_pitch_px": 28,
+      "valign": "t",
+      "text": "部品番号・工程番号などの厳密な一致が不得意\n最新版のみ、特定機種のみ等の版／適用条件を\u000b保証できない\n意味的に近いが、別の部品・旧版の情報を返すリスク",
+      "fill": "#FFFFFF",
+      "inset_px": [
+       34,
+       64,
+       40,
+       4
+      ]
+     },
+     {
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "size_px": 17.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "line_pitch_px": 28,
+      "valign": "t",
+      "text": "部品番号・工程番号・文書番号などで対象を厳密に絞り込み\n版・適用機種・有効期間などの業務条件をフィルタ\nそのうえでベクトル検索により、関連候補を拡張",
+      "fill": "#EAF3FC",
+      "inset_px": [
+       50,
+       86,
+       8,
+       4
+      ]
+     }
+    ],
+    [
+     {
+      "text": "",
+      "fill": "#EAF3FC"
+     },
+     {
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "size_px": 17.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "line_pitch_px": 28,
+      "valign": "t",
+      "text": "存在しない情報の生成（ハルシネーション）\n出典・根拠が不明で、業務で使えない\n同じ質問でも回答が変わり、再現性がない",
+      "fill": "#FFFFFF",
+      "inset_px": [
+       34,
+       64,
+       40,
+       4
+      ]
+     },
+     {
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "size_px": 17.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "line_pitch_px": 28,
+      "valign": "t",
+      "text": "検索で取得した根拠情報をコンテキストに生成\n確定部分は DB／業務 API での決定的な取得・検証を実施\n回答には出典・文書 ID・版・適用条件を付与し、再現性を確保",
+      "fill": "#EAF3FC",
+      "inset_px": [
+       50,
+       86,
+       8,
+       4
+      ]
+     }
+    ]
+   ],
+   "border": {
+    "color": "#FFFFFF",
+    "width_px": 4
+   },
+   "name": "failure-table"
+  },
+  {
+   "type": "icon",
+   "icon": "azure:sql-database",
+   "box": [
+    34,
+    170,
+    66,
+    66
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "text",
+   "box": [
+    120,
+    168,
+    260,
+    72
+   ],
+   "paras": [
+    [
+     {
+      "text": "構造化検索のみ",
+      "size_px": 24,
+      "bold": true
+     }
+    ],
+    [
+     {
+      "text": "（完全一致・フィルタ）",
+      "size_px": 20,
+      "bold": true
+     }
+    ]
+   ],
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m",
+   "line_pitch_px": 34
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    48,
+    254,
+    312,
+    82
+   ],
+   "fill": "#E6EAF0",
+   "line": null,
+   "text": "SQL による\nコード・番号の一致検索",
+   "size_px": 18,
+   "color": "#1E2A44",
+   "line_pitch_px": 28,
+   "radius_px": 8
+  },
+  {
+   "type": "ellipse",
+   "box": [
+    416,
+    168,
+    44,
+    44
+   ],
+   "fill": "#C8304A",
+   "line": null,
+   "text": "✕",
+   "size_px": 24,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "text",
+   "box": [
+    476,
+    166,
+    500,
+    48
+   ],
+   "text": "意味表現・略語を取り逃す",
+   "size_px": 23,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "chevron",
+   "box": [
+    964,
+    224.0,
+    26,
+    60
+   ],
+   "point_px": 26,
+   "fill": "#9AA9BD",
+   "line": null
+  },
+  {
+   "type": "icon",
+   "icon": "azure:search",
+   "box": [
+    1042,
+    172,
+    58,
+    58
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "text",
+   "box": [
+    1116,
+    174,
+    530,
+    52
+   ],
+   "text": "全文 BM25 ＋ ベクトル検索で補完",
+   "size_px": 23,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "icon",
+   "icon": "azure:file",
+   "box": [
+    34,
+    370,
+    66,
+    66
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "text",
+   "box": [
+    120,
+    368,
+    260,
+    72
+   ],
+   "paras": [
+    [
+     {
+      "text": "全文 BM25 のみ",
+      "size_px": 24,
+      "bold": true
+     }
+    ],
+    [
+     {
+      "text": "（キーワード一致）",
+      "size_px": 20,
+      "bold": true
+     }
+    ]
+   ],
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m",
+   "line_pitch_px": 34
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    48,
+    454,
+    312,
+    82
+   ],
+   "fill": "#E6EAF0",
+   "line": null,
+   "text": "文書・図面テキストの\nキーワード検索",
+   "size_px": 18,
+   "color": "#1E2A44",
+   "line_pitch_px": 28,
+   "radius_px": 8
+  },
+  {
+   "type": "ellipse",
+   "box": [
+    416,
+    368,
+    44,
+    44
+   ],
+   "fill": "#C8304A",
+   "line": null,
+   "text": "✕",
+   "size_px": 24,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "text",
+   "box": [
+    476,
+    366,
+    500,
+    48
+   ],
+   "text": "表記揺れ・意味類似に弱い",
+   "size_px": 23,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "chevron",
+   "box": [
+    964,
+    424.0,
+    26,
+    60
+   ],
+   "point_px": 26,
+   "fill": "#9AA9BD",
+   "line": null
+  },
+  {
+   "type": "icon",
+   "icon": "azure:cognitive-services",
+   "box": [
+    1042,
+    372,
+    58,
+    58
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "text",
+   "box": [
+    1116,
+    374,
+    530,
+    52
+   ],
+   "text": "ベクトル検索で補完",
+   "size_px": 23,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "icon",
+   "icon": "azure:cognitive-services",
+   "box": [
+    34,
+    570,
+    66,
+    66
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "text",
+   "box": [
+    120,
+    568,
+    260,
+    72
+   ],
+   "paras": [
+    [
+     {
+      "text": "ベクトル検索のみ",
+      "size_px": 24,
+      "bold": true
+     }
+    ],
+    [
+     {
+      "text": "（意味類似検索）",
+      "size_px": 20,
+      "bold": true
+     }
+    ]
+   ],
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m",
+   "line_pitch_px": 34
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    48,
+    654,
+    312,
+    82
+   ],
+   "fill": "#E6EAF0",
+   "line": null,
+   "text": "文書・図面・属性の\nベクトル類似検索",
+   "size_px": 18,
+   "color": "#1E2A44",
+   "line_pitch_px": 28,
+   "radius_px": 8
+  },
+  {
+   "type": "ellipse",
+   "box": [
+    416,
+    568,
+    44,
+    44
+   ],
+   "fill": "#C8304A",
+   "line": null,
+   "text": "✕",
+   "size_px": 24,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "text",
+   "box": [
+    476,
+    566,
+    500,
+    48
+   ],
+   "text": "確定キー・版／適用条件を保証できない",
+   "size_px": 23,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "chevron",
+   "box": [
+    964,
+    624.0,
+    26,
+    60
+   ],
+   "point_px": 26,
+   "fill": "#9AA9BD",
+   "line": null
+  },
+  {
+   "type": "icon",
+   "icon": "azure:sql-database",
+   "box": [
+    1042,
+    572,
+    58,
+    58
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "text",
+   "box": [
+    1116,
+    574,
+    530,
+    52
+   ],
+   "text": "構造化検索（SQL）の必須条件フィルタで補完",
+   "size_px": 23,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "icon",
+   "icon": "azure:azure-openai",
+   "box": [
+    34,
+    770,
+    66,
+    66
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "text",
+   "box": [
+    120,
+    768,
+    260,
+    72
+   ],
+   "paras": [
+    [
+     {
+      "text": "LLM 単独",
+      "size_px": 24,
+      "bold": true
+     }
+    ],
+    [
+     {
+      "text": "（生成のみ・検索なし）",
+      "size_px": 20,
+      "bold": true
+     }
+    ]
+   ],
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m",
+   "line_pitch_px": 34
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    48,
+    854,
+    312,
+    68
+   ],
+   "fill": "#E6EAF0",
+   "line": null,
+   "text": "事前知識に基づく\n生成回答",
+   "size_px": 18,
+   "color": "#1E2A44",
+   "line_pitch_px": 28,
+   "radius_px": 8
+  },
+  {
+   "type": "ellipse",
+   "box": [
+    416,
+    768,
+    44,
+    44
+   ],
+   "fill": "#C8304A",
+   "line": null,
+   "text": "✕",
+   "size_px": 24,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "text",
+   "box": [
+    476,
+    766,
+    500,
+    48
+   ],
+   "text": "根拠なき断定・再現不能",
+   "size_px": 23,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "chevron",
+   "box": [
+    964,
+    817.0,
+    26,
+    60
+   ],
+   "point_px": 26,
+   "fill": "#9AA9BD",
+   "line": null
+  },
+  {
+   "type": "icon",
+   "icon": "azure:sql-database",
+   "box": [
+    1042,
+    772,
+    58,
+    58
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "text",
+   "box": [
+    1116,
+    774,
+    530,
+    52
+   ],
+   "text": "検索結果＋業務 API の決定的処理で補完",
+   "size_px": 23,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  }
+ ]
+}

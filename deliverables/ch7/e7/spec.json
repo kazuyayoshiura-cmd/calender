@@ -1,0 +1,1613 @@
+{
+ "source_size": [
+  1672,
+  941
+ ],
+ "font": "Meiryo",
+ "background": "#FFFFFF",
+ "elements": [
+  {
+   "type": "text",
+   "box": [
+    24,
+    4,
+    1640,
+    62
+   ],
+   "text": "表7-4　検索候補の共通データ構造（API間で受け渡す共通フォーマット）",
+   "size_px": 38,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "text",
+   "box": [
+    24,
+    70,
+    1640,
+    60
+   ],
+   "text": "検索・版判定・説明生成の各APIで共通して扱う「検索候補（1件）」のデータ構造を定義する。構造化・全文・ベクトルなど異なる検索方式の結果を統一フォーマットで扱い、\n以降の版・適用判定、根拠提示、生成に利用する。",
+   "size_px": 17.5,
+   "bold": false,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m",
+   "line_pitch_px": 28
+  },
+  {
+   "type": "table",
+   "box": [
+    22,
+    142,
+    1142,
+    674
+   ],
+   "col_widths_px": [
+    54,
+    176,
+    130,
+    60,
+    372,
+    350
+   ],
+   "row_heights_px": [
+    40,
+    52,
+    38,
+    36,
+    36,
+    54,
+    54,
+    34,
+    56,
+    38,
+    54,
+    76,
+    52,
+    54
+   ],
+   "cells": [
+    [
+     {
+      "text": "",
+      "fill": "#0E3F82",
+      "color": "#FFFFFF",
+      "bold": true,
+      "size_px": 18,
+      "align": "c"
+     },
+     {
+      "text": "項目名",
+      "fill": "#0E3F82",
+      "color": "#FFFFFF",
+      "bold": true,
+      "size_px": 18,
+      "align": "c"
+     },
+     {
+      "text": "型",
+      "fill": "#0E3F82",
+      "color": "#FFFFFF",
+      "bold": true,
+      "size_px": 18,
+      "align": "c"
+     },
+     {
+      "text": "必須",
+      "fill": "#0E3F82",
+      "color": "#FFFFFF",
+      "bold": true,
+      "size_px": 18,
+      "align": "c"
+     },
+     {
+      "text": "説明",
+      "fill": "#0E3F82",
+      "color": "#FFFFFF",
+      "bold": true,
+      "size_px": 18,
+      "align": "c"
+     },
+     {
+      "text": "主な設定値・形式例",
+      "fill": "#0E3F82",
+      "color": "#FFFFFF",
+      "bold": true,
+      "size_px": 18,
+      "align": "c"
+     }
+    ],
+    [
+     {
+      "text": "1",
+      "size_px": 17,
+      "bold": true,
+      "color": "#1F3A6E",
+      "fill": "#E6F1FB",
+      "align": "c"
+     },
+     {
+      "text": "candidate_id",
+      "size_px": 18,
+      "bold": true,
+      "color": "#1356B0",
+      "fill": "#E6F1FB",
+      "align": "l",
+      "inset_px": [
+       12,
+       2,
+       2,
+       2
+      ]
+     },
+     {
+      "text": "string",
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "fill": "#F3F7FB",
+      "align": "l",
+      "inset_px": [
+       12,
+       2,
+       2,
+       2
+      ]
+     },
+     {
+      "text": "○",
+      "size_px": 17,
+      "color": "#1E2A44",
+      "fill": "#F3F7FB",
+      "align": "c"
+     },
+     {
+      "text": "検索候補を一意に識別するID\u000b（検索方式・データソース・元ID等を含む）",
+      "size_px": 15,
+      "color": "#1E2A44",
+      "fill": "#F3F7FB",
+      "align": "l",
+      "line_pitch_px": 22,
+      "inset_px": [
+       12,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "text": "例：DOC-12345、TOS-9876-10",
+      "size_px": 15,
+      "color": "#1E2A44",
+      "fill": "#F3F7FB",
+      "align": "l",
+      "line_pitch_px": 21,
+      "inset_px": [
+       12,
+       2,
+       4,
+       2
+      ]
+     }
+    ],
+    [
+     {
+      "text": "2",
+      "size_px": 17,
+      "bold": true,
+      "color": "#1F3A6E",
+      "fill": "#E6F1FB",
+      "align": "c"
+     },
+     {
+      "text": "data_source",
+      "size_px": 18,
+      "bold": true,
+      "color": "#1356B0",
+      "fill": "#E6F1FB",
+      "align": "l",
+      "inset_px": [
+       12,
+       2,
+       2,
+       2
+      ]
+     },
+     {
+      "text": "string",
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "fill": "#FFFFFF",
+      "align": "l",
+      "inset_px": [
+       12,
+       2,
+       2,
+       2
+      ]
+     },
+     {
+      "text": "○",
+      "size_px": 17,
+      "color": "#1E2A44",
+      "fill": "#FFFFFF",
+      "align": "c"
+     },
+     {
+      "text": "データソース種別",
+      "size_px": 15,
+      "color": "#1E2A44",
+      "fill": "#FFFFFF",
+      "align": "l",
+      "line_pitch_px": 22,
+      "inset_px": [
+       12,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "text": "N-PLUS / TOS / 共有文書",
+      "size_px": 15,
+      "color": "#1E2A44",
+      "fill": "#FFFFFF",
+      "align": "l",
+      "line_pitch_px": 21,
+      "inset_px": [
+       12,
+       2,
+       4,
+       2
+      ]
+     }
+    ],
+    [
+     {
+      "text": "3",
+      "size_px": 17,
+      "bold": true,
+      "color": "#1F3A6E",
+      "fill": "#E6F1FB",
+      "align": "c"
+     },
+     {
+      "text": "source_type",
+      "size_px": 18,
+      "bold": true,
+      "color": "#1356B0",
+      "fill": "#E6F1FB",
+      "align": "l",
+      "inset_px": [
+       12,
+       2,
+       2,
+       2
+      ]
+     },
+     {
+      "text": "string",
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "fill": "#F3F7FB",
+      "align": "l",
+      "inset_px": [
+       12,
+       2,
+       2,
+       2
+      ]
+     },
+     {
+      "text": "○",
+      "size_px": 17,
+      "color": "#1E2A44",
+      "fill": "#F3F7FB",
+      "align": "c"
+     },
+     {
+      "text": "データの種類",
+      "size_px": 15,
+      "color": "#1E2A44",
+      "fill": "#F3F7FB",
+      "align": "l",
+      "line_pitch_px": 22,
+      "inset_px": [
+       12,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "text": "構造化 / 文書 / その他",
+      "size_px": 15,
+      "color": "#1E2A44",
+      "fill": "#F3F7FB",
+      "align": "l",
+      "line_pitch_px": 21,
+      "inset_px": [
+       12,
+       2,
+       4,
+       2
+      ]
+     }
+    ],
+    [
+     {
+      "text": "4",
+      "size_px": 17,
+      "bold": true,
+      "color": "#1F3A6E",
+      "fill": "#E6F1FB",
+      "align": "c"
+     },
+     {
+      "text": "title",
+      "size_px": 18,
+      "bold": true,
+      "color": "#1356B0",
+      "fill": "#E6F1FB",
+      "align": "l",
+      "inset_px": [
+       12,
+       2,
+       2,
+       2
+      ]
+     },
+     {
+      "text": "string",
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "fill": "#FFFFFF",
+      "align": "l",
+      "inset_px": [
+       12,
+       2,
+       2,
+       2
+      ]
+     },
+     {
+      "text": "○",
+      "size_px": 17,
+      "color": "#1E2A44",
+      "fill": "#FFFFFF",
+      "align": "c"
+     },
+     {
+      "text": "候補のタイトル（文書名・工程名等）",
+      "size_px": 15,
+      "color": "#1E2A44",
+      "fill": "#FFFFFF",
+      "align": "l",
+      "line_pitch_px": 22,
+      "inset_px": [
+       12,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "text": "例：WPS W-55 Rev.C、作業工程 10",
+      "size_px": 15,
+      "color": "#1E2A44",
+      "fill": "#FFFFFF",
+      "align": "l",
+      "line_pitch_px": 21,
+      "inset_px": [
+       12,
+       2,
+       4,
+       2
+      ]
+     }
+    ],
+    [
+     {
+      "text": "5",
+      "size_px": 17,
+      "bold": true,
+      "color": "#1F3A6E",
+      "fill": "#E6F1FB",
+      "align": "c"
+     },
+     {
+      "text": "matched_conditions",
+      "size_px": 14,
+      "bold": true,
+      "color": "#1356B0",
+      "fill": "#E6F1FB",
+      "align": "l",
+      "inset_px": [
+       12,
+       2,
+       2,
+       2
+      ]
+     },
+     {
+      "text": "object",
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "fill": "#F3F7FB",
+      "align": "l",
+      "inset_px": [
+       12,
+       2,
+       2,
+       2
+      ]
+     },
+     {
+      "text": "○",
+      "size_px": 17,
+      "color": "#1E2A44",
+      "fill": "#F3F7FB",
+      "align": "c"
+     },
+     {
+      "text": "検索時にマッチした条件\u000b（質問から抽出・正規化した条件との対応）",
+      "size_px": 15,
+      "color": "#1E2A44",
+      "fill": "#F3F7FB",
+      "align": "l",
+      "line_pitch_px": 22,
+      "inset_px": [
+       12,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "text": "{ \"部品番号\": \"A123\", \"工程番号\": \"10\", … }",
+      "size_px": 14,
+      "color": "#1E2A44",
+      "fill": "#F3F7FB",
+      "align": "l",
+      "line_pitch_px": 21,
+      "inset_px": [
+       12,
+       2,
+       4,
+       2
+      ]
+     }
+    ],
+    [
+     {
+      "text": "6",
+      "size_px": 17,
+      "bold": true,
+      "color": "#1F3A6E",
+      "fill": "#E6F1FB",
+      "align": "c"
+     },
+     {
+      "text": "similarity",
+      "size_px": 18,
+      "bold": true,
+      "color": "#1356B0",
+      "fill": "#E6F1FB",
+      "align": "l",
+      "inset_px": [
+       12,
+       2,
+       2,
+       2
+      ]
+     },
+     {
+      "text": "number",
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "fill": "#FFFFFF",
+      "align": "l",
+      "inset_px": [
+       12,
+       2,
+       2,
+       2
+      ]
+     },
+     {
+      "text": "○",
+      "size_px": 17,
+      "color": "#1E2A44",
+      "fill": "#FFFFFF",
+      "align": "c"
+     },
+     {
+      "text": "検索スコア（0～1）\u000b（ベクトル類似度・RRF後の統合スコア等）",
+      "size_px": 15,
+      "color": "#1E2A44",
+      "fill": "#FFFFFF",
+      "align": "l",
+      "line_pitch_px": 22,
+      "inset_px": [
+       12,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "text": "0.0 ～ 1.0（例：0.87）",
+      "size_px": 15,
+      "color": "#1E2A44",
+      "fill": "#FFFFFF",
+      "align": "l",
+      "line_pitch_px": 21,
+      "inset_px": [
+       12,
+       2,
+       4,
+       2
+      ]
+     }
+    ],
+    [
+     {
+      "text": "7",
+      "size_px": 17,
+      "bold": true,
+      "color": "#1F3A6E",
+      "fill": "#E6F1FB",
+      "align": "c"
+     },
+     {
+      "text": "version_status",
+      "size_px": 18,
+      "bold": true,
+      "color": "#1356B0",
+      "fill": "#E6F1FB",
+      "align": "l",
+      "inset_px": [
+       12,
+       2,
+       2,
+       2
+      ]
+     },
+     {
+      "text": "string",
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "fill": "#F3F7FB",
+      "align": "l",
+      "inset_px": [
+       12,
+       2,
+       2,
+       2
+      ]
+     },
+     {
+      "text": "○",
+      "size_px": 17,
+      "color": "#1E2A44",
+      "fill": "#F3F7FB",
+      "align": "c"
+     },
+     {
+      "text": "版の状態",
+      "size_px": 15,
+      "color": "#1E2A44",
+      "fill": "#F3F7FB",
+      "align": "l",
+      "line_pitch_px": 22,
+      "inset_px": [
+       12,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "text": "latest / old / draft / unknown",
+      "size_px": 15,
+      "color": "#1E2A44",
+      "fill": "#F3F7FB",
+      "align": "l",
+      "line_pitch_px": 21,
+      "inset_px": [
+       12,
+       2,
+       4,
+       2
+      ]
+     }
+    ],
+    [
+     {
+      "text": "8",
+      "size_px": 17,
+      "bold": true,
+      "color": "#1F3A6E",
+      "fill": "#E6F1FB",
+      "align": "c"
+     },
+     {
+      "text": "applicability",
+      "size_px": 18,
+      "bold": true,
+      "color": "#1356B0",
+      "fill": "#E6F1FB",
+      "align": "l",
+      "inset_px": [
+       12,
+       2,
+       2,
+       2
+      ]
+     },
+     {
+      "text": "string",
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "fill": "#FFFFFF",
+      "align": "l",
+      "inset_px": [
+       12,
+       2,
+       2,
+       2
+      ]
+     },
+     {
+      "text": "○",
+      "size_px": 17,
+      "color": "#1E2A44",
+      "fill": "#FFFFFF",
+      "align": "c"
+     },
+     {
+      "text": "適用判定の結果",
+      "size_px": 15,
+      "color": "#1E2A44",
+      "fill": "#FFFFFF",
+      "align": "l",
+      "line_pitch_px": 22,
+      "inset_px": [
+       12,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "text": "applicable / not_applicable /\u000bunverified / partial",
+      "size_px": 15,
+      "color": "#1E2A44",
+      "fill": "#FFFFFF",
+      "align": "l",
+      "line_pitch_px": 21,
+      "inset_px": [
+       12,
+       2,
+       4,
+       2
+      ]
+     }
+    ],
+    [
+     {
+      "text": "9",
+      "size_px": 17,
+      "bold": true,
+      "color": "#1F3A6E",
+      "fill": "#E6F1FB",
+      "align": "c"
+     },
+     {
+      "text": "unverified_items",
+      "size_px": 16,
+      "bold": true,
+      "color": "#1356B0",
+      "fill": "#E6F1FB",
+      "align": "l",
+      "inset_px": [
+       12,
+       2,
+       2,
+       2
+      ]
+     },
+     {
+      "text": "array<string>",
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "fill": "#F3F7FB",
+      "align": "l",
+      "inset_px": [
+       12,
+       2,
+       2,
+       2
+      ]
+     },
+     {
+      "text": "△",
+      "size_px": 17,
+      "color": "#1E2A44",
+      "fill": "#F3F7FB",
+      "align": "c"
+     },
+     {
+      "text": "適用判定で未確認・不明な項目",
+      "size_px": 15,
+      "color": "#1E2A44",
+      "fill": "#F3F7FB",
+      "align": "l",
+      "line_pitch_px": 22,
+      "inset_px": [
+       12,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "text": "[\"号機\", \"機種\", \"発効日\"]",
+      "size_px": 14,
+      "color": "#1E2A44",
+      "fill": "#F3F7FB",
+      "align": "l",
+      "line_pitch_px": 21,
+      "inset_px": [
+       12,
+       2,
+       4,
+       2
+      ]
+     }
+    ],
+    [
+     {
+      "text": "10",
+      "size_px": 17,
+      "bold": true,
+      "color": "#1F3A6E",
+      "fill": "#E6F1FB",
+      "align": "c"
+     },
+     {
+      "text": "source_ref",
+      "size_px": 18,
+      "bold": true,
+      "color": "#1356B0",
+      "fill": "#E6F1FB",
+      "align": "l",
+      "inset_px": [
+       12,
+       2,
+       2,
+       2
+      ]
+     },
+     {
+      "text": "object",
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "fill": "#FFFFFF",
+      "align": "l",
+      "inset_px": [
+       12,
+       2,
+       2,
+       2
+      ]
+     },
+     {
+      "text": "○",
+      "size_px": 17,
+      "color": "#1E2A44",
+      "fill": "#FFFFFF",
+      "align": "c"
+     },
+     {
+      "text": "元データへの参照情報",
+      "size_px": 15,
+      "color": "#1E2A44",
+      "fill": "#FFFFFF",
+      "align": "l",
+      "line_pitch_px": 22,
+      "inset_px": [
+       12,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "text": "{ \"table\": \"WPS\", \"id\": \"W-55\",\u000b  \"file_path\": \"\\\\...\", \"url\": \"...\", \"page\": 12 }",
+      "size_px": 14,
+      "color": "#1E2A44",
+      "fill": "#FFFFFF",
+      "align": "l",
+      "line_pitch_px": 21,
+      "inset_px": [
+       12,
+       2,
+       4,
+       2
+      ]
+     }
+    ],
+    [
+     {
+      "text": "11",
+      "size_px": 17,
+      "bold": true,
+      "color": "#1F3A6E",
+      "fill": "#E6F1FB",
+      "align": "c"
+     },
+     {
+      "text": "evidence",
+      "size_px": 18,
+      "bold": true,
+      "color": "#1356B0",
+      "fill": "#E6F1FB",
+      "align": "l",
+      "inset_px": [
+       12,
+       2,
+       2,
+       2
+      ]
+     },
+     {
+      "text": "array<object>",
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "fill": "#F3F7FB",
+      "align": "l",
+      "inset_px": [
+       12,
+       2,
+       2,
+       2
+      ]
+     },
+     {
+      "text": "○",
+      "size_px": 17,
+      "color": "#1E2A44",
+      "fill": "#F3F7FB",
+      "align": "c"
+     },
+     {
+      "text": "回答の根拠として利用する箇所の一覧\u000b（本文・表・項番・ページ等）",
+      "size_px": 15,
+      "color": "#1E2A44",
+      "fill": "#F3F7FB",
+      "align": "l",
+      "line_pitch_px": 22,
+      "inset_px": [
+       12,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "text": "[ { \"type\": \"text\", \"page\": 12, \"section\": \"3.2\",\u000b    \"text\": \"...\" }, { \"type\": \"table\", \"page\": 15,\u000b    \"row\": 3, \"col\": 2, \"text\": \"...\" } ]",
+      "size_px": 14,
+      "color": "#1E2A44",
+      "fill": "#F3F7FB",
+      "align": "l",
+      "line_pitch_px": 21,
+      "inset_px": [
+       12,
+       2,
+       4,
+       2
+      ]
+     }
+    ],
+    [
+     {
+      "text": "12",
+      "size_px": 17,
+      "bold": true,
+      "color": "#1F3A6E",
+      "fill": "#E6F1FB",
+      "align": "c"
+     },
+     {
+      "text": "excerpt",
+      "size_px": 18,
+      "bold": true,
+      "color": "#1356B0",
+      "fill": "#E6F1FB",
+      "align": "l",
+      "inset_px": [
+       12,
+       2,
+       2,
+       2
+      ]
+     },
+     {
+      "text": "string",
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "fill": "#FFFFFF",
+      "align": "l",
+      "inset_px": [
+       12,
+       2,
+       2,
+       2
+      ]
+     },
+     {
+      "text": "△",
+      "size_px": 17,
+      "color": "#1E2A44",
+      "fill": "#FFFFFF",
+      "align": "c"
+     },
+     {
+      "text": "検索時にマッチした本文の抜粋\u000b（ハイライト表示用）",
+      "size_px": 15,
+      "color": "#1E2A44",
+      "fill": "#FFFFFF",
+      "align": "l",
+      "line_pitch_px": 22,
+      "inset_px": [
+       12,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "text": "例：\"機械加工前に…\"",
+      "size_px": 15,
+      "color": "#1E2A44",
+      "fill": "#FFFFFF",
+      "align": "l",
+      "line_pitch_px": 21,
+      "inset_px": [
+       12,
+       2,
+       4,
+       2
+      ]
+     }
+    ],
+    [
+     {
+      "text": "13",
+      "size_px": 17,
+      "bold": true,
+      "color": "#1F3A6E",
+      "fill": "#E6F1FB",
+      "align": "c"
+     },
+     {
+      "text": "metadata",
+      "size_px": 18,
+      "bold": true,
+      "color": "#1356B0",
+      "fill": "#E6F1FB",
+      "align": "l",
+      "inset_px": [
+       12,
+       2,
+       2,
+       2
+      ]
+     },
+     {
+      "text": "object",
+      "size_px": 15.5,
+      "color": "#1E2A44",
+      "fill": "#F3F7FB",
+      "align": "l",
+      "inset_px": [
+       12,
+       2,
+       2,
+       2
+      ]
+     },
+     {
+      "text": "△",
+      "size_px": 17,
+      "color": "#1E2A44",
+      "fill": "#F3F7FB",
+      "align": "c"
+     },
+     {
+      "text": "その他のメタデータ（更新日・ファイル種別・\u000bREV 等、表示に必要な情報）",
+      "size_px": 15,
+      "color": "#1E2A44",
+      "fill": "#F3F7FB",
+      "align": "l",
+      "line_pitch_px": 22,
+      "inset_px": [
+       12,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "text": "{ \"rev\": \"C\", \"effective_date\": \"2025-06-01\",\u000b  \"file_type\": \"PDF\", \"更新日\": \"2025-06-10\" }",
+      "size_px": 14,
+      "color": "#1E2A44",
+      "fill": "#F3F7FB",
+      "align": "l",
+      "line_pitch_px": 21,
+      "inset_px": [
+       12,
+       2,
+       4,
+       2
+      ]
+     }
+    ]
+   ],
+   "border": {
+    "color": "#FFFFFF",
+    "width_px": 2
+   },
+   "name": "schema-table"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    1178,
+    142,
+    474,
+    690
+   ],
+   "fill": "#EAF3FC",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    1178,
+    142,
+    474,
+    40
+   ],
+   "fill": "#0E3F82",
+   "line": null,
+   "text": "検索候補のJSON例",
+   "size_px": 18,
+   "bold": true,
+   "color": "#FFFFFF",
+   "radius_px": 6
+  },
+  {
+   "type": "text",
+   "box": [
+    1194,
+    188,
+    450,
+    640
+   ],
+   "paras": [
+    [
+     {
+      "text": "{",
+      "color": "#1F3A6E"
+     }
+    ],
+    [
+     {
+      "text": "  \"candidate_id\": ",
+      "color": "#1F3A6E"
+     },
+     {
+      "text": "\"DOC-12345\",",
+      "color": "#C8302C"
+     }
+    ],
+    [
+     {
+      "text": "  \"data_source\": ",
+      "color": "#1F3A6E"
+     },
+     {
+      "text": "\"共有文書\",",
+      "color": "#C8302C"
+     }
+    ],
+    [
+     {
+      "text": "  \"source_type\": ",
+      "color": "#1F3A6E"
+     },
+     {
+      "text": "\"文書\",",
+      "color": "#C8302C"
+     }
+    ],
+    [
+     {
+      "text": "  \"title\": ",
+      "color": "#1F3A6E"
+     },
+     {
+      "text": "\"WPS W-55 Rev.C\",",
+      "color": "#C8302C"
+     }
+    ],
+    [
+     {
+      "text": "  \"matched_conditions\": {",
+      "color": "#1F3A6E"
+     }
+    ],
+    [
+     {
+      "text": "    \"部品番号\": ",
+      "color": "#1F3A6E"
+     },
+     {
+      "text": "\"A123\",",
+      "color": "#C8302C"
+     }
+    ],
+    [
+     {
+      "text": "    \"工程番号\": ",
+      "color": "#1F3A6E"
+     },
+     {
+      "text": "\"10\",",
+      "color": "#C8302C"
+     }
+    ],
+    [
+     {
+      "text": "    \"検索語\": ",
+      "color": "#1F3A6E"
+     },
+     {
+      "text": "\"WPS\"",
+      "color": "#C8302C"
+     }
+    ],
+    [
+     {
+      "text": "  },",
+      "color": "#1F3A6E"
+     }
+    ],
+    [
+     {
+      "text": "  \"similarity\": ",
+      "color": "#1F3A6E"
+     },
+     {
+      "text": "0.87,",
+      "color": "#1E7B4E"
+     }
+    ],
+    [
+     {
+      "text": "  \"version_status\": ",
+      "color": "#1F3A6E"
+     },
+     {
+      "text": "\"latest\",",
+      "color": "#C8302C"
+     }
+    ],
+    [
+     {
+      "text": "  \"applicability\": ",
+      "color": "#1F3A6E"
+     },
+     {
+      "text": "\"applicable\",",
+      "color": "#C8302C"
+     }
+    ],
+    [
+     {
+      "text": "  \"unverified_items\": [],",
+      "color": "#1F3A6E"
+     }
+    ],
+    [
+     {
+      "text": "  \"source_ref\": {",
+      "color": "#1F3A6E"
+     }
+    ],
+    [
+     {
+      "text": "    \"file_path\": ",
+      "color": "#1F3A6E"
+     },
+     {
+      "text": "\"\\\\share\\manual\\WPS_W-55.pdf\",",
+      "color": "#C8302C"
+     }
+    ],
+    [
+     {
+      "text": "    \"page\": ",
+      "color": "#1F3A6E"
+     },
+     {
+      "text": "12,",
+      "color": "#1E7B4E"
+     }
+    ],
+    [
+     {
+      "text": "    \"doc_id\": ",
+      "color": "#1F3A6E"
+     },
+     {
+      "text": "\"WPS_W-55\",",
+      "color": "#C8302C"
+     }
+    ],
+    [
+     {
+      "text": "    \"rev\": ",
+      "color": "#1F3A6E"
+     },
+     {
+      "text": "\"C\"",
+      "color": "#C8302C"
+     }
+    ],
+    [
+     {
+      "text": "  },",
+      "color": "#1F3A6E"
+     }
+    ],
+    [
+     {
+      "text": "  \"evidence\": [",
+      "color": "#1F3A6E"
+     }
+    ],
+    [
+     {
+      "text": "    {",
+      "color": "#1F3A6E"
+     }
+    ],
+    [
+     {
+      "text": "      \"type\": ",
+      "color": "#1F3A6E"
+     },
+     {
+      "text": "\"text\",",
+      "color": "#C8302C"
+     }
+    ],
+    [
+     {
+      "text": "      \"page\": ",
+      "color": "#1F3A6E"
+     },
+     {
+      "text": "12,",
+      "color": "#1E7B4E"
+     }
+    ],
+    [
+     {
+      "text": "      \"section\": ",
+      "color": "#1F3A6E"
+     },
+     {
+      "text": "\"3.2\",",
+      "color": "#C8302C"
+     }
+    ],
+    [
+     {
+      "text": "      \"text\": ",
+      "color": "#1F3A6E"
+     },
+     {
+      "text": "\"機械加工前に…\"",
+      "color": "#C8302C"
+     }
+    ],
+    [
+     {
+      "text": "    },",
+      "color": "#1F3A6E"
+     }
+    ],
+    [
+     {
+      "text": "    {",
+      "color": "#1F3A6E"
+     }
+    ],
+    [
+     {
+      "text": "      \"type\": ",
+      "color": "#1F3A6E"
+     },
+     {
+      "text": "\"table\",",
+      "color": "#C8302C"
+     }
+    ],
+    [
+     {
+      "text": "      \"page\": ",
+      "color": "#1F3A6E"
+     },
+     {
+      "text": "15,",
+      "color": "#1E7B4E"
+     }
+    ],
+    [
+     {
+      "text": "      \"row\": ",
+      "color": "#1F3A6E"
+     },
+     {
+      "text": "3,",
+      "color": "#1E7B4E"
+     }
+    ],
+    [
+     {
+      "text": "      \"col\": ",
+      "color": "#1F3A6E"
+     },
+     {
+      "text": "2,",
+      "color": "#1E7B4E"
+     }
+    ],
+    [
+     {
+      "text": "      \"text\": ",
+      "color": "#1F3A6E"
+     },
+     {
+      "text": "\"…\"",
+      "color": "#C8302C"
+     }
+    ],
+    [
+     {
+      "text": "    }",
+      "color": "#1F3A6E"
+     }
+    ],
+    [
+     {
+      "text": "  ],",
+      "color": "#1F3A6E"
+     }
+    ],
+    [
+     {
+      "text": "  \"excerpt\": ",
+      "color": "#1F3A6E"
+     },
+     {
+      "text": "\"機械加工前に治具を確認する…\",",
+      "color": "#C8302C"
+     }
+    ],
+    [
+     {
+      "text": "  \"metadata\": {",
+      "color": "#1F3A6E"
+     }
+    ],
+    [
+     {
+      "text": "    \"rev\": ",
+      "color": "#1F3A6E"
+     },
+     {
+      "text": "\"C\",",
+      "color": "#C8302C"
+     }
+    ],
+    [
+     {
+      "text": "    \"effective_date\": ",
+      "color": "#1F3A6E"
+     },
+     {
+      "text": "\"2025-06-01\",",
+      "color": "#C8302C"
+     }
+    ],
+    [
+     {
+      "text": "    \"file_type\": ",
+      "color": "#1F3A6E"
+     },
+     {
+      "text": "\"PDF\",",
+      "color": "#C8302C"
+     }
+    ],
+    [
+     {
+      "text": "    \"更新日\": ",
+      "color": "#1F3A6E"
+     },
+     {
+      "text": "\"2025-06-10\"",
+      "color": "#C8302C"
+     }
+    ],
+    [
+     {
+      "text": "  }",
+      "color": "#1F3A6E"
+     }
+    ],
+    [
+     {
+      "text": "}",
+      "color": "#1F3A6E"
+     }
+    ]
+   ],
+   "size_px": 11.5,
+   "font": "Consolas",
+   "font_latin": "Consolas",
+   "valign": "t",
+   "line_pitch_px": 14.6
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    22,
+    840,
+    978,
+    92
+   ],
+   "fill": "#F3F7FB",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    22,
+    840,
+    150,
+    92
+   ],
+   "fill": "#E6F1FB",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "icon",
+   "icon": "azure:app-configuration",
+   "box": [
+    34,
+    862,
+    48,
+    48
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "text",
+   "box": [
+    88,
+    840,
+    84,
+    92
+   ],
+   "text": "設計方針",
+   "size_px": 17,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "text",
+   "box": [
+    184,
+    844,
+    808,
+    84
+   ],
+   "text": "構造化検索・全文検索・ベクトル検索 など、すべての検索方式の結果を同一フォーマットに変換する。\n版・適用判定（VA）で付与する version_status / applicability を含める。\nevidence により回答の根拠箇所（本文・表・項番・ページ等）を明示し、生成文はこの情報に基づいて作成する。\nAPI 間（/search → /version-check → /evidence → /explain）で共通して利用する。",
+   "size_px": 14,
+   "color": "#1E2A44",
+   "valign": "m",
+   "bullet": true,
+   "bullet_indent_px": 13,
+   "line_pitch_px": 20.5
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    1008,
+    840,
+    644,
+    92
+   ],
+   "fill": "#F3F7FB",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    1008,
+    840,
+    150,
+    92
+   ],
+   "fill": "#E6F1FB",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "icon",
+   "icon": "azure:file",
+   "box": [
+    1020,
+    862,
+    48,
+    48
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "text",
+   "box": [
+    1074,
+    840,
+    84,
+    92
+   ],
+   "text": "補足",
+   "size_px": 17,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "text",
+   "box": [
+    1170,
+    844,
+    474,
+    84
+   ],
+   "text": "必須：全ケースで必要な項目、△：必要に応じて設定する項目。\nunverified_items がある場合、生成時に「適用未確認」と明示する。\nmetadata は表示要件に応じて拡張可能（種別、更新日等）。\n実際の実装では、キー名や値は API 仕様書で詳細に定義する。",
+   "size_px": 13,
+   "color": "#1E2A44",
+   "valign": "m",
+   "bullet": true,
+   "bullet_indent_px": 13,
+   "line_pitch_px": 20.5
+  }
+ ]
+}

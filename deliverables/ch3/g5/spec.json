@@ -1,0 +1,1509 @@
+{
+ "source_size": [
+  1672,
+  941
+ ],
+ "font": "Meiryo",
+ "background": "#FFFFFF",
+ "elements": [
+  {
+   "type": "text",
+   "box": [
+    30,
+    6,
+    1300,
+    62
+   ],
+   "text": "表3-3　Gate 1 診断項目 × 確認方法 × 成果物 × 判定",
+   "size_px": 45,
+   "bold": true,
+   "color": "#1F3A6E",
+   "name": "title"
+  },
+  {
+   "type": "table",
+   "box": [
+    18,
+    74,
+    1637,
+    798
+   ],
+   "col_widths_px": [
+    60,
+    303,
+    365,
+    297,
+    261,
+    351
+   ],
+   "row_heights_px": [
+    64,
+    97,
+    104,
+    134,
+    103,
+    107,
+    96,
+    93
+   ],
+   "cells": [
+    [
+     {
+      "fill": "#05306E",
+      "color": "#FFFFFF",
+      "align": "c",
+      "line_pitch_px": 26,
+      "paras": [
+       [
+        {
+         "text": "No.",
+         "size_px": 19.5,
+         "bold": true
+        }
+       ]
+      ]
+     },
+     {
+      "fill": "#05306E",
+      "color": "#FFFFFF",
+      "align": "c",
+      "line_pitch_px": 26,
+      "paras": [
+       [
+        {
+         "text": "診断項目",
+         "size_px": 19.5,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（確認内容）",
+         "size_px": 17.5,
+         "bold": true
+        }
+       ]
+      ]
+     },
+     {
+      "fill": "#05306E",
+      "color": "#FFFFFF",
+      "align": "c",
+      "line_pitch_px": 26,
+      "paras": [
+       [
+        {
+         "text": "確認方法",
+         "size_px": 19.5,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（サンプル確認・分析方法）",
+         "size_px": 17.5,
+         "bold": true
+        }
+       ]
+      ]
+     },
+     {
+      "fill": "#05306E",
+      "color": "#FFFFFF",
+      "align": "c",
+      "line_pitch_px": 26,
+      "paras": [
+       [
+        {
+         "text": "成果物",
+         "size_px": 19.5,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（Gate 1での提出物）",
+         "size_px": 17.5,
+         "bold": true
+        }
+       ]
+      ]
+     },
+     {
+      "fill": "#05306E",
+      "color": "#FFFFFF",
+      "align": "c",
+      "line_pitch_px": 26,
+      "paras": [
+       [
+        {
+         "text": "判定基準",
+         "size_px": 19.5,
+         "bold": true
+        }
+       ]
+      ]
+     },
+     {
+      "fill": "#05306E",
+      "color": "#FFFFFF",
+      "align": "c",
+      "line_pitch_px": 26,
+      "paras": [
+       [
+        {
+         "text": "判定",
+         "size_px": 19.5,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（成立／条件付き／不成立）",
+         "size_px": 17.5,
+         "bold": true
+        }
+       ]
+      ]
+     }
+    ],
+    [
+     {
+      "fill": "#E4EDF2",
+      "text": "1",
+      "size_px": 26,
+      "bold": true,
+      "color": "#1F3A6E",
+      "align": "c"
+     },
+     {
+      "fill": "#EEF5FA",
+      "align": "l",
+      "inset_px": [
+       80,
+       2,
+       2,
+       2
+      ],
+      "color": "#1F3A6E",
+      "bold": true,
+      "line_pitch_px": 24,
+      "paras": [
+       [
+        {
+         "text": "12テーブルの基本情報",
+         "size_px": 16
+        }
+       ],
+       [
+        {
+         "text": "（件数・NULL率・PK/結合キー）",
+         "size_px": 13
+        }
+       ]
+      ]
+     },
+     {
+      "fill": "#FFFFFF",
+      "text": "各テーブルの件数、NULL率、データ型を取得\nPK/結合キーの定義を確認\nサンプルデータで内容を確認",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 22.5,
+      "size_px": 14,
+      "color": "#1E2440",
+      "align": "l",
+      "inset_px": [
+       12,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "fill": "#FFFFFF",
+      "text": "テーブル別データプロファイル\u000b（件数・NULL率・主要項目）\nPK/結合キー一覧",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 25,
+      "size_px": 13,
+      "color": "#1E2440",
+      "align": "l",
+      "inset_px": [
+       12,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "fill": "#FFFFFF",
+      "text": "全12テーブルの情報が取得できる\nPK/結合キーが特定できる",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 25,
+      "size_px": 13,
+      "color": "#1E2440",
+      "align": "l",
+      "inset_px": [
+       12,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "fill": "#EBF3F8",
+      "text": ""
+     }
+    ],
+    [
+     {
+      "fill": "#E4EDF2",
+      "text": "2",
+      "size_px": 26,
+      "bold": true,
+      "color": "#1F3A6E",
+      "align": "c"
+     },
+     {
+      "fill": "#EEF5FA",
+      "align": "l",
+      "inset_px": [
+       80,
+       2,
+       2,
+       2
+      ],
+      "color": "#1F3A6E",
+      "bold": true,
+      "line_pitch_px": 24,
+      "paras": [
+       [
+        {
+         "text": "JOIN到達率とキー一意性",
+         "size_px": 16
+        }
+       ],
+       [
+        {
+         "text": "（テーブル間の関連性）",
+         "size_px": 15
+        }
+       ]
+      ]
+     },
+     {
+      "fill": "#FFFFFF",
+      "text": "定義に基づくJOINを実行し到達率を測定\nキーの一意性（重複の有無）を確認\nサンプル部品でエンドツーエンドの結合確認",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 22.5,
+      "size_px": 14,
+      "color": "#1E2440",
+      "align": "l",
+      "inset_px": [
+       12,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "fill": "#FFFFFF",
+      "text": "テーブル結合図（ER図の実データ検証）\nJOIN到達率レポート\nキー一意性チェック結果",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 25,
+      "size_px": 13,
+      "color": "#1E2440",
+      "align": "l",
+      "inset_px": [
+       12,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "fill": "#FFFFFF",
+      "text": "主要なテーブル結合が可能（例：\u000b部品→作業工程→WPS→文書）\nキーの一意性が確保されている",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 25,
+      "size_px": 13,
+      "color": "#1E2440",
+      "align": "l",
+      "inset_px": [
+       12,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "fill": "#EBF3F8",
+      "text": ""
+     }
+    ],
+    [
+     {
+      "fill": "#E4EDF2",
+      "text": "3",
+      "size_px": 26,
+      "bold": true,
+      "color": "#1F3A6E",
+      "align": "c"
+     },
+     {
+      "fill": "#EEF5FA",
+      "align": "l",
+      "inset_px": [
+       80,
+       2,
+       2,
+       2
+      ],
+      "color": "#1F3A6E",
+      "bold": true,
+      "line_pitch_px": 24,
+      "paras": [
+       [
+        {
+         "text": "REV・ED・適用情報の有無",
+         "size_px": 16
+        }
+       ],
+       [
+        {
+         "text": "（定義・取得方法・根拠）",
+         "size_px": 15
+        }
+       ]
+      ]
+     },
+     {
+      "fill": "#FFFFFF",
+      "text": "各テーブルの項目にREV・ED・適用号機等の\u000b情報があるか確認\n情報の意味・採番ルール・更新ルールをヒアリング\nサンプルデータで実在性を確認",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 22.5,
+      "size_px": 14,
+      "color": "#1E2440",
+      "align": "l",
+      "inset_px": [
+       12,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "fill": "#FFFFFF",
+      "text": "REV・ED・適用情報 一覧\n取得方法・項目定義書\nサンプルデータ",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 25,
+      "size_px": 13,
+      "color": "#1E2440",
+      "align": "l",
+      "inset_px": [
+       12,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "fill": "#FFFFFF",
+      "text": "REV・ED・適用情報の有無と意味\u000bが明確である\n業務で利用可能な根拠がある",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 25,
+      "size_px": 13,
+      "color": "#1E2440",
+      "align": "l",
+      "inset_px": [
+       12,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "fill": "#EBF3F8",
+      "text": ""
+     }
+    ],
+    [
+     {
+      "fill": "#E4EDF2",
+      "text": "4",
+      "size_px": 26,
+      "bold": true,
+      "color": "#1F3A6E",
+      "align": "c"
+     },
+     {
+      "fill": "#EEF5FA",
+      "align": "l",
+      "inset_px": [
+       80,
+       2,
+       2,
+       2
+      ],
+      "color": "#1F3A6E",
+      "bold": true,
+      "line_pitch_px": 24,
+      "paras": [
+       [
+        {
+         "text": "過去版本文の取得可否",
+         "size_px": 16
+        }
+       ],
+       [
+        {
+         "text": "（版管理・履歴の参照）",
+         "size_px": 15
+        }
+       ]
+      ]
+     },
+     {
+      "fill": "#FFFFFF",
+      "text": "過去版の文書・WPS等が取得できるか確認\n版の履歴・格納場所・アクセス方法を調査\nサンプルで複数版の取得を検証",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 22.5,
+      "size_px": 14,
+      "color": "#1E2440",
+      "align": "l",
+      "inset_px": [
+       12,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "fill": "#FFFFFF",
+      "text": "過去版取得検証結果\n版管理の仕組み整理資料",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 25,
+      "size_px": 13,
+      "color": "#1E2440",
+      "align": "l",
+      "inset_px": [
+       12,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "fill": "#FFFFFF",
+      "text": "過去版の本文が取得できる\n版の対応関係が特定できる",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 25,
+      "size_px": 13,
+      "color": "#1E2440",
+      "align": "l",
+      "inset_px": [
+       12,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "fill": "#EBF3F8",
+      "text": ""
+     }
+    ],
+    [
+     {
+      "fill": "#E4EDF2",
+      "text": "5",
+      "size_px": 26,
+      "bold": true,
+      "color": "#1F3A6E",
+      "align": "c"
+     },
+     {
+      "fill": "#EEF5FA",
+      "align": "l",
+      "inset_px": [
+       80,
+       2,
+       2,
+       2
+      ],
+      "color": "#1F3A6E",
+      "bold": true,
+      "line_pitch_px": 24,
+      "paras": [
+       [
+        {
+         "text": "工程名と工程タイトルの対応",
+         "size_px": 16
+        }
+       ],
+       [
+        {
+         "text": "（マスタ一致性）",
+         "size_px": 15
+        }
+       ]
+      ]
+     },
+     {
+      "fill": "#FFFFFF",
+      "text": "作業工程の工程名とロードセンターの工程\u000bタイトルの対応関係を確認\nコード→名称変換のルールを検証\nサンプルで不一致データの有無を確認",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 22.5,
+      "size_px": 14,
+      "color": "#1E2440",
+      "align": "l",
+      "inset_px": [
+       12,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "fill": "#FFFFFF",
+      "text": "工程名－工程タイトル 対応表\nコード変換ルール\n不一致データの一覧",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 25,
+      "size_px": 13,
+      "color": "#1E2440",
+      "align": "l",
+      "inset_px": [
+       12,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "fill": "#FFFFFF",
+      "text": "工程名と工程タイトルの対応が\u000b明確である\nコード→名称変換が可能である",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 25,
+      "size_px": 13,
+      "color": "#1E2440",
+      "align": "l",
+      "inset_px": [
+       12,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "fill": "#EBF3F8",
+      "text": ""
+     }
+    ],
+    [
+     {
+      "fill": "#E4EDF2",
+      "text": "6",
+      "size_px": 26,
+      "bold": true,
+      "color": "#1F3A6E",
+      "align": "c"
+     },
+     {
+      "fill": "#EEF5FA",
+      "align": "l",
+      "inset_px": [
+       80,
+       2,
+       2,
+       2
+      ],
+      "color": "#1F3A6E",
+      "bold": true,
+      "line_pitch_px": 24,
+      "paras": [
+       [
+        {
+         "text": "文書ファイルパス実体と\u000b抽出精度",
+         "size_px": 16
+        }
+       ],
+       [
+        {
+         "text": "（図面・WPS・SPEC 等）",
+         "size_px": 13
+        }
+       ]
+      ]
+     },
+     {
+      "fill": "#FFFFFF",
+      "text": "ファイルパスの実体（ファイルの存在）を確認\nファイルの種別・リビジョン・ステータスを確認\n抽出処理の精度をサンプルで検証",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 22.5,
+      "size_px": 14,
+      "color": "#1E2440",
+      "align": "l",
+      "inset_px": [
+       12,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "fill": "#FFFFFF",
+      "text": "ファイルパス検証結果\n文書メタデータ抽出精度レポート\nアクセス可否一覧",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 25,
+      "size_px": 13,
+      "color": "#1E2440",
+      "align": "l",
+      "inset_px": [
+       12,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "fill": "#FFFFFF",
+      "text": "ファイルが実在しアクセス可能\nタイトル・リビジョン等の\u000bメタデータが正しく抽出できる",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 25,
+      "size_px": 13,
+      "color": "#1E2440",
+      "align": "l",
+      "inset_px": [
+       12,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "fill": "#EBF3F8",
+      "text": ""
+     }
+    ],
+    [
+     {
+      "fill": "#E4EDF2",
+      "text": "7",
+      "size_px": 26,
+      "bold": true,
+      "color": "#1F3A6E",
+      "align": "c"
+     },
+     {
+      "fill": "#EEF5FA",
+      "align": "l",
+      "inset_px": [
+       80,
+       2,
+       2,
+       2
+      ],
+      "color": "#1F3A6E",
+      "bold": true,
+      "line_pitch_px": 24,
+      "paras": [
+       [
+        {
+         "text": "代表質問の期待候補・\u000b必要根拠の存在",
+         "size_px": 16
+        }
+       ],
+       [
+        {
+         "text": "（検索成立性の確認）",
+         "size_px": 15
+        }
+       ]
+      ]
+     },
+     {
+      "fill": "#FFFFFF",
+      "text": "代表質問（例：部品Aの工程10、WPS番号、\u000b図面番号 等）を実際に実行\n期待される候補と必要な根拠情報の取得可否\u000bを確認",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 22.5,
+      "size_px": 14,
+      "color": "#1E2440",
+      "align": "l",
+      "inset_px": [
+       12,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "fill": "#FFFFFF",
+      "text": "代表質問の実行結果一覧\n候補データと根拠情報の取得状況\n検索成立性の評価レポート",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 25,
+      "size_px": 13,
+      "color": "#1E2440",
+      "align": "l",
+      "inset_px": [
+       12,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "fill": "#FFFFFF",
+      "text": "想定する候補が取得できる\n必要な根拠情報（作業内容・版・\u000b文書リンク等）が揃っている",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 25,
+      "size_px": 13,
+      "color": "#1E2440",
+      "align": "l",
+      "inset_px": [
+       12,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "fill": "#EBF3F8",
+      "text": ""
+     }
+    ]
+   ],
+   "border": {
+    "color": "#D3DEEB",
+    "width_px": 1.2
+   },
+   "name": "gate1-table"
+  },
+  {
+   "type": "icon",
+   "icon": "material:database-fill",
+   "box": [
+    88,
+    158.5,
+    56,
+    56
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "icon",
+   "icon": "lucide:network",
+   "box": [
+    88,
+    259.0,
+    56,
+    56
+   ],
+   "color": "#1F3F7A",
+   "stroke_width": 2.4
+  },
+  {
+   "type": "icon",
+   "icon": "lucide:file-text",
+   "box": [
+    88,
+    378.0,
+    56,
+    56
+   ],
+   "color": "#1F3F7A",
+   "stroke_width": 2.4
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    104,
+    410.0,
+    40,
+    20
+   ],
+   "radius_px": 9,
+   "fill": "#1F3F7A",
+   "line": null,
+   "text": "REV",
+   "size_px": 11.5,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "icon",
+   "icon": "lucide:copy",
+   "box": [
+    88,
+    496.5,
+    56,
+    56
+   ],
+   "color": "#1F3F7A",
+   "stroke_width": 2.4
+  },
+  {
+   "type": "icon",
+   "icon": "material:settings-fill",
+   "box": [
+    88,
+    601.5,
+    56,
+    56
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "icon",
+   "icon": "lucide:file-text",
+   "box": [
+    88,
+    703.0,
+    56,
+    56
+   ],
+   "color": "#1F3F7A",
+   "stroke_width": 2.4
+  },
+  {
+   "type": "icon",
+   "icon": "lucide:search",
+   "box": [
+    88,
+    797.5,
+    56,
+    56
+   ],
+   "color": "#1F3F7A",
+   "stroke_width": 2.4
+  },
+  {
+   "type": "rect",
+   "box": [
+    1314,
+    144.43,
+    96,
+    25
+   ],
+   "fill": "#61B982",
+   "line": null,
+   "text": "成立",
+   "size_px": 15.5,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "text",
+   "box": [
+    1428,
+    143.43,
+    224,
+    26
+   ],
+   "text": "全項目を確認",
+   "size_px": 15,
+   "color": "#1E2440"
+  },
+  {
+   "type": "rect",
+   "box": [
+    1314,
+    174.5,
+    96,
+    25
+   ],
+   "fill": "#F9D647",
+   "line": null,
+   "text": "条件付き",
+   "size_px": 15.5,
+   "bold": true,
+   "color": "#3A2E00"
+  },
+  {
+   "type": "text",
+   "box": [
+    1428,
+    173.5,
+    224,
+    26
+   ],
+   "text": "一部不明だが代替可能",
+   "size_px": 15,
+   "color": "#1E2440"
+  },
+  {
+   "type": "rect",
+   "box": [
+    1314,
+    204.57,
+    96,
+    25
+   ],
+   "fill": "#FCCED5",
+   "line": null,
+   "text": "不成立",
+   "size_px": 15.5,
+   "bold": true,
+   "color": "#C0303A"
+  },
+  {
+   "type": "text",
+   "box": [
+    1428,
+    203.57,
+    224,
+    26
+   ],
+   "text": "主要テーブルが取得不可",
+   "size_px": 15,
+   "color": "#1E2440"
+  },
+  {
+   "type": "rect",
+   "box": [
+    1314,
+    242.76,
+    96,
+    25
+   ],
+   "fill": "#61B982",
+   "line": null,
+   "text": "成立",
+   "size_px": 15.5,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "text",
+   "box": [
+    1428,
+    241.76,
+    224,
+    26
+   ],
+   "text": "想定通り結合可能",
+   "size_px": 15,
+   "color": "#1E2440"
+  },
+  {
+   "type": "rect",
+   "box": [
+    1314,
+    275.0,
+    96,
+    25
+   ],
+   "fill": "#F9D647",
+   "line": null,
+   "text": "条件付き",
+   "size_px": 15.5,
+   "bold": true,
+   "color": "#3A2E00"
+  },
+  {
+   "type": "text",
+   "box": [
+    1428,
+    274.0,
+    224,
+    26
+   ],
+   "text": "一部結合不可（代替案あり）",
+   "size_px": 15,
+   "color": "#1E2440"
+  },
+  {
+   "type": "rect",
+   "box": [
+    1314,
+    307.24,
+    96,
+    25
+   ],
+   "fill": "#FCCED5",
+   "line": null,
+   "text": "不成立",
+   "size_px": 15.5,
+   "bold": true,
+   "color": "#C0303A"
+  },
+  {
+   "type": "text",
+   "box": [
+    1428,
+    306.24,
+    224,
+    26
+   ],
+   "text": "主要な結合ができない",
+   "size_px": 15,
+   "color": "#1E2440"
+  },
+  {
+   "type": "rect",
+   "box": [
+    1314,
+    347,
+    96,
+    25
+   ],
+   "fill": "#61B982",
+   "line": null,
+   "text": "成立",
+   "size_px": 15.5,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "text",
+   "box": [
+    1428,
+    346,
+    224,
+    26
+   ],
+   "text": "情報あり・業務利用可能",
+   "size_px": 15,
+   "color": "#1E2440"
+  },
+  {
+   "type": "rect",
+   "box": [
+    1314,
+    379,
+    96,
+    25
+   ],
+   "fill": "#F9D647",
+   "line": null,
+   "text": "条件付き",
+   "size_px": 15.5,
+   "bold": true,
+   "color": "#3A2E00"
+  },
+  {
+   "type": "text",
+   "box": [
+    1428,
+    378,
+    224,
+    26
+   ],
+   "text": "一部情報のみ（代替案あり）",
+   "size_px": 15,
+   "color": "#1E2440"
+  },
+  {
+   "type": "rect",
+   "box": [
+    1314,
+    413,
+    96,
+    25
+   ],
+   "fill": "#FCCED5",
+   "line": null,
+   "text": "不成立",
+   "size_px": 15.5,
+   "bold": true,
+   "color": "#C0303A"
+  },
+  {
+   "type": "text",
+   "box": [
+    1428,
+    411,
+    224,
+    62
+   ],
+   "text": "情報なし\n→ F-09/12.2 評価不可\n（範囲縮小・中止協議）",
+   "size_px": 15.5,
+   "bold": true,
+   "color": "#D82030",
+   "valign": "t",
+   "line_pitch_px": 20
+  },
+  {
+   "type": "rect",
+   "box": [
+    1314,
+    480.57,
+    96,
+    25
+   ],
+   "fill": "#61B982",
+   "line": null,
+   "text": "成立",
+   "size_px": 15.5,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "text",
+   "box": [
+    1428,
+    479.57,
+    224,
+    26
+   ],
+   "text": "過去版を取得可能",
+   "size_px": 15,
+   "color": "#1E2440"
+  },
+  {
+   "type": "rect",
+   "box": [
+    1314,
+    512.5,
+    96,
+    25
+   ],
+   "fill": "#F9D647",
+   "line": null,
+   "text": "条件付き",
+   "size_px": 15.5,
+   "bold": true,
+   "color": "#3A2E00"
+  },
+  {
+   "type": "text",
+   "box": [
+    1428,
+    511.5,
+    224,
+    26
+   ],
+   "text": "一部のみ取得可能",
+   "size_px": 15,
+   "color": "#1E2440"
+  },
+  {
+   "type": "rect",
+   "box": [
+    1314,
+    544.4300000000001,
+    96,
+    25
+   ],
+   "fill": "#FCCED5",
+   "line": null,
+   "text": "不成立",
+   "size_px": 15.5,
+   "bold": true,
+   "color": "#C0303A"
+  },
+  {
+   "type": "text",
+   "box": [
+    1428,
+    543.4300000000001,
+    224,
+    26
+   ],
+   "text": "過去版が取得できない",
+   "size_px": 15,
+   "color": "#1E2440"
+  },
+  {
+   "type": "rect",
+   "box": [
+    1314,
+    584.33,
+    96,
+    25
+   ],
+   "fill": "#61B982",
+   "line": null,
+   "text": "成立",
+   "size_px": 15.5,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "text",
+   "box": [
+    1428,
+    583.33,
+    224,
+    26
+   ],
+   "text": "対応関係が明確",
+   "size_px": 15,
+   "color": "#1E2440"
+  },
+  {
+   "type": "rect",
+   "box": [
+    1314,
+    617.5,
+    96,
+    25
+   ],
+   "fill": "#F9D647",
+   "line": null,
+   "text": "条件付き",
+   "size_px": 15.5,
+   "bold": true,
+   "color": "#3A2E00"
+  },
+  {
+   "type": "text",
+   "box": [
+    1428,
+    616.5,
+    224,
+    26
+   ],
+   "text": "一部不一致（対応ルールあり）",
+   "size_px": 15,
+   "color": "#1E2440"
+  },
+  {
+   "type": "rect",
+   "box": [
+    1314,
+    650.67,
+    96,
+    25
+   ],
+   "fill": "#FCCED5",
+   "line": null,
+   "text": "不成立",
+   "size_px": 15.5,
+   "bold": true,
+   "color": "#C0303A"
+  },
+  {
+   "type": "text",
+   "box": [
+    1428,
+    649.67,
+    224,
+    26
+   ],
+   "text": "対応関係が不明",
+   "size_px": 15,
+   "color": "#1E2440"
+  },
+  {
+   "type": "rect",
+   "box": [
+    1314,
+    689.24,
+    96,
+    25
+   ],
+   "fill": "#61B982",
+   "line": null,
+   "text": "成立",
+   "size_px": 15.5,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "text",
+   "box": [
+    1428,
+    688.24,
+    224,
+    26
+   ],
+   "text": "実在・抽出精度良好",
+   "size_px": 15,
+   "color": "#1E2440"
+  },
+  {
+   "type": "rect",
+   "box": [
+    1314,
+    719.0,
+    96,
+    25
+   ],
+   "fill": "#F9D647",
+   "line": null,
+   "text": "条件付き",
+   "size_px": 15.5,
+   "bold": true,
+   "color": "#3A2E00"
+  },
+  {
+   "type": "text",
+   "box": [
+    1428,
+    718.0,
+    224,
+    26
+   ],
+   "text": "一部欠損（影響限定的）",
+   "size_px": 15,
+   "color": "#1E2440"
+  },
+  {
+   "type": "rect",
+   "box": [
+    1314,
+    748.76,
+    96,
+    25
+   ],
+   "fill": "#FCCED5",
+   "line": null,
+   "text": "不成立",
+   "size_px": 15.5,
+   "bold": true,
+   "color": "#C0303A"
+  },
+  {
+   "type": "text",
+   "box": [
+    1428,
+    747.76,
+    224,
+    26
+   ],
+   "text": "ファイル未存在が多い",
+   "size_px": 15,
+   "color": "#1E2440"
+  },
+  {
+   "type": "rect",
+   "box": [
+    1314,
+    784.67,
+    96,
+    25
+   ],
+   "fill": "#61B982",
+   "line": null,
+   "text": "成立",
+   "size_px": 15.5,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "text",
+   "box": [
+    1428,
+    783.67,
+    224,
+    26
+   ],
+   "text": "主要な質問で取得可能",
+   "size_px": 15,
+   "color": "#1E2440"
+  },
+  {
+   "type": "rect",
+   "box": [
+    1314,
+    813.5,
+    96,
+    25
+   ],
+   "fill": "#F9D647",
+   "line": null,
+   "text": "条件付き",
+   "size_px": 15.5,
+   "bold": true,
+   "color": "#3A2E00"
+  },
+  {
+   "type": "text",
+   "box": [
+    1428,
+    812.5,
+    224,
+    26
+   ],
+   "text": "一部質問で不足（代替案あり）",
+   "size_px": 15,
+   "color": "#1E2440"
+  },
+  {
+   "type": "rect",
+   "box": [
+    1314,
+    842.33,
+    96,
+    25
+   ],
+   "fill": "#FCCED5",
+   "line": null,
+   "text": "不成立",
+   "size_px": 15.5,
+   "bold": true,
+   "color": "#C0303A"
+  },
+  {
+   "type": "text",
+   "box": [
+    1428,
+    841.33,
+    224,
+    26
+   ],
+   "text": "候補・根拠が取得できない",
+   "size_px": 15,
+   "color": "#1E2440"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    18,
+    877,
+    1637,
+    60
+   ],
+   "radius_px": 6,
+   "fill": "#FDEEF1",
+   "line": {
+    "color": "#E05060",
+    "width_px": 1.5
+   }
+  },
+  {
+   "type": "icon",
+   "icon": "material:error-fill",
+   "box": [
+    30,
+    879,
+    58,
+    58
+   ],
+   "color": "#E02030"
+  },
+  {
+   "type": "text",
+   "box": [
+    118,
+    879,
+    1530,
+    56
+   ],
+   "text": "REV・ED・適用情報が確認できない場合、要求仕様の F-09（版・適用の追跡）および 12.2（適用範囲を考慮した検索・提示）を評価できないため、\nPoC の範囲縮小または中止について協議する。その他の項目も、不成立の場合は代替案の検討または範囲の見直しを行う。",
+   "size_px": 18.5,
+   "bold": true,
+   "color": "#D82030",
+   "line_pitch_px": 26
+  }
+ ]
+}

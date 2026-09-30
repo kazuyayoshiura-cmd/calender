@@ -1,0 +1,1287 @@
+{
+ "source_size": [
+  1672,
+  941
+ ],
+ "font": "Meiryo",
+ "background": "#FFFFFF",
+ "elements": [
+  {
+   "type": "roundRect",
+   "box": [
+    20,
+    10,
+    166,
+    58
+   ],
+   "fill": "#0E2E63",
+   "line": null,
+   "text": "表6-1",
+   "size_px": 30,
+   "bold": true,
+   "color": "#FFFFFF",
+   "radius_px": 6
+  },
+  {
+   "type": "text",
+   "box": [
+    206,
+    6,
+    1440,
+    66
+   ],
+   "text": "版・適用の情報源と優先順位",
+   "size_px": 40,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "table",
+   "box": [
+    16,
+    82,
+    1644,
+    608
+   ],
+   "col_widths_px": [
+    236,
+    366,
+    298,
+    168,
+    576
+   ],
+   "row_heights_px": [
+    58,
+    92,
+    88,
+    90,
+    90,
+    96,
+    94
+   ],
+   "cells": [
+    [
+     {
+      "text": "情報",
+      "fill": "#0E3F82",
+      "color": "#FFFFFF",
+      "bold": true,
+      "size_px": 23,
+      "align": "c"
+     },
+     {
+      "text": "主な情報源",
+      "fill": "#0E3F82",
+      "color": "#FFFFFF",
+      "bold": true,
+      "size_px": 23,
+      "align": "c"
+     },
+     {
+      "text": "用途",
+      "fill": "#0E3F82",
+      "color": "#FFFFFF",
+      "bold": true,
+      "size_px": 23,
+      "align": "c"
+     },
+     {
+      "text": "優先度・留意点",
+      "fill": "#0E3F82",
+      "color": "#FFFFFF",
+      "bold": true,
+      "size_px": 23,
+      "align": "c",
+      "span": [
+       1,
+       2
+      ]
+     },
+     null
+    ],
+    [
+     {
+      "paras": [
+       [
+        {
+         "text": "REV",
+         "size_px": 25,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（リビジョン）",
+         "size_px": 18,
+         "bold": true
+        }
+       ]
+      ],
+      "color": "#1F3A6E",
+      "fill": "#E6F1FB",
+      "align": "l",
+      "line_pitch_px": 30,
+      "inset_px": [
+       20,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "color": "#1E2A44",
+      "align": "l",
+      "valign": "m",
+      "fill": "#FFFFFF",
+      "text": "図面マスター（UsingDWG.REV）\n文書管理（JP/WPS/SPEC 等）",
+      "size_px": 17.5,
+      "line_pitch_px": 28,
+      "inset_px": [
+       20,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "paras": [
+       [
+        {
+         "text": "最新判定の主要キー",
+         "size_px": 18,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（同一文書番号内での新旧比較）",
+         "size_px": 17.5
+        }
+       ]
+      ],
+      "color": "#1E2A44",
+      "fill": "#FFFFFF",
+      "align": "l",
+      "line_pitch_px": 29,
+      "inset_px": [
+       16,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "text": "最優先",
+      "size_px": 22,
+      "bold": true,
+      "color": "#1F3A6E",
+      "align": "l",
+      "fill": "#F5F9FD",
+      "inset_px": [
+       76,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "color": "#1E2A44",
+      "align": "l",
+      "valign": "m",
+      "fill": "#F5F9FD",
+      "line_pitch_px": 27,
+      "inset_px": [
+       16,
+       2,
+       4,
+       2
+      ],
+      "size_px": 14.5,
+      "paras": [
+       [
+        {
+         "text": "同一文書番号で、",
+         "bold": false
+        },
+        {
+         "text": "発効日 ≦ 基準日 かつ有効の中で REV 最大を最新版",
+         "bold": true
+        },
+        {
+         "text": "とする",
+         "bold": false
+        }
+       ],
+       [
+        {
+         "text": "英数字の比較規則（例：A < B < … < Z < AA …）は Gate 0 で確認",
+         "bold": false
+        }
+       ]
+      ]
+     }
+    ],
+    [
+     {
+      "paras": [
+       [
+        {
+         "text": "ED",
+         "size_px": 25,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（改訂・設変番号）",
+         "size_px": 18,
+         "bold": true
+        }
+       ]
+      ],
+      "color": "#1F3A6E",
+      "fill": "#E6F1FB",
+      "align": "l",
+      "line_pitch_px": 30,
+      "inset_px": [
+       20,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "color": "#1E2A44",
+      "align": "l",
+      "valign": "m",
+      "fill": "#FFFFFF",
+      "text": "図面マスター（UsingDWG.EO）\n文書管理（設変履歴 等）",
+      "size_px": 17.5,
+      "line_pitch_px": 28,
+      "inset_px": [
+       20,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "paras": [
+       [
+        {
+         "text": "版の派生関係・改訂の追跡",
+         "size_px": 18,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（参考情報）",
+         "size_px": 17.5
+        }
+       ]
+      ],
+      "color": "#1E2A44",
+      "fill": "#FFFFFF",
+      "align": "l",
+      "line_pitch_px": 29,
+      "inset_px": [
+       16,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "text": "高",
+      "size_px": 22,
+      "bold": true,
+      "color": "#1F3A6E",
+      "align": "l",
+      "fill": "#F5F9FD",
+      "inset_px": [
+       76,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "color": "#1E2A44",
+      "align": "l",
+      "valign": "m",
+      "fill": "#F5F9FD",
+      "line_pitch_px": 27,
+      "inset_px": [
+       16,
+       2,
+       4,
+       2
+      ],
+      "size_px": 14.5,
+      "paras": [
+       [
+        {
+         "text": "同一 REV 内の改訂識別に使用",
+         "bold": false
+        }
+       ],
+       [
+        {
+         "text": "最新版判定の補助。運用は文書種別により異なるため Gate 0 で確認",
+         "bold": false
+        }
+       ]
+      ]
+     }
+    ],
+    [
+     {
+      "paras": [
+       [
+        {
+         "text": "発効日",
+         "size_px": 25,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（有効開始日）",
+         "size_px": 18,
+         "bold": true
+        }
+       ]
+      ],
+      "color": "#1F3A6E",
+      "fill": "#E6F1FB",
+      "align": "l",
+      "line_pitch_px": 30,
+      "inset_px": [
+       20,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "color": "#1E2A44",
+      "align": "l",
+      "valign": "m",
+      "fill": "#FFFFFF",
+      "text": "文書管理（発効日）\n図面マスター（承認日・発効日 等）",
+      "size_px": 17.5,
+      "line_pitch_px": 28,
+      "inset_px": [
+       20,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "paras": [
+       [
+        {
+         "text": "最新判定の条件",
+         "size_px": 18,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（基準日時点で有効かの判定）",
+         "size_px": 17.5
+        }
+       ]
+      ],
+      "color": "#1E2A44",
+      "fill": "#FFFFFF",
+      "align": "l",
+      "line_pitch_px": 29,
+      "inset_px": [
+       16,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "text": "最優先",
+      "size_px": 22,
+      "bold": true,
+      "color": "#1F3A6E",
+      "align": "l",
+      "fill": "#F5F9FD",
+      "inset_px": [
+       76,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "color": "#1E2A44",
+      "align": "l",
+      "valign": "m",
+      "fill": "#F5F9FD",
+      "line_pitch_px": 27,
+      "inset_px": [
+       16,
+       2,
+       4,
+       2
+      ],
+      "size_px": 14.5,
+      "paras": [
+       [
+        {
+         "text": "発効日 ≦ 基準日 のものを対象とする",
+         "bold": false
+        }
+       ],
+       [
+        {
+         "text": "未発効の文書は最新版としない",
+         "bold": false
+        }
+       ]
+      ]
+     }
+    ],
+    [
+     {
+      "paras": [
+       [
+        {
+         "text": "FROM - THRU",
+         "size_px": 18.5,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（適用号機範囲）",
+         "size_px": 18.5,
+         "bold": true
+        }
+       ]
+      ],
+      "color": "#1F3A6E",
+      "fill": "#E6F1FB",
+      "align": "l",
+      "line_pitch_px": 30,
+      "inset_px": [
+       20,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "color": "#1E2A44",
+      "align": "l",
+      "valign": "m",
+      "fill": "#FFFFFF",
+      "text": "図面マスター（UsingDWG.\u000bSerialFrom / SerialThru）",
+      "size_px": 17.5,
+      "line_pitch_px": 28,
+      "inset_px": [
+       20,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "paras": [
+       [
+        {
+         "text": "対象への適用判定",
+         "size_px": 18,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（号機・製番の範囲確認）",
+         "size_px": 17.5
+        }
+       ]
+      ],
+      "color": "#1E2A44",
+      "fill": "#FFFFFF",
+      "align": "l",
+      "line_pitch_px": 29,
+      "inset_px": [
+       16,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "text": "最優先",
+      "size_px": 22,
+      "bold": true,
+      "color": "#1F3A6E",
+      "align": "l",
+      "fill": "#F5F9FD",
+      "inset_px": [
+       76,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "color": "#1E2A44",
+      "align": "l",
+      "valign": "m",
+      "fill": "#F5F9FD",
+      "line_pitch_px": 27,
+      "inset_px": [
+       16,
+       2,
+       4,
+       2
+      ],
+      "size_px": 14.5,
+      "paras": [
+       [
+        {
+         "text": "対象の号機・製番が FROM ～ THRU の範囲内に含まれるかで判定",
+         "bold": false
+        }
+       ],
+       [
+        {
+         "text": "NULL（空欄）の扱い（全号機適用等）は Gate 0 で確認",
+         "bold": false
+        }
+       ]
+      ]
+     }
+    ],
+    [
+     {
+      "paras": [
+       [
+        {
+         "text": "MBOM部品バージョン",
+         "size_px": 18.5,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "有効開始/終了日",
+         "size_px": 18.5,
+         "bold": true
+        }
+       ]
+      ],
+      "color": "#1F3A6E",
+      "fill": "#E6F1FB",
+      "align": "l",
+      "line_pitch_px": 30,
+      "inset_px": [
+       20,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "color": "#1E2A44",
+      "align": "l",
+      "valign": "m",
+      "fill": "#FFFFFF",
+      "text": "MBOM（部品マスター／構成履歴）",
+      "size_px": 17.5,
+      "line_pitch_px": 28,
+      "inset_px": [
+       20,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "paras": [
+       [
+        {
+         "text": "部品の適用判定",
+         "size_px": 18,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（構成の有効期間確認）",
+         "size_px": 17.5
+        }
+       ]
+      ],
+      "color": "#1E2A44",
+      "fill": "#FFFFFF",
+      "align": "l",
+      "line_pitch_px": 29,
+      "inset_px": [
+       16,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "text": "高",
+      "size_px": 22,
+      "bold": true,
+      "color": "#1F3A6E",
+      "align": "l",
+      "fill": "#F5F9FD",
+      "inset_px": [
+       76,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "color": "#1E2A44",
+      "align": "l",
+      "valign": "m",
+      "fill": "#F5F9FD",
+      "line_pitch_px": 27,
+      "inset_px": [
+       16,
+       2,
+       4,
+       2
+      ],
+      "size_px": 14.5,
+      "paras": [
+       [
+        {
+         "text": "対象日時点で ",
+         "bold": false
+        },
+        {
+         "text": "有効開始日 ≦ 基準日 ≦ 有効終了日",
+         "bold": true
+        },
+        {
+         "text": " を満たすものを適用",
+         "bold": false
+        }
+       ],
+       [
+        {
+         "text": "終了日が NULL の扱い（無期限等）は Gate 0 で確認",
+         "bold": false
+        }
+       ]
+      ]
+     }
+    ],
+    [
+     {
+      "paras": [
+       [
+        {
+         "text": "履歴番号",
+         "size_px": 25,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（改訂履歴・変更履歴）",
+         "size_px": 18,
+         "bold": true
+        }
+       ]
+      ],
+      "color": "#1F3A6E",
+      "fill": "#E6F1FB",
+      "align": "l",
+      "line_pitch_px": 30,
+      "inset_px": [
+       20,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "color": "#1E2A44",
+      "align": "l",
+      "valign": "m",
+      "fill": "#FFFFFF",
+      "text": "文書管理（改訂履歴）\nシステム履歴（承認履歴 等）",
+      "size_px": 17.5,
+      "line_pitch_px": 28,
+      "inset_px": [
+       20,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "paras": [
+       [
+        {
+         "text": "変更経緯の確認",
+         "size_px": 18,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（参考情報）",
+         "size_px": 17.5
+        }
+       ]
+      ],
+      "color": "#1E2A44",
+      "fill": "#FFFFFF",
+      "align": "l",
+      "line_pitch_px": 29,
+      "inset_px": [
+       16,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "text": "補助",
+      "size_px": 22,
+      "bold": true,
+      "color": "#4A5563",
+      "align": "l",
+      "fill": "#F5F9FD",
+      "inset_px": [
+       76,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "color": "#1E2A44",
+      "align": "l",
+      "valign": "m",
+      "fill": "#F5F9FD",
+      "line_pitch_px": 27,
+      "inset_px": [
+       16,
+       2,
+       4,
+       2
+      ],
+      "size_px": 14.5,
+      "paras": [
+       [
+        {
+         "text": "最新版判定・適用判定の補助情報として利用",
+         "bold": false
+        }
+       ],
+       [
+        {
+         "text": "履歴番号のみでは最新版・適用を判定しない",
+         "bold": false
+        }
+       ]
+      ]
+     }
+    ]
+   ],
+   "border": {
+    "color": "#D6E1EE",
+    "width_px": 1.5
+   },
+   "name": "source-table"
+  },
+  {
+   "type": "ellipse",
+   "box": [
+    935.0,
+    163.0,
+    46,
+    46
+   ],
+   "fill": "#0E2E63",
+   "line": null,
+   "text": "1",
+   "size_px": 24,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "ellipse",
+   "box": [
+    935.0,
+    253.0,
+    46,
+    46
+   ],
+   "fill": "#2AA0EE",
+   "line": null,
+   "text": "2",
+   "size_px": 24,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "ellipse",
+   "box": [
+    935.0,
+    342.0,
+    46,
+    46
+   ],
+   "fill": "#0E2E63",
+   "line": null,
+   "text": "1",
+   "size_px": 24,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "ellipse",
+   "box": [
+    935.0,
+    432.0,
+    46,
+    46
+   ],
+   "fill": "#0E2E63",
+   "line": null,
+   "text": "1",
+   "size_px": 24,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "ellipse",
+   "box": [
+    935.0,
+    525.0,
+    46,
+    46
+   ],
+   "fill": "#2AA0EE",
+   "line": null,
+   "text": "2",
+   "size_px": 24,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "ellipse",
+   "box": [
+    935.0,
+    620.0,
+    46,
+    46
+   ],
+   "fill": "#7A838F",
+   "line": null,
+   "text": "3",
+   "size_px": 24,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    16,
+    706,
+    546,
+    218
+   ],
+   "fill": "#F7FAFD",
+   "line": {
+    "color": "#C4D6EA",
+    "width_px": 1.2
+   },
+   "radius_px": 6
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    16,
+    706,
+    546,
+    44
+   ],
+   "fill": "#0E4A9A",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "rect",
+   "box": [
+    16,
+    730,
+    546,
+    20
+   ],
+   "fill": "#0E4A9A",
+   "line": null
+  },
+  {
+   "type": "text",
+   "box": [
+    34,
+    706,
+    522,
+    44
+   ],
+   "text": "最新版の判定ルール（基本）",
+   "size_px": 22,
+   "bold": true,
+   "color": "#FFFFFF",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "ellipse",
+   "box": [
+    34.0,
+    764.0,
+    36,
+    36
+   ],
+   "fill": "#0E2E63",
+   "line": null,
+   "text": "1",
+   "size_px": 19,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "text",
+   "box": [
+    82,
+    758,
+    474,
+    48
+   ],
+   "text": "同一文書番号の候補を抽出",
+   "size_px": 16.5,
+   "bold": false,
+   "color": "#1E2A44",
+   "align": "l",
+   "valign": "m",
+   "line_pitch_px": 24
+  },
+  {
+   "type": "ellipse",
+   "box": [
+    34.0,
+    814.0,
+    36,
+    36
+   ],
+   "fill": "#0E2E63",
+   "line": null,
+   "text": "2",
+   "size_px": 19,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "text",
+   "box": [
+    82,
+    808,
+    474,
+    48
+   ],
+   "text": "発効日 ≦ 基準日 かつ 有効（終了日未到達）のものに絞り込み",
+   "size_px": 16.5,
+   "bold": false,
+   "color": "#1E2A44",
+   "align": "l",
+   "valign": "m",
+   "line_pitch_px": 24
+  },
+  {
+   "type": "ellipse",
+   "box": [
+    34.0,
+    864.0,
+    36,
+    36
+   ],
+   "fill": "#0E2E63",
+   "line": null,
+   "text": "3",
+   "size_px": 19,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "text",
+   "box": [
+    82,
+    858,
+    474,
+    56
+   ],
+   "text": "REV（必要に応じて ED を含む）の比較規則に従い、\u000b最大のものを最新版とする",
+   "size_px": 16.5,
+   "bold": false,
+   "color": "#1E2A44",
+   "align": "l",
+   "valign": "m",
+   "line_pitch_px": 24
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    576,
+    706,
+    564,
+    218
+   ],
+   "fill": "#F7FAFD",
+   "line": {
+    "color": "#C4D6EA",
+    "width_px": 1.2
+   },
+   "radius_px": 6
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    576,
+    706,
+    564,
+    44
+   ],
+   "fill": "#1D64C4",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "rect",
+   "box": [
+    576,
+    730,
+    564,
+    20
+   ],
+   "fill": "#1D64C4",
+   "line": null
+  },
+  {
+   "type": "text",
+   "box": [
+    594,
+    706,
+    540,
+    44
+   ],
+   "text": "適用の判定ルール（基本）",
+   "size_px": 22,
+   "bold": true,
+   "color": "#FFFFFF",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "ellipse",
+   "box": [
+    594.0,
+    766.0,
+    36,
+    36
+   ],
+   "fill": "#2A8FE8",
+   "line": null,
+   "text": "1",
+   "size_px": 19,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "text",
+   "box": [
+    642,
+    758,
+    494,
+    52
+   ],
+   "text": "対象の号機・製番が FROM ～ THRU の範囲内に含まれるかを確認\u000b（図面・文書）",
+   "size_px": 16,
+   "bold": false,
+   "color": "#1E2A44",
+   "align": "l",
+   "valign": "m",
+   "line_pitch_px": 24
+  },
+  {
+   "type": "ellipse",
+   "box": [
+    594.0,
+    822.0,
+    36,
+    36
+   ],
+   "fill": "#2A8FE8",
+   "line": null,
+   "text": "2",
+   "size_px": 19,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "text",
+   "box": [
+    642,
+    814,
+    494,
+    52
+   ],
+   "text": "部品については 有効開始日 ≦ 基準日 ≦ 有効終了日 を確認\u000b（MBOM）",
+   "size_px": 16,
+   "bold": false,
+   "color": "#1E2A44",
+   "align": "l",
+   "valign": "m",
+   "line_pitch_px": 24
+  },
+  {
+   "type": "ellipse",
+   "box": [
+    594.0,
+    878.0,
+    36,
+    36
+   ],
+   "fill": "#2A8FE8",
+   "line": null,
+   "text": "3",
+   "size_px": 19,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "text",
+   "box": [
+    642,
+    870,
+    494,
+    52
+   ],
+   "text": "上記を満たすもののみを適用と判定する",
+   "size_px": 16,
+   "bold": false,
+   "color": "#1E2A44",
+   "align": "l",
+   "valign": "m",
+   "line_pitch_px": 24
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    1154,
+    706,
+    502,
+    218
+   ],
+   "fill": "#F7FAFD",
+   "line": {
+    "color": "#C4D6EA",
+    "width_px": 1.2
+   },
+   "radius_px": 6
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    1154,
+    706,
+    502,
+    44
+   ],
+   "fill": "#5B6573",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "rect",
+   "box": [
+    1154,
+    730,
+    502,
+    20
+   ],
+   "fill": "#5B6573",
+   "line": null
+  },
+  {
+   "type": "text",
+   "box": [
+    1172,
+    706,
+    478,
+    44
+   ],
+   "text": "共通の留意事項",
+   "size_px": 22,
+   "bold": true,
+   "color": "#FFFFFF",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "text",
+   "box": [
+    1170,
+    758,
+    480,
+    162
+   ],
+   "valign": "t",
+   "color": "#1E2A44",
+   "bullet": true,
+   "bullet_indent_px": 16,
+   "line_pitch_px": 22.5,
+   "size_px": 15,
+   "text": "未発効の文書は、たとえ REV が最大でも最新版としない。\nNULL（空欄・未設定）の扱い（全号機適用、無期限 等）は\u000b文書種別ごとに異なるため、Gate 0 で確認する。\nREV・ED の比較規則（英数字・桁数・先頭ゼロの扱い等）は\u000bGate 0 で確認し、実装時に固定する。\n情報が欠損している場合でも、最新版であると断定しない。\u000b不明の場合は「適用未確認」として扱う。"
+  }
+ ]
+}

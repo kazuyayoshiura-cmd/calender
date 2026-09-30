@@ -1,0 +1,1777 @@
+{
+ "source_size": [
+  1672,
+  941
+ ],
+ "font": "Meiryo",
+ "background": "#FFFFFF",
+ "elements": [
+  {
+   "type": "text",
+   "box": [
+    24,
+    8,
+    1640,
+    66
+   ],
+   "text": "図7-1　検索APIのエンドポイント構成とDifyからの呼出関係",
+   "size_px": 38,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "icon",
+   "icon": "azure:users",
+   "box": [
+    18,
+    318,
+    60,
+    64
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "text",
+   "box": [
+    6,
+    386,
+    84,
+    30
+   ],
+   "text": "利用者",
+   "size_px": 19,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "c",
+   "valign": "m"
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     86,
+     348
+    ],
+    [
+     166,
+     348
+    ]
+   ],
+   "color": "#1F3A6E",
+   "width_px": 2.5,
+   "head": "end"
+  },
+  {
+   "type": "text",
+   "box": [
+    80,
+    276,
+    90,
+    52
+   ],
+   "text": "質問\n（自然言語）",
+   "size_px": 16,
+   "bold": false,
+   "color": "#1F3A6E",
+   "align": "c",
+   "valign": "m",
+   "line_pitch_px": 24
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     166,
+     444
+    ],
+    [
+     76,
+     444
+    ]
+   ],
+   "color": "#1F3A6E",
+   "width_px": 2.5,
+   "head": "end"
+  },
+  {
+   "type": "text",
+   "box": [
+    72,
+    462,
+    96,
+    52
+   ],
+   "text": "回答\n（根拠付き）",
+   "size_px": 16,
+   "bold": false,
+   "color": "#1F3A6E",
+   "align": "c",
+   "valign": "m",
+   "line_pitch_px": 24
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    172,
+    94,
+    298,
+    658
+   ],
+   "fill": "#E6F1FB",
+   "line": null,
+   "radius_px": 10
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    196,
+    114,
+    250,
+    78
+   ],
+   "fill": "#1356B0",
+   "line": null,
+   "paras": [
+    [
+     {
+      "text": "Dify ワークフロー",
+      "size_px": 23,
+      "bold": true
+     }
+    ],
+    [
+     {
+      "text": "（表示・分岐のみ）",
+      "size_px": 18
+     }
+    ]
+   ],
+   "color": "#FFFFFF",
+   "line_pitch_px": 32,
+   "radius_px": 6
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    196,
+    222,
+    254,
+    92
+   ],
+   "fill": "#FFFFFF",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "icon",
+   "icon": "azure:language",
+   "box": [
+    210,
+    242,
+    52,
+    52
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "text",
+   "box": [
+    276,
+    232,
+    172,
+    72
+   ],
+   "paras": [
+    [
+     {
+      "text": "入力",
+      "size_px": 19,
+      "bold": true
+     }
+    ],
+    [
+     {
+      "text": "（質問）",
+      "size_px": 16
+     }
+    ]
+   ],
+   "color": "#1E2A44",
+   "align": "l",
+   "valign": "m",
+   "line_pitch_px": 28
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    196,
+    350,
+    254,
+    92
+   ],
+   "fill": "#FFFFFF",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "icon",
+   "icon": "azure:workflow",
+   "box": [
+    210,
+    370,
+    52,
+    52
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "text",
+   "box": [
+    276,
+    360,
+    172,
+    72
+   ],
+   "paras": [
+    [
+     {
+      "text": "ワークフロー",
+      "size_px": 19,
+      "bold": true
+     }
+    ],
+    [
+     {
+      "text": "（条件分岐・制御）",
+      "size_px": 16
+     }
+    ]
+   ],
+   "color": "#1E2A44",
+   "align": "l",
+   "valign": "m",
+   "line_pitch_px": 28
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    196,
+    496,
+    254,
+    92
+   ],
+   "fill": "#FFFFFF",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "icon",
+   "icon": "azure:file",
+   "box": [
+    210,
+    516,
+    52,
+    52
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "text",
+   "box": [
+    276,
+    506,
+    172,
+    72
+   ],
+   "paras": [
+    [
+     {
+      "text": "結果の表示",
+      "size_px": 19,
+      "bold": true
+     }
+    ],
+    [
+     {
+      "text": "（回答・根拠・候補）",
+      "size_px": 16
+     }
+    ]
+   ],
+   "color": "#1E2A44",
+   "align": "l",
+   "valign": "m",
+   "line_pitch_px": 28
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     323,
+     316
+    ],
+    [
+     323,
+     348
+    ]
+   ],
+   "color": "#1F3A6E",
+   "width_px": 2.5,
+   "head": "end"
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     323,
+     444
+    ],
+    [
+     323,
+     494
+    ]
+   ],
+   "color": "#1F3A6E",
+   "width_px": 2.5,
+   "head": "end"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    184,
+    624,
+    274,
+    118
+   ],
+   "fill": "#E3E7EC",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "text",
+   "box": [
+    196,
+    632,
+    256,
+    104
+   ],
+   "text": "Difyは表示・分岐のみを担当し、\n検索・判定・生成・記録等の\n確定処理はすべてAPI側で実施",
+   "size_px": 16,
+   "bold": false,
+   "color": "#1E2A44",
+   "align": "l",
+   "valign": "m",
+   "line_pitch_px": 30
+  },
+  {
+   "type": "text",
+   "box": [
+    476,
+    268,
+    98,
+    56
+   ],
+   "text": "API呼出\n（HTTP）",
+   "size_px": 17,
+   "bold": false,
+   "color": "#1F3A6E",
+   "align": "c",
+   "valign": "m",
+   "line_pitch_px": 26
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     474,
+     338
+    ],
+    [
+     572,
+     338
+    ]
+   ],
+   "color": "#1F3A6E",
+   "width_px": 3.5,
+   "head": "end"
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     572,
+     444
+    ],
+    [
+     474,
+     444
+    ]
+   ],
+   "color": "#1F3A6E",
+   "width_px": 2.5,
+   "head": "end",
+   "dash": "dash"
+  },
+  {
+   "type": "text",
+   "box": [
+    470,
+    456,
+    104,
+    52
+   ],
+   "text": "検索結果\n（構造化JSON）",
+   "size_px": 15,
+   "bold": false,
+   "color": "#1F3A6E",
+   "align": "c",
+   "valign": "m",
+   "line_pitch_px": 24
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    578,
+    90,
+    606,
+    704
+   ],
+   "fill": "#FFFFFF",
+   "line": {
+    "color": "#0E2E63",
+    "width_px": 3
+   },
+   "radius_px": 6
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    578,
+    90,
+    606,
+    86
+   ],
+   "fill": "#0E2E63",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "icon",
+   "icon": "azure:app-services",
+   "box": [
+    712,
+    100,
+    40,
+    40
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "text",
+   "box": [
+    760,
+    98,
+    360,
+    44
+   ],
+   "text": "検索API（FastAPI）",
+   "size_px": 27,
+   "bold": true,
+   "color": "#FFFFFF",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "text",
+   "box": [
+    578,
+    140,
+    606,
+    32
+   ],
+   "text": "（検索・判定・生成・記録の確定処理）",
+   "size_px": 19,
+   "bold": false,
+   "color": "#FFFFFF",
+   "align": "c",
+   "valign": "m"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    594,
+    186,
+    574,
+    92
+   ],
+   "fill": "#FFFFFF",
+   "line": {
+    "color": "#9DBBE0",
+    "width_px": 1.2
+   },
+   "radius_px": 4
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    594,
+    186,
+    160,
+    92
+   ],
+   "fill": "#DCEBFA",
+   "line": null,
+   "radius_px": 4
+  },
+  {
+   "type": "text",
+   "box": [
+    600,
+    186,
+    150,
+    92
+   ],
+   "text": "/interpret",
+   "size_px": 23,
+   "bold": true,
+   "color": "#1356B0",
+   "align": "c",
+   "valign": "m"
+  },
+  {
+   "type": "icon",
+   "icon": "azure:form-recognizers",
+   "box": [
+    766,
+    208,
+    48,
+    48
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "text",
+   "box": [
+    836,
+    190,
+    330,
+    26
+   ],
+   "text": "LLM抽出 ＋ コード検証",
+   "size_px": 16.5,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "text",
+   "box": [
+    836,
+    216,
+    330,
+    60
+   ],
+   "text": "質問の意図解釈\n検索条件の抽出\nコード／用語の正規化・検証",
+   "size_px": 13.5,
+   "color": "#1E2A44",
+   "valign": "t",
+   "bullet": true,
+   "bullet_indent_px": 14,
+   "line_pitch_px": 19
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    594,
+    288,
+    574,
+    92
+   ],
+   "fill": "#FFFFFF",
+   "line": {
+    "color": "#9DBBE0",
+    "width_px": 1.2
+   },
+   "radius_px": 4
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    594,
+    288,
+    160,
+    92
+   ],
+   "fill": "#DCEBFA",
+   "line": null,
+   "radius_px": 4
+  },
+  {
+   "type": "text",
+   "box": [
+    600,
+    288,
+    150,
+    92
+   ],
+   "text": "/search",
+   "size_px": 23,
+   "bold": true,
+   "color": "#1356B0",
+   "align": "c",
+   "valign": "m"
+  },
+  {
+   "type": "icon",
+   "icon": "azure:search",
+   "box": [
+    766,
+    310,
+    48,
+    48
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "text",
+   "box": [
+    836,
+    292,
+    330,
+    26
+   ],
+   "text": "SQL・全文・ベクトル検索 ＋ RRF",
+   "size_px": 16.5,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "text",
+   "box": [
+    836,
+    318,
+    330,
+    60
+   ],
+   "text": "RDB（SQL検索）\nファイル（全文検索・ベクトル検索）\nRRFによる統合ランキング",
+   "size_px": 13.5,
+   "color": "#1E2A44",
+   "valign": "t",
+   "bullet": true,
+   "bullet_indent_px": 14,
+   "line_pitch_px": 19
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    594,
+    390,
+    574,
+    92
+   ],
+   "fill": "#FFFFFF",
+   "line": {
+    "color": "#9DBBE0",
+    "width_px": 1.2
+   },
+   "radius_px": 4
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    594,
+    390,
+    160,
+    92
+   ],
+   "fill": "#DCEBFA",
+   "line": null,
+   "radius_px": 4
+  },
+  {
+   "type": "text",
+   "box": [
+    600,
+    390,
+    150,
+    92
+   ],
+   "text": "/version-check",
+   "size_px": 17,
+   "bold": true,
+   "color": "#1356B0",
+   "align": "c",
+   "valign": "m"
+  },
+  {
+   "type": "icon",
+   "icon": "azure:versions",
+   "box": [
+    766,
+    412,
+    48,
+    48
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "text",
+   "box": [
+    836,
+    394,
+    330,
+    26
+   ],
+   "text": "版・適用判定",
+   "size_px": 16.5,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "text",
+   "box": [
+    836,
+    420,
+    330,
+    60
+   ],
+   "text": "版の新旧判定\n適用範囲の確認\n旧版・適用外の警告",
+   "size_px": 13.5,
+   "color": "#1E2A44",
+   "valign": "t",
+   "bullet": true,
+   "bullet_indent_px": 14,
+   "line_pitch_px": 19
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    594,
+    492,
+    574,
+    92
+   ],
+   "fill": "#FFFFFF",
+   "line": {
+    "color": "#9DBBE0",
+    "width_px": 1.2
+   },
+   "radius_px": 4
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    594,
+    492,
+    160,
+    92
+   ],
+   "fill": "#DCEBFA",
+   "line": null,
+   "radius_px": 4
+  },
+  {
+   "type": "text",
+   "box": [
+    600,
+    492,
+    150,
+    92
+   ],
+   "text": "/evidence",
+   "size_px": 23,
+   "bold": true,
+   "color": "#1356B0",
+   "align": "c",
+   "valign": "m"
+  },
+  {
+   "type": "icon",
+   "icon": "azure:private-link",
+   "box": [
+    766,
+    514,
+    48,
+    48
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "text",
+   "box": [
+    836,
+    496,
+    330,
+    26
+   ],
+   "text": "source_ref 組立",
+   "size_px": 16.5,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "text",
+   "box": [
+    836,
+    522,
+    330,
+    60
+   ],
+   "text": "根拠情報の整理\n根拠IDの採番\n出典メタデータの付与",
+   "size_px": 13.5,
+   "color": "#1E2A44",
+   "valign": "t",
+   "bullet": true,
+   "bullet_indent_px": 14,
+   "line_pitch_px": 19
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    594,
+    594,
+    574,
+    92
+   ],
+   "fill": "#FFFFFF",
+   "line": {
+    "color": "#9DBBE0",
+    "width_px": 1.2
+   },
+   "radius_px": 4
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    594,
+    594,
+    160,
+    92
+   ],
+   "fill": "#DCEBFA",
+   "line": null,
+   "radius_px": 4
+  },
+  {
+   "type": "text",
+   "box": [
+    600,
+    594,
+    150,
+    92
+   ],
+   "text": "/explain",
+   "size_px": 23,
+   "bold": true,
+   "color": "#1356B0",
+   "align": "c",
+   "valign": "m"
+  },
+  {
+   "type": "icon",
+   "icon": "azure:azure-openai",
+   "box": [
+    766,
+    616,
+    48,
+    48
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "text",
+   "box": [
+    836,
+    598,
+    330,
+    26
+   ],
+   "text": "根拠付き説明生成",
+   "size_px": 16.5,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "text",
+   "box": [
+    836,
+    624,
+    330,
+    60
+   ],
+   "text": "検索結果に基づく回答生成\n根拠IDの引用\n必要に応じた追質問の生成",
+   "size_px": 13.5,
+   "color": "#1E2A44",
+   "valign": "t",
+   "bullet": true,
+   "bullet_indent_px": 14,
+   "line_pitch_px": 19
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    594,
+    696,
+    574,
+    92
+   ],
+   "fill": "#FFFFFF",
+   "line": {
+    "color": "#9DBBE0",
+    "width_px": 1.2
+   },
+   "radius_px": 4
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    594,
+    696,
+    160,
+    92
+   ],
+   "fill": "#DCEBFA",
+   "line": null,
+   "radius_px": 4
+  },
+  {
+   "type": "text",
+   "box": [
+    600,
+    696,
+    150,
+    92
+   ],
+   "text": "/log",
+   "size_px": 23,
+   "bold": true,
+   "color": "#1356B0",
+   "align": "c",
+   "valign": "m"
+  },
+  {
+   "type": "icon",
+   "icon": "azure:activity-log",
+   "box": [
+    766,
+    718,
+    48,
+    48
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "text",
+   "box": [
+    836,
+    700,
+    330,
+    26
+   ],
+   "text": "F-07 記録",
+   "size_px": 16.5,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "text",
+   "box": [
+    836,
+    726,
+    330,
+    60
+   ],
+   "text": "質問・検索条件・結果の記録\n利用者・時刻・処理内容の保存\n監査・再現に必要な情報の保持",
+   "size_px": 13.5,
+   "color": "#1E2A44",
+   "valign": "t",
+   "bullet": true,
+   "bullet_indent_px": 14,
+   "line_pitch_px": 19
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    1230,
+    94,
+    428,
+    692
+   ],
+   "fill": "#E6F1FB",
+   "line": null,
+   "radius_px": 10
+  },
+  {
+   "type": "text",
+   "box": [
+    1230,
+    100,
+    428,
+    50
+   ],
+   "text": "データソース・AIリソース",
+   "size_px": 27,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "c",
+   "valign": "m"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    1246,
+    158,
+    398,
+    102
+   ],
+   "fill": "#FFFFFF",
+   "line": {
+    "color": "#C4D6EA",
+    "width_px": 1.2
+   },
+   "radius_px": 6
+  },
+  {
+   "type": "icon",
+   "icon": "azure:azure-database-postgresql-server",
+   "box": [
+    1258,
+    182.0,
+    54,
+    54
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "text",
+   "box": [
+    1322,
+    170,
+    140,
+    78
+   ],
+   "paras": [
+    [
+     {
+      "text": "PostgreSQL",
+      "size_px": 18,
+      "bold": true
+     }
+    ],
+    [
+     {
+      "text": "（構造化データ）",
+      "size_px": 14
+     }
+    ]
+   ],
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m",
+   "line_pitch_px": 28
+  },
+  {
+   "type": "text",
+   "box": [
+    1466,
+    166,
+    176,
+    86
+   ],
+   "text": "工程設計データ\u000b（N-PLUS／TOS 等）\nマスタ・コード情報",
+   "size_px": 13.5,
+   "color": "#1E2A44",
+   "valign": "m",
+   "bullet": true,
+   "bullet_indent_px": 14,
+   "line_pitch_px": 22
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     1188,
+     209.0
+    ],
+    [
+     1242,
+     209.0
+    ]
+   ],
+   "color": "#1F3A6E",
+   "width_px": 2.5,
+   "head": "both"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    1246,
+    282,
+    398,
+    102
+   ],
+   "fill": "#FFFFFF",
+   "line": {
+    "color": "#C4D6EA",
+    "width_px": 1.2
+   },
+   "radius_px": 6
+  },
+  {
+   "type": "icon",
+   "icon": "azure:cognitive-search",
+   "box": [
+    1258,
+    306.0,
+    54,
+    54
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "text",
+   "box": [
+    1322,
+    294,
+    140,
+    78
+   ],
+   "paras": [
+    [
+     {
+      "text": "OpenSearch",
+      "size_px": 18,
+      "bold": true
+     }
+    ],
+    [
+     {
+      "text": "（非構造化データ）",
+      "size_px": 14
+     }
+    ]
+   ],
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m",
+   "line_pitch_px": 28
+  },
+  {
+   "type": "text",
+   "box": [
+    1466,
+    290,
+    176,
+    86
+   ],
+   "text": "社内ドキュメント\u000b（ファイルサーバー等）\n全文検索・ベクトル検索",
+   "size_px": 13.5,
+   "color": "#1E2A44",
+   "valign": "m",
+   "bullet": true,
+   "bullet_indent_px": 14,
+   "line_pitch_px": 22
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     1188,
+     333.0
+    ],
+    [
+     1242,
+     333.0
+    ]
+   ],
+   "color": "#1F3A6E",
+   "width_px": 2.5,
+   "head": "both"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    1246,
+    410,
+    398,
+    102
+   ],
+   "fill": "#FFFFFF",
+   "line": {
+    "color": "#C4D6EA",
+    "width_px": 1.2
+   },
+   "radius_px": 6
+  },
+  {
+   "type": "icon",
+   "icon": "azure:azure-openai",
+   "box": [
+    1258,
+    434.0,
+    54,
+    54
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "text",
+   "box": [
+    1322,
+    422,
+    140,
+    78
+   ],
+   "paras": [
+    [
+     {
+      "text": "LLM",
+      "size_px": 19,
+      "bold": true
+     }
+    ],
+    [
+     {
+      "text": "（推論・生成）",
+      "size_px": 14
+     }
+    ]
+   ],
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m",
+   "line_pitch_px": 28
+  },
+  {
+   "type": "text",
+   "box": [
+    1466,
+    418,
+    176,
+    86
+   ],
+   "text": "質問解釈\n回答生成\nコード検証支援",
+   "size_px": 13.5,
+   "color": "#1E2A44",
+   "valign": "m",
+   "bullet": true,
+   "bullet_indent_px": 14,
+   "line_pitch_px": 22
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     1188,
+     461.0
+    ],
+    [
+     1242,
+     461.0
+    ]
+   ],
+   "color": "#1F3A6E",
+   "width_px": 2.5,
+   "head": "both"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    1246,
+    540,
+    398,
+    96
+   ],
+   "fill": "#FFFFFF",
+   "line": {
+    "color": "#C4D6EA",
+    "width_px": 1.2
+   },
+   "radius_px": 6
+  },
+  {
+   "type": "icon",
+   "icon": "azure:cognitive-services",
+   "box": [
+    1258,
+    561.0,
+    54,
+    54
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "text",
+   "box": [
+    1322,
+    552,
+    140,
+    72
+   ],
+   "paras": [
+    [
+     {
+      "text": "Embedding",
+      "size_px": 18,
+      "bold": true
+     }
+    ],
+    [
+     {
+      "text": "（ベクトル化）",
+      "size_px": 14
+     }
+    ]
+   ],
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m",
+   "line_pitch_px": 28
+  },
+  {
+   "type": "text",
+   "box": [
+    1466,
+    548,
+    176,
+    80
+   ],
+   "text": "文書のベクトル化\n類似検索",
+   "size_px": 13.5,
+   "color": "#1E2A44",
+   "valign": "m",
+   "bullet": true,
+   "bullet_indent_px": 14,
+   "line_pitch_px": 22
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     1188,
+     588.0
+    ],
+    [
+     1242,
+     588.0
+    ]
+   ],
+   "color": "#1F3A6E",
+   "width_px": 2.5,
+   "head": "both"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    1246,
+    666,
+    398,
+    102
+   ],
+   "fill": "#FFFFFF",
+   "line": {
+    "color": "#C4D6EA",
+    "width_px": 1.2
+   },
+   "radius_px": 6
+  },
+  {
+   "type": "icon",
+   "icon": "azure:metrics",
+   "box": [
+    1258,
+    690.0,
+    54,
+    54
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "text",
+   "box": [
+    1322,
+    678,
+    140,
+    78
+   ],
+   "paras": [
+    [
+     {
+      "text": "Reranker",
+      "size_px": 19,
+      "bold": true
+     }
+    ],
+    [
+     {
+      "text": "（再ランキング）",
+      "size_px": 14
+     }
+    ]
+   ],
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m",
+   "line_pitch_px": 28
+  },
+  {
+   "type": "text",
+   "box": [
+    1466,
+    674,
+    176,
+    86
+   ],
+   "text": "検索結果の再順位付け\n関連度スコアの最適化",
+   "size_px": 13.5,
+   "color": "#1E2A44",
+   "valign": "m",
+   "bullet": true,
+   "bullet_indent_px": 14,
+   "line_pitch_px": 22
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     1188,
+     717.0
+    ],
+    [
+     1242,
+     717.0
+    ]
+   ],
+   "color": "#1F3A6E",
+   "width_px": 2.5,
+   "head": "both"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    24,
+    812,
+    1624,
+    118
+   ],
+   "fill": "#E6EDF5",
+   "line": null,
+   "radius_px": 8
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    42,
+    826,
+    302,
+    90
+   ],
+   "fill": "#0E3F82",
+   "line": null,
+   "text": "根拠IDとログの横串管理\n（トレーサビリティ）",
+   "size_px": 21,
+   "bold": true,
+   "color": "#FFFFFF",
+   "line_pitch_px": 34,
+   "radius_px": 6
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    384,
+    828,
+    390,
+    88
+   ],
+   "fill": "#FFFFFF",
+   "line": {
+    "color": "#C4D6EA",
+    "width_px": 1.2
+   },
+   "radius_px": 6
+  },
+  {
+   "type": "icon",
+   "icon": "azure:file",
+   "box": [
+    400,
+    846,
+    50,
+    50
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "text",
+   "box": [
+    456,
+    836,
+    132,
+    72
+   ],
+   "paras": [
+    [
+     {
+      "text": "検索結果",
+      "size_px": 18,
+      "bold": true
+     }
+    ],
+    [
+     {
+      "text": "（候補リスト）",
+      "size_px": 13
+     }
+    ]
+   ],
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m",
+   "line_pitch_px": 28
+  },
+  {
+   "type": "text",
+   "box": [
+    590,
+    834,
+    182,
+    78
+   ],
+   "text": "根拠ID（source_ref_id）\n出典情報・スコア・版・適用",
+   "size_px": 12.5,
+   "color": "#1E2A44",
+   "valign": "m",
+   "bullet": true,
+   "bullet_indent_px": 13,
+   "line_pitch_px": 21
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    836,
+    828,
+    418,
+    88
+   ],
+   "fill": "#FFFFFF",
+   "line": {
+    "color": "#C4D6EA",
+    "width_px": 1.2
+   },
+   "radius_px": 6
+  },
+  {
+   "type": "icon",
+   "icon": "azure:private-link",
+   "box": [
+    852,
+    846,
+    50,
+    50
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "text",
+   "box": [
+    908,
+    836,
+    132,
+    72
+   ],
+   "paras": [
+    [
+     {
+      "text": "根拠ID",
+      "size_px": 18,
+      "bold": true
+     }
+    ],
+    [
+     {
+      "text": "（source_ref_id）",
+      "size_px": 13
+     }
+    ]
+   ],
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m",
+   "line_pitch_px": 28
+  },
+  {
+   "type": "text",
+   "box": [
+    1042,
+    834,
+    210,
+    78
+   ],
+   "text": "/evidence で採番\n各エンドポイントで共通利用\n回答・ログに引用",
+   "size_px": 12.5,
+   "color": "#1E2A44",
+   "valign": "m",
+   "bullet": true,
+   "bullet_indent_px": 13,
+   "line_pitch_px": 21
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    1310,
+    828,
+    320,
+    88
+   ],
+   "fill": "#FFFFFF",
+   "line": {
+    "color": "#C4D6EA",
+    "width_px": 1.2
+   },
+   "radius_px": 6
+  },
+  {
+   "type": "icon",
+   "icon": "azure:log-analytics-workspaces",
+   "box": [
+    1326,
+    846,
+    50,
+    50
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "text",
+   "box": [
+    1386,
+    832,
+    240,
+    26
+   ],
+   "text": "利用ログ（F-07）",
+   "size_px": 18,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "text",
+   "box": [
+    1390,
+    856,
+    236,
+    60
+   ],
+   "text": "/log で記録\n質問・検索条件・結果\n根拠ID・時刻・利用者 等",
+   "size_px": 13,
+   "color": "#1E2A44",
+   "valign": "t",
+   "bullet": true,
+   "bullet_indent_px": 13,
+   "line_pitch_px": 19
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     774,
+     872
+    ],
+    [
+     836,
+     872
+    ]
+   ],
+   "color": "#1F3A6E",
+   "width_px": 2.5,
+   "head": "end"
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     1254,
+     872
+    ],
+    [
+     1310,
+     872
+    ]
+   ],
+   "color": "#1F3A6E",
+   "width_px": 2.5,
+   "head": "end"
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     662,
+     796
+    ],
+    [
+     662,
+     828
+    ]
+   ],
+   "color": "#1F3A6E",
+   "width_px": 2.5,
+   "head": "end"
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     938,
+     796
+    ],
+    [
+     938,
+     828
+    ]
+   ],
+   "color": "#1F3A6E",
+   "width_px": 2.5,
+   "head": "both"
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     1126,
+     796
+    ],
+    [
+     1126,
+     806
+    ],
+    [
+     1444,
+     806
+    ],
+    [
+     1444,
+     828
+    ]
+   ],
+   "color": "#1F3A6E",
+   "width_px": 2.5,
+   "head": "end"
+  }
+ ]
+}

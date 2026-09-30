@@ -1,0 +1,2827 @@
+{
+ "source_size": [
+  1672,
+  941
+ ],
+ "font": "Meiryo",
+ "background": "#FFFFFF",
+ "elements": [
+  {
+   "type": "text",
+   "box": [
+    30,
+    10,
+    1612,
+    54
+   ],
+   "text": "4.4  表4-1  例外分岐一覧（候補なし・根拠不足・矛盾・版不明・対象外・低信頼）",
+   "size_px": 34,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m",
+   "name": "title"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    24,
+    66,
+    1624,
+    56
+   ],
+   "fill": "#F2F8FE",
+   "line": {
+    "color": "#9CC2E8",
+    "width_px": 1.2
+   },
+   "radius_px": 4
+  },
+  {
+   "type": "text",
+   "box": [
+    24,
+    67,
+    1624,
+    54
+   ],
+   "text": "検索・回答の過程で例外的な状況が発生した場合の検知方法、出力メッセージ、次に確認すべきこと、提示レベルを整理する。\nいずれの場合も、ユーザーに誤った情報を提示せず、適切な保留・確認を行う。",
+   "size_px": 16.5,
+   "bold": false,
+   "color": "#1F3A6E",
+   "align": "c",
+   "valign": "m",
+   "line_pitch_px": 24
+  },
+  {
+   "type": "table",
+   "box": [
+    24,
+    130,
+    1624,
+    802
+   ],
+   "col_widths_px": [
+    40,
+    104,
+    176,
+    124,
+    170,
+    300,
+    400,
+    206,
+    104
+   ],
+   "row_heights_px": [
+    44,
+    100,
+    124,
+    118,
+    120,
+    100,
+    96,
+    100
+   ],
+   "cells": [
+    [
+     {
+      "fill": "#123E82",
+      "color": "#FFFFFF",
+      "align": "c",
+      "line_pitch_px": 19,
+      "paras": [
+       [
+        {
+         "text": "No.",
+         "size_px": 15,
+         "bold": true
+        }
+       ]
+      ]
+     },
+     {
+      "fill": "#123E82",
+      "color": "#FFFFFF",
+      "align": "c",
+      "line_pitch_px": 19,
+      "paras": [
+       [
+        {
+         "text": "例外の種類",
+         "size_px": 15,
+         "bold": true
+        }
+       ]
+      ]
+     },
+     {
+      "fill": "#123E82",
+      "color": "#FFFFFF",
+      "align": "c",
+      "line_pitch_px": 19,
+      "paras": [
+       [
+        {
+         "text": "条件",
+         "size_px": 15,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（どのようなときに発生するか）",
+         "size_px": 10,
+         "bold": true
+        }
+       ]
+      ]
+     },
+     {
+      "fill": "#123E82",
+      "color": "#FFFFFF",
+      "align": "c",
+      "line_pitch_px": 19,
+      "paras": [
+       [
+        {
+         "text": "検知方法（例）",
+         "size_px": 15,
+         "bold": true
+        }
+       ]
+      ]
+     },
+     {
+      "fill": "#123E82",
+      "color": "#FFFFFF",
+      "align": "c",
+      "line_pitch_px": 19,
+      "paras": [
+       [
+        {
+         "text": "ユーザーの質問例",
+         "size_px": 15,
+         "bold": true
+        }
+       ]
+      ]
+     },
+     {
+      "fill": "#123E82",
+      "color": "#FFFFFF",
+      "align": "c",
+      "line_pitch_px": 19,
+      "paras": [
+       [
+        {
+         "text": "システムの動作・分岐イメージ",
+         "size_px": 15,
+         "bold": true
+        }
+       ]
+      ]
+     },
+     {
+      "fill": "#123E82",
+      "color": "#FFFFFF",
+      "align": "c",
+      "line_pitch_px": 19,
+      "paras": [
+       [
+        {
+         "text": "出力メッセージ例",
+         "size_px": 15,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（画面イメージ）",
+         "size_px": 11,
+         "bold": true
+        }
+       ]
+      ]
+     },
+     {
+      "fill": "#123E82",
+      "color": "#FFFFFF",
+      "align": "c",
+      "line_pitch_px": 19,
+      "paras": [
+       [
+        {
+         "text": "次に確認すべきこと",
+         "size_px": 15,
+         "bold": true
+        }
+       ]
+      ]
+     },
+     {
+      "fill": "#123E82",
+      "color": "#FFFFFF",
+      "align": "c",
+      "line_pitch_px": 19,
+      "paras": [
+       [
+        {
+         "text": "提示レベル",
+         "size_px": 15,
+         "bold": true
+        }
+       ]
+      ]
+     }
+    ],
+    [
+     {
+      "text": "1",
+      "size_px": 16,
+      "bold": true,
+      "color": "#1F3A6E",
+      "align": "c"
+     },
+     {
+      "text": "該当なし\n（確定キー）",
+      "size_px": 14.5,
+      "bold": true,
+      "color": "#D42A3A",
+      "align": "c",
+      "fill": "#FBE3E8",
+      "line_pitch_px": 22
+     },
+     {
+      "text": "部品番号・工程番号・\u000b文書番号などの確定キー\u000bで検索したが、\u000b該当レコードが存在しない。",
+      "size_px": 12.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "line_pitch_px": 19,
+      "inset_px": [
+       10,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "text": "構造化検索\u000b（SQL）\u000b0件",
+      "size_px": 12.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "line_pitch_px": 19,
+      "inset_px": [
+       10,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "text": ""
+     },
+     {
+      "text": ""
+     },
+     {
+      "text": ""
+     },
+     {
+      "text": "入力キーの再確認\n部品番号の桁数・表記\n別の部品番号で再検索",
+      "size_px": 12.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "line_pitch_px": 19,
+      "inset_px": [
+       10,
+       2,
+       4,
+       2
+      ],
+      "bullet": true,
+      "bullet_indent_px": 14
+     },
+     {
+      "text": "結果表示\nなし\n（保留）",
+      "size_px": 13,
+      "color": "#1E2A44",
+      "align": "c",
+      "line_pitch_px": 19
+     }
+    ],
+    [
+     {
+      "text": "2",
+      "size_px": 16,
+      "bold": true,
+      "color": "#1F3A6E",
+      "align": "c"
+     },
+     {
+      "text": "曖昧\n（複数該当）",
+      "size_px": 14.5,
+      "bold": true,
+      "color": "#1E2A44",
+      "align": "c",
+      "fill": "#FFF4D6",
+      "line_pitch_px": 22
+     },
+     {
+      "text": "確定キーで検索したが、\u000b複数の候補が該当し、\u000b閾値を超える件数がある。",
+      "size_px": 12.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "line_pitch_px": 19,
+      "inset_px": [
+       10,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "text": "構造化検索\u000b（SQL）\u000bn件 > 閾値\u000b（例：> 50件）",
+      "size_px": 12.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "line_pitch_px": 19,
+      "inset_px": [
+       10,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "text": ""
+     },
+     {
+      "text": ""
+     },
+     {
+      "text": ""
+     },
+     {
+      "text": "作業内容の指定\n版の指定\n適用範囲の指定\nより詳細なキーワード",
+      "size_px": 12.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "line_pitch_px": 19,
+      "inset_px": [
+       10,
+       2,
+       4,
+       2
+      ],
+      "bullet": true,
+      "bullet_indent_px": 14
+     },
+     {
+      "text": "候補一覧\n（保留）",
+      "size_px": 13,
+      "color": "#1E2A44",
+      "align": "c",
+      "line_pitch_px": 19
+     }
+    ],
+    [
+     {
+      "text": "3",
+      "size_px": 16,
+      "bold": true,
+      "color": "#1F3A6E",
+      "align": "c"
+     },
+     {
+      "text": "根拠不足",
+      "size_px": 16,
+      "bold": true,
+      "color": "#1E2A44",
+      "align": "c",
+      "fill": "#FFF4D6",
+      "line_pitch_px": 22
+     },
+     {
+      "text": "検索結果はあるが、\u000b上位候補のスコアが閾値\u000b未満、または回答に必要\u000bな根拠情報が不足している。",
+      "size_px": 12.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "line_pitch_px": 19,
+      "inset_px": [
+       10,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "text": "検索スコア\u000b閾値未満\u000b／必要項目の\u000b欠落",
+      "size_px": 12.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "line_pitch_px": 19,
+      "inset_px": [
+       10,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "text": ""
+     },
+     {
+      "text": ""
+     },
+     {
+      "text": ""
+     },
+     {
+      "text": "より具体的な作業内容\n部品番号の指定\n工程の特定\n関連するキーワード追加",
+      "size_px": 12.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "line_pitch_px": 19,
+      "inset_px": [
+       10,
+       2,
+       4,
+       2
+      ],
+      "bullet": true,
+      "bullet_indent_px": 14
+     },
+     {
+      "text": "参考提示\n（保留）",
+      "size_px": 13,
+      "color": "#1E2A44",
+      "align": "c",
+      "line_pitch_px": 19
+     }
+    ],
+    [
+     {
+      "text": "4",
+      "size_px": 16,
+      "bold": true,
+      "color": "#1F3A6E",
+      "align": "c"
+     },
+     {
+      "text": "矛盾",
+      "size_px": 16,
+      "bold": true,
+      "color": "#1E2A44",
+      "align": "c",
+      "fill": "#FFF4D6",
+      "line_pitch_px": 22
+     },
+     {
+      "text": "同一文書IDで版の内容が\u000b不整合、または複数候補\u000bで主要項目（作業内容・\u000b適用範囲等）が相違する。",
+      "size_px": 12.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "line_pitch_px": 19,
+      "inset_px": [
+       10,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "text": "版情報の不整合\u000b複数候補の\u000b主要項目差異",
+      "size_px": 12.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "line_pitch_px": 19,
+      "inset_px": [
+       10,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "text": ""
+     },
+     {
+      "text": ""
+     },
+     {
+      "text": ""
+     },
+     {
+      "text": "どちらの版を参照すべきか\n適用する機種・期間の確認\n担当者への確認",
+      "size_px": 12.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "line_pitch_px": 19,
+      "inset_px": [
+       10,
+       2,
+       4,
+       2
+      ],
+      "bullet": true,
+      "bullet_indent_px": 14
+     },
+     {
+      "text": "候補比較\n（保留）",
+      "size_px": 13,
+      "color": "#1E2A44",
+      "align": "c",
+      "line_pitch_px": 19
+     }
+    ],
+    [
+     {
+      "text": "5",
+      "size_px": 16,
+      "bold": true,
+      "color": "#1F3A6E",
+      "align": "c"
+     },
+     {
+      "text": "版・適用不明",
+      "size_px": 14.5,
+      "bold": true,
+      "color": "#1E2A44",
+      "align": "c",
+      "fill": "#FFF4D6",
+      "line_pitch_px": 22
+     },
+     {
+      "text": "検索結果において、\u000b版列がNULL、または\u000b適用情報が登録されて\u000bいない。",
+      "size_px": 12.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "line_pitch_px": 19,
+      "inset_px": [
+       10,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "text": "版列NULL\u000b適用情報なし",
+      "size_px": 12.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "line_pitch_px": 19,
+      "inset_px": [
+       10,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "text": ""
+     },
+     {
+      "text": ""
+     },
+     {
+      "text": ""
+     },
+     {
+      "text": "最新版の確認\n適用範囲の確認\n担当者への確認",
+      "size_px": 12.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "line_pitch_px": 19,
+      "inset_px": [
+       10,
+       2,
+       4,
+       2
+      ],
+      "bullet": true,
+      "bullet_indent_px": 14
+     },
+     {
+      "text": "参考提示\n（保留）",
+      "size_px": 13,
+      "color": "#1E2A44",
+      "align": "c",
+      "line_pitch_px": 19
+     }
+    ],
+    [
+     {
+      "text": "6",
+      "size_px": 16,
+      "bold": true,
+      "color": "#1F3A6E",
+      "align": "c"
+     },
+     {
+      "text": "対象外",
+      "size_px": 16,
+      "bold": true,
+      "color": "#1E2A44",
+      "align": "c",
+      "fill": "#FFF4D6",
+      "line_pitch_px": 22
+     },
+     {
+      "text": "画像・図面・NECST 等\u000b本PoCの対象外データ\u000bに関する質問。",
+      "size_px": 12.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "line_pitch_px": 19,
+      "inset_px": [
+       10,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "text": "キーワード検知\u000b（図面、画像、\u000bNECST 等）",
+      "size_px": 12.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "line_pitch_px": 19,
+      "inset_px": [
+       10,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "text": ""
+     },
+     {
+      "text": ""
+     },
+     {
+      "text": ""
+     },
+     {
+      "text": "対象システムの利用\n設計部門への確認\n将来の対応可否の確認",
+      "size_px": 12.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "line_pitch_px": 19,
+      "inset_px": [
+       10,
+       2,
+       4,
+       2
+      ],
+      "bullet": true,
+      "bullet_indent_px": 14
+     },
+     {
+      "text": "回答なし\n（案内）",
+      "size_px": 13,
+      "color": "#1E2A44",
+      "align": "c",
+      "line_pitch_px": 19
+     }
+    ],
+    [
+     {
+      "text": "7",
+      "size_px": 16,
+      "bold": true,
+      "color": "#1F3A6E",
+      "align": "c"
+     },
+     {
+      "text": "低信頼",
+      "size_px": 16,
+      "bold": true,
+      "color": "#1E2A44",
+      "align": "c",
+      "fill": "#FFF4D6",
+      "line_pitch_px": 22
+     },
+     {
+      "text": "検索スコアが閾値未満\u000bかつ一致条件が少なく、\u000b回答の信頼性が低い\u000bと判断される。",
+      "size_px": 12.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "line_pitch_px": 19,
+      "inset_px": [
+       10,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "text": "総合スコア < 閾値\u000b一致条件が少ない",
+      "size_px": 12.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "line_pitch_px": 19,
+      "inset_px": [
+       10,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "text": ""
+     },
+     {
+      "text": ""
+     },
+     {
+      "text": ""
+     },
+     {
+      "text": "より具体的なキーワード\n部品番号／工程の指定\n作業内容の詳細化",
+      "size_px": 12.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "line_pitch_px": 19,
+      "inset_px": [
+       10,
+       2,
+       4,
+       2
+      ],
+      "bullet": true,
+      "bullet_indent_px": 14
+     },
+     {
+      "text": "参考提示\n（保留）",
+      "size_px": 13,
+      "color": "#1E2A44",
+      "align": "c",
+      "line_pitch_px": 19
+     }
+    ]
+   ],
+   "border": {
+    "color": "#D3DEEB",
+    "width_px": 1
+   },
+   "name": "exception-table"
+  },
+  {
+   "type": "icon",
+   "icon": "material:person-fill",
+   "box": [
+    472,
+    210.0,
+    26,
+    28
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    500,
+    198.0,
+    132,
+    52
+   ],
+   "radius_px": 8,
+   "fill": "#FFFFFF",
+   "line": {
+    "color": "#8FB4E0",
+    "width_px": 1.2
+   },
+   "text": "「部品番号 A12345\u000bのTOSを確認したい」",
+   "size_px": 11.5,
+   "color": "#1E2A44",
+   "align": "c",
+   "line_pitch_px": 17
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    644,
+    200.0,
+    100,
+    48
+   ],
+   "radius_px": 4,
+   "fill": "#E4F0FC",
+   "line": {
+    "color": "#6E9BD6",
+    "width_px": 1.2
+   },
+   "paras": [
+    [
+     {
+      "text": "構造化検索",
+      "size_px": 12,
+      "bold": true,
+      "color": "#1F3A6E"
+     }
+    ],
+    [
+     {
+      "text": "（完全一致・フィルタ）",
+      "size_px": 10,
+      "color": "#33466A"
+     }
+    ]
+   ],
+   "align": "c",
+   "line_pitch_px": 16,
+   "inset_px": [
+    3,
+    1,
+    3,
+    1
+   ]
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     746,
+     224.0
+    ],
+    [
+     744.0,
+     224.0
+    ]
+   ],
+   "color": "#1F3A6E",
+   "width_px": 1.4,
+   "head": "end"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    746.0,
+    200.0,
+    76,
+    48
+   ],
+   "radius_px": 4,
+   "fill": "#E4F0FC",
+   "line": {
+    "color": "#6E9BD6",
+    "width_px": 1.2
+   },
+   "paras": [
+    [
+     {
+      "text": "0件",
+      "size_px": 12,
+      "bold": true,
+      "color": "#1F3A6E"
+     }
+    ]
+   ],
+   "align": "c",
+   "line_pitch_px": 16,
+   "inset_px": [
+    3,
+    1,
+    3,
+    1
+   ]
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     824.0,
+     224.0
+    ],
+    [
+     822.0,
+     224.0
+    ]
+   ],
+   "color": "#1F3A6E",
+   "width_px": 1.4,
+   "head": "end"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    824.0,
+    200.0,
+    108,
+    48
+   ],
+   "radius_px": 4,
+   "fill": "#FBDDE2",
+   "line": {
+    "color": "#D9707F",
+    "width_px": 1.2
+   },
+   "paras": [
+    [
+     {
+      "text": "該当なし",
+      "size_px": 12,
+      "bold": true,
+      "color": "#1F3A6E"
+     }
+    ],
+    [
+     {
+      "text": "（類似で埋めない）",
+      "size_px": 10,
+      "color": "#33466A"
+     }
+    ]
+   ],
+   "align": "c",
+   "line_pitch_px": 16,
+   "inset_px": [
+    3,
+    1,
+    3,
+    1
+   ]
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    944,
+    180,
+    388,
+    88
+   ],
+   "fill": "#FFF3F4",
+   "line": {
+    "color": "#E58A95",
+    "width_px": 1.2
+   },
+   "radius_px": 4
+  },
+  {
+   "type": "icon",
+   "icon": "material:error-fill",
+   "box": [
+    950,
+    184,
+    20,
+    20
+   ],
+   "color": "#D42A3A"
+  },
+  {
+   "type": "text",
+   "box": [
+    974,
+    182,
+    352,
+    22
+   ],
+   "text": "該当レコードはありません。",
+   "size_px": 12.5,
+   "bold": true,
+   "color": "#D42A3A",
+   "align": "l",
+   "valign": "t",
+   "line_pitch_px": 18
+  },
+  {
+   "type": "text",
+   "box": [
+    974,
+    204,
+    352,
+    51
+   ],
+   "text": "・指定された部品番号：A12345\n・対象：TOS\n入力内容をご確認ください。",
+   "size_px": 11.5,
+   "bold": false,
+   "color": "#1E2A44",
+   "align": "l",
+   "valign": "t",
+   "line_pitch_px": 17
+  },
+  {
+   "type": "icon",
+   "icon": "material:person-fill",
+   "box": [
+    472,
+    322.0,
+    26,
+    28
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    500,
+    310.0,
+    132,
+    52
+   ],
+   "radius_px": 8,
+   "fill": "#FFFFFF",
+   "line": {
+    "color": "#8FB4E0",
+    "width_px": 1.2
+   },
+   "text": "「工程番号 100 の\u000bTOSを確認したい」",
+   "size_px": 11.5,
+   "color": "#1E2A44",
+   "align": "c",
+   "line_pitch_px": 17
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    644,
+    312.0,
+    100,
+    48
+   ],
+   "radius_px": 4,
+   "fill": "#E4F0FC",
+   "line": {
+    "color": "#6E9BD6",
+    "width_px": 1.2
+   },
+   "paras": [
+    [
+     {
+      "text": "構造化検索",
+      "size_px": 12,
+      "bold": true,
+      "color": "#1F3A6E"
+     }
+    ]
+   ],
+   "align": "c",
+   "line_pitch_px": 16,
+   "inset_px": [
+    3,
+    1,
+    3,
+    1
+   ]
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     746,
+     336.0
+    ],
+    [
+     744.0,
+     336.0
+    ]
+   ],
+   "color": "#1F3A6E",
+   "width_px": 1.4,
+   "head": "end"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    746.0,
+    312.0,
+    76,
+    48
+   ],
+   "radius_px": 4,
+   "fill": "#E4F0FC",
+   "line": {
+    "color": "#6E9BD6",
+    "width_px": 1.2
+   },
+   "paras": [
+    [
+     {
+      "text": "n件",
+      "size_px": 12,
+      "bold": true,
+      "color": "#1F3A6E"
+     }
+    ],
+    [
+     {
+      "text": "（多数）",
+      "size_px": 10,
+      "color": "#33466A"
+     }
+    ]
+   ],
+   "align": "c",
+   "line_pitch_px": 16,
+   "inset_px": [
+    3,
+    1,
+    3,
+    1
+   ]
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     824.0,
+     336.0
+    ],
+    [
+     822.0,
+     336.0
+    ]
+   ],
+   "color": "#1F3A6E",
+   "width_px": 1.4,
+   "head": "end"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    824.0,
+    312.0,
+    108,
+    48
+   ],
+   "radius_px": 4,
+   "fill": "#FFF1CC",
+   "line": {
+    "color": "#E2B650",
+    "width_px": 1.2
+   },
+   "paras": [
+    [
+     {
+      "text": "候補一覧提示",
+      "size_px": 12,
+      "bold": true,
+      "color": "#1F3A6E"
+     }
+    ],
+    [
+     {
+      "text": "＋追加条件の依頼",
+      "size_px": 10,
+      "color": "#33466A"
+     }
+    ]
+   ],
+   "align": "c",
+   "line_pitch_px": 16,
+   "inset_px": [
+    3,
+    1,
+    3,
+    1
+   ]
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    944,
+    280,
+    388,
+    112
+   ],
+   "fill": "#F2F7FD",
+   "line": {
+    "color": "#8FB4E0",
+    "width_px": 1.2
+   },
+   "radius_px": 4
+  },
+  {
+   "type": "icon",
+   "icon": "material:info-fill",
+   "box": [
+    950,
+    284,
+    20,
+    20
+   ],
+   "color": "#2F6FD0"
+  },
+  {
+   "type": "text",
+   "box": [
+    974,
+    282,
+    352,
+    22
+   ],
+   "text": "複数の候補が見つかりました。",
+   "size_px": 12.5,
+   "bold": true,
+   "color": "#1F4E9C",
+   "align": "l",
+   "valign": "t",
+   "line_pitch_px": 18
+  },
+  {
+   "type": "text",
+   "box": [
+    974,
+    304,
+    352,
+    17
+   ],
+   "text": "該当候補を絞り込むため、追加の条件を指定してください。",
+   "size_px": 11.5,
+   "bold": false,
+   "color": "#1E2A44",
+   "align": "l",
+   "valign": "t",
+   "line_pitch_px": 17
+  },
+  {
+   "type": "table",
+   "box": [
+    974,
+    324,
+    350,
+    64.0
+   ],
+   "col_widths_px": [
+    44,
+    80,
+    160,
+    66
+   ],
+   "row_heights_px": [
+    16.0,
+    16.0,
+    16.0,
+    16.0
+   ],
+   "cells": [
+    [
+     {
+      "text": "No.",
+      "bold": true,
+      "fill": "#E6EEF8"
+     },
+     {
+      "text": "工程番号",
+      "bold": true,
+      "fill": "#E6EEF8"
+     },
+     {
+      "text": "作業内容",
+      "bold": true,
+      "fill": "#E6EEF8"
+     },
+     {
+      "text": "件数",
+      "bold": true,
+      "fill": "#E6EEF8"
+     }
+    ],
+    [
+     {
+      "text": "1",
+      "bold": false,
+      "fill": "#FFFFFF"
+     },
+     {
+      "text": "100",
+      "bold": false,
+      "fill": "#FFFFFF"
+     },
+     {
+      "text": "穴あけ加工",
+      "bold": false,
+      "fill": "#FFFFFF"
+     },
+     {
+      "text": "120",
+      "bold": false,
+      "fill": "#FFFFFF"
+     }
+    ],
+    [
+     {
+      "text": "2",
+      "bold": false,
+      "fill": "#FFFFFF"
+     },
+     {
+      "text": "100",
+      "bold": false,
+      "fill": "#FFFFFF"
+     },
+     {
+      "text": "リーマ加工",
+      "bold": false,
+      "fill": "#FFFFFF"
+     },
+     {
+      "text": "85",
+      "bold": false,
+      "fill": "#FFFFFF"
+     }
+    ],
+    [
+     {
+      "text": "3",
+      "bold": false,
+      "fill": "#FFFFFF"
+     },
+     {
+      "text": "100",
+      "bold": false,
+      "fill": "#FFFFFF"
+     },
+     {
+      "text": "面取り",
+      "bold": false,
+      "fill": "#FFFFFF"
+     },
+     {
+      "text": "62",
+      "bold": false,
+      "fill": "#FFFFFF"
+     }
+    ]
+   ],
+   "size_px": 10.5,
+   "align": "c",
+   "color": "#1E2A44",
+   "border": {
+    "color": "#C9D6E6",
+    "width_px": 0.8
+   },
+   "cell_pad_px": 3
+  },
+  {
+   "type": "icon",
+   "icon": "material:person-fill",
+   "box": [
+    472,
+    443.0,
+    26,
+    28
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    500,
+    431.0,
+    132,
+    52
+   ],
+   "radius_px": 8,
+   "fill": "#FFFFFF",
+   "line": {
+    "color": "#8FB4E0",
+    "width_px": 1.2
+   },
+   "text": "「この加工工程に近い\u000b過去のTOSを探したい」",
+   "size_px": 11.5,
+   "color": "#1E2A44",
+   "align": "c",
+   "line_pitch_px": 17
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    644,
+    433.0,
+    100,
+    48
+   ],
+   "radius_px": 4,
+   "fill": "#E4F0FC",
+   "line": {
+    "color": "#6E9BD6",
+    "width_px": 1.2
+   },
+   "paras": [
+    [
+     {
+      "text": "全文＋ベクトル検索",
+      "size_px": 11,
+      "bold": true,
+      "color": "#1F3A6E"
+     }
+    ],
+    [
+     {
+      "text": "（ハイブリッド）",
+      "size_px": 10,
+      "color": "#33466A"
+     }
+    ]
+   ],
+   "align": "c",
+   "line_pitch_px": 16,
+   "inset_px": [
+    3,
+    1,
+    3,
+    1
+   ]
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     746,
+     457.0
+    ],
+    [
+     744.0,
+     457.0
+    ]
+   ],
+   "color": "#1F3A6E",
+   "width_px": 1.4,
+   "head": "end"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    746.0,
+    433.0,
+    76,
+    48
+   ],
+   "radius_px": 4,
+   "fill": "#E4F0FC",
+   "line": {
+    "color": "#6E9BD6",
+    "width_px": 1.2
+   },
+   "paras": [
+    [
+     {
+      "text": "低スコア",
+      "size_px": 12,
+      "bold": true,
+      "color": "#1F3A6E"
+     }
+    ],
+    [
+     {
+      "text": "／根拠欠落",
+      "size_px": 10,
+      "color": "#33466A"
+     }
+    ]
+   ],
+   "align": "c",
+   "line_pitch_px": 16,
+   "inset_px": [
+    3,
+    1,
+    3,
+    1
+   ]
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     824.0,
+     457.0
+    ],
+    [
+     822.0,
+     457.0
+    ]
+   ],
+   "color": "#1F3A6E",
+   "width_px": 1.4,
+   "head": "end"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    824.0,
+    433.0,
+    108,
+    48
+   ],
+   "radius_px": 4,
+   "fill": "#FFF1CC",
+   "line": {
+    "color": "#E2B650",
+    "width_px": 1.2
+   },
+   "paras": [
+    [
+     {
+      "text": "保留",
+      "size_px": 12,
+      "bold": true,
+      "color": "#1F3A6E"
+     }
+    ],
+    [
+     {
+      "text": "（部分情報を参考提示）",
+      "size_px": 10,
+      "color": "#33466A"
+     }
+    ]
+   ],
+   "align": "c",
+   "line_pitch_px": 16,
+   "inset_px": [
+    3,
+    1,
+    3,
+    1
+   ]
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    944,
+    404,
+    388,
+    106
+   ],
+   "fill": "#FFF3F4",
+   "line": {
+    "color": "#E58A95",
+    "width_px": 1.2
+   },
+   "radius_px": 4
+  },
+  {
+   "type": "icon",
+   "icon": "material:warning-fill",
+   "box": [
+    950,
+    408,
+    20,
+    20
+   ],
+   "color": "#E07A1F"
+  },
+  {
+   "type": "text",
+   "box": [
+    974,
+    406,
+    352,
+    22
+   ],
+   "text": "十分な根拠が得られないため、確定した回答はできません。",
+   "size_px": 12.5,
+   "bold": true,
+   "color": "#D42A3A",
+   "align": "l",
+   "valign": "t",
+   "line_pitch_px": 18
+  },
+  {
+   "type": "text",
+   "box": [
+    974,
+    428,
+    352,
+    17
+   ],
+   "text": "以下は参考となる候補です。",
+   "size_px": 11.5,
+   "bold": false,
+   "color": "#1E2A44",
+   "align": "l",
+   "valign": "t",
+   "line_pitch_px": 17
+  },
+  {
+   "type": "table",
+   "box": [
+    974,
+    448,
+    350,
+    51
+   ],
+   "col_widths_px": [
+    40,
+    96,
+    64,
+    150
+   ],
+   "row_heights_px": [
+    17,
+    17,
+    17
+   ],
+   "cells": [
+    [
+     {
+      "text": "No.",
+      "bold": true,
+      "fill": "#E6EEF8"
+     },
+     {
+      "text": "TOS番号",
+      "bold": true,
+      "fill": "#E6EEF8"
+     },
+     {
+      "text": "類似度",
+      "bold": true,
+      "fill": "#E6EEF8"
+     },
+     {
+      "text": "作業内容（要約）",
+      "bold": true,
+      "fill": "#E6EEF8"
+     }
+    ],
+    [
+     {
+      "text": "1",
+      "bold": false,
+      "fill": "#FFFFFF"
+     },
+     {
+      "text": "TOS-12345",
+      "bold": false,
+      "fill": "#FFFFFF"
+     },
+     {
+      "text": "0.42",
+      "bold": false,
+      "fill": "#FFFFFF"
+     },
+     {
+      "text": "穴あけ加工 …",
+      "bold": false,
+      "fill": "#FFFFFF"
+     }
+    ],
+    [
+     {
+      "text": "2",
+      "bold": false,
+      "fill": "#FFFFFF"
+     },
+     {
+      "text": "TOS-67890",
+      "bold": false,
+      "fill": "#FFFFFF"
+     },
+     {
+      "text": "0.38",
+      "bold": false,
+      "fill": "#FFFFFF"
+     },
+     {
+      "text": "リーマ加工 …",
+      "bold": false,
+      "fill": "#FFFFFF"
+     }
+    ]
+   ],
+   "size_px": 10.5,
+   "align": "c",
+   "color": "#1E2A44",
+   "border": {
+    "color": "#C9D6E6",
+    "width_px": 0.8
+   },
+   "cell_pad_px": 3
+  },
+  {
+   "type": "icon",
+   "icon": "material:person-fill",
+   "box": [
+    472,
+    562.0,
+    26,
+    28
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    500,
+    550.0,
+    132,
+    52
+   ],
+   "radius_px": 8,
+   "fill": "#FFFFFF",
+   "line": {
+    "color": "#8FB4E0",
+    "width_px": 1.2
+   },
+   "text": "「JP-123の\u000b作業内容を教えて」",
+   "size_px": 11.5,
+   "color": "#1E2A44",
+   "align": "c",
+   "line_pitch_px": 17
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    644,
+    534.0,
+    78,
+    38
+   ],
+   "radius_px": 4,
+   "fill": "#E4F0FC",
+   "line": {
+    "color": "#6E9BD6",
+    "width_px": 1.2
+   },
+   "paras": [
+    [
+     {
+      "text": "候補A",
+      "size_px": 12.5,
+      "bold": true,
+      "color": "#1F3A6E"
+     }
+    ],
+    [
+     {
+      "text": "（Rev.2）",
+      "size_px": 10,
+      "color": "#33466A"
+     }
+    ]
+   ],
+   "align": "c",
+   "line_pitch_px": 16,
+   "inset_px": [
+    3,
+    1,
+    3,
+    1
+   ]
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    644,
+    580.0,
+    78,
+    38
+   ],
+   "radius_px": 4,
+   "fill": "#E4F0FC",
+   "line": {
+    "color": "#6E9BD6",
+    "width_px": 1.2
+   },
+   "paras": [
+    [
+     {
+      "text": "候補B",
+      "size_px": 12.5,
+      "bold": true,
+      "color": "#1F3A6E"
+     }
+    ],
+    [
+     {
+      "text": "（Rev.3）",
+      "size_px": 10,
+      "color": "#33466A"
+     }
+    ]
+   ],
+   "align": "c",
+   "line_pitch_px": 16,
+   "inset_px": [
+    3,
+    1,
+    3,
+    1
+   ]
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    742,
+    554.0,
+    82,
+    44
+   ],
+   "radius_px": 4,
+   "fill": "#E4F0FC",
+   "line": {
+    "color": "#6E9BD6",
+    "width_px": 1.2
+   },
+   "paras": [
+    [
+     {
+      "text": "内容比較で",
+      "size_px": 11.5,
+      "bold": true,
+      "color": "#1F3A6E"
+     }
+    ],
+    [
+     {
+      "text": "相違を検知",
+      "size_px": 11.5,
+      "color": "#1F3A6E",
+      "bold": true
+     }
+    ]
+   ],
+   "align": "c",
+   "line_pitch_px": 16,
+   "inset_px": [
+    3,
+    1,
+    3,
+    1
+   ]
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    842,
+    552.0,
+    90,
+    48
+   ],
+   "radius_px": 4,
+   "fill": "#FFF1CC",
+   "line": {
+    "color": "#E2B650",
+    "width_px": 1.2
+   },
+   "paras": [
+    [
+     {
+      "text": "両方を提示",
+      "size_px": 12.5,
+      "bold": true,
+      "color": "#1F3A6E"
+     }
+    ],
+    [
+     {
+      "text": "＋矛盾箇所の明示",
+      "size_px": 10.5,
+      "color": "#33466A"
+     }
+    ]
+   ],
+   "align": "c",
+   "line_pitch_px": 16,
+   "inset_px": [
+    3,
+    1,
+    3,
+    1
+   ]
+  },
+  {
+   "type": "line",
+   "points": [
+    [
+     722,
+     553.0
+    ],
+    [
+     732,
+     553.0
+    ],
+    [
+     732,
+     599.0
+    ],
+    [
+     722,
+     599.0
+    ]
+   ],
+   "color": "#1F3A6E",
+   "width_px": 1.4
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     732,
+     576.0
+    ],
+    [
+     742,
+     576.0
+    ]
+   ],
+   "color": "#1F3A6E",
+   "width_px": 1.4,
+   "head": "end"
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     824,
+     576.0
+    ],
+    [
+     842,
+     576.0
+    ]
+   ],
+   "color": "#1F3A6E",
+   "width_px": 1.4,
+   "head": "end"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    944,
+    522,
+    388,
+    108
+   ],
+   "fill": "#FFF3F4",
+   "line": {
+    "color": "#E58A95",
+    "width_px": 1.2
+   },
+   "radius_px": 4
+  },
+  {
+   "type": "icon",
+   "icon": "material:warning-fill",
+   "box": [
+    950,
+    526,
+    20,
+    20
+   ],
+   "color": "#E07A1F"
+  },
+  {
+   "type": "text",
+   "box": [
+    974,
+    524,
+    352,
+    22
+   ],
+   "text": "複数の候補で内容に相違があります。",
+   "size_px": 12.5,
+   "bold": true,
+   "color": "#D42A3A",
+   "align": "l",
+   "valign": "t",
+   "line_pitch_px": 18
+  },
+  {
+   "type": "text",
+   "box": [
+    974,
+    546,
+    352,
+    17
+   ],
+   "text": "ご確認のうえ、適切な版を選択してください。",
+   "size_px": 11.5,
+   "bold": false,
+   "color": "#1E2A44",
+   "align": "l",
+   "valign": "t",
+   "line_pitch_px": 17
+  },
+  {
+   "type": "table",
+   "box": [
+    974,
+    566,
+    350,
+    60.0
+   ],
+   "col_widths_px": [
+    90,
+    130,
+    130
+   ],
+   "row_heights_px": [
+    15.0,
+    15.0,
+    15.0,
+    15.0
+   ],
+   "cells": [
+    [
+     {
+      "text": "項目",
+      "bold": true,
+      "fill": "#E6EEF8"
+     },
+     {
+      "text": "Rev.2",
+      "bold": true,
+      "fill": "#E6EEF8"
+     },
+     {
+      "text": "Rev.3",
+      "bold": true,
+      "fill": "#E6EEF8"
+     }
+    ],
+    [
+     {
+      "text": "作業内容",
+      "bold": false,
+      "fill": "#FFFFFF"
+     },
+     {
+      "text": "穴あけ加工",
+      "bold": false,
+      "fill": "#FFFFFF"
+     },
+     {
+      "text": "リーマ加工",
+      "bold": false,
+      "fill": "#FFFFFF"
+     }
+    ],
+    [
+     {
+      "text": "適用範囲",
+      "bold": false,
+      "fill": "#FFFFFF"
+     },
+     {
+      "text": "A機種のみ",
+      "bold": false,
+      "fill": "#FFFFFF"
+     },
+     {
+      "text": "A/B機種",
+      "bold": false,
+      "fill": "#FFFFFF"
+     }
+    ],
+    [
+     {
+      "text": "更新日",
+      "bold": false,
+      "fill": "#FFFFFF"
+     },
+     {
+      "text": "2023/01/10",
+      "bold": false,
+      "fill": "#FFFFFF"
+     },
+     {
+      "text": "2024/05/20",
+      "bold": false,
+      "fill": "#FFFFFF"
+     }
+    ]
+   ],
+   "size_px": 10.5,
+   "align": "c",
+   "color": "#1E2A44",
+   "border": {
+    "color": "#C9D6E6",
+    "width_px": 0.8
+   },
+   "cell_pad_px": 3
+  },
+  {
+   "type": "icon",
+   "icon": "material:person-fill",
+   "box": [
+    472,
+    672.0,
+    26,
+    28
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    500,
+    660.0,
+    132,
+    52
+   ],
+   "radius_px": 8,
+   "fill": "#FFFFFF",
+   "line": {
+    "color": "#8FB4E0",
+    "width_px": 1.2
+   },
+   "text": "「JP-456の\u000b最新版を教えて」",
+   "size_px": 11.5,
+   "color": "#1E2A44",
+   "align": "c",
+   "line_pitch_px": 17
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    644,
+    662.0,
+    100,
+    48
+   ],
+   "radius_px": 4,
+   "fill": "#E4F0FC",
+   "line": {
+    "color": "#6E9BD6",
+    "width_px": 1.2
+   },
+   "paras": [
+    [
+     {
+      "text": "検索結果取得",
+      "size_px": 12,
+      "bold": true,
+      "color": "#1F3A6E"
+     }
+    ]
+   ],
+   "align": "c",
+   "line_pitch_px": 16,
+   "inset_px": [
+    3,
+    1,
+    3,
+    1
+   ]
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     746,
+     686.0
+    ],
+    [
+     744.0,
+     686.0
+    ]
+   ],
+   "color": "#1F3A6E",
+   "width_px": 1.4,
+   "head": "end"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    746.0,
+    662.0,
+    76,
+    48
+   ],
+   "radius_px": 4,
+   "fill": "#E4F0FC",
+   "line": {
+    "color": "#6E9BD6",
+    "width_px": 1.2
+   },
+   "paras": [
+    [
+     {
+      "text": "版・適用情報",
+      "size_px": 12,
+      "bold": true,
+      "color": "#1F3A6E"
+     }
+    ],
+    [
+     {
+      "text": "なし",
+      "size_px": 10,
+      "color": "#33466A"
+     }
+    ]
+   ],
+   "align": "c",
+   "line_pitch_px": 16,
+   "inset_px": [
+    3,
+    1,
+    3,
+    1
+   ]
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     824.0,
+     686.0
+    ],
+    [
+     822.0,
+     686.0
+    ]
+   ],
+   "color": "#1F3A6E",
+   "width_px": 1.4,
+   "head": "end"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    824.0,
+    662.0,
+    108,
+    48
+   ],
+   "radius_px": 4,
+   "fill": "#FFF1CC",
+   "line": {
+    "color": "#E2B650",
+    "width_px": 1.2
+   },
+   "paras": [
+    [
+     {
+      "text": "適用未確認",
+      "size_px": 12,
+      "bold": true,
+      "color": "#1F3A6E"
+     }
+    ],
+    [
+     {
+      "text": "（最新版と断定しない）",
+      "size_px": 10,
+      "color": "#33466A"
+     }
+    ]
+   ],
+   "align": "c",
+   "line_pitch_px": 16,
+   "inset_px": [
+    3,
+    1,
+    3,
+    1
+   ]
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    944,
+    642,
+    388,
+    88
+   ],
+   "fill": "#F2F7FD",
+   "line": {
+    "color": "#8FB4E0",
+    "width_px": 1.2
+   },
+   "radius_px": 4
+  },
+  {
+   "type": "icon",
+   "icon": "material:info-fill",
+   "box": [
+    950,
+    646,
+    20,
+    20
+   ],
+   "color": "#2F6FD0"
+  },
+  {
+   "type": "text",
+   "box": [
+    974,
+    644,
+    352,
+    22
+   ],
+   "text": "版・適用情報が不明です。",
+   "size_px": 12.5,
+   "bold": true,
+   "color": "#1F4E9C",
+   "align": "l",
+   "valign": "t",
+   "line_pitch_px": 18
+  },
+  {
+   "type": "text",
+   "box": [
+    974,
+    666,
+    352,
+    17
+   ],
+   "text": "以下の候補は適用情報が登録されていません。",
+   "size_px": 11.5,
+   "bold": false,
+   "color": "#1E2A44",
+   "align": "l",
+   "valign": "t",
+   "line_pitch_px": 17
+  },
+  {
+   "type": "table",
+   "box": [
+    974,
+    686,
+    350,
+    34
+   ],
+   "col_widths_px": [
+    40,
+    80,
+    110,
+    50,
+    70
+   ],
+   "row_heights_px": [
+    17,
+    17
+   ],
+   "cells": [
+    [
+     {
+      "text": "No.",
+      "bold": true,
+      "fill": "#E6EEF8"
+     },
+     {
+      "text": "文書番号",
+      "bold": true,
+      "fill": "#E6EEF8"
+     },
+     {
+      "text": "作業内容",
+      "bold": true,
+      "fill": "#E6EEF8"
+     },
+     {
+      "text": "版",
+      "bold": true,
+      "fill": "#E6EEF8"
+     },
+     {
+      "text": "適用範囲",
+      "bold": true,
+      "fill": "#E6EEF8"
+     }
+    ],
+    [
+     {
+      "text": "1",
+      "bold": false,
+      "fill": "#FFFFFF"
+     },
+     {
+      "text": "JP-456",
+      "bold": false,
+      "fill": "#FFFFFF"
+     },
+     {
+      "text": "溶接作業",
+      "bold": false,
+      "fill": "#FFFFFF"
+     },
+     {
+      "text": "－",
+      "bold": false,
+      "fill": "#FFFFFF"
+     },
+     {
+      "text": "－",
+      "bold": false,
+      "fill": "#FFFFFF"
+     }
+    ]
+   ],
+   "size_px": 10.5,
+   "align": "c",
+   "color": "#1E2A44",
+   "border": {
+    "color": "#C9D6E6",
+    "width_px": 0.8
+   },
+   "cell_pad_px": 3
+  },
+  {
+   "type": "icon",
+   "icon": "material:person-fill",
+   "box": [
+    472,
+    770.0,
+    26,
+    28
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    500,
+    758.0,
+    132,
+    52
+   ],
+   "radius_px": 8,
+   "fill": "#FFFFFF",
+   "line": {
+    "color": "#8FB4E0",
+    "width_px": 1.2
+   },
+   "text": "「この図面と類似形状\u000bのWPSを探したい」",
+   "size_px": 11.5,
+   "color": "#1E2A44",
+   "align": "c",
+   "line_pitch_px": 17
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    644,
+    760.0,
+    120,
+    48
+   ],
+   "radius_px": 4,
+   "fill": "#E4F0FC",
+   "line": {
+    "color": "#6E9BD6",
+    "width_px": 1.2
+   },
+   "paras": [
+    [
+     {
+      "text": "対象外判定",
+      "size_px": 12,
+      "bold": true,
+      "color": "#1F3A6E"
+     }
+    ]
+   ],
+   "align": "c",
+   "line_pitch_px": 16,
+   "inset_px": [
+    3,
+    1,
+    3,
+    1
+   ]
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     766,
+     784.0
+    ],
+    [
+     790.0,
+     784.0
+    ]
+   ],
+   "color": "#1F3A6E",
+   "width_px": 1.4,
+   "head": "end"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    792.0,
+    760.0,
+    140,
+    48
+   ],
+   "radius_px": 4,
+   "fill": "#FFF1CC",
+   "line": {
+    "color": "#E2B650",
+    "width_px": 1.2
+   },
+   "paras": [
+    [
+     {
+      "text": "PoC対象外",
+      "size_px": 12,
+      "bold": true,
+      "color": "#1F3A6E"
+     }
+    ],
+    [
+     {
+      "text": "（案内メッセージ）",
+      "size_px": 10,
+      "color": "#33466A"
+     }
+    ]
+   ],
+   "align": "c",
+   "line_pitch_px": 16,
+   "inset_px": [
+    3,
+    1,
+    3,
+    1
+   ]
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    944,
+    742,
+    388,
+    84
+   ],
+   "fill": "#F2F7FD",
+   "line": {
+    "color": "#8FB4E0",
+    "width_px": 1.2
+   },
+   "radius_px": 4
+  },
+  {
+   "type": "icon",
+   "icon": "material:info-fill",
+   "box": [
+    950,
+    746,
+    20,
+    20
+   ],
+   "color": "#2F6FD0"
+  },
+  {
+   "type": "text",
+   "box": [
+    974,
+    744,
+    352,
+    22
+   ],
+   "text": "ご質問の内容は、本PoCの対象外です。",
+   "size_px": 12.5,
+   "bold": true,
+   "color": "#1F4E9C",
+   "align": "l",
+   "valign": "t",
+   "line_pitch_px": 18
+  },
+  {
+   "type": "text",
+   "box": [
+    974,
+    766,
+    352,
+    51
+   ],
+   "text": "・対象外：図面画像の類似形状検索\n・確認先：設計部門／関連システム\n※ 将来的な拡張で対応を検討します。",
+   "size_px": 11.5,
+   "bold": false,
+   "color": "#1E2A44",
+   "align": "l",
+   "valign": "t",
+   "line_pitch_px": 17
+  },
+  {
+   "type": "icon",
+   "icon": "material:person-fill",
+   "box": [
+    472,
+    868.0,
+    26,
+    28
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    500,
+    856.0,
+    132,
+    52
+   ],
+   "radius_px": 8,
+   "fill": "#FFFFFF",
+   "line": {
+    "color": "#8FB4E0",
+    "width_px": 1.2
+   },
+   "text": "「Aと似た工程の\u000bTOSを探して」",
+   "size_px": 11.5,
+   "color": "#1E2A44",
+   "align": "c",
+   "line_pitch_px": 17
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    644,
+    858.0,
+    100,
+    48
+   ],
+   "radius_px": 4,
+   "fill": "#E4F0FC",
+   "line": {
+    "color": "#6E9BD6",
+    "width_px": 1.2
+   },
+   "paras": [
+    [
+     {
+      "text": "検索結果",
+      "size_px": 12,
+      "bold": true,
+      "color": "#1F3A6E"
+     }
+    ]
+   ],
+   "align": "c",
+   "line_pitch_px": 16,
+   "inset_px": [
+    3,
+    1,
+    3,
+    1
+   ]
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     746,
+     882.0
+    ],
+    [
+     744.0,
+     882.0
+    ]
+   ],
+   "color": "#1F3A6E",
+   "width_px": 1.4,
+   "head": "end"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    746.0,
+    858.0,
+    76,
+    48
+   ],
+   "radius_px": 4,
+   "fill": "#E4F0FC",
+   "line": {
+    "color": "#6E9BD6",
+    "width_px": 1.2
+   },
+   "paras": [
+    [
+     {
+      "text": "低信頼",
+      "size_px": 12,
+      "bold": true,
+      "color": "#1F3A6E"
+     }
+    ],
+    [
+     {
+      "text": "（スコア < 閾値）",
+      "size_px": 10,
+      "color": "#33466A"
+     }
+    ]
+   ],
+   "align": "c",
+   "line_pitch_px": 16,
+   "inset_px": [
+    3,
+    1,
+    3,
+    1
+   ]
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     824.0,
+     882.0
+    ],
+    [
+     822.0,
+     882.0
+    ]
+   ],
+   "color": "#1F3A6E",
+   "width_px": 1.4,
+   "head": "end"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    824.0,
+    858.0,
+    108,
+    48
+   ],
+   "radius_px": 4,
+   "fill": "#FFF1CC",
+   "line": {
+    "color": "#E2B650",
+    "width_px": 1.2
+   },
+   "paras": [
+    [
+     {
+      "text": "低信頼のため保留",
+      "size_px": 11,
+      "bold": true,
+      "color": "#1F3A6E"
+     }
+    ],
+    [
+     {
+      "text": "（追加条件の提示）",
+      "size_px": 10,
+      "color": "#33466A"
+     }
+    ]
+   ],
+   "align": "c",
+   "line_pitch_px": 16,
+   "inset_px": [
+    3,
+    1,
+    3,
+    1
+   ]
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    944,
+    838,
+    388,
+    88
+   ],
+   "fill": "#FFF3F4",
+   "line": {
+    "color": "#E58A95",
+    "width_px": 1.2
+   },
+   "radius_px": 4
+  },
+  {
+   "type": "icon",
+   "icon": "material:warning-fill",
+   "box": [
+    950,
+    842,
+    20,
+    20
+   ],
+   "color": "#E07A1F"
+  },
+  {
+   "type": "text",
+   "box": [
+    974,
+    840,
+    352,
+    40
+   ],
+   "text": "回答の信頼性が低いため、確定した回答はできません。\u000b追加の条件を指定してください。",
+   "size_px": 12.5,
+   "bold": true,
+   "color": "#D42A3A",
+   "align": "l",
+   "valign": "t",
+   "line_pitch_px": 18
+  },
+  {
+   "type": "text",
+   "box": [
+    974,
+    880,
+    352,
+    17
+   ],
+   "text": "（参考）類似候補：2件（スコア：0.31, 0.28）",
+   "size_px": 11.5,
+   "bold": false,
+   "color": "#1E2A44",
+   "align": "l",
+   "valign": "t",
+   "line_pitch_px": 17
+  }
+ ]
+}

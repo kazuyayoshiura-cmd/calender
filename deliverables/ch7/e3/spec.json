@@ -1,0 +1,1573 @@
+{
+ "source_size": [
+  1672,
+  941
+ ],
+ "font": "Meiryo",
+ "background": "#FFFFFF",
+ "elements": [
+  {
+   "type": "text",
+   "box": [
+    24,
+    4,
+    1640,
+    64
+   ],
+   "text": "図7-2　説明生成と根拠IDの対応",
+   "size_px": 40,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "rect",
+   "box": [
+    16,
+    72,
+    346,
+    74
+   ],
+   "fill": "#0E3F82",
+   "line": null,
+   "paras": [
+    [
+     {
+      "text": "① 検索結果",
+      "size_px": 22,
+      "bold": true
+     }
+    ],
+    [
+     {
+      "text": "（候補の evidence[]）",
+      "size_px": 15.5
+     }
+    ]
+   ],
+   "color": "#FFFFFF",
+   "line_pitch_px": 30
+  },
+  {
+   "type": "rect",
+   "box": [
+    384,
+    72,
+    352,
+    74
+   ],
+   "fill": "#0E3F82",
+   "line": null,
+   "paras": [
+    [
+     {
+      "text": "② 説明生成（LLM）",
+      "size_px": 22,
+      "bold": true
+     }
+    ],
+    [
+     {
+      "text": "（evidence 以外を根拠にしない）",
+      "size_px": 15.5
+     }
+    ]
+   ],
+   "color": "#FFFFFF",
+   "line_pitch_px": 30
+  },
+  {
+   "type": "rect",
+   "box": [
+    756,
+    72,
+    292,
+    74
+   ],
+   "fill": "#0E3F82",
+   "line": null,
+   "paras": [
+    [
+     {
+      "text": "③ 生成結果",
+      "size_px": 22,
+      "bold": true
+     }
+    ],
+    [
+     {
+      "text": "（参照ID付きの説明文）",
+      "size_px": 17
+     }
+    ]
+   ],
+   "color": "#FFFFFF",
+   "line_pitch_px": 30
+  },
+  {
+   "type": "rect",
+   "box": [
+    1066,
+    72,
+    252,
+    74
+   ],
+   "fill": "#0E3F82",
+   "line": null,
+   "paras": [
+    [
+     {
+      "text": "④ コード検証",
+      "size_px": 22,
+      "bold": true
+     }
+    ],
+    [
+     {
+      "text": "（参照IDのチェック）",
+      "size_px": 17
+     }
+    ]
+   ],
+   "color": "#FFFFFF",
+   "line_pitch_px": 30
+  },
+  {
+   "type": "rect",
+   "box": [
+    1356,
+    72,
+    300,
+    74
+   ],
+   "fill": "#0E3F82",
+   "line": null,
+   "paras": [
+    [
+     {
+      "text": "⑤ Dify での表示",
+      "size_px": 22,
+      "bold": true
+     }
+    ],
+    [
+     {
+      "text": "（回答・根拠・参照リンク）",
+      "size_px": 17
+     }
+    ]
+   ],
+   "color": "#FFFFFF",
+   "line_pitch_px": 30
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    16,
+    156,
+    346,
+    578
+   ],
+   "fill": "#EAF3FC",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "text",
+   "box": [
+    16,
+    162,
+    346,
+    34
+   ],
+   "text": "検索API /search の結果",
+   "size_px": 19,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "c",
+   "valign": "m"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    28,
+    204,
+    322,
+    228
+   ],
+   "fill": "#FFFFFF",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    38,
+    216,
+    50,
+    44
+   ],
+   "fill": "#1F7FE0",
+   "line": null,
+   "text": "E1",
+   "size_px": 21,
+   "bold": true,
+   "color": "#FFFFFF",
+   "radius_px": 4
+  },
+  {
+   "type": "text",
+   "box": [
+    98,
+    212,
+    246,
+    26
+   ],
+   "text": "source_ref_id：REF-0001",
+   "size_px": 16,
+   "bold": true,
+   "color": "#0E2E63",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "text",
+   "box": [
+    98,
+    238,
+    246,
+    24
+   ],
+   "text": "ファイル名：作業標準 JP-123",
+   "size_px": 14.5,
+   "bold": false,
+   "color": "#1E2A44",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "text",
+   "box": [
+    98,
+    260,
+    246,
+    24
+   ],
+   "text": "版：Rev.3（2024-05-01）",
+   "size_px": 14.5,
+   "bold": false,
+   "color": "#1E2A44",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "text",
+   "box": [
+    98,
+    284,
+    120,
+    22
+   ],
+   "text": "本文抜粋：",
+   "size_px": 14.5,
+   "bold": false,
+   "color": "#1E2A44",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    98,
+    308,
+    236,
+    60
+   ],
+   "fill": "#EEF2F7",
+   "line": null,
+   "radius_px": 4
+  },
+  {
+   "type": "text",
+   "box": [
+    106,
+    312,
+    222,
+    52
+   ],
+   "text": "「治工具の取り付け後、\u000bトルク 15N・m で締め付ける。」",
+   "size_px": 14,
+   "bold": false,
+   "color": "#1E2A44",
+   "align": "l",
+   "valign": "m",
+   "line_pitch_px": 24
+  },
+  {
+   "type": "text",
+   "box": [
+    98,
+    374,
+    246,
+    24
+   ],
+   "text": "場所：p.12 3.2項",
+   "size_px": 14.5,
+   "bold": false,
+   "color": "#1E2A44",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "text",
+   "box": [
+    98,
+    398,
+    246,
+    24
+   ],
+   "text": "種別：作業標準（PDF）",
+   "size_px": 14.5,
+   "bold": false,
+   "color": "#1E2A44",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    28,
+    442,
+    322,
+    228
+   ],
+   "fill": "#FFFFFF",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    38,
+    454,
+    50,
+    44
+   ],
+   "fill": "#1F7FE0",
+   "line": null,
+   "text": "E2",
+   "size_px": 21,
+   "bold": true,
+   "color": "#FFFFFF",
+   "radius_px": 4
+  },
+  {
+   "type": "text",
+   "box": [
+    98,
+    450,
+    246,
+    26
+   ],
+   "text": "source_ref_id：REF-0456",
+   "size_px": 16,
+   "bold": true,
+   "color": "#0E2E63",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "text",
+   "box": [
+    98,
+    476,
+    246,
+    24
+   ],
+   "text": "ファイル名：TOS-2024-001",
+   "size_px": 14.5,
+   "bold": false,
+   "color": "#1E2A44",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "text",
+   "box": [
+    98,
+    498,
+    246,
+    24
+   ],
+   "text": "版：A",
+   "size_px": 14.5,
+   "bold": false,
+   "color": "#1E2A44",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "text",
+   "box": [
+    98,
+    522,
+    120,
+    22
+   ],
+   "text": "本文抜粋：",
+   "size_px": 14.5,
+   "bold": false,
+   "color": "#1E2A44",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    98,
+    546,
+    236,
+    60
+   ],
+   "fill": "#EEF2F7",
+   "line": null,
+   "radius_px": 4
+  },
+  {
+   "type": "text",
+   "box": [
+    106,
+    550,
+    222,
+    52
+   ],
+   "text": "「本工程では治工具Aを使用し、\u000b締付トルクは15N・mとする。」",
+   "size_px": 14,
+   "bold": false,
+   "color": "#1E2A44",
+   "align": "l",
+   "valign": "m",
+   "line_pitch_px": 24
+  },
+  {
+   "type": "text",
+   "box": [
+    98,
+    612,
+    246,
+    24
+   ],
+   "text": "場所：工程 10",
+   "size_px": 14.5,
+   "bold": false,
+   "color": "#1E2A44",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "text",
+   "box": [
+    98,
+    636,
+    246,
+    24
+   ],
+   "text": "種別：N-PLUS（TOS）",
+   "size_px": 14.5,
+   "bold": false,
+   "color": "#1E2A44",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "text",
+   "box": [
+    16,
+    686,
+    346,
+    44
+   ],
+   "text": "・・・\n（上位 N 件を evidence[] として提示）",
+   "size_px": 14.5,
+   "bold": false,
+   "color": "#33466A",
+   "align": "c",
+   "valign": "m",
+   "line_pitch_px": 20
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     364,
+     420
+    ],
+    [
+     398,
+     420
+    ]
+   ],
+   "color": "#1F3A6E",
+   "width_px": 2.5,
+   "head": "end"
+  },
+  {
+   "type": "text",
+   "box": [
+    356,
+    346,
+    60,
+    70
+   ],
+   "text": "",
+   "size_px": 12,
+   "bold": false,
+   "color": "#1E2A44",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    398,
+    156,
+    324,
+    508
+   ],
+   "fill": "#EAF3FC",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    414,
+    168,
+    292,
+    172
+   ],
+   "fill": "#FFFFFF",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "icon",
+   "icon": "azure:azure-openai",
+   "box": [
+    524.0,
+    182,
+    72,
+    72
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "text",
+   "box": [
+    414,
+    262,
+    292,
+    66
+   ],
+   "text": "LLM\n（生成）",
+   "size_px": 20,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "c",
+   "valign": "m",
+   "line_pitch_px": 30
+  },
+  {
+   "type": "text",
+   "box": [
+    414,
+    352,
+    292,
+    32
+   ],
+   "paras": [
+    [
+     {
+      "text": "evidence[]",
+      "size_px": 15.5,
+      "bold": true
+     },
+     {
+      "text": "（本文・場所・source_ref）",
+      "size_px": 12.5
+     }
+    ]
+   ],
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "text",
+   "box": [
+    414,
+    388,
+    292,
+    30
+   ],
+   "text": "プロンプト（抜粋）",
+   "size_px": 19,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "text",
+   "box": [
+    414,
+    422,
+    296,
+    236
+   ],
+   "valign": "t",
+   "color": "#1E2A44",
+   "bullet": true,
+   "bullet_indent_px": 16,
+   "line_pitch_px": 24,
+   "para_space_px": 6,
+   "size_px": 15,
+   "text": "以下の evidence[] だけを根拠にして\u000b回答してください。\nevidence にない情報は\u000b生成しないでください。\n文章中に必ず参照IDを\u000b[E1][E2] の形式で付与してください。\n不明な点は「根拠が不足しています」\u000bとしてください。"
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     724,
+     420
+    ],
+    [
+     762,
+     420
+    ]
+   ],
+   "color": "#1F3A6E",
+   "width_px": 2.5,
+   "head": "end"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    762,
+    156,
+    280,
+    508
+   ],
+   "fill": "#EAF3FC",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    772,
+    166,
+    260,
+    488
+   ],
+   "fill": "#FFFFFF",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "text",
+   "box": [
+    772,
+    170,
+    260,
+    34
+   ],
+   "text": "LLM の出力例",
+   "size_px": 19,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "c",
+   "valign": "m"
+  },
+  {
+   "type": "line",
+   "points": [
+    [
+     786,
+     208
+    ],
+    [
+     1018,
+     208
+    ]
+   ],
+   "color": "#C4D6EA",
+   "width_px": 1
+  },
+  {
+   "type": "text",
+   "box": [
+    784,
+    218,
+    242,
+    428
+   ],
+   "paras": [
+    [
+     {
+      "text": "TOS-2024-001 では、本工程で\u000b治工具Aを使用し、締付トルクは\u000b15N・m と規定されています ",
+      "size_px": 16
+     },
+     {
+      "text": "[E2]",
+      "size_px": 16,
+      "bold": true,
+      "color": "#1F7FE0"
+     },
+     {
+      "text": "。",
+      "size_px": 16
+     }
+    ],
+    [
+     {
+      "text": "また、作業標準 JP-123 では、\u000b治工具の取り付け後、トルク\u000b15N・m で締め付ける手順が\u000b記載されています ",
+      "size_px": 16
+     },
+     {
+      "text": "[E1]",
+      "size_px": 16,
+      "bold": true,
+      "color": "#1F7FE0"
+     },
+     {
+      "text": "。",
+      "size_px": 16
+     }
+    ],
+    [
+     {
+      "text": "したがって、本工程の治工具A\u000bの締付トルクは 15N・m です\u000b",
+      "size_px": 16
+     },
+     {
+      "text": "[E1][E2]",
+      "size_px": 16,
+      "bold": true,
+      "color": "#1F7FE0"
+     },
+     {
+      "text": "。",
+      "size_px": 16
+     }
+    ]
+   ],
+   "color": "#1E2A44",
+   "valign": "t",
+   "line_pitch_px": 28,
+   "para_space_px": 14
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     1044,
+     420
+    ],
+    [
+     1074,
+     420
+    ]
+   ],
+   "color": "#1F3A6E",
+   "width_px": 2.5,
+   "head": "end"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    1072,
+    156,
+    240,
+    438
+   ],
+   "fill": "#EAF3FC",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "icon",
+   "icon": "azure:form-recognizers",
+   "box": [
+    1086,
+    170,
+    58,
+    62
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "text",
+   "box": [
+    1152,
+    174,
+    156,
+    56
+   ],
+   "paras": [
+    [
+     {
+      "text": "コード検証",
+      "size_px": 19,
+      "bold": true
+     }
+    ],
+    [
+     {
+      "text": "（ルールチェック）",
+      "size_px": 15
+     }
+    ]
+   ],
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m",
+   "line_pitch_px": 26
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    1084,
+    248,
+    216,
+    164
+   ],
+   "fill": "#FFFFFF",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    1084,
+    248,
+    216,
+    38
+   ],
+   "fill": "#D6E6F7",
+   "line": null,
+   "text": "参照IDの付与確認",
+   "size_px": 17,
+   "bold": true,
+   "color": "#1F3A6E",
+   "radius_px": 6
+  },
+  {
+   "type": "text",
+   "box": [
+    1094,
+    294,
+    200,
+    114
+   ],
+   "text": "すべての主張に参照ID\u000bが付いているか\n存在しない参照IDが\u000b含まれていないか",
+   "size_px": 15,
+   "color": "#1E2A44",
+   "valign": "t",
+   "bullet": true,
+   "bullet_indent_px": 14,
+   "line_pitch_px": 24,
+   "para_space_px": 6
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    1084,
+    422,
+    216,
+    164
+   ],
+   "fill": "#FFFFFF",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    1084,
+    422,
+    216,
+    38
+   ],
+   "fill": "#D6E6F7",
+   "line": null,
+   "text": "根拠の整合性確認",
+   "size_px": 17,
+   "bold": true,
+   "color": "#1F3A6E",
+   "radius_px": 6
+  },
+  {
+   "type": "text",
+   "box": [
+    1094,
+    468,
+    200,
+    114
+   ],
+   "text": "evidence の内容と\u000b矛盾していないか\n根拠不足の主張がないか",
+   "size_px": 15,
+   "color": "#1E2A44",
+   "valign": "t",
+   "bullet": true,
+   "bullet_indent_px": 14,
+   "line_pitch_px": 24,
+   "para_space_px": 6
+  },
+  {
+   "type": "text",
+   "box": [
+    1314,
+    364,
+    44,
+    50
+   ],
+   "text": "検証\nOK",
+   "size_px": 15,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "c",
+   "valign": "m",
+   "line_pitch_px": 21
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     1312,
+     420
+    ],
+    [
+     1358,
+     420
+    ]
+   ],
+   "color": "#1F3A6E",
+   "width_px": 2.5,
+   "head": "end"
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     1192.0,
+     596
+    ],
+    [
+     1192.0,
+     680
+    ]
+   ],
+   "color": "#D43A3A",
+   "width_px": 2.5,
+   "head": "end"
+  },
+  {
+   "type": "text",
+   "box": [
+    978.0,
+    602,
+    204,
+    50
+   ],
+   "paras": [
+    [
+     {
+      "text": "NG",
+      "size_px": 17,
+      "bold": true
+     }
+    ],
+    [
+     {
+      "text": "（根拠不足・矛盾・参照IDなし）",
+      "size_px": 12.5
+     }
+    ]
+   ],
+   "color": "#C0303A",
+   "align": "r",
+   "valign": "m",
+   "line_pitch_px": 22
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    1356,
+    156,
+    300,
+    508
+   ],
+   "fill": "#EAF3FC",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "text",
+   "box": [
+    1356,
+    162,
+    300,
+    32
+   ],
+   "text": "Dify チャット画面（表示例）",
+   "size_px": 18,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "c",
+   "valign": "m"
+  },
+  {
+   "type": "icon",
+   "icon": "azure:users",
+   "box": [
+    1368,
+    202,
+    34,
+    36
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    1412,
+    202,
+    232,
+    36
+   ],
+   "fill": "#FFFFFF",
+   "line": null,
+   "text": "この工程の治具の締付トルクは？",
+   "size_px": 14,
+   "color": "#1E2A44",
+   "radius_px": 6
+  },
+  {
+   "type": "icon",
+   "icon": "azure:bot-services",
+   "box": [
+    1368,
+    258,
+    34,
+    34
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    1412,
+    252,
+    232,
+    262
+   ],
+   "fill": "#FFFFFF",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "text",
+   "box": [
+    1422,
+    260,
+    216,
+    250
+   ],
+   "paras": [
+    [
+     {
+      "text": "TOS-2024-001 では、本工程\u000bでは治工具Aを使用し、締付\u000bトルクは 15N・m と規定され\u000bています ",
+      "size_px": 13
+     },
+     {
+      "text": "[E2]",
+      "size_px": 13,
+      "bold": true,
+      "color": "#1F7FE0"
+     },
+     {
+      "text": "。",
+      "size_px": 13
+     }
+    ],
+    [
+     {
+      "text": "また、作業標準 JP-123 では、\u000b治工具の取り付け後、トルク\u000b15N・m で締め付ける手順が\u000b記載されています ",
+      "size_px": 13
+     },
+     {
+      "text": "[E1]",
+      "size_px": 13,
+      "bold": true,
+      "color": "#1F7FE0"
+     },
+     {
+      "text": "。",
+      "size_px": 13
+     }
+    ],
+    [
+     {
+      "text": "したがって、本工程の治工具A\u000bの締付トルクは 15N・m です\u000b",
+      "size_px": 13
+     },
+     {
+      "text": "[E1][E2]",
+      "size_px": 13,
+      "bold": true,
+      "color": "#1F7FE0"
+     },
+     {
+      "text": "。",
+      "size_px": 13
+     }
+    ]
+   ],
+   "color": "#1E2A44",
+   "valign": "t",
+   "line_pitch_px": 20,
+   "para_space_px": 6
+  },
+  {
+   "type": "text",
+   "box": [
+    1368,
+    526,
+    200,
+    26
+   ],
+   "text": "参照資料",
+   "size_px": 15.5,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    1368,
+    558,
+    276,
+    40
+   ],
+   "fill": "#FFFFFF",
+   "line": null,
+   "radius_px": 4
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    1374,
+    562,
+    36,
+    32
+   ],
+   "fill": "#1F7FE0",
+   "line": null,
+   "text": "E1",
+   "size_px": 15,
+   "bold": true,
+   "color": "#FFFFFF",
+   "radius_px": 3
+  },
+  {
+   "type": "text",
+   "box": [
+    1416,
+    558,
+    196,
+    40
+   ],
+   "text": "作業標準 JP-123（Rev.3）p.12",
+   "size_px": 12,
+   "bold": false,
+   "color": "#1E2A44",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "icon",
+   "icon": "lucide:external-link",
+   "box": [
+    1614,
+    567,
+    22,
+    22
+   ],
+   "color": "#1F7FE0",
+   "stroke_width": 2.2
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    1368,
+    604,
+    276,
+    40
+   ],
+   "fill": "#FFFFFF",
+   "line": null,
+   "radius_px": 4
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    1374,
+    608,
+    36,
+    32
+   ],
+   "fill": "#1F7FE0",
+   "line": null,
+   "text": "E2",
+   "size_px": 15,
+   "bold": true,
+   "color": "#FFFFFF",
+   "radius_px": 3
+  },
+  {
+   "type": "text",
+   "box": [
+    1416,
+    604,
+    196,
+    40
+   ],
+   "text": "TOS-2024-001（A）工程10",
+   "size_px": 12,
+   "bold": false,
+   "color": "#1E2A44",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "icon",
+   "icon": "lucide:external-link",
+   "box": [
+    1614,
+    613,
+    22,
+    22
+   ],
+   "color": "#1F7FE0",
+   "stroke_width": 2.2
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    446,
+    680,
+    1210,
+    124
+   ],
+   "fill": "#FDEDED",
+   "line": {
+    "color": "#F0B4B4",
+    "width_px": 1.5
+   },
+   "radius_px": 6
+  },
+  {
+   "type": "icon",
+   "icon": "material:error-fill",
+   "box": [
+    462,
+    692,
+    42,
+    42
+   ],
+   "color": "#E02020"
+  },
+  {
+   "type": "text",
+   "box": [
+    512,
+    690,
+    600,
+    34
+   ],
+   "paras": [
+    [
+     {
+      "text": "保留",
+      "size_px": 22,
+      "bold": true
+     },
+     {
+      "text": "（根拠不足・矛盾時）",
+      "size_px": 17,
+      "bold": true
+     }
+    ]
+   ],
+   "color": "#D42A2A",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "text",
+   "box": [
+    512,
+    726,
+    740,
+    76
+   ],
+   "size_px": 15,
+   "color": "#1E2A44",
+   "valign": "t",
+   "bullet": true,
+   "bullet_indent_px": 14,
+   "line_pitch_px": 24,
+   "text": "evidence に該当情報がない、または矛盾がある場合は回答を保留\n「根拠が不足しています／情報が矛盾しています」として返す（参照IDなしの文は削除）\n必要に応じて追加検索や対象の見直しを促す"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    1262,
+    694,
+    380,
+    98
+   ],
+   "fill": "#FFFFFF",
+   "line": null,
+   "radius_px": 8
+  },
+  {
+   "type": "icon",
+   "icon": "azure:bot-services",
+   "box": [
+    1276,
+    718,
+    46,
+    46
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "text",
+   "box": [
+    1334,
+    700,
+    300,
+    86
+   ],
+   "text": "該当する情報が見つかりませんでした。\n根拠が不足しています。\n別の条件で再検索してください。",
+   "size_px": 14.5,
+   "bold": false,
+   "color": "#1E2A44",
+   "align": "l",
+   "valign": "m",
+   "line_pitch_px": 24
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    16,
+    818,
+    1640,
+    114
+   ],
+   "fill": "#E6EFF8",
+   "line": null,
+   "radius_px": 8
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    30,
+    830,
+    326,
+    88
+   ],
+   "fill": "#0E3F82",
+   "line": null,
+   "text": "二重の Faithfulness 担保\n（ハルシネーション抑制）",
+   "size_px": 21,
+   "bold": true,
+   "color": "#FFFFFF",
+   "line_pitch_px": 34,
+   "radius_px": 6
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    380,
+    830,
+    420,
+    88
+   ],
+   "fill": "#FFFFFF",
+   "line": {
+    "color": "#9DBBE0",
+    "width_px": 1.2
+   },
+   "radius_px": 6
+  },
+  {
+   "type": "ellipse",
+   "box": [
+    394.0,
+    850.0,
+    48,
+    48
+   ],
+   "fill": "#1F6FD1",
+   "line": null,
+   "text": "1",
+   "size_px": 26,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "text",
+   "box": [
+    454,
+    834,
+    330,
+    30
+   ],
+   "text": "生成時の制約",
+   "size_px": 20,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "text",
+   "box": [
+    454,
+    866,
+    342,
+    50
+   ],
+   "text": "LLMに「evidence 以外を根拠にしない」指示\n必ず参照IDを付与するようプロンプトで制約",
+   "size_px": 14,
+   "color": "#1E2A44",
+   "valign": "t",
+   "bullet": true,
+   "bullet_indent_px": 13,
+   "line_pitch_px": 22
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    874,
+    830,
+    420,
+    88
+   ],
+   "fill": "#FFFFFF",
+   "line": {
+    "color": "#9DBBE0",
+    "width_px": 1.2
+   },
+   "radius_px": 6
+  },
+  {
+   "type": "ellipse",
+   "box": [
+    888.0,
+    850.0,
+    48,
+    48
+   ],
+   "fill": "#1F6FD1",
+   "line": null,
+   "text": "2",
+   "size_px": 26,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "text",
+   "box": [
+    948,
+    834,
+    330,
+    30
+   ],
+   "text": "事後のコード検証",
+   "size_px": 20,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "text",
+   "box": [
+    948,
+    866,
+    342,
+    50
+   ],
+   "text": "参照ID未付与文の検出・削除または保留\nevidence と矛盾する記述の検出",
+   "size_px": 14,
+   "color": "#1E2A44",
+   "valign": "t",
+   "bullet": true,
+   "bullet_indent_px": 13,
+   "line_pitch_px": 22
+  },
+  {
+   "type": "text",
+   "box": [
+    806,
+    846,
+    64,
+    56
+   ],
+   "text": "+",
+   "size_px": 44,
+   "bold": true,
+   "color": "#1F6FD1",
+   "align": "c",
+   "valign": "m"
+  },
+  {
+   "type": "rightArrow",
+   "box": [
+    1318,
+    850,
+    52,
+    46
+   ],
+   "fill": "#1F6FD1",
+   "line": null
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    1384,
+    836,
+    262,
+    76
+   ],
+   "fill": "#FFFFFF",
+   "line": {
+    "color": "#1F6FD1",
+    "width_px": 2.5
+   },
+   "text": "根拠に基づく\n信頼性の高い回答を表示",
+   "size_px": 18,
+   "bold": true,
+   "color": "#1F3A6E",
+   "line_pitch_px": 28,
+   "radius_px": 4
+  }
+ ]
+}

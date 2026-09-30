@@ -1,0 +1,722 @@
+{
+ "source_size": [
+  1672,
+  941
+ ],
+ "font": "Meiryo",
+ "background": "#FFFFFF",
+ "elements": [
+  {
+   "type": "roundRect",
+   "box": [
+    12,
+    8,
+    1648,
+    76
+   ],
+   "fill": "#E3F0FB",
+   "line": null,
+   "radius_px": 10
+  },
+  {
+   "type": "text",
+   "box": [
+    12,
+    8,
+    1648,
+    76
+   ],
+   "text": "確定条件はコードで絞り、意味検索は候補拡張に限定",
+   "size_px": 38,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "c",
+   "valign": "m"
+  },
+  {
+   "type": "table",
+   "box": [
+    10,
+    94,
+    1652,
+    838
+   ],
+   "col_widths_px": [
+    290,
+    302,
+    291,
+    417,
+    352
+   ],
+   "row_heights_px": [
+    72,
+    198,
+    214,
+    204,
+    150
+   ],
+   "cells": [
+    [
+     {
+      "text": "質問種類",
+      "fill": "#0E2E63",
+      "color": "#FFFFFF",
+      "bold": true,
+      "size_px": 22,
+      "align": "c",
+      "line_pitch_px": 30
+     },
+     {
+      "text": "質問例",
+      "fill": "#0E2E63",
+      "color": "#FFFFFF",
+      "bold": true,
+      "size_px": 22,
+      "align": "c",
+      "line_pitch_px": 30
+     },
+     {
+      "text": "採用する方式",
+      "fill": "#0E2E63",
+      "color": "#FFFFFF",
+      "bold": true,
+      "size_px": 22,
+      "align": "c",
+      "line_pitch_px": 30
+     },
+     {
+      "text": "なぜこの方式を採用するのか（理由）",
+      "fill": "#0E2E63",
+      "color": "#FFFFFF",
+      "bold": true,
+      "size_px": 22,
+      "align": "c",
+      "line_pitch_px": 30
+     },
+     {
+      "text": "単一方式で起きる\n取り逃しリスク",
+      "fill": "#0E2E63",
+      "color": "#FFFFFF",
+      "bold": true,
+      "size_px": 22,
+      "align": "c",
+      "line_pitch_px": 30
+     }
+    ],
+    [
+     {
+      "text": "部品番号・工程番号・\u000b文書番号など\u000b確定キーのみ",
+      "size_px": 20.5,
+      "bold": true,
+      "color": "#1F3A6E",
+      "align": "l",
+      "valign": "t",
+      "line_pitch_px": 31,
+      "fill": "#EAF3FC",
+      "inset_px": [
+       80,
+       26,
+       4,
+       4
+      ]
+     },
+     {
+      "bullet": true,
+      "bullet_indent_px": 20,
+      "size_px": 18.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "line_pitch_px": 28,
+      "inset_px": [
+       18,
+       4,
+       8,
+       4
+      ],
+      "text": "部品番号 123456 の\u000b図面を検索\n工程番号 10-20 の\u000b作業手順を表示\n文書番号 JP-2024-001\u000bを参照"
+     },
+     {
+      "paras": [
+       [
+        {
+         "text": "構造化検索"
+        }
+       ],
+       [
+        {
+         "text": "（完全一致・フィルタ）"
+        }
+       ]
+      ],
+      "size_px": 21,
+      "bold": true,
+      "color": "#1F3A6E",
+      "align": "c",
+      "valign": "b",
+      "fill": "#E3F0FB",
+      "line_pitch_px": 30,
+      "inset_px": [
+       4,
+       4,
+       4,
+       22
+      ]
+     },
+     {
+      "bullet": true,
+      "bullet_indent_px": 20,
+      "size_px": 17.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "line_pitch_px": 27,
+      "inset_px": [
+       18,
+       4,
+       8,
+       4
+      ],
+      "text": "確定キーは一意性が高く、\u000b構造化検索で正確かつ高速に\u000b目的のデータへ到達できる\n不要な類似候補を除外し、\u000b誤った情報の混入を防ぐ"
+     },
+     {
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "size_px": 17.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "line_pitch_px": 27,
+      "inset_px": [
+       18,
+       4,
+       8,
+       4
+      ],
+      "fill": "#EEF1F5",
+      "paras": [
+       [
+        {
+         "text": "ベクトル検索のみ：",
+         "bold": true
+        },
+        {
+         "text": "\u000b表記ゆれや類似表現により\u000b別の部品・文書を返す可能性"
+        }
+       ],
+       [
+        {
+         "text": "全文検索のみ：",
+         "bold": true
+        },
+        {
+         "text": "\u000bコード項目の一致精度が低く、\u000b該当データを取り逃す可能性"
+        }
+       ]
+      ]
+     }
+    ],
+    [
+     {
+      "text": "確定キー＋\u000b自然言語",
+      "size_px": 20.5,
+      "bold": true,
+      "color": "#1F3A6E",
+      "align": "l",
+      "valign": "t",
+      "line_pitch_px": 31,
+      "fill": "#EAF3FC",
+      "inset_px": [
+       80,
+       26,
+       4,
+       4
+      ]
+     },
+     {
+      "bullet": true,
+      "bullet_indent_px": 20,
+      "size_px": 18.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "line_pitch_px": 28,
+      "inset_px": [
+       18,
+       4,
+       8,
+       4
+      ],
+      "text": "部品番号 123456 の\u000b後継品を教えて\n工程番号 10-20 の\u000b不具合事例を調べて"
+     },
+     {
+      "paras": [
+       [
+        {
+         "text": "構造化で絞って"
+        }
+       ],
+       [
+        {
+         "text": "全文・ベクトル"
+        }
+       ]
+      ],
+      "size_px": 21,
+      "bold": true,
+      "color": "#1F3A6E",
+      "align": "c",
+      "valign": "b",
+      "fill": "#E3F0FB",
+      "line_pitch_px": 30,
+      "inset_px": [
+       4,
+       4,
+       4,
+       22
+      ]
+     },
+     {
+      "bullet": true,
+      "bullet_indent_px": 20,
+      "size_px": 17.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "line_pitch_px": 27,
+      "inset_px": [
+       18,
+       4,
+       8,
+       4
+      ],
+      "text": "確定キーで対象範囲を絞り込み、\u000bその中から自然言語の意図に合う\u000b情報を全文・ベクトルで検索する\nノイズを抑えつつ、関連情報の\u000b取りこぼしを防げる"
+     },
+     {
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "size_px": 17.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "line_pitch_px": 27,
+      "inset_px": [
+       18,
+       4,
+       8,
+       4
+      ],
+      "fill": "#EEF1F5",
+      "paras": [
+       [
+        {
+         "text": "構造化検索のみ：",
+         "bold": true
+        },
+        {
+         "text": "\u000b確定キーだけでは関連情報\u000b（関連文書・類似事例）を\u000b取り逃す可能性"
+        }
+       ],
+       [
+        {
+         "text": "ベクトル検索のみ：",
+         "bold": true
+        },
+        {
+         "text": "\u000b対象範囲が広くノイズが多く、\u000b目的の情報を見落とす可能性"
+        }
+       ]
+      ]
+     }
+    ],
+    [
+     {
+      "text": "自然言語のみ",
+      "size_px": 20.5,
+      "bold": true,
+      "color": "#1F3A6E",
+      "align": "l",
+      "valign": "t",
+      "line_pitch_px": 31,
+      "fill": "#EAF3FC",
+      "inset_px": [
+       80,
+       26,
+       4,
+       4
+      ]
+     },
+     {
+      "bullet": true,
+      "bullet_indent_px": 20,
+      "size_px": 18.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "line_pitch_px": 28,
+      "inset_px": [
+       18,
+       4,
+       8,
+       4
+      ],
+      "text": "この部品の類似事例を\u000b教えて\n加工方法の注意点を調べて\nこの不具合の原因は？"
+     },
+     {
+      "paras": [
+       [
+        {
+         "text": "全文 BM25＋"
+        }
+       ],
+       [
+        {
+         "text": "ベクトルのハイブリッド"
+        }
+       ]
+      ],
+      "size_px": 21,
+      "bold": true,
+      "color": "#1F3A6E",
+      "align": "c",
+      "valign": "b",
+      "fill": "#E3F0FB",
+      "line_pitch_px": 30,
+      "inset_px": [
+       4,
+       4,
+       4,
+       22
+      ]
+     },
+     {
+      "bullet": true,
+      "bullet_indent_px": 20,
+      "size_px": 17.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "line_pitch_px": 27,
+      "inset_px": [
+       18,
+       4,
+       8,
+       4
+      ],
+      "text": "キーワードの一致（全文 BM25）\u000bと意味の類似（ベクトル）を\u000b組み合わせ、用語の揺れや\u000b類似表現にも対応できる\n網羅性を高め、関連する候補を\u000b幅広く提示できる"
+     },
+     {
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "size_px": 17.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "line_pitch_px": 27,
+      "inset_px": [
+       18,
+       4,
+       8,
+       4
+      ],
+      "fill": "#EEF1F5",
+      "paras": [
+       [
+        {
+         "text": "全文検索のみ：",
+         "bold": true
+        },
+        {
+         "text": "\u000b同義語・表記ゆれにより\u000b関連情報を取り逃す可能性"
+        }
+       ],
+       [
+        {
+         "text": "ベクトル検索のみ：",
+         "bold": true
+        },
+        {
+         "text": "\u000b固有名詞や専門用語の一致に\u000b弱く、重要な情報を見落とす可能性"
+        }
+       ]
+      ]
+     }
+    ],
+    [
+     {
+      "text": "意図不明／\u000b同名異義語",
+      "size_px": 20.5,
+      "bold": true,
+      "color": "#1F3A6E",
+      "align": "l",
+      "valign": "t",
+      "line_pitch_px": 31,
+      "fill": "#EAF3FC",
+      "inset_px": [
+       80,
+       26,
+       4,
+       4
+      ]
+     },
+     {
+      "bullet": true,
+      "bullet_indent_px": 20,
+      "size_px": 18.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "line_pitch_px": 28,
+      "inset_px": [
+       18,
+       4,
+       8,
+       4
+      ],
+      "paras": [
+       [
+        {
+         "text": "この部品について教えて"
+        },
+        {
+         "text": "\u000b（対象の部品が不明）",
+         "size_px": 14,
+         "color": "#33466A"
+        }
+       ],
+       [
+        {
+         "text": "“フランジ”の図面を探して"
+        },
+        {
+         "text": "\u000b（同名異義語が複数存在）",
+         "size_px": 14,
+         "color": "#33466A"
+        }
+       ]
+      ]
+     },
+     {
+      "paras": [
+       [
+        {
+         "text": "追加確認"
+        }
+       ],
+       [
+        {
+         "text": "（Dify質問分岐）"
+        }
+       ]
+      ],
+      "size_px": 21,
+      "bold": true,
+      "color": "#1F3A6E",
+      "align": "c",
+      "valign": "b",
+      "fill": "#E3F0FB",
+      "line_pitch_px": 30,
+      "inset_px": [
+       4,
+       4,
+       4,
+       14
+      ]
+     },
+     {
+      "bullet": true,
+      "bullet_indent_px": 20,
+      "size_px": 17.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "line_pitch_px": 27,
+      "inset_px": [
+       18,
+       4,
+       8,
+       4
+      ],
+      "text": "意図が不明確な場合や同名異義語\u000bが存在する場合は、追加質問により\u000b対象を特定してから検索を実行する\n誤った解釈による検索を防ぎ、\u000b精度の高い結果を提示できる"
+     },
+     {
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "size_px": 17.5,
+      "color": "#1E2A44",
+      "align": "l",
+      "line_pitch_px": 27,
+      "inset_px": [
+       18,
+       4,
+       8,
+       4
+      ],
+      "fill": "#EEF1F5",
+      "paras": [
+       [
+        {
+         "text": "単一検索方式のみ：",
+         "bold": true
+        },
+        {
+         "text": "\u000b誤った対象で検索され、無関係な\u000b結果を提示する可能性が高く、\u000b正しい情報を取り逃す"
+        }
+       ]
+      ]
+     }
+    ]
+   ],
+   "border": {
+    "color": "#FFFFFF",
+    "width_px": 3
+   },
+   "name": "method-table"
+  },
+  {
+   "type": "ellipse",
+   "box": [
+    26,
+    184,
+    48,
+    48
+   ],
+   "fill": "#1F4E8C",
+   "line": null,
+   "text": "1",
+   "size_px": 24,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "icon",
+   "icon": "azure:sql-database",
+   "box": [
+    715.5,
+    185.0,
+    64,
+    64
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "ellipse",
+   "box": [
+    26,
+    382,
+    48,
+    48
+   ],
+   "fill": "#1F4E8C",
+   "line": null,
+   "text": "2",
+   "size_px": 24,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "icon",
+   "icon": "azure:sql-database",
+   "box": [
+    679.5,
+    386.0,
+    58,
+    58
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "text",
+   "box": [
+    737.5,
+    398,
+    26,
+    30
+   ],
+   "text": "+",
+   "size_px": 24,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "c",
+   "valign": "m"
+  },
+  {
+   "type": "icon",
+   "icon": "azure:search",
+   "box": [
+    763.5,
+    389.0,
+    52,
+    52
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "ellipse",
+   "box": [
+    26,
+    596,
+    48,
+    48
+   ],
+   "fill": "#1F4E8C",
+   "line": null,
+   "text": "3",
+   "size_px": 24,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "icon",
+   "icon": "azure:file",
+   "box": [
+    674.5,
+    600.0,
+    58,
+    58
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "text",
+   "box": [
+    732.5,
+    612,
+    26,
+    30
+   ],
+   "text": "+",
+   "size_px": 24,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "c",
+   "valign": "m"
+  },
+  {
+   "type": "icon",
+   "icon": "azure:cognitive-services",
+   "box": [
+    758.5,
+    598.0,
+    62,
+    62
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "ellipse",
+   "box": [
+    26,
+    800,
+    48,
+    48
+   ],
+   "fill": "#1F4E8C",
+   "line": null,
+   "text": "4",
+   "size_px": 24,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "icon",
+   "icon": "azure:bot-services",
+   "box": [
+    716.5,
+    794.0,
+    62,
+    62
+   ],
+   "color": "#1F3F7A"
+  }
+ ]
+}

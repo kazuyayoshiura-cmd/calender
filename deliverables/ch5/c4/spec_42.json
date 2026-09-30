@@ -1,0 +1,761 @@
+{
+ "source_size": [
+  1672,
+  941
+ ],
+ "font": "Meiryo",
+ "background": "#FFFFFF",
+ "elements": [
+  {
+   "type": "roundRect",
+   "box": [
+    14,
+    14,
+    136,
+    56
+   ],
+   "fill": "#0E2E63",
+   "line": null,
+   "text": "表 5-4",
+   "size_px": 28,
+   "bold": true,
+   "color": "#FFFFFF",
+   "radius_px": 4
+  },
+  {
+   "type": "text",
+   "box": [
+    176,
+    8,
+    1000,
+    68
+   ],
+   "paras": [
+    [
+     {
+      "text": "方式比較の評価計画",
+      "size_px": 40,
+      "bold": true
+     },
+     {
+      "text": "（評価対象・評価指標の定義・採否判断の基準）",
+      "size_px": 26,
+      "bold": true
+     }
+    ]
+   ],
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    20,
+    92,
+    700,
+    752
+   ],
+   "fill": "#FFFFFF",
+   "line": {
+    "color": "#C9D6E6",
+    "width_px": 1.2
+   },
+   "radius_px": 6
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    20,
+    92,
+    700,
+    50
+   ],
+   "fill": "#0E2E63",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "rect",
+   "box": [
+    20,
+    122,
+    700,
+    20
+   ],
+   "fill": "#0E2E63",
+   "line": null
+  },
+  {
+   "type": "text",
+   "box": [
+    40,
+    92,
+    670,
+    50
+   ],
+   "text": "評価対象：代表質問セット（例）",
+   "size_px": 22,
+   "bold": true,
+   "color": "#FFFFFF",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "table",
+   "box": [
+    36,
+    158,
+    668,
+    660
+   ],
+   "col_widths_px": [
+    250,
+    418
+   ],
+   "row_heights_px": [
+    132,
+    132,
+    132,
+    132,
+    132
+   ],
+   "cells": [
+    [
+     {
+      "text": "番号・条件一致",
+      "size_px": 20,
+      "bold": true,
+      "color": "#1F3A6E",
+      "fill": "#EAF3FC",
+      "align": "l",
+      "inset_px": [
+       76,
+       2,
+       4,
+       2
+      ],
+      "line_pitch_px": 28
+     },
+     {
+      "text": "「部品番号 123456 のTOSを教えて」",
+      "size_px": 18,
+      "color": "#1E2A44",
+      "fill": "#F7FAFD",
+      "align": "l",
+      "line_pitch_px": 28,
+      "line_pitch": null,
+      "inset_px": [
+       16,
+       2,
+       8,
+       2
+      ]
+     }
+    ],
+    [
+     {
+      "text": "略語・表記揺れ",
+      "size_px": 20,
+      "bold": true,
+      "color": "#1F3A6E",
+      "fill": "#EAF3FC",
+      "align": "l",
+      "inset_px": [
+       76,
+       2,
+       4,
+       2
+      ],
+      "line_pitch_px": 28
+     },
+     {
+      "text": "「治具／治工具／ジグに関する作業指示」",
+      "size_px": 18,
+      "color": "#1E2A44",
+      "fill": "#F7FAFD",
+      "align": "l",
+      "line_pitch_px": 28,
+      "line_pitch": null,
+      "inset_px": [
+       16,
+       2,
+       8,
+       2
+      ]
+     }
+    ],
+    [
+     {
+      "text": "言い換え\u000b（意味類似）",
+      "size_px": 20,
+      "bold": true,
+      "color": "#1F3A6E",
+      "fill": "#EAF3FC",
+      "align": "l",
+      "inset_px": [
+       76,
+       2,
+       4,
+       2
+      ],
+      "line_pitch_px": 28
+     },
+     {
+      "text": "「過去に類似工程で使われた\u000bTOSを探したい」",
+      "size_px": 18,
+      "color": "#1E2A44",
+      "fill": "#F7FAFD",
+      "align": "l",
+      "line_pitch_px": 28,
+      "line_pitch": null,
+      "inset_px": [
+       16,
+       2,
+       8,
+       2
+      ]
+     }
+    ],
+    [
+     {
+      "text": "同名異義語",
+      "size_px": 20,
+      "bold": true,
+      "color": "#1F3A6E",
+      "fill": "#EAF3FC",
+      "align": "l",
+      "inset_px": [
+       76,
+       2,
+       4,
+       2
+      ],
+      "line_pitch_px": 28
+     },
+     {
+      "text": "「A工程のドリルについて\u000b（治具のドリル or 加工のドリル？）」",
+      "size_px": 18,
+      "color": "#1E2A44",
+      "fill": "#F7FAFD",
+      "align": "l",
+      "line_pitch_px": 28,
+      "line_pitch": null,
+      "inset_px": [
+       16,
+       2,
+       8,
+       2
+      ]
+     }
+    ],
+    [
+     {
+      "text": "版・適用条件",
+      "size_px": 20,
+      "bold": true,
+      "color": "#1F3A6E",
+      "fill": "#EAF3FC",
+      "align": "l",
+      "inset_px": [
+       76,
+       2,
+       4,
+       2
+      ],
+      "line_pitch_px": 28
+     },
+     {
+      "text": "「JP-2024-001 の最新版と\u000b適用機種を教えて」",
+      "size_px": 18,
+      "color": "#1E2A44",
+      "fill": "#F7FAFD",
+      "align": "l",
+      "line_pitch_px": 28,
+      "line_pitch": null,
+      "inset_px": [
+       16,
+       2,
+       8,
+       2
+      ]
+     }
+    ]
+   ],
+   "border": {
+    "color": "#FFFFFF",
+    "width_px": 4
+   }
+  },
+  {
+   "type": "ellipse",
+   "box": [
+    50,
+    202.0,
+    44,
+    44
+   ],
+   "fill": "#1F4E8C",
+   "line": null,
+   "text": "1",
+   "size_px": 22,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "ellipse",
+   "box": [
+    50,
+    334.0,
+    44,
+    44
+   ],
+   "fill": "#1F4E8C",
+   "line": null,
+   "text": "2",
+   "size_px": 22,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "ellipse",
+   "box": [
+    50,
+    466.0,
+    44,
+    44
+   ],
+   "fill": "#1F4E8C",
+   "line": null,
+   "text": "3",
+   "size_px": 22,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "ellipse",
+   "box": [
+    50,
+    598.0,
+    44,
+    44
+   ],
+   "fill": "#1F4E8C",
+   "line": null,
+   "text": "4",
+   "size_px": 22,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "ellipse",
+   "box": [
+    50,
+    730.0,
+    44,
+    44
+   ],
+   "fill": "#1F4E8C",
+   "line": null,
+   "text": "5",
+   "size_px": 22,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    736,
+    92,
+    460,
+    752
+   ],
+   "fill": "#FFFFFF",
+   "line": {
+    "color": "#C9D6E6",
+    "width_px": 1.2
+   },
+   "radius_px": 6
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    736,
+    92,
+    460,
+    50
+   ],
+   "fill": "#0E2E63",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "rect",
+   "box": [
+    736,
+    122,
+    460,
+    20
+   ],
+   "fill": "#0E2E63",
+   "line": null
+  },
+  {
+   "type": "text",
+   "box": [
+    756,
+    92,
+    430,
+    50
+   ],
+   "text": "評価指標の定義",
+   "size_px": 22,
+   "bold": true,
+   "color": "#FFFFFF",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "table",
+   "box": [
+    752,
+    158,
+    428,
+    660
+   ],
+   "col_widths_px": [
+    150,
+    278
+   ],
+   "row_heights_px": [
+    220,
+    220,
+    220
+   ],
+   "cells": [
+    [
+     {
+      "text": "Top-5\n到達率",
+      "size_px": 20,
+      "bold": true,
+      "color": "#1F3A6E",
+      "fill": "#EAF3FC",
+      "align": "c"
+     },
+     {
+      "text": "正解または許容回答が\u000b上位5件に含まれる割合\u000b（％）。高いほど良い。",
+      "size_px": 18,
+      "color": "#1E2A44",
+      "fill": "#F7FAFD",
+      "align": "l",
+      "line_pitch_px": 30,
+      "inset_px": [
+       16,
+       2,
+       10,
+       2
+      ]
+     }
+    ],
+    [
+     {
+      "text": "根拠の\n正確性",
+      "size_px": 20,
+      "bold": true,
+      "color": "#1F3A6E",
+      "fill": "#EAF3FC",
+      "align": "c"
+     },
+     {
+      "text": "提示された根拠（出典・\u000b版・該当箇所等）が正しい\u000b割合（%）。高いほど良い。",
+      "size_px": 18,
+      "color": "#1E2A44",
+      "fill": "#F7FAFD",
+      "align": "l",
+      "line_pitch_px": 30,
+      "inset_px": [
+       16,
+       2,
+       10,
+       2
+      ]
+     }
+    ],
+    [
+     {
+      "text": "応答時間",
+      "size_px": 20,
+      "bold": true,
+      "color": "#1F3A6E",
+      "fill": "#EAF3FC",
+      "align": "c"
+     },
+     {
+      "text": "質問入力から最終回答の\u000b表示までの時間（秒）。\u000b短いほど良い。",
+      "size_px": 18,
+      "color": "#1E2A44",
+      "fill": "#F7FAFD",
+      "align": "l",
+      "line_pitch_px": 30,
+      "inset_px": [
+       16,
+       2,
+       10,
+       2
+      ]
+     }
+    ]
+   ],
+   "border": {
+    "color": "#FFFFFF",
+    "width_px": 4
+   }
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    1212,
+    92,
+    446,
+    752
+   ],
+   "fill": "#FFFFFF",
+   "line": {
+    "color": "#C9D6E6",
+    "width_px": 1.2
+   },
+   "radius_px": 6
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    1212,
+    92,
+    446,
+    50
+   ],
+   "fill": "#0E2E63",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "rect",
+   "box": [
+    1212,
+    122,
+    446,
+    20
+   ],
+   "fill": "#0E2E63",
+   "line": null
+  },
+  {
+   "type": "text",
+   "box": [
+    1232,
+    92,
+    416,
+    50
+   ],
+   "text": "採否判断の基準（例）",
+   "size_px": 22,
+   "bold": true,
+   "color": "#FFFFFF",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "table",
+   "box": [
+    1228,
+    158,
+    414,
+    300
+   ],
+   "col_widths_px": [
+    150,
+    264
+   ],
+   "row_heights_px": [
+    110,
+    90,
+    100
+   ],
+   "cells": [
+    [
+     {
+      "text": "Top-5\n到達率",
+      "size_px": 18,
+      "bold": true,
+      "color": "#1F3A6E",
+      "fill": "#EAF3FC",
+      "align": "c",
+      "line_pitch_px": 26
+     },
+     {
+      "text": "80%以上（全体）\u000bかつ 各質問セットで\u000b70%以上",
+      "size_px": 17.5,
+      "color": "#1E2A44",
+      "fill": "#F7FAFD",
+      "align": "l",
+      "line_pitch_px": 27,
+      "inset_px": [
+       14,
+       2,
+       8,
+       2
+      ]
+     }
+    ],
+    [
+     {
+      "text": "根拠の\n正確性",
+      "size_px": 18,
+      "bold": true,
+      "color": "#1F3A6E",
+      "fill": "#EAF3FC",
+      "align": "c",
+      "line_pitch_px": 26
+     },
+     {
+      "text": "85%以上（全体）",
+      "size_px": 17.5,
+      "color": "#1E2A44",
+      "fill": "#F7FAFD",
+      "align": "l",
+      "line_pitch_px": 27,
+      "inset_px": [
+       14,
+       2,
+       8,
+       2
+      ]
+     }
+    ],
+    [
+     {
+      "text": "応答時間",
+      "size_px": 18,
+      "bold": true,
+      "color": "#1F3A6E",
+      "fill": "#EAF3FC",
+      "align": "c",
+      "line_pitch_px": 26
+     },
+     {
+      "text": "3秒以内（目安）",
+      "size_px": 17.5,
+      "color": "#1E2A44",
+      "fill": "#F7FAFD",
+      "align": "l",
+      "line_pitch_px": 27,
+      "inset_px": [
+       14,
+       2,
+       8,
+       2
+      ]
+     }
+    ]
+   ],
+   "border": {
+    "color": "#FFFFFF",
+    "width_px": 4
+   }
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    1228,
+    486,
+    220,
+    38
+   ],
+   "fill": "#3E6FA8",
+   "line": null,
+   "text": "リランクの採用判断",
+   "size_px": 18,
+   "bold": true,
+   "color": "#FFFFFF",
+   "radius_px": 4
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    1228,
+    530,
+    414,
+    298
+   ],
+   "fill": "#F7FAFD",
+   "line": null,
+   "radius_px": 4
+  },
+  {
+   "type": "text",
+   "box": [
+    1244,
+    546,
+    392,
+    270
+   ],
+   "text": "併用に対して Top-5到達率の改善が\u000b+3%未満 かつ 根拠の正確性の改善が\u000b+3%未満の場合、リランクは不採用とする。\n応答時間が業務要件（3秒以内）を\u000b超える場合も不採用とする。",
+   "size_px": 17,
+   "color": "#1E2A44",
+   "valign": "t",
+   "bullet": true,
+   "line_pitch_px": 28,
+   "para_space_px": 14,
+   "bullet_indent_px": 20
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    20,
+    860,
+    1638,
+    64
+   ],
+   "fill": "#EEF2F7",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "icon",
+   "icon": "azure:file",
+   "box": [
+    36,
+    870,
+    40,
+    44
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "text",
+   "box": [
+    90,
+    860,
+    1560,
+    64
+   ],
+   "paras": [
+    [
+     {
+      "text": "前提：",
+      "size_px": 19,
+      "bold": true,
+      "color": "#1F3A6E"
+     },
+     {
+      "text": "評価は固定の代表質問セットで実施し、各方式を同一条件で比較する。辞書・プロンプト・パラメータ等の調整も評価対象に含め、再現性のある結果で判断する。",
+      "size_px": 17.5
+     }
+    ]
+   ],
+   "color": "#1E2A44",
+   "align": "l",
+   "valign": "m"
+  }
+ ]
+}

@@ -1,0 +1,973 @@
+{
+ "source_size": [
+  1672,
+  941
+ ],
+ "font": "Meiryo",
+ "background": "#FFFFFF",
+ "elements": [
+  {
+   "type": "text",
+   "box": [
+    30,
+    6,
+    1300,
+    62
+   ],
+   "paras": [
+    [
+     {
+      "text": "表3-2　不足情報リスト",
+      "size_px": 44
+     },
+     {
+      "text": "（現時点の定義にない／根拠が薄い項目）",
+      "size_px": 37
+     }
+    ]
+   ],
+   "bold": true,
+   "color": "#1F3A6E",
+   "name": "title"
+  },
+  {
+   "type": "table",
+   "box": [
+    18,
+    72,
+    1637,
+    800
+   ],
+   "col_widths_px": [
+    329,
+    457,
+    481,
+    370
+   ],
+   "row_heights_px": [
+    66,
+    109,
+    114,
+    116,
+    100,
+    109,
+    86,
+    100
+   ],
+   "cells": [
+    [
+     {
+      "fill": "#002B65",
+      "color": "#FFFFFF",
+      "align": "c",
+      "line_pitch_px": 24,
+      "paras": [
+       [
+        {
+         "text": "不足情報",
+         "size_px": 20,
+         "bold": true
+        }
+       ]
+      ]
+     },
+     {
+      "fill": "#002B65",
+      "color": "#FFFFFF",
+      "align": "c",
+      "line_pitch_px": 24,
+      "paras": [
+       [
+        {
+         "text": "影響",
+         "size_px": 20,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（何ができない／どのようなリスクがあるか）",
+         "size_px": 15.5,
+         "bold": true
+        }
+       ]
+      ]
+     },
+     {
+      "fill": "#002B65",
+      "color": "#FFFFFF",
+      "align": "c",
+      "line_pitch_px": 24,
+      "paras": [
+       [
+        {
+         "text": "Gate 1で確認すること",
+         "size_px": 20,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（確認内容・論点）",
+         "size_px": 15.5,
+         "bold": true
+        }
+       ]
+      ]
+     },
+     {
+      "fill": "#002B65",
+      "color": "#FFFFFF",
+      "align": "c",
+      "line_pitch_px": 24,
+      "paras": [
+       [
+        {
+         "text": "未確認時の扱い",
+         "size_px": 20,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（PoCでの方針）",
+         "size_px": 15.5,
+         "bold": true
+        }
+       ]
+      ]
+     }
+    ],
+    [
+     {
+      "fill": "#E9F5FD",
+      "align": "l",
+      "inset_px": [
+       94,
+       2,
+       2,
+       2
+      ],
+      "color": "#1F3A6E",
+      "line_pitch_px": 30,
+      "paras": [
+       [
+        {
+         "text": "REV",
+         "size_px": 22,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（改訂版）",
+         "size_px": 17,
+         "bold": true
+        }
+       ]
+      ]
+     },
+     {
+      "fill": "#FFFFFF",
+      "text": "最新版の特定ができず、古い工程・図面・WPS\u000bを参照するリスクがある。\n変更差分の追跡や類似検索の精度が低下する。",
+      "bullet": true,
+      "bullet_indent_px": 20,
+      "line_pitch_px": 25.5,
+      "size_px": 16.5,
+      "color": "#1E2440",
+      "align": "l",
+      "inset_px": [
+       18,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "fill": "#FFFFFF",
+      "text": "各テーブルでのREVの有無と定義・採番ルール\n関連テーブル間のREVの紐付け方法\n最新版の判定ロジック（最大値？有効日？ステータス？）",
+      "bullet": true,
+      "bullet_indent_px": 20,
+      "line_pitch_px": 25.5,
+      "size_px": 15.5,
+      "color": "#1E2440",
+      "align": "l",
+      "inset_px": [
+       18,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "fill": "#E4F1FC",
+      "align": "l",
+      "inset_px": [
+       28,
+       2,
+       4,
+       2
+      ],
+      "line_pitch_px": 24.5,
+      "color": "#1E2440",
+      "paras": [
+       [
+        {
+         "text": "REVを前提とした絞り込みは\u000b行わない。",
+         "size_px": 16.5,
+         "bold": true,
+         "color": "#D82030"
+        }
+       ],
+       [
+        {
+         "text": "検索結果に版の情報を付与できない",
+         "size_px": 16.5
+        }
+       ],
+       [
+        {
+         "text": "旨を明示し、要確認として扱う。",
+         "size_px": 16.5
+        }
+       ]
+      ]
+     }
+    ],
+    [
+     {
+      "fill": "#E9F5FD",
+      "align": "l",
+      "inset_px": [
+       94,
+       2,
+       2,
+       2
+      ],
+      "color": "#1F3A6E",
+      "line_pitch_px": 30,
+      "paras": [
+       [
+        {
+         "text": "ED",
+         "size_px": 22,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（設計変更）",
+         "size_px": 17,
+         "bold": true
+        }
+       ]
+      ]
+     },
+     {
+      "fill": "#FFFFFF",
+      "text": "設計変更の反映状況が分からず、\n適用外のデータを提示する可能性がある。\n変更影響の分析（過去→現行）ができない。",
+      "bullet": true,
+      "bullet_indent_px": 20,
+      "line_pitch_px": 25.5,
+      "size_px": 16.5,
+      "color": "#1E2440",
+      "align": "l",
+      "inset_px": [
+       18,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "fill": "#FFFFFF",
+      "text": "EDの項目有無、管理テーブル・採番ルール\n対象データ（部品／工程／図面／WPS等）との紐付け方法\n有効期間・適用範囲との関係",
+      "bullet": true,
+      "bullet_indent_px": 20,
+      "line_pitch_px": 25.5,
+      "size_px": 15.5,
+      "color": "#1E2440",
+      "align": "l",
+      "inset_px": [
+       18,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "fill": "#E4F1FC",
+      "align": "l",
+      "inset_px": [
+       28,
+       2,
+       4,
+       2
+      ],
+      "line_pitch_px": 24.5,
+      "color": "#1E2440",
+      "paras": [
+       [
+        {
+         "text": "EDを考慮したフィルタリングは\u000b行わない。",
+         "size_px": 16.5,
+         "bold": true,
+         "color": "#D82030"
+        }
+       ],
+       [
+        {
+         "text": "該当有無は不明として、",
+         "size_px": 16.5
+        }
+       ],
+       [
+        {
+         "text": "結果に注意書きを付与する。",
+         "size_px": 16.5
+        }
+       ]
+      ]
+     }
+    ],
+    [
+     {
+      "fill": "#E9F5FD",
+      "align": "l",
+      "inset_px": [
+       94,
+       2,
+       2,
+       2
+      ],
+      "color": "#1F3A6E",
+      "line_pitch_px": 30,
+      "paras": [
+       [
+        {
+         "text": "適用単位",
+         "size_px": 22,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（機体・型式・号機など）",
+         "size_px": 17,
+         "bold": true
+        }
+       ]
+      ]
+     },
+     {
+      "fill": "#FFFFFF",
+      "text": "データの適用範囲が不明で、\u000b特定機体・型式向けかの判断ができない。\n類似工程の検索時に誤った候補を提示する\u000bリスクがある。",
+      "bullet": true,
+      "bullet_indent_px": 20,
+      "line_pitch_px": 25.5,
+      "size_px": 16.5,
+      "color": "#1E2440",
+      "align": "l",
+      "inset_px": [
+       18,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "fill": "#FFFFFF",
+      "text": "適用単位の項目有無（機体／型式／号機／ブロック等）\n管理テーブル・コード体系\n工程・図面・WPSとの紐付け方法\n適用範囲の優先順位・判定ロジック",
+      "bullet": true,
+      "bullet_indent_px": 20,
+      "line_pitch_px": 25.5,
+      "size_px": 15.5,
+      "color": "#1E2440",
+      "align": "l",
+      "inset_px": [
+       18,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "fill": "#E4F1FC",
+      "align": "l",
+      "inset_px": [
+       28,
+       2,
+       4,
+       2
+      ],
+      "line_pitch_px": 24.5,
+      "color": "#1E2440",
+      "paras": [
+       [
+        {
+         "text": "適用単位による絞り込みは行わない。",
+         "size_px": 16.5,
+         "bold": true,
+         "color": "#D82030"
+        }
+       ],
+       [
+        {
+         "text": "適用範囲は不明として、",
+         "size_px": 16.5
+        }
+       ],
+       [
+        {
+         "text": "結果に注意書きを付与する。",
+         "size_px": 16.5
+        }
+       ]
+      ]
+     }
+    ],
+    [
+     {
+      "fill": "#E9F5FD",
+      "align": "l",
+      "inset_px": [
+       94,
+       2,
+       2,
+       2
+      ],
+      "color": "#1F3A6E",
+      "line_pitch_px": 30,
+      "paras": [
+       [
+        {
+         "text": "文書の有効日",
+         "size_px": 22,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（発行日・有効開始／終了日）",
+         "size_px": 14.5,
+         "bold": true
+        }
+       ]
+      ]
+     },
+     {
+      "fill": "#FFFFFF",
+      "text": "文書が現行有効か判断できず、\u000b失効した図面・WPS・SPECを参照する\u000b可能性がある。",
+      "bullet": true,
+      "bullet_indent_px": 20,
+      "line_pitch_px": 25.5,
+      "size_px": 16.5,
+      "color": "#1E2440",
+      "align": "l",
+      "inset_px": [
+       18,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "fill": "#FFFFFF",
+      "text": "各文書の有効日項目の有無・定義\n有効開始日・終了日の管理方法\n日付に基づく検索・フィルタの可否",
+      "bullet": true,
+      "bullet_indent_px": 20,
+      "line_pitch_px": 25.5,
+      "size_px": 15.5,
+      "color": "#1E2440",
+      "align": "l",
+      "inset_px": [
+       18,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "fill": "#E4F1FC",
+      "align": "l",
+      "inset_px": [
+       28,
+       2,
+       4,
+       2
+      ],
+      "line_pitch_px": 24.5,
+      "color": "#1E2440",
+      "paras": [
+       [
+        {
+         "text": "有効日を考慮した絞り込みは行わない。",
+         "size_px": 16.5,
+         "bold": true,
+         "color": "#D82030"
+        }
+       ],
+       [
+        {
+         "text": "文書の有効性は不明として、",
+         "size_px": 16.5
+        }
+       ],
+       [
+        {
+         "text": "結果に注意書きを付与する。",
+         "size_px": 16.5
+        }
+       ]
+      ]
+     }
+    ],
+    [
+     {
+      "fill": "#E9F5FD",
+      "align": "l",
+      "inset_px": [
+       94,
+       2,
+       2,
+       2
+      ],
+      "color": "#1F3A6E",
+      "line_pitch_px": 30,
+      "paras": [
+       [
+        {
+         "text": "文書のステータス",
+         "size_px": 22,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（作成中・承認・発行・廃止等）",
+         "size_px": 14.5,
+         "bold": true
+        }
+       ]
+      ]
+     },
+     {
+      "fill": "#FFFFFF",
+      "text": "承認前や廃止済みの文書を提示する\u000bリスクがある。\n業務で使用できないドキュメントを\u000b参照する可能性がある。",
+      "bullet": true,
+      "bullet_indent_px": 20,
+      "line_pitch_px": 25.5,
+      "size_px": 16.5,
+      "color": "#1E2440",
+      "align": "l",
+      "inset_px": [
+       18,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "fill": "#FFFFFF",
+      "text": "ステータスの項目有無・ステータス区分\n承認フローとの関係（承認者・承認日等）\nステータスによる検索・フィルタ条件",
+      "bullet": true,
+      "bullet_indent_px": 20,
+      "line_pitch_px": 25.5,
+      "size_px": 15.5,
+      "color": "#1E2440",
+      "align": "l",
+      "inset_px": [
+       18,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "fill": "#E4F1FC",
+      "align": "l",
+      "inset_px": [
+       28,
+       2,
+       4,
+       2
+      ],
+      "line_pitch_px": 24.5,
+      "color": "#1E2440",
+      "paras": [
+       [
+        {
+         "text": "ステータスによる絞り込みは行わない。",
+         "size_px": 16.5,
+         "bold": true,
+         "color": "#D82030"
+        }
+       ],
+       [
+        {
+         "text": "文書の状態は不明として、",
+         "size_px": 16.5
+        }
+       ],
+       [
+        {
+         "text": "結果に注意書きを付与する。",
+         "size_px": 16.5
+        }
+       ]
+      ]
+     }
+    ],
+    [
+     {
+      "fill": "#E9F5FD",
+      "align": "l",
+      "inset_px": [
+       94,
+       2,
+       2,
+       2
+      ],
+      "color": "#1F3A6E",
+      "line_pitch_px": 30,
+      "paras": [
+       [
+        {
+         "text": "正本ソース",
+         "size_px": 22,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（正本データの所在）",
+         "size_px": 17,
+         "bold": true
+        }
+       ]
+      ]
+     },
+     {
+      "fill": "#FFFFFF",
+      "text": "どのシステム／テーブルの情報を\u000b正とするか不明で、データの不整合や\u000b重複が発生する。",
+      "bullet": true,
+      "bullet_indent_px": 20,
+      "line_pitch_px": 25.5,
+      "size_px": 16.5,
+      "color": "#1E2440",
+      "align": "l",
+      "inset_px": [
+       18,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "fill": "#FFFFFF",
+      "text": "各項目の正本ソース（テーブル・システム）の特定\n同一情報の重複管理の有無と優先順位\nマスタとトランザクションの役割分担",
+      "bullet": true,
+      "bullet_indent_px": 20,
+      "line_pitch_px": 25.5,
+      "size_px": 15.5,
+      "color": "#1E2440",
+      "align": "l",
+      "inset_px": [
+       18,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "fill": "#E4F1FC",
+      "align": "l",
+      "inset_px": [
+       28,
+       2,
+       4,
+       2
+      ],
+      "line_pitch_px": 24.5,
+      "color": "#1E2440",
+      "paras": [
+       [
+        {
+         "text": "正本の断定は行わない。",
+         "size_px": 16.5,
+         "bold": true,
+         "color": "#D82030"
+        }
+       ],
+       [
+        {
+         "text": "複数ソースが存在する場合は、",
+         "size_px": 16.5
+        }
+       ],
+       [
+        {
+         "text": "出典を併記し、要確認として扱う。",
+         "size_px": 16.5
+        }
+       ]
+      ]
+     }
+    ],
+    [
+     {
+      "fill": "#E9F5FD",
+      "align": "l",
+      "inset_px": [
+       94,
+       2,
+       2,
+       2
+      ],
+      "color": "#1F3A6E",
+      "line_pitch_px": 30,
+      "paras": [
+       [
+        {
+         "text": "更新条件",
+         "size_px": 22,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（データ更新のタイミング・ルール）",
+         "size_px": 13,
+         "bold": true
+        }
+       ]
+      ]
+     },
+     {
+      "fill": "#FFFFFF",
+      "text": "データの鮮度が不明で、最新情報を\u000b反映できない可能性がある。\n更新差分の取り込みタイミングを誤ると、\u000b検索結果の信頼性が低下する。",
+      "bullet": true,
+      "bullet_indent_px": 20,
+      "line_pitch_px": 25.5,
+      "size_px": 16.5,
+      "color": "#1E2440",
+      "align": "l",
+      "inset_px": [
+       18,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "fill": "#FFFFFF",
+      "text": "各テーブルの更新頻度・トリガー条件\nバッチ更新／リアルタイム更新の別\n更新履歴の取得可否\nPoC期間中のデータ更新の扱い",
+      "bullet": true,
+      "bullet_indent_px": 20,
+      "line_pitch_px": 25.5,
+      "size_px": 15.5,
+      "color": "#1E2440",
+      "align": "l",
+      "inset_px": [
+       18,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "fill": "#E4F1FC",
+      "align": "l",
+      "inset_px": [
+       28,
+       2,
+       4,
+       2
+      ],
+      "line_pitch_px": 24.5,
+      "color": "#1E2440",
+      "paras": [
+       [
+        {
+         "text": "更新の前提は置かない。",
+         "size_px": 16.5,
+         "bold": true,
+         "color": "#D82030"
+        }
+       ],
+       [
+        {
+         "text": "取得時点のデータでの検索に限定し、",
+         "size_px": 16.5
+        }
+       ],
+       [
+        {
+         "text": "鮮度に関する注意書きを付与する。",
+         "size_px": 16.5
+        }
+       ]
+      ]
+     }
+    ]
+   ],
+   "border": {
+    "color": "#D3DEEB",
+    "width_px": 1.2
+   },
+   "name": "shortage-table"
+  },
+  {
+   "type": "icon",
+   "icon": "lucide:file-text",
+   "box": [
+    38,
+    164.5,
+    56,
+    56
+   ],
+   "color": "#1F3F7A",
+   "stroke_width": 2.2
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    56,
+    196.5,
+    38,
+    20
+   ],
+   "radius_px": 9,
+   "fill": "#1F3F7A",
+   "line": null,
+   "text": "REV",
+   "size_px": 11.5,
+   "bold": true,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "icon",
+   "icon": "lucide:file",
+   "box": [
+    38,
+    276.0,
+    56,
+    56
+   ],
+   "color": "#1F3F7A",
+   "stroke_width": 2.2
+  },
+  {
+   "type": "text",
+   "box": [
+    38,
+    292.0,
+    56,
+    30
+   ],
+   "text": "ED",
+   "size_px": 15,
+   "bold": true,
+   "color": "#1F3F7A",
+   "align": "c"
+  },
+  {
+   "type": "icon",
+   "icon": "material:flight-fill",
+   "box": [
+    38,
+    391.0,
+    56,
+    56
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "icon",
+   "icon": "lucide:calendar-days",
+   "box": [
+    38,
+    499.0,
+    56,
+    56
+   ],
+   "color": "#1F3F7A",
+   "stroke_width": 2.2
+  },
+  {
+   "type": "icon",
+   "icon": "lucide:file-search",
+   "box": [
+    38,
+    603.5,
+    56,
+    56
+   ],
+   "color": "#1F3F7A",
+   "stroke_width": 2.2
+  },
+  {
+   "type": "icon",
+   "icon": "material:database-fill",
+   "box": [
+    38,
+    701.0,
+    56,
+    56
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "icon",
+   "icon": "lucide:refresh-cw",
+   "box": [
+    38,
+    794.0,
+    56,
+    56
+   ],
+   "color": "#1F3F7A",
+   "stroke_width": 2.2
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    18,
+    879,
+    1637,
+    58
+   ],
+   "radius_px": 6,
+   "fill": "#FDEEF1",
+   "line": {
+    "color": "#E05060",
+    "width_px": 1.5
+   }
+  },
+  {
+   "type": "icon",
+   "icon": "material:error-fill",
+   "box": [
+    30,
+    880,
+    56,
+    56
+   ],
+   "color": "#E02030"
+  },
+  {
+   "type": "text",
+   "box": [
+    110,
+    881,
+    1530,
+    54
+   ],
+   "text": "上記項目が未確認の場合、検索結果について版・適用範囲・有効性等を断定せず、「要確認」として扱う。\nGate 1にて必要な項目の有無・テーブル定義・取得方法を確認し、TOS検索単位および文書チャンクの構築方針を確定する。",
+   "size_px": 19.5,
+   "bold": true,
+   "color": "#D82030",
+   "line_pitch_px": 26
+  }
+ ]
+}

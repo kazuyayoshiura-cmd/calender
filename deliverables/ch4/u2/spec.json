@@ -1,0 +1,2645 @@
+{
+ "source_size": [
+  1672,
+  941
+ ],
+ "font": "Meiryo",
+ "background": "#FFFFFF",
+ "slides": [
+  {
+   "background": "#FFFFFF",
+   "elements": [
+    {
+     "type": "text",
+     "box": [
+      30,
+      10,
+      1612,
+      54
+     ],
+     "text": "4.2  UC1：共有ファイル／JP等検索の処理フロー（図4-2）",
+     "size_px": 34,
+     "bold": true,
+     "color": "#1F3A6E",
+     "align": "l",
+     "valign": "m",
+     "name": "title"
+    },
+    {
+     "type": "roundRect",
+     "box": [
+      24,
+      68,
+      1624,
+      62
+     ],
+     "fill": "#F2F8FE",
+     "line": {
+      "color": "#9CC2E8",
+      "width_px": 1.2
+     },
+     "radius_px": 4
+    },
+    {
+     "type": "text",
+     "box": [
+      24,
+      70,
+      1624,
+      58
+     ],
+     "text": "UC1では、社内のファイルサーバーに格納された作業標準（JP）等のドキュメントを対象に、\n「文書番号で指定して探す」または「作業内容から関連する標準を探す」の2パターンの検索フローを実現する。",
+     "size_px": 18,
+     "bold": false,
+     "color": "#1F3A6E",
+     "align": "c",
+     "valign": "m",
+     "line_pitch_px": 26
+    },
+    {
+     "type": "rect",
+     "box": [
+      24,
+      138,
+      806,
+      790
+     ],
+     "fill": "#FFFFFF",
+     "line": {
+      "color": "#1F3F7A",
+      "width_px": 1.5
+     }
+    },
+    {
+     "type": "rect",
+     "box": [
+      24,
+      138,
+      806,
+      44
+     ],
+     "fill": "#1F3F7A",
+     "line": null
+    },
+    {
+     "type": "text",
+     "box": [
+      38,
+      138,
+      530,
+      44
+     ],
+     "text": "パターン1：文書番号指定で検索（正確検索）",
+     "size_px": 19.5,
+     "bold": true,
+     "color": "#FFFFFF",
+     "align": "l",
+     "valign": "m"
+    },
+    {
+     "type": "roundRect",
+     "box": [
+      572,
+      145,
+      250,
+      30
+     ],
+     "fill": "#FFFFFF",
+     "line": null,
+     "text": "例：「作業標準JP-123の最新版を教えて」",
+     "size_px": 12,
+     "color": "#1F3A6E",
+     "radius_px": 3
+    },
+    {
+     "type": "text",
+     "box": [
+      40,
+      186,
+      780,
+      50
+     ],
+     "text": "文書番号（JP番号等）が明示されている場合は、構造化検索により該当文書を特定し、\n最新版・適用範囲を確認して提示する。",
+     "size_px": 16,
+     "bold": false,
+     "color": "#1E2A44",
+     "align": "l",
+     "valign": "m",
+     "line_pitch_px": 24
+    },
+    {
+     "type": "rect",
+     "box": [
+      34,
+      240,
+      142,
+      40
+     ],
+     "fill": "#D6E6F7",
+     "line": null,
+     "paras": [
+      [
+       {
+        "text": "ユーザー",
+        "size_px": 15,
+        "bold": true
+       }
+      ],
+      [
+       {
+        "text": "（Dify）",
+        "size_px": 12.5,
+        "bold": true
+       }
+      ]
+     ],
+     "color": "#1F3A6E",
+     "align": "c",
+     "line_pitch_px": 18
+    },
+    {
+     "type": "rect",
+     "box": [
+      180,
+      240,
+      322,
+      40
+     ],
+     "fill": "#D6E6F7",
+     "line": null,
+     "paras": [
+      [
+       {
+        "text": "検索API / アプリケーション",
+        "size_px": 15,
+        "bold": true
+       }
+      ]
+     ],
+     "color": "#1F3A6E",
+     "align": "c",
+     "line_pitch_px": 18
+    },
+    {
+     "type": "rect",
+     "box": [
+      506,
+      240,
+      162,
+      40
+     ],
+     "fill": "#D6E6F7",
+     "line": null,
+     "paras": [
+      [
+       {
+        "text": "データストア",
+        "size_px": 15,
+        "bold": true
+       }
+      ],
+      [
+       {
+        "text": "（ファイルサーバー）",
+        "size_px": 12.5,
+        "bold": true
+       }
+      ]
+     ],
+     "color": "#1F3A6E",
+     "align": "c",
+     "line_pitch_px": 18
+    },
+    {
+     "type": "rect",
+     "box": [
+      672,
+      240,
+      144,
+      40
+     ],
+     "fill": "#D6E6F7",
+     "line": null,
+     "paras": [
+      [
+       {
+        "text": "LLM",
+        "size_px": 15,
+        "bold": true
+       }
+      ],
+      [
+       {
+        "text": "（説明生成：任意）",
+        "size_px": 12.5,
+        "bold": true
+       }
+      ]
+     ],
+     "color": "#1F3A6E",
+     "align": "c",
+     "line_pitch_px": 18
+    },
+    {
+     "type": "line",
+     "points": [
+      [
+       178,
+       286
+      ],
+      [
+       178,
+       924
+      ]
+     ],
+     "color": "#C9D6E6",
+     "width_px": 1,
+     "dash": "dash"
+    },
+    {
+     "type": "line",
+     "points": [
+      [
+       504,
+       286
+      ],
+      [
+       504,
+       924
+      ]
+     ],
+     "color": "#C9D6E6",
+     "width_px": 1,
+     "dash": "dash"
+    },
+    {
+     "type": "line",
+     "points": [
+      [
+       670,
+       286
+      ],
+      [
+       670,
+       924
+      ]
+     ],
+     "color": "#C9D6E6",
+     "width_px": 1,
+     "dash": "dash"
+    },
+    {
+     "type": "icon",
+     "icon": "material:person-fill",
+     "box": [
+      90.0,
+      290,
+      32,
+      32
+     ],
+     "color": "#1F3F7A"
+    },
+    {
+     "type": "roundRect",
+     "box": [
+      42,
+      326,
+      128,
+      110
+     ],
+     "radius_px": 6,
+     "fill": "#FFFFFF",
+     "line": {
+      "color": "#3A5F8F",
+      "width_px": 1.5
+     },
+     "paras": [
+      [
+       {
+        "text": "質問入力",
+        "size_px": 16,
+        "bold": true,
+        "color": "#1F3A6E"
+       }
+      ],
+      [
+       {
+        "text": "例：",
+        "size_px": 13
+       }
+      ],
+      [
+       {
+        "text": "「作業標準JP-123の",
+        "size_px": 12
+       }
+      ],
+      [
+       {
+        "text": "最新版を教えて」",
+        "size_px": 12
+       }
+      ]
+     ],
+     "color": "#33466A",
+     "align": "l",
+     "valign": "t",
+     "line_pitch_px": 19,
+     "inset_px": [
+      10,
+      6,
+      6,
+      4
+     ]
+    },
+    {
+     "type": "roundRect",
+     "box": [
+      233,
+      292,
+      220,
+      76
+     ],
+     "radius_px": 6,
+     "fill": "#EEF5FC",
+     "line": {
+      "color": "#3A5F8F",
+      "width_px": 1.5
+     },
+     "paras": [
+      [
+       {
+        "text": "質問解釈",
+        "size_px": 15,
+        "bold": true,
+        "color": "#1F3A6E"
+       }
+      ],
+      [
+       {
+        "text": "（LLMでJSON抽出）",
+        "size_px": 12.5,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "doc_no=JP-123",
+        "size_px": 12.5,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "intent=doc_search",
+        "size_px": 12.5,
+        "color": "#33466A"
+       }
+      ]
+     ],
+     "align": "c",
+     "color": "#33466A",
+     "line_pitch_px": 17,
+     "inset_px": [
+      8,
+      2,
+      8,
+      2
+     ]
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       170,
+       350
+      ],
+      [
+       233,
+       350
+      ]
+     ],
+     "color": "#1F3A6E",
+     "width_px": 2.2,
+     "head": "end"
+    },
+    {
+     "type": "roundRect",
+     "box": [
+      233,
+      388,
+      220,
+      60
+     ],
+     "radius_px": 6,
+     "fill": "#FFF3D6",
+     "line": {
+      "color": "#E0B85A",
+      "width_px": 1.5
+     },
+     "paras": [
+      [
+       {
+        "text": "文書番号の検証",
+        "size_px": 15,
+        "bold": true,
+        "color": "#1F3A6E"
+       }
+      ],
+      [
+       {
+        "text": "（マスタ／ファイル一覧で実在チェック）",
+        "size_px": 12,
+        "color": "#33466A"
+       }
+      ]
+     ],
+     "align": "c",
+     "color": "#33466A",
+     "line_pitch_px": 17.4,
+     "inset_px": [
+      8,
+      2,
+      8,
+      2
+     ]
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       343,
+       368
+      ],
+      [
+       343,
+       388
+      ]
+     ],
+     "color": "#1F3A6E",
+     "width_px": 2.2,
+     "head": "end"
+    },
+    {
+     "type": "diamond",
+     "box": [
+      267,
+      468,
+      152,
+      74
+     ],
+     "fill": "#DCEBFA",
+     "line": {
+      "color": "#5B8FD0",
+      "width_px": 1.5
+     },
+     "text": "文書番号は\n実在する？",
+     "size_px": 13.5,
+     "bold": true,
+     "color": "#1F3A6E",
+     "line_pitch_px": 18.2
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       343,
+       448
+      ],
+      [
+       343,
+       468
+      ]
+     ],
+     "color": "#1F3A6E",
+     "width_px": 2.2,
+     "head": "end"
+    },
+    {
+     "type": "roundRect",
+     "box": [
+      524,
+      473,
+      290,
+      64
+     ],
+     "radius_px": 6,
+     "fill": "#FBDDE2",
+     "line": {
+      "color": "#D9707F",
+      "width_px": 1.5
+     },
+     "paras": [
+      [
+       {
+        "text": "該当なし（類似で埋めない）",
+        "size_px": 15,
+        "bold": true,
+        "color": "#1F3A6E"
+       }
+      ],
+      [
+       {
+        "text": "・入力キーの再確認依頼",
+        "size_px": 13,
+        "color": "#33466A"
+       }
+      ]
+     ],
+     "align": "c",
+     "color": "#33466A",
+     "line_pitch_px": 18.8,
+     "inset_px": [
+      8,
+      2,
+      8,
+      2
+     ]
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       419,
+       505
+      ],
+      [
+       524,
+       505
+      ]
+     ],
+     "color": "#1F3A6E",
+     "width_px": 2.2,
+     "head": "end"
+    },
+    {
+     "type": "text",
+     "box": [
+      427,
+      480,
+      90,
+      22
+     ],
+     "text": "存在しない",
+     "size_px": 13,
+     "bold": false,
+     "color": "#1E2A44",
+     "align": "l",
+     "valign": "m"
+    },
+    {
+     "type": "roundRect",
+     "box": [
+      233,
+      562,
+      220,
+      80
+     ],
+     "radius_px": 6,
+     "fill": "#EEF5FC",
+     "line": {
+      "color": "#3A5F8F",
+      "width_px": 1.5
+     },
+     "paras": [
+      [
+       {
+        "text": "構造化検索",
+        "size_px": 15,
+        "bold": true,
+        "color": "#1F3A6E"
+       }
+      ],
+      [
+       {
+        "text": "（完全一致・フィルタ）",
+        "size_px": 12.5,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "SELECT … WHERE JP番号=?",
+        "size_px": 12.5,
+        "color": "#33466A"
+       }
+      ]
+     ],
+     "align": "c",
+     "color": "#33466A",
+     "line_pitch_px": 19,
+     "inset_px": [
+      8,
+      2,
+      8,
+      2
+     ]
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       343,
+       542
+      ],
+      [
+       343,
+       562
+      ]
+     ],
+     "color": "#1F3A6E",
+     "width_px": 2.2,
+     "head": "end"
+    },
+    {
+     "type": "text",
+     "box": [
+      351,
+      542,
+      90,
+      20
+     ],
+     "text": "存在する",
+     "size_px": 13,
+     "bold": false,
+     "color": "#1E2A44",
+     "align": "l",
+     "valign": "m"
+    },
+    {
+     "type": "roundRect",
+     "box": [
+      512,
+      560,
+      156,
+      170
+     ],
+     "fill": "#FFFFFF",
+     "line": {
+      "color": "#5B8FD0",
+      "width_px": 1.5
+     },
+     "radius_px": 6
+    },
+    {
+     "type": "icon",
+     "icon": "material:database-fill",
+     "box": [
+      520,
+      570,
+      36,
+      36
+     ],
+     "color": "#2A5CA8"
+    },
+    {
+     "type": "text",
+     "box": [
+      560,
+      566,
+      104,
+      46
+     ],
+     "paras": [
+      [
+       {
+        "text": "ファイルサーバー",
+        "size_px": 12.5,
+        "bold": true
+       }
+      ],
+      [
+       {
+        "text": "（JP / 作業標準 等）",
+        "size_px": 11
+       }
+      ]
+     ],
+     "color": "#33466A",
+     "align": "l",
+     "valign": "m",
+     "line_pitch_px": 19
+    },
+    {
+     "type": "icon",
+     "icon": "material:description-fill",
+     "box": [
+      520,
+      630,
+      36,
+      40
+     ],
+     "color": "#2A5CA8"
+    },
+    {
+     "type": "text",
+     "box": [
+      560,
+      622,
+      104,
+      70
+     ],
+     "paras": [
+      [
+       {
+        "text": "該当文書の取得",
+        "size_px": 12.5,
+        "bold": true
+       }
+      ],
+      [
+       {
+        "text": "（最新版・版履歴・",
+        "size_px": 11
+       }
+      ],
+      [
+       {
+        "text": "　適用範囲）",
+        "size_px": 11
+       }
+      ]
+     ],
+     "color": "#33466A",
+     "align": "l",
+     "valign": "t",
+     "line_pitch_px": 18
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       453,
+       602
+      ],
+      [
+       512,
+       602
+      ]
+     ],
+     "color": "#1F3A6E",
+     "width_px": 2.2,
+     "head": "end"
+    },
+    {
+     "type": "roundRect",
+     "box": [
+      233,
+      662,
+      220,
+      80
+     ],
+     "radius_px": 6,
+     "fill": "#FFF3D6",
+     "line": {
+      "color": "#E0B85A",
+      "width_px": 1.5
+     },
+     "paras": [
+      [
+       {
+        "text": "版・適用判定",
+        "size_px": 15,
+        "bold": true,
+        "color": "#1F3A6E"
+       }
+      ],
+      [
+       {
+        "text": "（第6章のルール）",
+        "size_px": 12.5,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "・最新版の特定",
+        "size_px": 12.5,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "・適用範囲の確認",
+        "size_px": 12.5,
+        "color": "#33466A"
+       }
+      ]
+     ],
+     "align": "c",
+     "color": "#33466A",
+     "line_pitch_px": 17,
+     "inset_px": [
+      8,
+      2,
+      8,
+      2
+     ]
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       343,
+       642
+      ],
+      [
+       343,
+       662
+      ]
+     ],
+     "color": "#1F3A6E",
+     "width_px": 2.2,
+     "head": "end"
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       512,
+       702
+      ],
+      [
+       453,
+       702
+      ]
+     ],
+     "color": "#1F3A6E",
+     "width_px": 2.2,
+     "head": "end"
+    },
+    {
+     "type": "roundRect",
+     "box": [
+      233,
+      762,
+      220,
+      54
+     ],
+     "radius_px": 6,
+     "fill": "#EEF5FC",
+     "line": {
+      "color": "#3A5F8F",
+      "width_px": 1.5
+     },
+     "paras": [
+      [
+       {
+        "text": "結果整形",
+        "size_px": 15,
+        "bold": true,
+        "color": "#1F3A6E"
+       }
+      ],
+      [
+       {
+        "text": "（該当文書情報・原本リンク）",
+        "size_px": 12.5,
+        "color": "#33466A"
+       }
+      ]
+     ],
+     "align": "c",
+     "color": "#33466A",
+     "line_pitch_px": 18.1,
+     "inset_px": [
+      8,
+      2,
+      8,
+      2
+     ]
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       343,
+       742
+      ],
+      [
+       343,
+       762
+      ]
+     ],
+     "color": "#1F3A6E",
+     "width_px": 2.2,
+     "head": "end"
+    },
+    {
+     "type": "roundRect",
+     "box": [
+      680,
+      740,
+      140,
+      100
+     ],
+     "radius_px": 6,
+     "fill": "#FFFFFF",
+     "line": {
+      "color": "#3A5F8F",
+      "width_px": 1.5,
+      "dash": "dash"
+     },
+     "paras": [
+      [
+       {
+        "text": "要約生成（任意）",
+        "size_px": 14,
+        "bold": true,
+        "color": "#1F3A6E"
+       }
+      ],
+      [
+       {
+        "text": "（参照ID付き）",
+        "size_px": 12,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "・文書の概要説明",
+        "size_px": 12,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "・改訂ポイント 等",
+        "size_px": 12,
+        "color": "#33466A"
+       }
+      ]
+     ],
+     "align": "l",
+     "color": "#33466A",
+     "line_pitch_px": 18,
+     "inset_px": [
+      8,
+      2,
+      8,
+      2
+     ]
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       453,
+       789
+      ],
+      [
+       680,
+       789
+      ]
+     ],
+     "color": "#1F3A6E",
+     "width_px": 1.6,
+     "head": "end",
+     "dash": "dash"
+    },
+    {
+     "type": "text",
+     "box": [
+      493,
+      766,
+      60,
+      20
+     ],
+     "text": "（任意）",
+     "size_px": 12.5,
+     "bold": false,
+     "color": "#1E2A44",
+     "align": "l",
+     "valign": "m"
+    },
+    {
+     "type": "roundRect",
+     "box": [
+      74,
+      838,
+      420,
+      82
+     ],
+     "radius_px": 6,
+     "fill": "#E3F2DC",
+     "line": {
+      "color": "#8CC27A",
+      "width_px": 1.5
+     },
+     "paras": [
+      [
+       {
+        "text": "結果表示",
+        "size_px": 15,
+        "bold": true,
+        "color": "#1F3A6E"
+       }
+      ],
+      [
+       {
+        "text": "・文書情報（最新版・版履歴・適用範囲）",
+        "size_px": 13,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "・原本リンク",
+        "size_px": 13,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "・必要に応じて要約（任意）",
+        "size_px": 13,
+        "color": "#33466A"
+       }
+      ]
+     ],
+     "align": "l",
+     "color": "#33466A",
+     "line_pitch_px": 19,
+     "inset_px": [
+      8,
+      2,
+      8,
+      2
+     ]
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       343,
+       816
+      ],
+      [
+       343,
+       838
+      ]
+     ],
+     "color": "#1F3A6E",
+     "width_px": 2.2,
+     "head": "end"
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       750,
+       840
+      ],
+      [
+       750,
+       879
+      ],
+      [
+       494,
+       879
+      ]
+     ],
+     "color": "#1F3A6E",
+     "width_px": 1.6,
+     "head": "end",
+     "dash": "dash"
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       106,
+       436
+      ],
+      [
+       106,
+       602
+      ],
+      [
+       233,
+       602
+      ]
+     ],
+     "color": "#1F3A6E",
+     "width_px": 1.4,
+     "head": "both",
+     "dash": "dash"
+    },
+    {
+     "type": "rect",
+     "box": [
+      842,
+      138,
+      806,
+      790
+     ],
+     "fill": "#FFFFFF",
+     "line": {
+      "color": "#1F3F7A",
+      "width_px": 1.5
+     }
+    },
+    {
+     "type": "rect",
+     "box": [
+      842,
+      138,
+      806,
+      44
+     ],
+     "fill": "#1F3F7A",
+     "line": null
+    },
+    {
+     "type": "text",
+     "box": [
+      856,
+      138,
+      530,
+      44
+     ],
+     "text": "パターン2：作業内容から関連標準を探す（類似検索）",
+     "size_px": 19.5,
+     "bold": true,
+     "color": "#FFFFFF",
+     "align": "l",
+     "valign": "m"
+    },
+    {
+     "type": "roundRect",
+     "box": [
+      1390,
+      145,
+      250,
+      30
+     ],
+     "fill": "#FFFFFF",
+     "line": null,
+     "text": "例：「設計変更に関するJP作業標準は？」",
+     "size_px": 12,
+     "color": "#1F3A6E",
+     "radius_px": 3
+    },
+    {
+     "type": "text",
+     "box": [
+      858,
+      186,
+      780,
+      50
+     ],
+     "text": "作業内容などの自然言語から、全文検索＋ベクトル検索のハイブリッド方式で関連する作業標準を\n検索し、候補を提示する。",
+     "size_px": 16,
+     "bold": false,
+     "color": "#1E2A44",
+     "align": "l",
+     "valign": "m",
+     "line_pitch_px": 24
+    },
+    {
+     "type": "rect",
+     "box": [
+      852,
+      240,
+      142,
+      40
+     ],
+     "fill": "#D6E6F7",
+     "line": null,
+     "paras": [
+      [
+       {
+        "text": "ユーザー",
+        "size_px": 15,
+        "bold": true
+       }
+      ],
+      [
+       {
+        "text": "（Dify）",
+        "size_px": 12.5,
+        "bold": true
+       }
+      ]
+     ],
+     "color": "#1F3A6E",
+     "align": "c",
+     "line_pitch_px": 18
+    },
+    {
+     "type": "rect",
+     "box": [
+      998,
+      240,
+      322,
+      40
+     ],
+     "fill": "#D6E6F7",
+     "line": null,
+     "paras": [
+      [
+       {
+        "text": "検索API / アプリケーション",
+        "size_px": 15,
+        "bold": true
+       }
+      ]
+     ],
+     "color": "#1F3A6E",
+     "align": "c",
+     "line_pitch_px": 18
+    },
+    {
+     "type": "rect",
+     "box": [
+      1324,
+      240,
+      162,
+      40
+     ],
+     "fill": "#D6E6F7",
+     "line": null,
+     "paras": [
+      [
+       {
+        "text": "データストア",
+        "size_px": 15,
+        "bold": true
+       }
+      ],
+      [
+       {
+        "text": "（ファイルサーバー）",
+        "size_px": 12.5,
+        "bold": true
+       }
+      ]
+     ],
+     "color": "#1F3A6E",
+     "align": "c",
+     "line_pitch_px": 18
+    },
+    {
+     "type": "rect",
+     "box": [
+      1490,
+      240,
+      144,
+      40
+     ],
+     "fill": "#D6E6F7",
+     "line": null,
+     "paras": [
+      [
+       {
+        "text": "LLM",
+        "size_px": 15,
+        "bold": true
+       }
+      ],
+      [
+       {
+        "text": "（説明生成・比較）",
+        "size_px": 12.5,
+        "bold": true
+       }
+      ]
+     ],
+     "color": "#1F3A6E",
+     "align": "c",
+     "line_pitch_px": 18
+    },
+    {
+     "type": "line",
+     "points": [
+      [
+       996,
+       286
+      ],
+      [
+       996,
+       924
+      ]
+     ],
+     "color": "#C9D6E6",
+     "width_px": 1,
+     "dash": "dash"
+    },
+    {
+     "type": "line",
+     "points": [
+      [
+       1322,
+       286
+      ],
+      [
+       1322,
+       924
+      ]
+     ],
+     "color": "#C9D6E6",
+     "width_px": 1,
+     "dash": "dash"
+    },
+    {
+     "type": "line",
+     "points": [
+      [
+       1488,
+       286
+      ],
+      [
+       1488,
+       924
+      ]
+     ],
+     "color": "#C9D6E6",
+     "width_px": 1,
+     "dash": "dash"
+    },
+    {
+     "type": "icon",
+     "icon": "material:person-fill",
+     "box": [
+      908.0,
+      290,
+      32,
+      32
+     ],
+     "color": "#1F3F7A"
+    },
+    {
+     "type": "roundRect",
+     "box": [
+      860,
+      326,
+      128,
+      128
+     ],
+     "radius_px": 6,
+     "fill": "#FFFFFF",
+     "line": {
+      "color": "#3A5F8F",
+      "width_px": 1.5
+     },
+     "paras": [
+      [
+       {
+        "text": "質問入力",
+        "size_px": 16,
+        "bold": true,
+        "color": "#1F3A6E"
+       }
+      ],
+      [
+       {
+        "text": "例：",
+        "size_px": 13
+       }
+      ],
+      [
+       {
+        "text": "「設計変更に関して",
+        "size_px": 12
+       }
+      ],
+      [
+       {
+        "text": "指示しているJP",
+        "size_px": 12
+       }
+      ],
+      [
+       {
+        "text": "作業標準の項番を",
+        "size_px": 12
+       }
+      ],
+      [
+       {
+        "text": "教えて」",
+        "size_px": 12
+       }
+      ]
+     ],
+     "color": "#33466A",
+     "align": "l",
+     "valign": "t",
+     "line_pitch_px": 19,
+     "inset_px": [
+      10,
+      6,
+      6,
+      4
+     ]
+    },
+    {
+     "type": "roundRect",
+     "box": [
+      1051,
+      292,
+      220,
+      86
+     ],
+     "radius_px": 6,
+     "fill": "#EEF5FC",
+     "line": {
+      "color": "#3A5F8F",
+      "width_px": 1.5
+     },
+     "paras": [
+      [
+       {
+        "text": "質問解釈",
+        "size_px": 15,
+        "bold": true,
+        "color": "#1F3A6E"
+       }
+      ],
+      [
+       {
+        "text": "（LLMでJSON抽出）",
+        "size_px": 12.5,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "intent=doc_search",
+        "size_px": 12.5,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "keywords=設計変更, 指示",
+        "size_px": 12.5,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "free_text=…",
+        "size_px": 12.5,
+        "color": "#33466A"
+       }
+      ]
+     ],
+     "align": "c",
+     "color": "#33466A",
+     "line_pitch_px": 16.5,
+     "inset_px": [
+      8,
+      2,
+      8,
+      2
+     ]
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       988,
+       355
+      ],
+      [
+       1051,
+       355
+      ]
+     ],
+     "color": "#1F3A6E",
+     "width_px": 2.2,
+     "head": "end"
+    },
+    {
+     "type": "roundRect",
+     "box": [
+      1051,
+      398,
+      220,
+      66
+     ],
+     "radius_px": 6,
+     "fill": "#FFF3D6",
+     "line": {
+      "color": "#E0B85A",
+      "width_px": 1.5
+     },
+     "paras": [
+      [
+       {
+        "text": "キーワードの正規化・拡張",
+        "size_px": 14.5,
+        "bold": true,
+        "color": "#1F3A6E"
+       }
+      ],
+      [
+       {
+        "text": "（辞書展開・同義語含む）",
+        "size_px": 11.5,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "例：設計変更 → 変更管理, DCCB 等",
+        "size_px": 11.5,
+        "color": "#33466A"
+       }
+      ]
+     ],
+     "align": "c",
+     "color": "#33466A",
+     "line_pitch_px": 16.5,
+     "inset_px": [
+      8,
+      2,
+      8,
+      2
+     ]
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       1161,
+       378
+      ],
+      [
+       1161,
+       398
+      ]
+     ],
+     "color": "#1F3A6E",
+     "width_px": 2.2,
+     "head": "end"
+    },
+    {
+     "type": "roundRect",
+     "box": [
+      1041,
+      484,
+      240,
+      108
+     ],
+     "radius_px": 6,
+     "fill": "#DCEBFA",
+     "line": {
+      "color": "#5B8FD0",
+      "width_px": 1.5
+     },
+     "paras": [
+      [
+       {
+        "text": "ハイブリッド検索",
+        "size_px": 15,
+        "bold": true,
+        "color": "#1F3A6E"
+       }
+      ],
+      [
+       {
+        "text": "・全文検索（BM25：kuromoji）",
+        "size_px": 12.5,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "・ベクトル検索（文脈化テキスト）",
+        "size_px": 12.5,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "・RRF統合 ＋ 必須条件フィルタ",
+        "size_px": 12.5,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "　　（リランク：任意）",
+        "size_px": 12.5,
+        "color": "#33466A"
+       }
+      ]
+     ],
+     "align": "l",
+     "color": "#33466A",
+     "line_pitch_px": 19,
+     "inset_px": [
+      8,
+      2,
+      8,
+      2
+     ]
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       1161,
+       464
+      ],
+      [
+       1161,
+       484
+      ]
+     ],
+     "color": "#1F3A6E",
+     "width_px": 2.2,
+     "head": "end"
+    },
+    {
+     "type": "roundRect",
+     "box": [
+      1330,
+      484,
+      156,
+      150
+     ],
+     "fill": "#FFFFFF",
+     "line": {
+      "color": "#5B8FD0",
+      "width_px": 1.5
+     },
+     "radius_px": 6
+    },
+    {
+     "type": "icon",
+     "icon": "material:database-fill",
+     "box": [
+      1338,
+      494,
+      36,
+      36
+     ],
+     "color": "#2A5CA8"
+    },
+    {
+     "type": "text",
+     "box": [
+      1378,
+      490,
+      104,
+      46
+     ],
+     "paras": [
+      [
+       {
+        "text": "ファイルサーバー",
+        "size_px": 12.5,
+        "bold": true
+       }
+      ],
+      [
+       {
+        "text": "（JP / 作業標準 等）",
+        "size_px": 11
+       }
+      ]
+     ],
+     "color": "#33466A",
+     "align": "l",
+     "valign": "m",
+     "line_pitch_px": 19
+    },
+    {
+     "type": "icon",
+     "icon": "material:description-fill",
+     "box": [
+      1338,
+      554,
+      36,
+      40
+     ],
+     "color": "#2A5CA8"
+    },
+    {
+     "type": "text",
+     "box": [
+      1378,
+      546,
+      104,
+      70
+     ],
+     "paras": [
+      [
+       {
+        "text": "関連文書の取得",
+        "size_px": 12.5,
+        "bold": true
+       }
+      ],
+      [
+       {
+        "text": "（本文・該当箇所・",
+        "size_px": 11
+       }
+      ],
+      [
+       {
+        "text": "　版情報）",
+        "size_px": 11
+       }
+      ]
+     ],
+     "color": "#33466A",
+     "align": "l",
+     "valign": "t",
+     "line_pitch_px": 18
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       1281,
+       538
+      ],
+      [
+       1330,
+       538
+      ]
+     ],
+     "color": "#1F3A6E",
+     "width_px": 2.2,
+     "head": "end"
+    },
+    {
+     "type": "roundRect",
+     "box": [
+      1051,
+      612,
+      220,
+      84
+     ],
+     "radius_px": 6,
+     "fill": "#FFF3D6",
+     "line": {
+      "color": "#E0B85A",
+      "width_px": 1.5
+     },
+     "paras": [
+      [
+       {
+        "text": "版・適用判定",
+        "size_px": 15,
+        "bold": true,
+        "color": "#1F3A6E"
+       }
+      ],
+      [
+       {
+        "text": "（第6章のルール）",
+        "size_px": 12.5,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "・適用範囲の確認",
+        "size_px": 12.5,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "・旧版・適用外の除外/警告",
+        "size_px": 12.5,
+        "color": "#33466A"
+       }
+      ]
+     ],
+     "align": "c",
+     "color": "#33466A",
+     "line_pitch_px": 18,
+     "inset_px": [
+      8,
+      2,
+      8,
+      2
+     ]
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       1161,
+       592
+      ],
+      [
+       1161,
+       612
+      ]
+     ],
+     "color": "#1F3A6E",
+     "width_px": 2.2,
+     "head": "end"
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       1330,
+       624
+      ],
+      [
+       1271,
+       624
+      ]
+     ],
+     "color": "#1F3A6E",
+     "width_px": 2.2,
+     "head": "end"
+    },
+    {
+     "type": "roundRect",
+     "box": [
+      1041,
+      716,
+      240,
+      58
+     ],
+     "radius_px": 6,
+     "fill": "#EEF5FC",
+     "line": {
+      "color": "#3A5F8F",
+      "width_px": 1.5
+     },
+     "paras": [
+      [
+       {
+        "text": "結果整形",
+        "size_px": 15,
+        "bold": true,
+        "color": "#1F3A6E"
+       }
+      ],
+      [
+       {
+        "text": "（候補一覧・一致/類似/未確認の区分）",
+        "size_px": 12,
+        "color": "#33466A"
+       }
+      ]
+     ],
+     "align": "c",
+     "color": "#33466A",
+     "line_pitch_px": 17.4,
+     "inset_px": [
+      8,
+      2,
+      8,
+      2
+     ]
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       1161,
+       696
+      ],
+      [
+       1161,
+       716
+      ]
+     ],
+     "color": "#1F3A6E",
+     "width_px": 2.2,
+     "head": "end"
+    },
+    {
+     "type": "roundRect",
+     "box": [
+      1498,
+      690,
+      140,
+      128
+     ],
+     "radius_px": 6,
+     "fill": "#EEF5FC",
+     "line": {
+      "color": "#3A5F8F",
+      "width_px": 1.5
+     },
+     "paras": [
+      [
+       {
+        "text": "LLMで説明・比較生成",
+        "size_px": 12.5,
+        "bold": true,
+        "color": "#1F3A6E"
+       }
+      ],
+      [
+       {
+        "text": "（参照ID付き）",
+        "size_px": 12,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "・候補の要約",
+        "size_px": 12,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "・共通点／相違点",
+        "size_px": 12,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "・適用上の注意 等",
+        "size_px": 12,
+        "color": "#33466A"
+       }
+      ]
+     ],
+     "align": "c",
+     "color": "#33466A",
+     "line_pitch_px": 19,
+     "inset_px": [
+      8,
+      2,
+      8,
+      2
+     ]
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       1281,
+       745
+      ],
+      [
+       1498,
+       745
+      ]
+     ],
+     "color": "#1F3A6E",
+     "width_px": 2.2,
+     "head": "end"
+    },
+    {
+     "type": "roundRect",
+     "box": [
+      892,
+      838,
+      570,
+      82
+     ],
+     "radius_px": 6,
+     "fill": "#E3F2DC",
+     "line": {
+      "color": "#8CC27A",
+      "width_px": 1.5
+     },
+     "paras": [
+      [
+       {
+        "text": "結果表示",
+        "size_px": 15,
+        "bold": true,
+        "color": "#1F3A6E"
+       }
+      ],
+      [
+       {
+        "text": "・候補一覧（関連度順）",
+        "size_px": 13,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "・一致した条件／類似する点／未確認事項",
+        "size_px": 13,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "・原本リンク・版情報・適用ラベル",
+        "size_px": 13,
+        "color": "#33466A"
+       }
+      ]
+     ],
+     "align": "l",
+     "color": "#33466A",
+     "line_pitch_px": 19,
+     "inset_px": [
+      8,
+      2,
+      8,
+      2
+     ]
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       1161,
+       774
+      ],
+      [
+       1161,
+       838
+      ]
+     ],
+     "color": "#1F3A6E",
+     "width_px": 2.2,
+     "head": "end"
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       1568,
+       818
+      ],
+      [
+       1568,
+       879
+      ],
+      [
+       1462,
+       879
+      ]
+     ],
+     "color": "#1F3A6E",
+     "width_px": 1.6,
+     "head": "end",
+     "dash": "dash"
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       924,
+       454
+      ],
+      [
+       924,
+       538
+      ],
+      [
+       1041,
+       538
+      ]
+     ],
+     "color": "#1F3A6E",
+     "width_px": 1.4,
+     "head": "both",
+     "dash": "dash"
+    }
+   ]
+  },
+  {
+   "background": "#FFFFFF",
+   "elements": [
+    {
+     "type": "text",
+     "box": [
+      30,
+      10,
+      1612,
+      54
+     ],
+     "text": "4.2  UC1：共有ファイル／JP等検索の出力イメージ（図4-2）",
+     "size_px": 34,
+     "bold": true,
+     "color": "#1F3A6E",
+     "align": "l",
+     "valign": "m",
+     "name": "title"
+    },
+    {
+     "type": "rect",
+     "box": [
+      24,
+      76,
+      806,
+      846
+     ],
+     "fill": "#FFFFFF",
+     "line": {
+      "color": "#1F3F7A",
+      "width_px": 1.5
+     }
+    },
+    {
+     "type": "rect",
+     "box": [
+      24,
+      76,
+      806,
+      50
+     ],
+     "fill": "#1F3F7A",
+     "line": null
+    },
+    {
+     "type": "icon",
+     "icon": "material:description-fill",
+     "box": [
+      38,
+      83,
+      34,
+      36
+     ],
+     "color": "#FFFFFF"
+    },
+    {
+     "type": "text",
+     "box": [
+      80,
+      76,
+      740,
+      50
+     ],
+     "text": "出力イメージ（パターン1：文書番号指定）",
+     "size_px": 21,
+     "bold": true,
+     "color": "#FFFFFF",
+     "align": "l",
+     "valign": "m"
+    },
+    {
+     "type": "roundRect",
+     "box": [
+      48,
+      150,
+      758,
+      340
+     ],
+     "fill": "#F7FAFD",
+     "line": {
+      "color": "#C9D6E6",
+      "width_px": 1.2
+     },
+     "radius_px": 6
+    },
+    {
+     "type": "rect",
+     "box": [
+      48,
+      150,
+      8,
+      340
+     ],
+     "fill": "#1F3F7A",
+     "line": null
+    },
+    {
+     "type": "text",
+     "box": [
+      76,
+      170,
+      300,
+      40
+     ],
+     "text": "作業標準 JP-123",
+     "size_px": 26,
+     "bold": true,
+     "color": "#1F3A6E",
+     "align": "l",
+     "valign": "m"
+    },
+    {
+     "type": "roundRect",
+     "box": [
+      314,
+      176,
+      96,
+      30
+     ],
+     "fill": "#2E9E4F",
+     "line": null,
+     "text": "最新版",
+     "size_px": 16,
+     "bold": true,
+     "color": "#FFFFFF",
+     "radius_px": 4
+    },
+    {
+     "type": "table",
+     "box": [
+      76,
+      230,
+      700,
+      220
+     ],
+     "col_widths_px": [
+      160,
+      540
+     ],
+     "row_heights_px": [
+      56,
+      56,
+      56,
+      56
+     ],
+     "cells": [
+      [
+       {
+        "text": "版数",
+        "bold": true,
+        "color": "#1F3A6E"
+       },
+       {
+        "text": "Rev.3（2024/10/01）"
+       }
+      ],
+      [
+       {
+        "text": "適用範囲",
+        "bold": true,
+        "color": "#1F3A6E"
+       },
+       {
+        "text": "○○工程（機種A/B）"
+       }
+      ],
+      [
+       {
+        "text": "文書種別",
+        "bold": true,
+        "color": "#1F3A6E"
+       },
+       {
+        "text": "作業標準（JP）"
+       }
+      ],
+      [
+       {
+        "text": "原本リンク",
+        "bold": true,
+        "color": "#1F3A6E"
+       },
+       {
+        "text": "JP-123_Rev3.pdf",
+        "color": "#1F5FD0"
+       }
+      ]
+     ],
+     "size_px": 19,
+     "align": "l",
+     "color": "#1E2A44",
+     "border": {
+      "color": "#DDE5EF",
+      "width_px": 1
+     },
+     "cell_pad_px": 14
+    },
+    {
+     "type": "rect",
+     "box": [
+      48,
+      552,
+      6,
+      36
+     ],
+     "fill": "#1F3F7A",
+     "line": null
+    },
+    {
+     "type": "text",
+     "box": [
+      64,
+      552,
+      742,
+      36
+     ],
+     "text": "LLMによる要約（任意）",
+     "size_px": 19,
+     "bold": true,
+     "color": "#1F3A6E",
+     "align": "l",
+     "valign": "m"
+    },
+    {
+     "type": "roundRect",
+     "box": [
+      48,
+      598,
+      758,
+      296
+     ],
+     "fill": "#FFFFFF",
+     "line": {
+      "color": "#C9D6E6",
+      "width_px": 1.2
+     },
+     "radius_px": 6
+    },
+    {
+     "type": "text",
+     "box": [
+      72,
+      618,
+      714,
+      130
+     ],
+     "text": "本作業標準は、○○工程における△△作業の手順を規定したものです。\u000bRev.3では、手順5の検査方法が変更されています。\u000b主な改訂点は以下のとおりです。",
+     "size_px": 19,
+     "bold": false,
+     "color": "#1E2A44",
+     "align": "l",
+     "valign": "t",
+     "line_pitch_px": 34
+    },
+    {
+     "type": "text",
+     "box": [
+      72,
+      752,
+      714,
+      100
+     ],
+     "text": "…（参照：JP-123 Rev.3、P.3）\n…（参照：JP-123 Rev.3、P.5）",
+     "size_px": 19,
+     "color": "#1E2A44",
+     "valign": "t",
+     "bullet": true,
+     "line_pitch_px": 34,
+     "bullet_indent_px": 24
+    },
+    {
+     "type": "rect",
+     "box": [
+      842,
+      76,
+      806,
+      846
+     ],
+     "fill": "#FFFFFF",
+     "line": {
+      "color": "#1F3F7A",
+      "width_px": 1.5
+     }
+    },
+    {
+     "type": "rect",
+     "box": [
+      842,
+      76,
+      806,
+      50
+     ],
+     "fill": "#1F3F7A",
+     "line": null
+    },
+    {
+     "type": "icon",
+     "icon": "material:description-fill",
+     "box": [
+      856,
+      83,
+      34,
+      36
+     ],
+     "color": "#FFFFFF"
+    },
+    {
+     "type": "text",
+     "box": [
+      898,
+      76,
+      740,
+      50
+     ],
+     "text": "出力イメージ（パターン2：作業内容から検索）",
+     "size_px": 21,
+     "bold": true,
+     "color": "#FFFFFF",
+     "align": "l",
+     "valign": "m"
+    },
+    {
+     "type": "rect",
+     "box": [
+      866,
+      150,
+      6,
+      36
+     ],
+     "fill": "#1F3F7A",
+     "line": null
+    },
+    {
+     "type": "text",
+     "box": [
+      882,
+      150,
+      742,
+      36
+     ],
+     "text": "候補一覧",
+     "size_px": 19,
+     "bold": true,
+     "color": "#1F3A6E",
+     "align": "l",
+     "valign": "m"
+    },
+    {
+     "type": "table",
+     "box": [
+      866,
+      196,
+      758,
+      280
+     ],
+     "col_widths_px": [
+      56,
+      116,
+      236,
+      100,
+      100,
+      150
+     ],
+     "row_heights_px": [
+      56,
+      56,
+      56,
+      56,
+      56
+     ],
+     "cells": [
+      [
+       {
+        "text": "No.",
+        "bold": true,
+        "fill": "#E6EEF8",
+        "color": "#1F3A6E"
+       },
+       {
+        "text": "文書番号",
+        "bold": true,
+        "fill": "#E6EEF8",
+        "color": "#1F3A6E"
+       },
+       {
+        "text": "文書名",
+        "bold": true,
+        "fill": "#E6EEF8",
+        "color": "#1F3A6E"
+       },
+       {
+        "text": "関連度",
+        "bold": true,
+        "fill": "#E6EEF8",
+        "color": "#1F3A6E"
+       },
+       {
+        "text": "版",
+        "bold": true,
+        "fill": "#E6EEF8",
+        "color": "#1F3A6E"
+       },
+       {
+        "text": "適用範囲",
+        "bold": true,
+        "fill": "#E6EEF8",
+        "color": "#1F3A6E"
+       }
+      ],
+      [
+       "1",
+       "JP-045",
+       {
+        "text": "設計変更時の作業手順",
+        "align": "l"
+       },
+       "0.92",
+       "Rev.5",
+       "機種A/B"
+      ],
+      [
+       "2",
+       "JP-078",
+       {
+        "text": "DCCB対応手順",
+        "align": "l"
+       },
+       "0.85",
+       "Rev.2",
+       "全機種"
+      ],
+      [
+       "3",
+       "JP-123",
+       {
+        "text": "変更指示書の作成手順",
+        "align": "l"
+       },
+       "0.78",
+       "Rev.3",
+       "機種A"
+      ],
+      [
+       "…",
+       "…",
+       "",
+       "",
+       "",
+       ""
+      ]
+     ],
+     "size_px": 18,
+     "align": "c",
+     "color": "#1E2A44",
+     "border": {
+      "color": "#C9D6E6",
+      "width_px": 1
+     },
+     "cell_pad_px": 8
+    },
+    {
+     "type": "rect",
+     "box": [
+      866,
+      508,
+      6,
+      36
+     ],
+     "fill": "#1F3F7A",
+     "line": null
+    },
+    {
+     "type": "text",
+     "box": [
+      882,
+      508,
+      742,
+      36
+     ],
+     "text": "LLMによる説明・比較（抜粋）",
+     "size_px": 19,
+     "bold": true,
+     "color": "#1F3A6E",
+     "align": "l",
+     "valign": "m"
+    },
+    {
+     "type": "roundRect",
+     "box": [
+      866,
+      554,
+      758,
+      340
+     ],
+     "fill": "#FFFFFF",
+     "line": {
+      "color": "#C9D6E6",
+      "width_px": 1.2
+     },
+     "radius_px": 6
+    },
+    {
+     "type": "text",
+     "box": [
+      890,
+      572,
+      714,
+      34
+     ],
+     "text": "上記のJPは、いずれも設計変更対応に関連する作業標準です。",
+     "size_px": 19,
+     "bold": false,
+     "color": "#1E2A44",
+     "align": "l",
+     "valign": "t"
+    },
+    {
+     "type": "text",
+     "box": [
+      890,
+      620,
+      714,
+      270
+     ],
+     "text": "JP-045：設計変更時の基本的な作業手順。\u000b（参照：JP-045 Rev.5, P.2）\nJP-078：DCCBに関する具体的な指示方法。\u000b（参照：JP-078 Rev.2, P.1）\nJP-123：変更指示書の作成手順。\u000b（参照：JP-123 Rev.3, P.4）",
+     "size_px": 19,
+     "color": "#1E2A44",
+     "valign": "t",
+     "bullet": true,
+     "line_pitch_px": 32,
+     "para_space_px": 10,
+     "bullet_indent_px": 24
+    }
+   ]
+  }
+ ]
+}

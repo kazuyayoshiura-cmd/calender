@@ -1,0 +1,2499 @@
+{
+ "source_size": [
+  1672,
+  941
+ ],
+ "font": "Meiryo",
+ "background": "#FFFFFF",
+ "elements": [
+  {
+   "type": "rect",
+   "box": [
+    0,
+    18,
+    26,
+    52
+   ],
+   "fill": "#18356B",
+   "line": null
+  },
+  {
+   "type": "text",
+   "box": [
+    46,
+    12,
+    820,
+    64
+   ],
+   "text": "検索に使えるデータへどう整えるか",
+   "size_px": 42,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "image",
+   "path": "logo.png",
+   "box": [
+    1512,
+    12,
+    146,
+    34
+   ],
+   "name": "logo"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    24,
+    84,
+    1624,
+    82
+   ],
+   "fill": "#EDEEF1",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "text",
+   "box": [
+    52,
+    92,
+    1580,
+    68
+   ],
+   "text": "N-PLUSと共有文書をそのまま検索するのではなく、業務上意味のある「検索単位」に加工する。\n検索に必要な情報だけでなく、版・適用・根拠まで紐付け、正確検索と類似検索の双方で利用できる状態にする。",
+   "size_px": 23,
+   "bold": false,
+   "color": "#2A3550",
+   "align": "l",
+   "valign": "m",
+   "line_pitch_px": 34
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    25,
+    226,
+    532,
+    674
+   ],
+   "fill": "#FFFFFF",
+   "line": {
+    "color": "#D6E0EC",
+    "width_px": 1.2
+   },
+   "radius_px": 4
+  },
+  {
+   "type": "rect",
+   "box": [
+    25,
+    180,
+    532,
+    46
+   ],
+   "fill": "#173A6E",
+   "line": null
+  },
+  {
+   "type": "ellipse",
+   "box": [
+    42,
+    186,
+    34,
+    34
+   ],
+   "fill": "#FFFFFF",
+   "line": null,
+   "text": "1",
+   "size_px": 22,
+   "bold": true,
+   "color": "#173A6E"
+  },
+  {
+   "type": "text",
+   "box": [
+    87,
+    180,
+    466,
+    46
+   ],
+   "paras": [
+    [
+     {
+      "text": "現状の課題",
+      "size_px": 22,
+      "bold": true
+     },
+     {
+      "text": " — 元データのままでは検索に使いにくい",
+      "size_px": 15
+     }
+    ]
+   ],
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    571,
+    226,
+    533,
+    674
+   ],
+   "fill": "#FFFFFF",
+   "line": {
+    "color": "#D6E0EC",
+    "width_px": 1.2
+   },
+   "radius_px": 4
+  },
+  {
+   "type": "rect",
+   "box": [
+    571,
+    180,
+    533,
+    46
+   ],
+   "fill": "#173A6E",
+   "line": null
+  },
+  {
+   "type": "ellipse",
+   "box": [
+    588,
+    186,
+    34,
+    34
+   ],
+   "fill": "#FFFFFF",
+   "line": null,
+   "text": "2",
+   "size_px": 22,
+   "bold": true,
+   "color": "#173A6E"
+  },
+  {
+   "type": "text",
+   "box": [
+    633,
+    180,
+    467,
+    46
+   ],
+   "paras": [
+    [
+     {
+      "text": "どう整えるか",
+      "size_px": 22,
+      "bold": true
+     },
+     {
+      "text": " — 業務上の意味が通る検索単位を作る",
+      "size_px": 15
+     }
+    ]
+   ],
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    1118,
+    226,
+    530,
+    674
+   ],
+   "fill": "#FFFFFF",
+   "line": {
+    "color": "#D6E0EC",
+    "width_px": 1.2
+   },
+   "radius_px": 4
+  },
+  {
+   "type": "rect",
+   "box": [
+    1118,
+    180,
+    530,
+    46
+   ],
+   "fill": "#173A6E",
+   "line": null
+  },
+  {
+   "type": "ellipse",
+   "box": [
+    1135,
+    186,
+    34,
+    34
+   ],
+   "fill": "#FFFFFF",
+   "line": null,
+   "text": "3",
+   "size_px": 22,
+   "bold": true,
+   "color": "#173A6E"
+  },
+  {
+   "type": "text",
+   "box": [
+    1180,
+    180,
+    464,
+    46
+   ],
+   "paras": [
+    [
+     {
+      "text": "検索基盤でどう保持するか",
+      "size_px": 22,
+      "bold": true
+     },
+     {
+      "text": " — 検索情報と根拠情報をセットで持つ",
+      "size_px": 12
+     }
+    ]
+   ],
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "chevron",
+   "box": [
+    551,
+    425,
+    24,
+    62
+   ],
+   "point_px": 16,
+   "fill": "#1F4E8C",
+   "line": null
+  },
+  {
+   "type": "chevron",
+   "box": [
+    551,
+    723,
+    24,
+    62
+   ],
+   "point_px": 16,
+   "fill": "#1F4E8C",
+   "line": null
+  },
+  {
+   "type": "chevron",
+   "box": [
+    1106,
+    425,
+    24,
+    62
+   ],
+   "point_px": 16,
+   "fill": "#1F4E8C",
+   "line": null
+  },
+  {
+   "type": "chevron",
+   "box": [
+    1106,
+    723,
+    24,
+    62
+   ],
+   "point_px": 16,
+   "fill": "#1F4E8C",
+   "line": null
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    36,
+    240,
+    510,
+    386
+   ],
+   "fill": "#F7FAFD",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    36,
+    240,
+    510,
+    44
+   ],
+   "fill": "#E6EEF8",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "text",
+   "box": [
+    52,
+    240,
+    400,
+    44
+   ],
+   "text": "N-PLUS（構造化データ）",
+   "size_px": 20,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    42,
+    294,
+    238,
+    38
+   ],
+   "fill": "#DCE8F5",
+   "line": null,
+   "radius_px": 2
+  },
+  {
+   "type": "text",
+   "box": [
+    42,
+    294,
+    238,
+    38
+   ],
+   "text": "情報が複数テーブルに分散",
+   "size_px": 17,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "c",
+   "valign": "m"
+  },
+  {
+   "type": "icon",
+   "icon": "material:database-fill",
+   "box": [
+    44,
+    408,
+    80,
+    80
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    146,
+    343.0,
+    134,
+    24
+   ],
+   "fill": "#EEF3F9",
+   "line": null,
+   "radius_px": 2
+  },
+  {
+   "type": "text",
+   "box": [
+    160,
+    343.0,
+    120,
+    24
+   ],
+   "text": "部品",
+   "size_px": 15,
+   "bold": false,
+   "color": "#1F2F4F",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    146,
+    370.5,
+    134,
+    24
+   ],
+   "fill": "#EEF3F9",
+   "line": null,
+   "radius_px": 2
+  },
+  {
+   "type": "text",
+   "box": [
+    160,
+    370.5,
+    120,
+    24
+   ],
+   "text": "作業工程（TOS）",
+   "size_px": 15,
+   "bold": false,
+   "color": "#1F2F4F",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    146,
+    398.0,
+    134,
+    24
+   ],
+   "fill": "#EEF3F9",
+   "line": null,
+   "radius_px": 2
+  },
+  {
+   "type": "text",
+   "box": [
+    160,
+    398.0,
+    120,
+    24
+   ],
+   "text": "WPS",
+   "size_px": 15,
+   "bold": false,
+   "color": "#1F2F4F",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    146,
+    425.5,
+    134,
+    24
+   ],
+   "fill": "#EEF3F9",
+   "line": null,
+   "radius_px": 2
+  },
+  {
+   "type": "text",
+   "box": [
+    160,
+    425.5,
+    120,
+    24
+   ],
+   "text": "作業工程履歴",
+   "size_px": 15,
+   "bold": false,
+   "color": "#1F2F4F",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    146,
+    453.0,
+    134,
+    24
+   ],
+   "fill": "#EEF3F9",
+   "line": null,
+   "radius_px": 2
+  },
+  {
+   "type": "text",
+   "box": [
+    160,
+    453.0,
+    120,
+    24
+   ],
+   "text": "ロードセンター",
+   "size_px": 15,
+   "bold": false,
+   "color": "#1F2F4F",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    146,
+    480.5,
+    134,
+    24
+   ],
+   "fill": "#EEF3F9",
+   "line": null,
+   "radius_px": 2
+  },
+  {
+   "type": "text",
+   "box": [
+    160,
+    480.5,
+    120,
+    24
+   ],
+   "text": "図面／ドキュメント",
+   "size_px": 15,
+   "bold": false,
+   "color": "#1F2F4F",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    146,
+    508.0,
+    134,
+    24
+   ],
+   "fill": "#EEF3F9",
+   "line": null,
+   "radius_px": 2
+  },
+  {
+   "type": "text",
+   "box": [
+    160,
+    508.0,
+    120,
+    24
+   ],
+   "text": "版・適用情報",
+   "size_px": 15,
+   "bold": false,
+   "color": "#1F2F4F",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    146,
+    535.5,
+    134,
+    24
+   ],
+   "fill": "#EEF3F9",
+   "line": null,
+   "radius_px": 2
+  },
+  {
+   "type": "text",
+   "box": [
+    160,
+    535.5,
+    120,
+    24
+   ],
+   "text": "MBOM／EBOM",
+   "size_px": 15,
+   "bold": false,
+   "color": "#1F2F4F",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    146,
+    563.0,
+    134,
+    24
+   ],
+   "fill": "#EEF3F9",
+   "line": null,
+   "radius_px": 2
+  },
+  {
+   "type": "text",
+   "box": [
+    160,
+    563.0,
+    120,
+    24
+   ],
+   "text": "CSC",
+   "size_px": 15,
+   "bold": false,
+   "color": "#1F2F4F",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    146,
+    590.5,
+    134,
+    24
+   ],
+   "fill": "#EEF3F9",
+   "line": null,
+   "radius_px": 2
+  },
+  {
+   "type": "text",
+   "box": [
+    160,
+    590.5,
+    120,
+    24
+   ],
+   "text": "…",
+   "size_px": 15,
+   "bold": false,
+   "color": "#1F2F4F",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    296,
+    294,
+    244,
+    324
+   ],
+   "fill": "#EEF3F9",
+   "line": null,
+   "radius_px": 4
+  },
+  {
+   "type": "text",
+   "box": [
+    312,
+    306,
+    226,
+    310
+   ],
+   "text": "部品・作業工程・WPS・\u000b履歴・図面・MBOM等が\u000b別テーブルに分散\n1レコードだけでは「どの\u000b部品の、どの工程で、何を\u000bするのか」が揃わない\nコード値や関連情報を\u000b横断しないと意味が分\u000bからない\nREV・適用号機等は、現時点\u000bの定義書では所在が確認\u000bできないものがある",
+   "size_px": 16.5,
+   "color": "#1F2F4F",
+   "valign": "t",
+   "bullet": true,
+   "line_pitch_px": 24,
+   "para_space_px": 9,
+   "bullet_indent_px": 18
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    36,
+    640,
+    510,
+    250
+   ],
+   "fill": "#F7FAFD",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    40,
+    645,
+    242,
+    70
+   ],
+   "fill": "#E6EEF8",
+   "line": null,
+   "radius_px": 4
+  },
+  {
+   "type": "text",
+   "box": [
+    52,
+    648,
+    230,
+    64
+   ],
+   "size_px": 20,
+   "bold": false,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m",
+   "line_pitch_px": 32,
+   "paras": [
+    [
+     {
+      "text": "共有文書",
+      "bold": true
+     }
+    ],
+    [
+     {
+      "text": "（Word／Excel／PDF）"
+     }
+    ]
+   ]
+  },
+  {
+   "type": "icon",
+   "icon": "lucide:file",
+   "box": [
+    58,
+    748,
+    54,
+    60
+   ],
+   "color": "#1F3F7A",
+   "stroke_width": 2.4
+  },
+  {
+   "type": "text",
+   "box": [
+    58,
+    764,
+    54,
+    40
+   ],
+   "text": "W",
+   "size_px": 22,
+   "bold": true,
+   "color": "#1F3F7A",
+   "align": "c",
+   "valign": "m"
+  },
+  {
+   "type": "icon",
+   "icon": "lucide:file",
+   "box": [
+    140,
+    748,
+    54,
+    60
+   ],
+   "color": "#1F3F7A",
+   "stroke_width": 2.4
+  },
+  {
+   "type": "text",
+   "box": [
+    140,
+    764,
+    54,
+    40
+   ],
+   "text": "X",
+   "size_px": 22,
+   "bold": true,
+   "color": "#1F3F7A",
+   "align": "c",
+   "valign": "m"
+  },
+  {
+   "type": "icon",
+   "icon": "lucide:file",
+   "box": [
+    214,
+    748,
+    54,
+    60
+   ],
+   "color": "#1F3F7A",
+   "stroke_width": 2.4
+  },
+  {
+   "type": "text",
+   "box": [
+    214,
+    764,
+    54,
+    40
+   ],
+   "text": "⅄",
+   "size_px": 20,
+   "bold": true,
+   "color": "#1F3F7A",
+   "align": "c",
+   "valign": "m"
+  },
+  {
+   "type": "text",
+   "box": [
+    56,
+    818,
+    240,
+    60
+   ],
+   "text": "形式・構成がバラバラで、\n必要箇所の特定が難しい",
+   "size_px": 18,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m",
+   "line_pitch_px": 28
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    296,
+    648,
+    244,
+    236
+   ],
+   "fill": "#EEF3F9",
+   "line": null,
+   "radius_px": 4
+  },
+  {
+   "type": "text",
+   "box": [
+    312,
+    660,
+    226,
+    220
+   ],
+   "text": "Word／Excel／PDFなど\u000b形式が異なる\n文書全体をそのまま検索\u000b単位にすると、必要箇所を\u000b特定しづらい\n表・見出し・ページ等の\u000b構造を失うと、根拠箇所\u000bまで戻れない",
+   "size_px": 16.5,
+   "color": "#1F2F4F",
+   "valign": "t",
+   "bullet": true,
+   "line_pitch_px": 24,
+   "para_space_px": 9,
+   "bullet_indent_px": 18
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    580,
+    240,
+    514,
+    344
+   ],
+   "fill": "#F7FAFD",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    580,
+    240,
+    514,
+    44
+   ],
+   "fill": "#E6EEF8",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "text",
+   "box": [
+    596,
+    240,
+    490,
+    44
+   ],
+   "text": "N-PLUSを統合し、TOSを起点とした検索単位に加工",
+   "size_px": 19,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "icon",
+   "icon": "material:database-fill",
+   "box": [
+    598,
+    312,
+    52,
+    52
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "icon",
+   "icon": "material:database-fill",
+   "box": [
+    598,
+    390,
+    52,
+    52
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "icon",
+   "icon": "material:database-fill",
+   "box": [
+    598,
+    478,
+    52,
+    52
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    656,
+    299.0,
+    128,
+    24
+   ],
+   "fill": "#EEF3F9",
+   "line": null,
+   "radius_px": 2
+  },
+  {
+   "type": "text",
+   "box": [
+    670,
+    299.0,
+    114,
+    24
+   ],
+   "text": "部品",
+   "size_px": 15,
+   "bold": false,
+   "color": "#1F2F4F",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    656,
+    327.3,
+    128,
+    24
+   ],
+   "fill": "#EEF3F9",
+   "line": null,
+   "radius_px": 2
+  },
+  {
+   "type": "text",
+   "box": [
+    670,
+    327.3,
+    114,
+    24
+   ],
+   "text": "作業工程（TOS）",
+   "size_px": 15,
+   "bold": false,
+   "color": "#1F2F4F",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    656,
+    355.6,
+    128,
+    24
+   ],
+   "fill": "#EEF3F9",
+   "line": null,
+   "radius_px": 2
+  },
+  {
+   "type": "text",
+   "box": [
+    670,
+    355.6,
+    114,
+    24
+   ],
+   "text": "WPS",
+   "size_px": 15,
+   "bold": false,
+   "color": "#1F2F4F",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    656,
+    383.9,
+    128,
+    24
+   ],
+   "fill": "#EEF3F9",
+   "line": null,
+   "radius_px": 2
+  },
+  {
+   "type": "text",
+   "box": [
+    670,
+    383.9,
+    114,
+    24
+   ],
+   "text": "作業工程履歴",
+   "size_px": 15,
+   "bold": false,
+   "color": "#1F2F4F",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    656,
+    412.2,
+    128,
+    24
+   ],
+   "fill": "#EEF3F9",
+   "line": null,
+   "radius_px": 2
+  },
+  {
+   "type": "text",
+   "box": [
+    670,
+    412.2,
+    114,
+    24
+   ],
+   "text": "ロードセンター",
+   "size_px": 15,
+   "bold": false,
+   "color": "#1F2F4F",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    656,
+    440.5,
+    128,
+    24
+   ],
+   "fill": "#EEF3F9",
+   "line": null,
+   "radius_px": 2
+  },
+  {
+   "type": "text",
+   "box": [
+    670,
+    440.5,
+    114,
+    24
+   ],
+   "text": "図面／ドキュメント",
+   "size_px": 15,
+   "bold": false,
+   "color": "#1F2F4F",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    656,
+    468.8,
+    128,
+    24
+   ],
+   "fill": "#EEF3F9",
+   "line": null,
+   "radius_px": 2
+  },
+  {
+   "type": "text",
+   "box": [
+    670,
+    468.8,
+    114,
+    24
+   ],
+   "text": "MBOM／EBOM",
+   "size_px": 15,
+   "bold": false,
+   "color": "#1F2F4F",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    656,
+    497.1,
+    128,
+    24
+   ],
+   "fill": "#EEF3F9",
+   "line": null,
+   "radius_px": 2
+  },
+  {
+   "type": "text",
+   "box": [
+    670,
+    497.1,
+    114,
+    24
+   ],
+   "text": "CSC",
+   "size_px": 15,
+   "bold": false,
+   "color": "#1F2F4F",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    656,
+    525.4,
+    128,
+    24
+   ],
+   "fill": "#EEF3F9",
+   "line": null,
+   "radius_px": 2
+  },
+  {
+   "type": "text",
+   "box": [
+    670,
+    525.4,
+    114,
+    24
+   ],
+   "text": "…",
+   "size_px": 15,
+   "bold": false,
+   "color": "#1F2F4F",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "line",
+   "points": [
+    [
+     786,
+     316
+    ],
+    [
+     794,
+     320
+    ],
+    [
+     794,
+     532
+    ],
+    [
+     786,
+     536
+    ]
+   ],
+   "color": "#5A7196",
+   "width_px": 1.5
+  },
+  {
+   "type": "line",
+   "points": [
+    [
+     794,
+     426.0
+    ],
+    [
+     802,
+     426.0
+    ]
+   ],
+   "color": "#5A7196",
+   "width_px": 1.5
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    808,
+    380,
+    76,
+    100
+   ],
+   "fill": "#2E5A8E",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "icon",
+   "icon": "lucide:file-text",
+   "box": [
+    826.0,
+    388,
+    40,
+    40
+   ],
+   "color": "#FFFFFF",
+   "stroke_width": 2
+  },
+  {
+   "type": "text",
+   "box": [
+    808,
+    430,
+    76,
+    46
+   ],
+   "text": "TOS\n検索単位",
+   "size_px": 16,
+   "bold": true,
+   "color": "#FFFFFF",
+   "align": "c",
+   "valign": "m",
+   "line_pitch_px": 21
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    888,
+    292,
+    204,
+    286
+   ],
+   "fill": "#EEF3F9",
+   "line": null,
+   "radius_px": 4
+  },
+  {
+   "type": "text",
+   "box": [
+    898,
+    296,
+    196,
+    280
+   ],
+   "text": "作業工程を起点に関連\u000bテーブルをJOIN\n部品番号・工程番号等の\u000bキーで、部品／WPS／履\u000b歴／図面／MBOM等を\u000b紐付け\nコードを業務名称へ変換\n部品・工程・作業内容・職\u000b場・WPS・変更履歴等を\u000b1つの文脈に統合\n基本は「作業工程1行＝\u000b1検索候補」",
+   "size_px": 16,
+   "color": "#1F2F4F",
+   "valign": "t",
+   "bullet": true,
+   "line_pitch_px": 22.3,
+   "para_space_px": 6,
+   "bullet_indent_px": 16
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    580,
+    598,
+    514,
+    292
+   ],
+   "fill": "#F7FAFD",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    580,
+    598,
+    514,
+    44
+   ],
+   "fill": "#E6EEF8",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "text",
+   "box": [
+    596,
+    598,
+    490,
+    44
+   ],
+   "text": "共有文書を意味のある単位に分割し、メタデータを付与",
+   "size_px": 19,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "icon",
+   "icon": "lucide:file-text",
+   "box": [
+    602,
+    690,
+    38,
+    42
+   ],
+   "color": "#1F3F7A",
+   "stroke_width": 2
+  },
+  {
+   "type": "text",
+   "box": [
+    592,
+    730,
+    60,
+    22
+   ],
+   "text": "Word",
+   "size_px": 15,
+   "bold": true,
+   "color": "#1F3F7A",
+   "align": "c",
+   "valign": "m"
+  },
+  {
+   "type": "icon",
+   "icon": "lucide:file-spreadsheet",
+   "box": [
+    604,
+    754,
+    34,
+    38
+   ],
+   "color": "#1F3F7A",
+   "stroke_width": 2
+  },
+  {
+   "type": "text",
+   "box": [
+    592,
+    788,
+    60,
+    18
+   ],
+   "text": "Excel",
+   "size_px": 12,
+   "bold": true,
+   "color": "#1F3F7A",
+   "align": "c",
+   "valign": "m"
+  },
+  {
+   "type": "icon",
+   "icon": "lucide:file",
+   "box": [
+    604,
+    812,
+    34,
+    38
+   ],
+   "color": "#1F3F7A",
+   "stroke_width": 2
+  },
+  {
+   "type": "text",
+   "box": [
+    592,
+    850,
+    60,
+    22
+   ],
+   "text": "PDF",
+   "size_px": 15,
+   "bold": true,
+   "color": "#1F3F7A",
+   "align": "c",
+   "valign": "m"
+  },
+  {
+   "type": "line",
+   "points": [
+    [
+     667,
+     672
+    ],
+    [
+     667,
+     855
+    ]
+   ],
+   "color": "#5A7196",
+   "width_px": 1.5
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     667,
+     673.0
+    ],
+    [
+     690,
+     673.0
+    ]
+   ],
+   "color": "#5A7196",
+   "width_px": 1.3,
+   "head_size": "sm"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    694,
+    661.0,
+    90,
+    24
+   ],
+   "fill": "#EEF3F9",
+   "line": null,
+   "radius_px": 2
+  },
+  {
+   "type": "text",
+   "box": [
+    708,
+    661.0,
+    76,
+    24
+   ],
+   "text": "章",
+   "size_px": 15,
+   "bold": false,
+   "color": "#1F2F4F",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     667,
+     703.3
+    ],
+    [
+     690,
+     703.3
+    ]
+   ],
+   "color": "#5A7196",
+   "width_px": 1.3,
+   "head_size": "sm"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    694,
+    691.3,
+    90,
+    24
+   ],
+   "fill": "#EEF3F9",
+   "line": null,
+   "radius_px": 2
+  },
+  {
+   "type": "text",
+   "box": [
+    708,
+    691.3,
+    76,
+    24
+   ],
+   "text": "節",
+   "size_px": 15,
+   "bold": false,
+   "color": "#1F2F4F",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     667,
+     733.6
+    ],
+    [
+     690,
+     733.6
+    ]
+   ],
+   "color": "#5A7196",
+   "width_px": 1.3,
+   "head_size": "sm"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    694,
+    721.6,
+    90,
+    24
+   ],
+   "fill": "#EEF3F9",
+   "line": null,
+   "radius_px": 2
+  },
+  {
+   "type": "text",
+   "box": [
+    708,
+    721.6,
+    76,
+    24
+   ],
+   "text": "項番",
+   "size_px": 15,
+   "bold": false,
+   "color": "#1F2F4F",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     667,
+     763.9
+    ],
+    [
+     690,
+     763.9
+    ]
+   ],
+   "color": "#5A7196",
+   "width_px": 1.3,
+   "head_size": "sm"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    694,
+    751.9,
+    90,
+    24
+   ],
+   "fill": "#EEF3F9",
+   "line": null,
+   "radius_px": 2
+  },
+  {
+   "type": "text",
+   "box": [
+    708,
+    751.9,
+    76,
+    24
+   ],
+   "text": "表（行単位）",
+   "size_px": 15,
+   "bold": false,
+   "color": "#1F2F4F",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     667,
+     794.2
+    ],
+    [
+     690,
+     794.2
+    ]
+   ],
+   "color": "#5A7196",
+   "width_px": 1.3,
+   "head_size": "sm"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    694,
+    782.2,
+    90,
+    24
+   ],
+   "fill": "#EEF3F9",
+   "line": null,
+   "radius_px": 2
+  },
+  {
+   "type": "text",
+   "box": [
+    708,
+    782.2,
+    76,
+    24
+   ],
+   "text": "図・図面",
+   "size_px": 15,
+   "bold": false,
+   "color": "#1F2F4F",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     667,
+     824.5
+    ],
+    [
+     690,
+     824.5
+    ]
+   ],
+   "color": "#5A7196",
+   "width_px": 1.3,
+   "head_size": "sm"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    694,
+    812.5,
+    90,
+    24
+   ],
+   "fill": "#EEF3F9",
+   "line": null,
+   "radius_px": 2
+  },
+  {
+   "type": "text",
+   "box": [
+    708,
+    812.5,
+    76,
+    24
+   ],
+   "text": "1ページ",
+   "size_px": 15,
+   "bold": false,
+   "color": "#1F2F4F",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "arrow",
+   "points": [
+    [
+     667,
+     854.8
+    ],
+    [
+     690,
+     854.8
+    ]
+   ],
+   "color": "#5A7196",
+   "width_px": 1.3,
+   "head_size": "sm"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    694,
+    842.8,
+    90,
+    24
+   ],
+   "fill": "#EEF3F9",
+   "line": null,
+   "radius_px": 2
+  },
+  {
+   "type": "text",
+   "box": [
+    708,
+    842.8,
+    76,
+    24
+   ],
+   "text": "…",
+   "size_px": 15,
+   "bold": false,
+   "color": "#1F2F4F",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "line",
+   "points": [
+    [
+     786,
+     678
+    ],
+    [
+     794,
+     682
+    ],
+    [
+     794,
+     846
+    ],
+    [
+     786,
+     850
+    ]
+   ],
+   "color": "#5A7196",
+   "width_px": 1.5
+  },
+  {
+   "type": "line",
+   "points": [
+    [
+     794,
+     764.0
+    ],
+    [
+     802,
+     764.0
+    ]
+   ],
+   "color": "#5A7196",
+   "width_px": 1.5
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    808,
+    714,
+    76,
+    94
+   ],
+   "fill": "#2E5A8E",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "icon",
+   "icon": "lucide:file-text",
+   "box": [
+    826.0,
+    722,
+    40,
+    40
+   ],
+   "color": "#FFFFFF",
+   "stroke_width": 2
+  },
+  {
+   "type": "text",
+   "box": [
+    808,
+    764,
+    76,
+    40
+   ],
+   "text": "文書\n検索単位",
+   "size_px": 16,
+   "bold": true,
+   "color": "#FFFFFF",
+   "align": "c",
+   "valign": "m",
+   "line_pitch_px": 21
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    888,
+    650,
+    204,
+    236
+   ],
+   "fill": "#EEF3F9",
+   "line": null,
+   "radius_px": 4
+  },
+  {
+   "type": "text",
+   "box": [
+    898,
+    652,
+    196,
+    232
+   ],
+   "text": "章・節・項番の階層を保\u000b持して分割\n表はヘッダと各行の関係\u000bを保持\nExcelはシート・セル、\u000bWordは表番号、PDFは\u000bページを保持\n文書番号・REV・発効日・\u000b取得元等を付与\n「意味が通る文書チャンク」\u000bを検索単位として作る",
+   "size_px": 16,
+   "color": "#1F2F4F",
+   "valign": "t",
+   "bullet": true,
+   "line_pitch_px": 22,
+   "para_space_px": 0,
+   "bullet_indent_px": 16
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    1134,
+    240,
+    502,
+    36
+   ],
+   "fill": "#E6EEF8",
+   "line": null,
+   "radius_px": 4
+  },
+  {
+   "type": "text",
+   "box": [
+    1150,
+    240,
+    480,
+    36
+   ],
+   "text": "TOS検索単位（構造化データ）",
+   "size_px": 20,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "icon",
+   "icon": "lucide:file-text",
+   "box": [
+    1144,
+    364,
+    84,
+    84
+   ],
+   "color": "#1F3F7A",
+   "stroke_width": 1.8
+  },
+  {
+   "type": "table",
+   "box": [
+    1236,
+    277,
+    280,
+    265.20000000000005
+   ],
+   "col_widths_px": [
+    106,
+    174
+   ],
+   "row_heights_px": [
+    22.1,
+    22.1,
+    22.1,
+    22.1,
+    22.1,
+    22.1,
+    22.1,
+    22.1,
+    22.1,
+    22.1,
+    22.1,
+    22.1
+   ],
+   "cells": [
+    [
+     {
+      "text": "部品番号"
+     },
+     {
+      "text": "A12345"
+     }
+    ],
+    [
+     {
+      "text": "部品名称"
+     },
+     {
+      "text": "ブラケット"
+     }
+    ],
+    [
+     {
+      "text": "材質"
+     },
+     {
+      "text": "Ti合金"
+     }
+    ],
+    [
+     {
+      "text": "工程番号"
+     },
+     {
+      "text": "LC001"
+     }
+    ],
+    [
+     {
+      "text": "工程名"
+     },
+     {
+      "text": "バリ取り"
+     }
+    ],
+    [
+     {
+      "text": "作業内容"
+     },
+     {
+      "text": "機械加工"
+     }
+    ],
+    [
+     {
+      "text": "WPS"
+     },
+     {
+      "text": "W-55 Rev.C"
+     }
+    ],
+    [
+     {
+      "text": "図面"
+     },
+     {
+      "text": "D-12345 Rev.C"
+     }
+    ],
+    [
+     {
+      "text": "上位組立"
+     },
+     {
+      "text": "A320 001～050"
+     }
+    ],
+    [
+     {
+      "text": "変更日／理由"
+     },
+     {
+      "text": "2025-06／治具変更"
+     }
+    ],
+    [
+     {
+      "text": "版・適用情報"
+     },
+     {
+      "text": "REV B、001～050"
+     }
+    ],
+    [
+     {
+      "text": "元テーブル/PK"
+     },
+     {
+      "text": "作業工程 (A,10)"
+     }
+    ]
+   ],
+   "size_px": 13.2,
+   "align": "l",
+   "color": "#1F2F4F",
+   "border": {
+    "color": "#DDE5EF",
+    "width_px": 1
+   },
+   "cell_pad_px": 5
+  },
+  {
+   "type": "table",
+   "box": [
+    1236,
+    542.2,
+    400,
+    22.1
+   ],
+   "col_widths_px": [
+    106,
+    294
+   ],
+   "row_heights_px": [
+    22.1
+   ],
+   "cells": [
+    [
+     {
+      "text": "検索用テキスト"
+     },
+     {
+      "text": "部品A ブラケット(SUS) の工程10…"
+     }
+    ]
+   ],
+   "size_px": 13.2,
+   "align": "l",
+   "color": "#1F2F4F",
+   "border": {
+    "color": "#DDE5EF",
+    "width_px": 1
+   },
+   "cell_pad_px": 5
+  },
+  {
+   "type": "line",
+   "points": [
+    [
+     1520,
+     286
+    ],
+    [
+     1528,
+     290
+    ],
+    [
+     1528,
+     404
+    ],
+    [
+     1520,
+     408
+    ]
+   ],
+   "color": "#5A7196",
+   "width_px": 1.5
+  },
+  {
+   "type": "line",
+   "points": [
+    [
+     1528,
+     347.0
+    ],
+    [
+     1536,
+     347.0
+    ]
+   ],
+   "color": "#5A7196",
+   "width_px": 1.5
+  },
+  {
+   "type": "text",
+   "box": [
+    1546,
+    322,
+    110,
+    52
+   ],
+   "paras": [
+    [
+     {
+      "text": "業務情報",
+      "size_px": 18,
+      "bold": true
+     }
+    ],
+    [
+     {
+      "text": "（検索に使う）",
+      "size_px": 15.5
+     }
+    ]
+   ],
+   "color": "#1F3A6E",
+   "line_pitch_px": 26
+  },
+  {
+   "type": "line",
+   "points": [
+    [
+     1520,
+     418
+    ],
+    [
+     1528,
+     422
+    ],
+    [
+     1528,
+     526
+    ],
+    [
+     1520,
+     530
+    ]
+   ],
+   "color": "#5A7196",
+   "width_px": 1.5
+  },
+  {
+   "type": "line",
+   "points": [
+    [
+     1528,
+     474.0
+    ],
+    [
+     1536,
+     474.0
+    ]
+   ],
+   "color": "#5A7196",
+   "width_px": 1.5
+  },
+  {
+   "type": "text",
+   "box": [
+    1546,
+    458,
+    110,
+    52
+   ],
+   "paras": [
+    [
+     {
+      "text": "根拠情報",
+      "size_px": 18,
+      "bold": true
+     }
+    ],
+    [
+     {
+      "text": "（元データへ戻る）",
+      "size_px": 15.5
+     }
+    ]
+   ],
+   "color": "#1F3A6E",
+   "line_pitch_px": 26
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    1134,
+    590,
+    502,
+    36
+   ],
+   "fill": "#E6EEF8",
+   "line": null,
+   "radius_px": 4
+  },
+  {
+   "type": "text",
+   "box": [
+    1150,
+    590,
+    480,
+    36
+   ],
+   "text": "文書検索単位（非構造化データ）",
+   "size_px": 20,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "icon",
+   "icon": "lucide:file-text",
+   "box": [
+    1144,
+    694,
+    84,
+    84
+   ],
+   "color": "#1F3F7A",
+   "stroke_width": 1.8
+  },
+  {
+   "type": "table",
+   "box": [
+    1236,
+    629,
+    280,
+    230
+   ],
+   "col_widths_px": [
+    106,
+    174
+   ],
+   "row_heights_px": [
+    23,
+    23,
+    23,
+    23,
+    23,
+    23,
+    23,
+    23,
+    23,
+    23
+   ],
+   "cells": [
+    [
+     {
+      "text": "本文"
+     },
+     {
+      "text": "作業手順として…"
+     }
+    ],
+    [
+     {
+      "text": "見出しパス"
+     },
+     {
+      "text": "第3章 ＞3.2 ＞注意事項"
+     }
+    ],
+    [
+     {
+      "text": "文書番号"
+     },
+     {
+      "text": "D-12345"
+     }
+    ],
+    [
+     {
+      "text": "REV"
+     },
+     {
+      "text": "B"
+     }
+    ],
+    [
+     {
+      "text": "発効日"
+     },
+     {
+      "text": "2024-06-01"
+     }
+    ],
+    [
+     {
+      "text": "ページ／項番"
+     },
+     {
+      "text": "p.15 ／ 第3章 3.2"
+     }
+    ],
+    [
+     {
+      "text": "シート／セル"
+     },
+     {
+      "text": "Sheet1 ／ B5"
+     }
+    ],
+    [
+     {
+      "text": "ファイルパス"
+     },
+     {
+      "text": "/folder/…/作業手順書.pdf"
+     }
+    ],
+    [
+     {
+      "text": "抽出方式"
+     },
+     {
+      "text": "章・節・項番で分割"
+     }
+    ],
+    [
+     {
+      "text": "抽出品質"
+     },
+     {
+      "text": "正常（表構造保持）"
+     }
+    ]
+   ],
+   "size_px": 13.2,
+   "align": "l",
+   "color": "#1F2F4F",
+   "border": {
+    "color": "#DDE5EF",
+    "width_px": 1
+   },
+   "cell_pad_px": 5
+  },
+  {
+   "type": "table",
+   "box": [
+    1236,
+    859,
+    400,
+    23
+   ],
+   "col_widths_px": [
+    106,
+    294
+   ],
+   "row_heights_px": [
+    23
+   ],
+   "cells": [
+    [
+     {
+      "text": "検索用テキスト"
+     },
+     {
+      "text": "穴あけ加工時の注意事項…"
+     }
+    ]
+   ],
+   "size_px": 13.2,
+   "align": "l",
+   "color": "#1F2F4F",
+   "border": {
+    "color": "#DDE5EF",
+    "width_px": 1
+   },
+   "cell_pad_px": 5
+  },
+  {
+   "type": "line",
+   "points": [
+    [
+     1522,
+     634
+    ],
+    [
+     1530,
+     638
+    ],
+    [
+     1530,
+     748
+    ],
+    [
+     1522,
+     752
+    ]
+   ],
+   "color": "#5A7196",
+   "width_px": 1.5
+  },
+  {
+   "type": "line",
+   "points": [
+    [
+     1530,
+     693.0
+    ],
+    [
+     1538,
+     693.0
+    ]
+   ],
+   "color": "#5A7196",
+   "width_px": 1.5
+  },
+  {
+   "type": "text",
+   "box": [
+    1546,
+    670,
+    110,
+    52
+   ],
+   "paras": [
+    [
+     {
+      "text": "業務情報",
+      "size_px": 18,
+      "bold": true
+     }
+    ],
+    [
+     {
+      "text": "（検索に使う）",
+      "size_px": 15.5
+     }
+    ]
+   ],
+   "color": "#1F3A6E",
+   "line_pitch_px": 26
+  },
+  {
+   "type": "line",
+   "points": [
+    [
+     1522,
+     770
+    ],
+    [
+     1530,
+     774
+    ],
+    [
+     1530,
+     864
+    ],
+    [
+     1522,
+     868
+    ]
+   ],
+   "color": "#5A7196",
+   "width_px": 1.5
+  },
+  {
+   "type": "line",
+   "points": [
+    [
+     1530,
+     819.0
+    ],
+    [
+     1538,
+     819.0
+    ]
+   ],
+   "color": "#5A7196",
+   "width_px": 1.5
+  },
+  {
+   "type": "text",
+   "box": [
+    1546,
+    800,
+    110,
+    52
+   ],
+   "paras": [
+    [
+     {
+      "text": "根拠情報",
+      "size_px": 18,
+      "bold": true
+     }
+    ],
+    [
+     {
+      "text": "（元文書へ戻る）",
+      "size_px": 15.5
+     }
+    ]
+   ],
+   "color": "#1F3A6E",
+   "line_pitch_px": 26
+  },
+  {
+   "type": "text",
+   "box": [
+    1600,
+    906,
+    44,
+    26
+   ],
+   "text": "6",
+   "size_px": 14,
+   "bold": false,
+   "color": "#6B7385",
+   "align": "r",
+   "valign": "m"
+  }
+ ]
+}

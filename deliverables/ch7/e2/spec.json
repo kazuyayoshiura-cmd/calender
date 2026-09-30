@@ -1,0 +1,909 @@
+{
+ "source_size": [
+  1672,
+  941
+ ],
+ "font": "Meiryo",
+ "background": "#FFFFFF",
+ "elements": [
+  {
+   "type": "text",
+   "box": [
+    24,
+    4,
+    1640,
+    64
+   ],
+   "text": "表7-1　API入出力仕様（要約）",
+   "size_px": 40,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "table",
+   "box": [
+    16,
+    70,
+    1642,
+    868
+   ],
+   "col_widths_px": [
+    320,
+    454,
+    418,
+    450
+   ],
+   "row_heights_px": [
+    46,
+    180,
+    196,
+    162,
+    180,
+    104
+   ],
+   "cells": [
+    [
+     {
+      "text": "エンドポイント",
+      "fill": "#0E3F82",
+      "color": "#FFFFFF",
+      "bold": true,
+      "size_px": 22,
+      "align": "c"
+     },
+     {
+      "text": "入力（リクエスト）",
+      "fill": "#0E3F82",
+      "color": "#FFFFFF",
+      "bold": true,
+      "size_px": 22,
+      "align": "c"
+     },
+     {
+      "text": "出力（レスポンス）",
+      "fill": "#0E3F82",
+      "color": "#FFFFFF",
+      "bold": true,
+      "size_px": 22,
+      "align": "c"
+     },
+     {
+      "text": "確定処理・制約",
+      "fill": "#0E3F82",
+      "color": "#FFFFFF",
+      "bold": true,
+      "size_px": 22,
+      "align": "c"
+     }
+    ],
+    [
+     {
+      "text": "",
+      "fill": "#E6F1FB"
+     },
+     {
+      "text": "",
+      "fill": "#FFFFFF"
+     },
+     {
+      "text": "",
+      "fill": "#FFFFFF"
+     },
+     {
+      "text": "LLMで質問の意図を解釈し、検索条件を抽出\n業務用語・同義語の正規化、コード値検証\n不明・曖昧な項目は確認メッセージを返す\nこのAPIで確定するのは「構造化条件」のみ\n実データの検索は行わない\n解釈・検証のログを記録（F-07）",
+      "fill": "#E6F1FB",
+      "size_px": 15,
+      "color": "#1E2A44",
+      "align": "l",
+      "valign": "m",
+      "bullet": true,
+      "bullet_indent_px": 16,
+      "line_pitch_px": 22,
+      "inset_px": [
+       14,
+       2,
+       6,
+       2
+      ]
+     }
+    ],
+    [
+     {
+      "text": "",
+      "fill": "#E6F1FB"
+     },
+     {
+      "text": "",
+      "fill": "#FFFFFF"
+     },
+     {
+      "text": "",
+      "fill": "#FFFFFF"
+     },
+     {
+      "text": "mode：exact / similar / hybrid\nfilters：各種条件（機種、期間、ステータス等）\ntop_k：取得件数（例：10、20、50）\n複数手法（SQL・全文・ベクトル検索）を統合し\u000bRRFでランク付け、必要に応じて再ランキング\n権限・アクセス制御を適用\nこのAPIで確定するのは「検索結果（候補リスト）」",
+      "fill": "#E6F1FB",
+      "size_px": 15,
+      "color": "#1E2A44",
+      "align": "l",
+      "valign": "m",
+      "bullet": true,
+      "bullet_indent_px": 16,
+      "line_pitch_px": 22,
+      "inset_px": [
+       14,
+       2,
+       6,
+       2
+      ]
+     }
+    ],
+    [
+     {
+      "text": "",
+      "fill": "#E6F1FB"
+     },
+     {
+      "text": "",
+      "fill": "#FFFFFF"
+     },
+     {
+      "text": "",
+      "fill": "#FFFFFF"
+     },
+     {
+      "text": "候補の内容を取得し、根拠情報を参照して説明生成\nevidenceに source_ref_id・ページ・引用箇所等を付与\n事実に基づく説明を生成（推測は抑制）\nこのAPIで確定するのは「説明文と根拠の紐付け」",
+      "fill": "#E6F1FB",
+      "size_px": 16,
+      "color": "#1E2A44",
+      "align": "l",
+      "valign": "m",
+      "bullet": true,
+      "bullet_indent_px": 16,
+      "line_pitch_px": 25,
+      "inset_px": [
+       14,
+       2,
+       6,
+       2
+      ]
+     }
+    ],
+    [
+     {
+      "text": "",
+      "fill": "#E6F1FB"
+     },
+     {
+      "text": "",
+      "fill": "#FFFFFF"
+     },
+     {
+      "text": "",
+      "fill": "#FFFFFF"
+     },
+     {
+      "text": "指定した候補（2～3件）の主要項目を比較\n一致点・相違点を整理して提示\n欠損している項目は「未記載」として表示し、\u000b値の補完や推測は行わない\n根拠となる source_ref_id を併記\nこのAPIで確定するのは「比較結果の提示」のみ",
+      "fill": "#E6F1FB",
+      "size_px": 16,
+      "color": "#1E2A44",
+      "align": "l",
+      "valign": "m",
+      "bullet": true,
+      "bullet_indent_px": 16,
+      "line_pitch_px": 25,
+      "inset_px": [
+       14,
+       2,
+       6,
+       2
+      ]
+     }
+    ],
+    [
+     {
+      "text": "",
+      "fill": "#E6F1FB"
+     },
+     {
+      "text": "",
+      "fill": "#FFFFFF"
+     },
+     {
+      "text": "",
+      "fill": "#FFFFFF"
+     },
+     {
+      "text": "source_ref_id に対応する原本データを取得\nファイル種別（PDF／TIFF／図面 等）に応じて返却\nアクセス権限を確認し、許可されたデータのみ返す\nこのAPIで確定するのは「原本データの取得」のみ",
+      "fill": "#E6F1FB",
+      "size_px": 16,
+      "color": "#1E2A44",
+      "align": "l",
+      "valign": "m",
+      "bullet": true,
+      "bullet_indent_px": 16,
+      "line_pitch_px": 25,
+      "inset_px": [
+       14,
+       2,
+       6,
+       2
+      ]
+     }
+    ]
+   ],
+   "border": {
+    "color": "#D6E1EE",
+    "width_px": 2
+   },
+   "name": "api-table"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    32,
+    128,
+    86,
+    30
+   ],
+   "fill": "#1F7FE0",
+   "line": null,
+   "text": "POST",
+   "size_px": 17,
+   "bold": true,
+   "color": "#FFFFFF",
+   "radius_px": 4
+  },
+  {
+   "type": "text",
+   "box": [
+    30,
+    160,
+    290,
+    44
+   ],
+   "text": "/interpret",
+   "size_px": 31,
+   "bold": true,
+   "color": "#0E2E63",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "text",
+   "box": [
+    32,
+    206,
+    286,
+    86
+   ],
+   "text": "質問 → 構造化条件JSON\u000b（LLM＋検証・正規化ログ）",
+   "size_px": 16,
+   "bold": false,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "t",
+   "line_pitch_px": 25
+  },
+  {
+   "type": "text",
+   "box": [
+    350,
+    122,
+    434,
+    28
+   ],
+   "text": "自然言語の質問、コンテキスト情報 等",
+   "size_px": 17,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    350,
+    154,
+    426,
+    134
+   ],
+   "fill": "#EAF2FB",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "text",
+   "box": [
+    358,
+    158,
+    414,
+    126
+   ],
+   "text": "{\u000b  \"question\": \"部品番号Aの過去TOSを探したい\",\u000b  \"context\": {\"user_id\": \"u123\", ...},\u000b  \"options\": {\"domain\": \"TOS\"}\u000b}",
+   "size_px": 11.5,
+   "color": "#1E2A44",
+   "font": "Consolas",
+   "font_latin": "Consolas",
+   "valign": "t",
+   "line_pitch_px": 15.5
+  },
+  {
+   "type": "text",
+   "box": [
+    804,
+    122,
+    398,
+    28
+   ],
+   "text": "構造化条件JSON（正規化後）＋ 検証結果",
+   "size_px": 17,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    804,
+    154,
+    390,
+    134
+   ],
+   "fill": "#EAF2FB",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "text",
+   "box": [
+    812,
+    158,
+    378,
+    126
+   ],
+   "text": "{\u000b  \"conditions\": {\u000b    \"part_no\": \"A\", \"target\": \"TOS\",\u000b    \"time_range\": null, ...\u000b  },\u000b  \"validation\": {\"status\": \"ok\", \"messages\": []},\u000b  \"normalized_query\": \"...\"\u000b}",
+   "size_px": 11.5,
+   "color": "#1E2A44",
+   "font": "Consolas",
+   "font_latin": "Consolas",
+   "valign": "t",
+   "line_pitch_px": 15.5
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    32,
+    308,
+    86,
+    30
+   ],
+   "fill": "#1F7FE0",
+   "line": null,
+   "text": "POST",
+   "size_px": 17,
+   "bold": true,
+   "color": "#FFFFFF",
+   "radius_px": 4
+  },
+  {
+   "type": "text",
+   "box": [
+    30,
+    340,
+    290,
+    44
+   ],
+   "text": "/search",
+   "size_px": 31,
+   "bold": true,
+   "color": "#0E2E63",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "text",
+   "box": [
+    32,
+    386,
+    286,
+    102
+   ],
+   "text": "条件JSON → 候補リスト\u000b（SQL・全文・ベクトル検索+RRF）",
+   "size_px": 16,
+   "bold": false,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "t",
+   "line_pitch_px": 25
+  },
+  {
+   "type": "text",
+   "box": [
+    350,
+    302,
+    434,
+    28
+   ],
+   "text": "検索条件JSON",
+   "size_px": 17,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    350,
+    334,
+    426,
+    150
+   ],
+   "fill": "#EAF2FB",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "text",
+   "box": [
+    358,
+    338,
+    414,
+    142
+   ],
+   "text": "{\u000b  \"conditions\": {\"part_no\": \"A\", \"target\": \"TOS\"},\u000b  \"mode\": \"hybrid\",\u000b  \"filters\": {\"model\": \"B737\",\u000b              \"date_from\": \"2020-01-01\"},\u000b  \"top_k\": 20,\u000b  \"rerank\": true\u000b}",
+   "size_px": 11.5,
+   "color": "#1E2A44",
+   "font": "Consolas",
+   "font_latin": "Consolas",
+   "valign": "t",
+   "line_pitch_px": 15.5
+  },
+  {
+   "type": "text",
+   "box": [
+    804,
+    302,
+    398,
+    28
+   ],
+   "text": "検索候補リスト（スコア付き）",
+   "size_px": 17,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    804,
+    334,
+    390,
+    150
+   ],
+   "fill": "#EAF2FB",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "text",
+   "box": [
+    812,
+    338,
+    378,
+    142
+   ],
+   "text": "{\u000b  \"results\": [\u000b    { \"id\": \"TOS-2024-001\", \"score\": 0.92,\u000b      \"title\": \"治工具製作指示票\",\u000b      \"summary\": \"...\",\u000b      \"source_ref_id\": \"REF-0001\" }, ...\u000b  ]\u000b}",
+   "size_px": 11.5,
+   "color": "#1E2A44",
+   "font": "Consolas",
+   "font_latin": "Consolas",
+   "valign": "t",
+   "line_pitch_px": 15.5
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    32,
+    504,
+    86,
+    30
+   ],
+   "fill": "#1F7FE0",
+   "line": null,
+   "text": "POST",
+   "size_px": 17,
+   "bold": true,
+   "color": "#FFFFFF",
+   "radius_px": 4
+  },
+  {
+   "type": "text",
+   "box": [
+    30,
+    536,
+    290,
+    44
+   ],
+   "text": "/explain",
+   "size_px": 31,
+   "bold": true,
+   "color": "#0E2E63",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "text",
+   "box": [
+    32,
+    582,
+    286,
+    68
+   ],
+   "text": "候補ID → evidence参照\u000bID付き説明",
+   "size_px": 16,
+   "bold": false,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "t",
+   "line_pitch_px": 25
+  },
+  {
+   "type": "text",
+   "box": [
+    350,
+    498,
+    434,
+    28
+   ],
+   "text": "候補ID、質問（任意）",
+   "size_px": 17,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    350,
+    530,
+    426,
+    116
+   ],
+   "fill": "#EAF2FB",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "text",
+   "box": [
+    358,
+    534,
+    414,
+    108
+   ],
+   "text": "{\u000b  \"id\": \"TOS-2024-001\",\u000b  \"question\": \"このTOSのポイントを教えて\"\u000b}",
+   "size_px": 11.5,
+   "color": "#1E2A44",
+   "font": "Consolas",
+   "font_latin": "Consolas",
+   "valign": "t",
+   "line_pitch_px": 15.5
+  },
+  {
+   "type": "text",
+   "box": [
+    804,
+    498,
+    398,
+    28
+   ],
+   "text": "根拠付き説明（evidence参照ID付き）",
+   "size_px": 17,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    804,
+    530,
+    390,
+    116
+   ],
+   "fill": "#EAF2FB",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "text",
+   "box": [
+    812,
+    534,
+    378,
+    108
+   ],
+   "text": "{\u000b  \"id\": \"TOS-2024-001\",\u000b  \"explanation\": \"このTOSは…であり、…\",\u000b  \"evidence\": [{ \"source_ref_id\": \"REF-0001\",\u000b    \"page\": 3, \"chunk_id\": \"C-01\", \"quote\": \"...\" },\u000b    ...]\u000b}",
+   "size_px": 11.5,
+   "color": "#1E2A44",
+   "font": "Consolas",
+   "font_latin": "Consolas",
+   "valign": "t",
+   "line_pitch_px": 15.5
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    32,
+    666,
+    86,
+    30
+   ],
+   "fill": "#1F7FE0",
+   "line": null,
+   "text": "POST",
+   "size_px": 17,
+   "bold": true,
+   "color": "#FFFFFF",
+   "radius_px": 4
+  },
+  {
+   "type": "text",
+   "box": [
+    30,
+    698,
+    290,
+    44
+   ],
+   "text": "/compare",
+   "size_px": 31,
+   "bold": true,
+   "color": "#0E2E63",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "text",
+   "box": [
+    32,
+    744,
+    286,
+    86
+   ],
+   "text": "候補2～3件の一致・相違\u000b（欠損を補完しない）",
+   "size_px": 16,
+   "bold": false,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "t",
+   "line_pitch_px": 25
+  },
+  {
+   "type": "text",
+   "box": [
+    350,
+    660,
+    434,
+    28
+   ],
+   "text": "比較対象の候補ID（2～3件）",
+   "size_px": 17,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    350,
+    692,
+    426,
+    134
+   ],
+   "fill": "#EAF2FB",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "text",
+   "box": [
+    358,
+    696,
+    414,
+    126
+   ],
+   "text": "{\u000b  \"ids\": [\"TOS-2024-001\", \"TOS-2023-045\",\u000b          \"TOS-2021-012\"],\u000b  \"compare_items\": [\"工程\", \"使用部品\", \"改訂点\"]\u000b}",
+   "size_px": 11.5,
+   "color": "#1E2A44",
+   "font": "Consolas",
+   "font_latin": "Consolas",
+   "valign": "t",
+   "line_pitch_px": 15.5
+  },
+  {
+   "type": "text",
+   "box": [
+    804,
+    660,
+    398,
+    28
+   ],
+   "text": "比較結果（一致・相違の整理表）",
+   "size_px": 17,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    804,
+    692,
+    390,
+    134
+   ],
+   "fill": "#EAF2FB",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "text",
+   "box": [
+    812,
+    696,
+    378,
+    126
+   ],
+   "text": "{\u000b  \"comparison\": [\u000b    { \"item\": \"工程\",\u000b      \"TOS-2024-001\": \"機械加工\",\u000b      \"TOS-2023-045\": \"機械加工\",\u000b      \"TOS-2021-012\": \"手加工\",\u000b      \"note\": \"2021のみ異なる\" }, ... ]\u000b}",
+   "size_px": 11.5,
+   "color": "#1E2A44",
+   "font": "Consolas",
+   "font_latin": "Consolas",
+   "valign": "t",
+   "line_pitch_px": 15.5
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    32,
+    846,
+    86,
+    30
+   ],
+   "fill": "#1F7FE0",
+   "line": null,
+   "text": "GET",
+   "size_px": 17,
+   "bold": true,
+   "color": "#FFFFFF",
+   "radius_px": 4
+  },
+  {
+   "type": "text",
+   "box": [
+    30,
+    876,
+    290,
+    36
+   ],
+   "text": "/source/{ref_id}",
+   "size_px": 24,
+   "bold": true,
+   "color": "#0E2E63",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "text",
+   "box": [
+    32,
+    912,
+    286,
+    24
+   ],
+   "text": "原本参照（ドキュメント・図面等）",
+   "size_px": 14.5,
+   "bold": false,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "t",
+   "line_pitch_px": 25
+  },
+  {
+   "type": "text",
+   "box": [
+    350,
+    840,
+    434,
+    28
+   ],
+   "text": "参照ID（パスパラメータ）",
+   "size_px": 17,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    350,
+    872,
+    426,
+    58
+   ],
+   "fill": "#EAF2FB",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "text",
+   "box": [
+    358,
+    876,
+    414,
+    50
+   ],
+   "text": "/source/REF-0001",
+   "size_px": 17,
+   "color": "#1E2A44",
+   "font": "Consolas",
+   "font_latin": "Consolas",
+   "valign": "m",
+   "line_pitch_px": 15.5
+  },
+  {
+   "type": "text",
+   "box": [
+    804,
+    840,
+    398,
+    28
+   ],
+   "text": "原本データ（メタ情報付き）",
+   "size_px": 17,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "roundRect",
+   "box": [
+    804,
+    872,
+    390,
+    58
+   ],
+   "fill": "#EAF2FB",
+   "line": null,
+   "radius_px": 6
+  },
+  {
+   "type": "text",
+   "box": [
+    812,
+    876,
+    378,
+    50
+   ],
+   "text": "{ \"ref_id\": \"REF-0001\", \"type\": \"pdf\",\u000b  \"file_url\": \"/files/...\",\u000b  \"metadata\": {\"title\": \"...\", \"page\": 3, ...} }",
+   "size_px": 11.5,
+   "color": "#1E2A44",
+   "font": "Consolas",
+   "font_latin": "Consolas",
+   "valign": "t",
+   "line_pitch_px": 15.5
+  }
+ ]
+}

@@ -1,0 +1,1255 @@
+{
+ "source_size": [
+  1672,
+  941
+ ],
+ "font": "Meiryo",
+ "background": "#FFFFFF",
+ "elements": [
+  {
+   "type": "text",
+   "box": [
+    24,
+    4,
+    1640,
+    62
+   ],
+   "text": "表7-3　推奨製品・モデルと代替案（PoC評価で最終採否を決定）",
+   "size_px": 38,
+   "bold": true,
+   "color": "#1F3A6E",
+   "align": "l",
+   "valign": "m"
+  },
+  {
+   "type": "table",
+   "box": [
+    16,
+    70,
+    1644,
+    870.0
+   ],
+   "col_widths_px": [
+    356,
+    412,
+    398,
+    478
+   ],
+   "row_heights_px": [
+    42,
+    92.0,
+    92.0,
+    92.0,
+    92.0,
+    92.0,
+    92.0,
+    92.0,
+    92.0,
+    92.0
+   ],
+   "cells": [
+    [
+     {
+      "paras": [
+       [
+        {
+         "text": "対象",
+         "size_px": 20,
+         "bold": true
+        }
+       ]
+      ],
+      "fill": "#0E3F82",
+      "color": "#FFFFFF",
+      "align": "c"
+     },
+     {
+      "paras": [
+       [
+        {
+         "text": "推奨案",
+         "size_px": 20,
+         "bold": true
+        }
+       ]
+      ],
+      "fill": "#0E3F82",
+      "color": "#FFFFFF",
+      "align": "c"
+     },
+     {
+      "paras": [
+       [
+        {
+         "text": "代替案",
+         "size_px": 20,
+         "bold": true
+        }
+       ]
+      ],
+      "fill": "#0E3F82",
+      "color": "#FFFFFF",
+      "align": "c"
+     },
+     {
+      "paras": [
+       [
+        {
+         "text": "選定・切替の基準",
+         "size_px": 20,
+         "bold": true
+        },
+        {
+         "text": "（PoCでの評価ポイント）",
+         "size_px": 15,
+         "bold": true
+        }
+       ]
+      ],
+      "fill": "#0E3F82",
+      "color": "#FFFFFF",
+      "align": "c"
+     }
+    ],
+    [
+     {
+      "paras": [
+       [
+        {
+         "text": "Dify",
+         "size_px": 19.5,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（ワークフロー作成・実行基盤）",
+         "size_px": 14.5
+        }
+       ]
+      ],
+      "color": "#1F3A6E",
+      "fill": "#EAF3FC",
+      "align": "l",
+      "line_pitch_px": 30,
+      "inset_px": [
+       96,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "paras": [
+       [
+        {
+         "text": "Dify",
+         "size_px": 19,
+         "bold": true,
+         "color": "#1356B0"
+        }
+       ],
+       [
+        {
+         "text": "・生産技術部員のワークフロー変更・作成",
+         "size_px": 15
+        }
+       ],
+       [
+        {
+         "text": "・RAG／エージェントのオーケストレーション",
+         "size_px": 15
+        }
+       ]
+      ],
+      "color": "#1E2A44",
+      "fill": "#F1F7FD",
+      "align": "l",
+      "valign": "m",
+      "line_pitch_px": 24,
+      "inset_px": [
+       16,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "paras": [
+       [
+        {
+         "text": "n8n",
+         "size_px": 19,
+         "bold": true,
+         "color": "#1356B0"
+        }
+       ],
+       [
+        {
+         "text": "・柔軟なワークフロー設計",
+         "size_px": 15
+        }
+       ],
+       [
+        {
+         "text": "・既存システム連携に強い",
+         "size_px": 15
+        }
+       ]
+      ],
+      "color": "#1E2A44",
+      "fill": "#F1F7FD",
+      "align": "l",
+      "valign": "m",
+      "line_pitch_px": 24,
+      "inset_px": [
+       16,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "text": "現場ユーザーによるフロー作成・変更のしやすさ\n必要機能（RAG、権限、運用管理）の充足度\n運用コスト・保守性・社内スキルの適合性",
+      "size_px": 16,
+      "color": "#1E2A44",
+      "fill": "#EAF3FC",
+      "align": "l",
+      "valign": "m",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 25.555555555555554,
+      "inset_px": [
+       24,
+       2,
+       6,
+       2
+      ]
+     }
+    ],
+    [
+     {
+      "paras": [
+       [
+        {
+         "text": "FastAPI",
+         "size_px": 19.5,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（検索・判定・生成の決定的処理）",
+         "size_px": 14.5
+        }
+       ]
+      ],
+      "color": "#1F3A6E",
+      "fill": "#FFFFFF",
+      "align": "l",
+      "line_pitch_px": 30,
+      "inset_px": [
+       96,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "paras": [
+       [
+        {
+         "text": "FastAPI（Python）",
+         "size_px": 19,
+         "bold": true,
+         "color": "#1356B0"
+        }
+       ],
+       [
+        {
+         "text": "・検索 APIのエンドポイント実装",
+         "size_px": 15
+        }
+       ],
+       [
+        {
+         "text": "・コード検証・版判定などの決定処理",
+         "size_px": 15
+        }
+       ]
+      ],
+      "color": "#1E2A44",
+      "fill": "#F1F7FD",
+      "align": "l",
+      "valign": "m",
+      "line_pitch_px": 24,
+      "inset_px": [
+       16,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "paras": [
+       [
+        {
+         "text": "Flask / Spring Boot",
+         "size_px": 19,
+         "bold": true,
+         "color": "#1356B0"
+        }
+       ],
+       [
+        {
+         "text": "・シンプルな構成（Flask）",
+         "size_px": 15
+        }
+       ],
+       [
+        {
+         "text": "・既存資産との親和性（Spring Boot）",
+         "size_px": 15
+        }
+       ]
+      ],
+      "color": "#1E2A44",
+      "fill": "#F1F7FD",
+      "align": "l",
+      "valign": "m",
+      "line_pitch_px": 24,
+      "inset_px": [
+       16,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "text": "開発・保守のしやすさ、拡張性\nセキュリティ対応、認証・監査ログ連携\n社内標準との整合性",
+      "size_px": 16,
+      "color": "#1E2A44",
+      "fill": "#FFFFFF",
+      "align": "l",
+      "valign": "m",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 25.555555555555554,
+      "inset_px": [
+       24,
+       2,
+       6,
+       2
+      ]
+     }
+    ],
+    [
+     {
+      "paras": [
+       [
+        {
+         "text": "vLLM",
+         "size_px": 19.5,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（LLM 推論基盤）",
+         "size_px": 14.5
+        }
+       ]
+      ],
+      "color": "#1F3A6E",
+      "fill": "#EAF3FC",
+      "align": "l",
+      "line_pitch_px": 30,
+      "inset_px": [
+       96,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "paras": [
+       [
+        {
+         "text": "vLLM",
+         "size_px": 19,
+         "bold": true,
+         "color": "#1356B0"
+        }
+       ],
+       [
+        {
+         "text": "・高スループットな LLM 推論",
+         "size_px": 15
+        }
+       ],
+       [
+        {
+         "text": "・オンプレ（DGX Spark）での運用適合",
+         "size_px": 15
+        }
+       ]
+      ],
+      "color": "#1E2A44",
+      "fill": "#F1F7FD",
+      "align": "l",
+      "valign": "m",
+      "line_pitch_px": 24,
+      "inset_px": [
+       16,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "paras": [
+       [
+        {
+         "text": "Text Generation Inference（TGI）",
+         "size_px": 17,
+         "bold": true,
+         "color": "#1356B0"
+        }
+       ],
+       [
+        {
+         "text": "llama.cpp（軽量構成）",
+         "size_px": 17,
+         "bold": true,
+         "color": "#1356B0"
+        }
+       ],
+       [
+        {
+         "text": "・環境や規模に応じた選択肢",
+         "size_px": 15
+        }
+       ]
+      ],
+      "color": "#1E2A44",
+      "fill": "#F1F7FD",
+      "align": "l",
+      "valign": "m",
+      "line_pitch_px": 24,
+      "inset_px": [
+       16,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "text": "応答速度・同時利用性能\n対応モデルの豊富さ\nDGX Spark での動作安定性・運用コスト",
+      "size_px": 16,
+      "color": "#1E2A44",
+      "fill": "#EAF3FC",
+      "align": "l",
+      "valign": "m",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 25.555555555555554,
+      "inset_px": [
+       24,
+       2,
+       6,
+       2
+      ]
+     }
+    ],
+    [
+     {
+      "paras": [
+       [
+        {
+         "text": "llama.cpp",
+         "size_px": 19.5,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（軽量LLM 推論）",
+         "size_px": 14.5
+        }
+       ]
+      ],
+      "color": "#1F3A6E",
+      "fill": "#FFFFFF",
+      "align": "l",
+      "line_pitch_px": 30,
+      "inset_px": [
+       96,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "paras": [
+       [
+        {
+         "text": "llama.cpp",
+         "size_px": 19,
+         "bold": true,
+         "color": "#1356B0"
+        }
+       ],
+       [
+        {
+         "text": "・小～中規模モデルの軽量・安定推論",
+         "size_px": 15
+        }
+       ],
+       [
+        {
+         "text": "・検証用途・比較評価に利用",
+         "size_px": 15
+        }
+       ]
+      ],
+      "color": "#1E2A44",
+      "fill": "#F1F7FD",
+      "align": "l",
+      "valign": "m",
+      "line_pitch_px": 24,
+      "inset_px": [
+       16,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "paras": [
+       [
+        {
+         "text": "Ollama / LM Studio",
+         "size_px": 19,
+         "bold": true,
+         "color": "#1356B0"
+        }
+       ],
+       [
+        {
+         "text": "・簡易運用・検証環境",
+         "size_px": 15
+        }
+       ]
+      ],
+      "color": "#1E2A44",
+      "fill": "#F1F7FD",
+      "align": "l",
+      "valign": "m",
+      "line_pitch_px": 24,
+      "inset_px": [
+       16,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "text": "低リソース環境での動作安定性\n必要精度・応答速度の達成可否\n運用の簡易性（導入・更新・管理）",
+      "size_px": 16,
+      "color": "#1E2A44",
+      "fill": "#FFFFFF",
+      "align": "l",
+      "valign": "m",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 25.555555555555554,
+      "inset_px": [
+       24,
+       2,
+       6,
+       2
+      ]
+     }
+    ],
+    [
+     {
+      "paras": [
+       [
+        {
+         "text": "日本語Embedding\u000bモデル",
+         "size_px": 19.5,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（ベクトル化）",
+         "size_px": 14.5
+        }
+       ]
+      ],
+      "color": "#1F3A6E",
+      "fill": "#EAF3FC",
+      "align": "l",
+      "line_pitch_px": 30,
+      "inset_px": [
+       96,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "paras": [
+       [
+        {
+         "text": "intfloat/multilingual-e5-large",
+         "size_px": 18,
+         "bold": true,
+         "color": "#1356B0"
+        }
+       ],
+       [
+        {
+         "text": "・日本語を含む多言語対応",
+         "size_px": 15
+        }
+       ],
+       [
+        {
+         "text": "・高い検索性能・実績",
+         "size_px": 15
+        }
+       ]
+      ],
+      "color": "#1E2A44",
+      "fill": "#F1F7FD",
+      "align": "l",
+      "valign": "m",
+      "line_pitch_px": 24,
+      "inset_px": [
+       16,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "paras": [
+       [
+        {
+         "text": "BAAI/bge-large-ja",
+         "size_px": 15.5,
+         "bold": true,
+         "color": "#1356B0"
+        }
+       ],
+       [
+        {
+         "text": "SBIntuitions/text-embedding-3-large",
+         "size_px": 15.5,
+         "bold": true,
+         "color": "#1356B0"
+        }
+       ],
+       [
+        {
+         "text": "・日本語特化／商用モデルの選択肢",
+         "size_px": 15
+        }
+       ]
+      ],
+      "color": "#1E2A44",
+      "fill": "#F1F7FD",
+      "align": "l",
+      "valign": "m",
+      "line_pitch_px": 24,
+      "inset_px": [
+       16,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "text": "検索精度（再現率・適合率）\n日本語ドメインでの性能\nモデルサイズ・推論速度・運用コスト",
+      "size_px": 16,
+      "color": "#1E2A44",
+      "fill": "#EAF3FC",
+      "align": "l",
+      "valign": "m",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 25.555555555555554,
+      "inset_px": [
+       24,
+       2,
+       6,
+       2
+      ]
+     }
+    ],
+    [
+     {
+      "paras": [
+       [
+        {
+         "text": "Ruri系リランカー",
+         "size_px": 19.5,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（再ランキング）",
+         "size_px": 14.5
+        }
+       ]
+      ],
+      "color": "#1F3A6E",
+      "fill": "#FFFFFF",
+      "align": "l",
+      "line_pitch_px": 30,
+      "inset_px": [
+       96,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "paras": [
+       [
+        {
+         "text": "ruri-large（Ruri系）",
+         "size_px": 19,
+         "bold": true,
+         "color": "#1356B0"
+        }
+       ],
+       [
+        {
+         "text": "・日本語特化の高精度リランク",
+         "size_px": 15
+        }
+       ],
+       [
+        {
+         "text": "・社内文書に適した関連度向上",
+         "size_px": 15
+        }
+       ]
+      ],
+      "color": "#1E2A44",
+      "fill": "#F1F7FD",
+      "align": "l",
+      "valign": "m",
+      "line_pitch_px": 24,
+      "inset_px": [
+       16,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "paras": [
+       [
+        {
+         "text": "bge-reranker-large-ja",
+         "size_px": 17,
+         "bold": true,
+         "color": "#1356B0"
+        }
+       ],
+       [
+        {
+         "text": "cohere-rerank（商用）",
+         "size_px": 17,
+         "bold": true,
+         "color": "#1356B0"
+        }
+       ],
+       [
+        {
+         "text": "・精度・コストに応じた選択肢",
+         "size_px": 15
+        }
+       ]
+      ],
+      "color": "#1E2A44",
+      "fill": "#F1F7FD",
+      "align": "l",
+      "valign": "m",
+      "line_pitch_px": 24,
+      "inset_px": [
+       16,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "text": "再ランキング後の精度向上効果\n日本語での性能・安定性\n推論速度・運用コスト",
+      "size_px": 16,
+      "color": "#1E2A44",
+      "fill": "#FFFFFF",
+      "align": "l",
+      "valign": "m",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 25.555555555555554,
+      "inset_px": [
+       24,
+       2,
+       6,
+       2
+      ]
+     }
+    ],
+    [
+     {
+      "paras": [
+       [
+        {
+         "text": "OpenSearch",
+         "size_px": 19.5,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（全文検索・ベクトル検索）",
+         "size_px": 14.5
+        }
+       ]
+      ],
+      "color": "#1F3A6E",
+      "fill": "#EAF3FC",
+      "align": "l",
+      "line_pitch_px": 30,
+      "inset_px": [
+       96,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "paras": [
+       [
+        {
+         "text": "OpenSearch（2.11 以降）",
+         "size_px": 19,
+         "bold": true,
+         "color": "#1356B0"
+        }
+       ],
+       [
+        {
+         "text": "・全文検索＋ベクトル検索の統合",
+         "size_px": 15
+        }
+       ],
+       [
+        {
+         "text": "・ハイブリッド検索・RRF 対応",
+         "size_px": 15
+        }
+       ]
+      ],
+      "color": "#1E2A44",
+      "fill": "#F1F7FD",
+      "align": "l",
+      "valign": "m",
+      "line_pitch_px": 24,
+      "inset_px": [
+       16,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "paras": [
+       [
+        {
+         "text": "Elasticsearch",
+         "size_px": 19,
+         "bold": true,
+         "color": "#1356B0"
+        }
+       ],
+       [
+        {
+         "text": "・既存環境・運用要件に応じて選択",
+         "size_px": 15
+        }
+       ]
+      ],
+      "color": "#1E2A44",
+      "fill": "#F1F7FD",
+      "align": "l",
+      "valign": "m",
+      "line_pitch_px": 24,
+      "inset_px": [
+       16,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "text": "検索性能（全文・ベクトル・ハイブリッド）\n運用性・スケーラビリティ\n社内標準・既存資産との整合性",
+      "size_px": 16,
+      "color": "#1E2A44",
+      "fill": "#EAF3FC",
+      "align": "l",
+      "valign": "m",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 25.555555555555554,
+      "inset_px": [
+       24,
+       2,
+       6,
+       2
+      ]
+     }
+    ],
+    [
+     {
+      "paras": [
+       [
+        {
+         "text": "pgvector",
+         "size_px": 19.5,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（構造化データのベクトル検索）",
+         "size_px": 14.5
+        }
+       ]
+      ],
+      "color": "#1F3A6E",
+      "fill": "#FFFFFF",
+      "align": "l",
+      "line_pitch_px": 30,
+      "inset_px": [
+       96,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "paras": [
+       [
+        {
+         "text": "PostgreSQL + pgvector",
+         "size_px": 19,
+         "bold": true,
+         "color": "#1356B0"
+        }
+       ],
+       [
+        {
+         "text": "・構造化データとベクトルの統合検索",
+         "size_px": 15
+        }
+       ],
+       [
+        {
+         "text": "・版管理・トランザクションとの親和性",
+         "size_px": 15
+        }
+       ]
+      ],
+      "color": "#1E2A44",
+      "fill": "#F1F7FD",
+      "align": "l",
+      "valign": "m",
+      "line_pitch_px": 24,
+      "inset_px": [
+       16,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "paras": [
+       [
+        {
+         "text": "専用ベクトルDB（Pinecone 等）",
+         "size_px": 19,
+         "bold": true,
+         "color": "#1356B0"
+        }
+       ],
+       [
+        {
+         "text": "・大規模化時のクラウド選択肢",
+         "size_px": 15
+        }
+       ]
+      ],
+      "color": "#1E2A44",
+      "fill": "#F1F7FD",
+      "align": "l",
+      "valign": "m",
+      "line_pitch_px": 24,
+      "inset_px": [
+       16,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "text": "検索性能・拡張性\n運用コスト・保守性\nオンプレ/クラウド移行時の再現性",
+      "size_px": 16,
+      "color": "#1E2A44",
+      "fill": "#FFFFFF",
+      "align": "l",
+      "valign": "m",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 25.555555555555554,
+      "inset_px": [
+       24,
+       2,
+       6,
+       2
+      ]
+     }
+    ],
+    [
+     {
+      "paras": [
+       [
+        {
+         "text": "Docling",
+         "size_px": 19.5,
+         "bold": true
+        }
+       ],
+       [
+        {
+         "text": "（文書抽出・前処理）",
+         "size_px": 14.5
+        }
+       ]
+      ],
+      "color": "#1F3A6E",
+      "fill": "#EAF3FC",
+      "align": "l",
+      "line_pitch_px": 30,
+      "inset_px": [
+       96,
+       2,
+       4,
+       2
+      ]
+     },
+     {
+      "paras": [
+       [
+        {
+         "text": "Docling",
+         "size_px": 19,
+         "bold": true,
+         "color": "#1356B0"
+        }
+       ],
+       [
+        {
+         "text": "・PDF/図面のテキスト・表・画像抽出",
+         "size_px": 15
+        }
+       ],
+       [
+        {
+         "text": "・RAG 向けの構造化データ生成",
+         "size_px": 15
+        }
+       ]
+      ],
+      "color": "#1E2A44",
+      "fill": "#F1F7FD",
+      "align": "l",
+      "valign": "m",
+      "line_pitch_px": 24,
+      "inset_px": [
+       16,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "paras": [
+       [
+        {
+         "text": "Azure Document Intelligence",
+         "size_px": 15.5,
+         "bold": true,
+         "color": "#1356B0"
+        }
+       ],
+       [
+        {
+         "text": "Unstructured / OCR（Tesseract 等）",
+         "size_px": 15.5,
+         "bold": true,
+         "color": "#1356B0"
+        }
+       ],
+       [
+        {
+         "text": "・クラウド／既存ツールの選択肢",
+         "size_px": 15
+        }
+       ]
+      ],
+      "color": "#1E2A44",
+      "fill": "#F1F7FD",
+      "align": "l",
+      "valign": "m",
+      "line_pitch_px": 24,
+      "inset_px": [
+       16,
+       2,
+       6,
+       2
+      ]
+     },
+     {
+      "text": "抽出精度（テキスト・表・画像）\n図面・TIFF 等の対応可否\n運用コスト・オンプレ/クラウドの適合性",
+      "size_px": 16,
+      "color": "#1E2A44",
+      "fill": "#EAF3FC",
+      "align": "l",
+      "valign": "m",
+      "bullet": true,
+      "bullet_indent_px": 18,
+      "line_pitch_px": 25.555555555555554,
+      "inset_px": [
+       24,
+       2,
+       6,
+       2
+      ]
+     }
+    ]
+   ],
+   "border": {
+    "color": "#D6E1EE",
+    "width_px": 1.5
+   },
+   "name": "table"
+  },
+  {
+   "type": "icon",
+   "icon": "azure:workflow",
+   "box": [
+    36,
+    132.0,
+    52,
+    52
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "icon",
+   "icon": "azure:app-services",
+   "box": [
+    36,
+    224.0,
+    52,
+    52
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "icon",
+   "icon": "azure:machine-learning",
+   "box": [
+    36,
+    316.0,
+    52,
+    52
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "icon",
+   "icon": "azure:virtual-machine",
+   "box": [
+    36,
+    408.0,
+    52,
+    52
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "icon",
+   "icon": "azure:cognitive-services",
+   "box": [
+    36,
+    500.0,
+    52,
+    52
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "icon",
+   "icon": "azure:metrics",
+   "box": [
+    36,
+    592.0,
+    52,
+    52
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "icon",
+   "icon": "azure:cognitive-search",
+   "box": [
+    36,
+    684.0,
+    52,
+    52
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "icon",
+   "icon": "azure:azure-database-postgresql-server",
+   "box": [
+    36,
+    776.0,
+    52,
+    52
+   ],
+   "color": "#1F3F7A"
+  },
+  {
+   "type": "icon",
+   "icon": "azure:form-recognizers",
+   "box": [
+    36,
+    868.0,
+    52,
+    52
+   ],
+   "color": "#1F3F7A"
+  }
+ ]
+}

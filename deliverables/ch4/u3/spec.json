@@ -1,0 +1,3069 @@
+{
+ "source_size": [
+  1672,
+  941
+ ],
+ "font": "Meiryo",
+ "background": "#FFFFFF",
+ "slides": [
+  {
+   "background": "#FFFFFF",
+   "elements": [
+    {
+     "type": "text",
+     "box": [
+      30,
+      10,
+      1612,
+      54
+     ],
+     "text": "4.3  UC2：N-PLUS／TOS検索の処理フロー（図4-3）",
+     "size_px": 34,
+     "bold": true,
+     "color": "#1F3A6E",
+     "align": "l",
+     "valign": "m",
+     "name": "title"
+    },
+    {
+     "type": "roundRect",
+     "box": [
+      24,
+      68,
+      1624,
+      62
+     ],
+     "fill": "#F2F8FE",
+     "line": {
+      "color": "#9CC2E8",
+      "width_px": 1.2
+     },
+     "radius_px": 4
+    },
+    {
+     "type": "text",
+     "box": [
+      24,
+      70,
+      1624,
+      58
+     ],
+     "text": "UC2では、N-PLUSのTOSデータを対象に、「部品・工程を指定して検索」「類似作業工程を探索」「両者を併用した検索」の3つのパターンを実現する。\nいずれのパターンでも、構造化検索・全文検索・ベクトル検索を適切に組み合わせ、版・適用判定を行い、根拠付きで候補を提示する。",
+     "size_px": 17,
+     "bold": false,
+     "color": "#1F3A6E",
+     "align": "c",
+     "valign": "m",
+     "line_pitch_px": 26
+    },
+    {
+     "type": "rect",
+     "box": [
+      24,
+      138,
+      536,
+      786
+     ],
+     "fill": "#FFFFFF",
+     "line": {
+      "color": "#1F3F7A",
+      "width_px": 1.5
+     }
+    },
+    {
+     "type": "rect",
+     "box": [
+      24,
+      138,
+      536,
+      44
+     ],
+     "fill": "#1F3F7A",
+     "line": null
+    },
+    {
+     "type": "text",
+     "box": [
+      38,
+      138,
+      516,
+      44
+     ],
+     "text": "パターン1：部品・工程指定で検索（正確検索）",
+     "size_px": 19.5,
+     "bold": true,
+     "color": "#FFFFFF",
+     "align": "l",
+     "valign": "m"
+    },
+    {
+     "type": "text",
+     "box": [
+      38,
+      186,
+      512,
+      50
+     ],
+     "text": "部品番号や工程番号などの確定キーを指定し、\nN-PLUSのTOSを正確に検索する。",
+     "size_px": 15.5,
+     "bold": false,
+     "color": "#1E2A44",
+     "align": "l",
+     "valign": "m",
+     "line_pitch_px": 23
+    },
+    {
+     "type": "icon",
+     "icon": "material:person-fill",
+     "box": [
+      34,
+      256,
+      32,
+      32
+     ],
+     "color": "#1F3F7A"
+    },
+    {
+     "type": "roundRect",
+     "box": [
+      70,
+      248,
+      150,
+      112
+     ],
+     "radius_px": 6,
+     "fill": "#FFFFFF",
+     "line": {
+      "color": "#3A5F8F",
+      "width_px": 1.5
+     },
+     "paras": [
+      [
+       {
+        "text": "質問入力",
+        "size_px": 15.5,
+        "bold": true,
+        "color": "#1F3A6E"
+       }
+      ],
+      [
+       {
+        "text": "例：",
+        "size_px": 12.5
+       }
+      ],
+      [
+       {
+        "text": "「部品番号Aの工程",
+        "size_px": 12
+       }
+      ],
+      [
+       {
+        "text": "100のTOSを確認",
+        "size_px": 12
+       }
+      ],
+      [
+       {
+        "text": "したい」",
+        "size_px": 12
+       }
+      ]
+     ],
+     "color": "#33466A",
+     "align": "l",
+     "valign": "t",
+     "line_pitch_px": 19,
+     "inset_px": [
+      10,
+      6,
+      6,
+      4
+     ]
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       220,
+       289
+      ],
+      [
+       238,
+       289
+      ]
+     ],
+     "color": "#1F3A6E",
+     "width_px": 2.2,
+     "head": "end"
+    },
+    {
+     "type": "roundRect",
+     "box": [
+      238,
+      248,
+      236,
+      82
+     ],
+     "radius_px": 6,
+     "fill": "#EEF5FC",
+     "line": {
+      "color": "#3A5F8F",
+      "width_px": 1.5
+     },
+     "paras": [
+      [
+       {
+        "text": "質問解釈",
+        "size_px": 15,
+        "bold": true,
+        "color": "#1F3A6E"
+       }
+      ],
+      [
+       {
+        "text": "（LLMでJSON抽出）",
+        "size_px": 12.5,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "part_no, process_no",
+        "size_px": 12.5,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "intent=tos_search",
+        "size_px": 12.5,
+        "color": "#33466A"
+       }
+      ]
+     ],
+     "align": "c",
+     "color": "#33466A",
+     "line_pitch_px": 17,
+     "inset_px": [
+      8,
+      2,
+      8,
+      2
+     ]
+    },
+    {
+     "type": "roundRect",
+     "box": [
+      238,
+      350,
+      236,
+      66
+     ],
+     "radius_px": 6,
+     "fill": "#FFF3D6",
+     "line": {
+      "color": "#E0B85A",
+      "width_px": 1.5
+     },
+     "paras": [
+      [
+       {
+        "text": "コード検証",
+        "size_px": 15,
+        "bold": true,
+        "color": "#1F3A6E"
+       }
+      ],
+      [
+       {
+        "text": "・部品番号の実在チェック",
+        "size_px": 13,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "・工程番号の実在チェック",
+        "size_px": 13,
+        "color": "#33466A"
+       }
+      ]
+     ],
+     "align": "c",
+     "color": "#33466A",
+     "line_pitch_px": 19,
+     "inset_px": [
+      8,
+      2,
+      8,
+      2
+     ]
+    },
+    {
+     "type": "diamond",
+     "box": [
+      294,
+      434,
+      124,
+      78
+     ],
+     "fill": "#DCEBFA",
+     "line": {
+      "color": "#5B8FD0",
+      "width_px": 1.5
+     },
+     "text": "キーは\nマスタに実在？",
+     "size_px": 13,
+     "bold": true,
+     "color": "#1F3A6E",
+     "line_pitch_px": 17.6
+    },
+    {
+     "type": "roundRect",
+     "box": [
+      434,
+      433,
+      120,
+      80
+     ],
+     "radius_px": 6,
+     "fill": "#FBDDE2",
+     "line": {
+      "color": "#D9707F",
+      "width_px": 1.5
+     },
+     "paras": [
+      [
+       {
+        "text": "該当なし",
+        "size_px": 15,
+        "bold": true,
+        "color": "#1F3A6E"
+       }
+      ],
+      [
+       {
+        "text": "（類似で埋めない）",
+        "size_px": 11,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "・入力キーの",
+        "size_px": 11,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "　再確認を依頼",
+        "size_px": 11,
+        "color": "#33466A"
+       }
+      ]
+     ],
+     "align": "c",
+     "color": "#33466A",
+     "line_pitch_px": 16,
+     "inset_px": [
+      8,
+      2,
+      8,
+      2
+     ]
+    },
+    {
+     "type": "roundRect",
+     "box": [
+      238,
+      532,
+      236,
+      98
+     ],
+     "radius_px": 6,
+     "fill": "#DCEBFA",
+     "line": {
+      "color": "#5B8FD0",
+      "width_px": 1.5
+     },
+     "paras": [
+      [
+       {
+        "text": "構造化検索",
+        "size_px": 15,
+        "bold": true,
+        "color": "#1F3A6E"
+       }
+      ],
+      [
+       {
+        "text": "（完全一致・フィルタ）",
+        "size_px": 12.5,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "SELECT … FROM TOS",
+        "size_px": 12.5,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "WHERE part_no=?",
+        "size_px": 12.5,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "AND process_no=?",
+        "size_px": 12.5,
+        "color": "#33466A"
+       }
+      ]
+     ],
+     "align": "c",
+     "color": "#33466A",
+     "line_pitch_px": 17,
+     "inset_px": [
+      8,
+      2,
+      8,
+      2
+     ]
+    },
+    {
+     "type": "roundRect",
+     "box": [
+      38,
+      546,
+      172,
+      70
+     ],
+     "fill": "#FFFFFF",
+     "line": {
+      "color": "#5B8FD0",
+      "width_px": 1.5
+     },
+     "radius_px": 6
+    },
+    {
+     "type": "icon",
+     "icon": "material:database-fill",
+     "box": [
+      44,
+      559,
+      42,
+      44
+     ],
+     "color": "#2A5CA8"
+    },
+    {
+     "type": "text",
+     "box": [
+      88,
+      550,
+      120,
+      62
+     ],
+     "paras": [
+      [
+       {
+        "text": "N-PLUS",
+        "size_px": 13.5,
+        "bold": true
+       }
+      ],
+      [
+       {
+        "text": "（TOS／Sequence／",
+        "size_px": 11
+       }
+      ],
+      [
+       {
+        "text": "　MakeProcess 等）",
+        "size_px": 11
+       }
+      ]
+     ],
+     "color": "#33466A",
+     "align": "l",
+     "valign": "m",
+     "line_pitch_px": 18
+    },
+    {
+     "type": "roundRect",
+     "box": [
+      238,
+      650,
+      236,
+      86
+     ],
+     "radius_px": 6,
+     "fill": "#FFF3D6",
+     "line": {
+      "color": "#E0B85A",
+      "width_px": 1.5
+     },
+     "paras": [
+      [
+       {
+        "text": "版・適用判定",
+        "size_px": 15,
+        "bold": true,
+        "color": "#1F3A6E"
+       }
+      ],
+      [
+       {
+        "text": "（第6章のルール）",
+        "size_px": 13,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "・最新版の特定",
+        "size_px": 13,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "・適用範囲の確認",
+        "size_px": 13,
+        "color": "#33466A"
+       }
+      ]
+     ],
+     "align": "c",
+     "color": "#33466A",
+     "line_pitch_px": 18,
+     "inset_px": [
+      8,
+      2,
+      8,
+      2
+     ]
+    },
+    {
+     "type": "roundRect",
+     "box": [
+      54,
+      758,
+      476,
+      150
+     ],
+     "radius_px": 6,
+     "fill": "#E3F2DC",
+     "line": {
+      "color": "#8CC27A",
+      "width_px": 1.5
+     },
+     "paras": [
+      [
+       {
+        "text": "結果表示（取得データを直接表示）",
+        "size_px": 16,
+        "bold": true,
+        "color": "#1F3A6E"
+       }
+      ],
+      [
+       {
+        "text": "・TOS基本情報",
+        "size_px": 14,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "・関連シーケンス／工程一覧",
+        "size_px": 14,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "・版・適用ラベル",
+        "size_px": 14,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "・原本リンク（N-PLUS画面）",
+        "size_px": 14,
+        "color": "#33466A"
+       }
+      ]
+     ],
+     "align": "l",
+     "color": "#33466A",
+     "line_pitch_px": 25,
+     "inset_px": [
+      8,
+      2,
+      8,
+      2
+     ]
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       356,
+       330
+      ],
+      [
+       356,
+       350
+      ]
+     ],
+     "color": "#1F3A6E",
+     "width_px": 2.2,
+     "head": "end"
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       356,
+       416
+      ],
+      [
+       356,
+       434
+      ]
+     ],
+     "color": "#1F3A6E",
+     "width_px": 2.2,
+     "head": "end"
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       356,
+       512
+      ],
+      [
+       356,
+       532
+      ]
+     ],
+     "color": "#1F3A6E",
+     "width_px": 2.2,
+     "head": "end"
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       356,
+       630
+      ],
+      [
+       356,
+       650
+      ]
+     ],
+     "color": "#1F3A6E",
+     "width_px": 2.2,
+     "head": "end"
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       356,
+       736
+      ],
+      [
+       356,
+       758
+      ]
+     ],
+     "color": "#1F3A6E",
+     "width_px": 2.2,
+     "head": "end"
+    },
+    {
+     "type": "text",
+     "box": [
+      364,
+      512,
+      80,
+      20
+     ],
+     "text": "存在する",
+     "size_px": 12.5,
+     "bold": false,
+     "color": "#1E2A44",
+     "align": "l",
+     "valign": "m"
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       418,
+       473
+      ],
+      [
+       434,
+       473
+      ]
+     ],
+     "color": "#1F3A6E",
+     "width_px": 2.2,
+     "head": "end"
+    },
+    {
+     "type": "text",
+     "box": [
+      434,
+      412,
+      120,
+      20
+     ],
+     "text": "存在しない",
+     "size_px": 12,
+     "bold": false,
+     "color": "#1E2A44",
+     "align": "c",
+     "valign": "m"
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       294,
+       473
+      ],
+      [
+       145,
+       473
+      ],
+      [
+       145,
+       360
+      ]
+     ],
+     "color": "#1F3A6E",
+     "width_px": 1.4,
+     "head": "end",
+     "dash": "dash"
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       210,
+       581
+      ],
+      [
+       238,
+       581
+      ]
+     ],
+     "color": "#1F3A6E",
+     "width_px": 2.2,
+     "head": "end"
+    },
+    {
+     "type": "rect",
+     "box": [
+      568,
+      138,
+      536,
+      786
+     ],
+     "fill": "#FFFFFF",
+     "line": {
+      "color": "#1F3F7A",
+      "width_px": 1.5
+     }
+    },
+    {
+     "type": "rect",
+     "box": [
+      568,
+      138,
+      536,
+      44
+     ],
+     "fill": "#1F3F7A",
+     "line": null
+    },
+    {
+     "type": "text",
+     "box": [
+      582,
+      138,
+      516,
+      44
+     ],
+     "text": "パターン2：類似作業工程探索（類似検索）",
+     "size_px": 19.5,
+     "bold": true,
+     "color": "#FFFFFF",
+     "align": "l",
+     "valign": "m"
+    },
+    {
+     "type": "text",
+     "box": [
+      582,
+      186,
+      512,
+      50
+     ],
+     "text": "作業内容などの自然言語から、過去に類似する作業工程で\n使われたTOSを探索する。",
+     "size_px": 15.5,
+     "bold": false,
+     "color": "#1E2A44",
+     "align": "l",
+     "valign": "m",
+     "line_pitch_px": 23
+    },
+    {
+     "type": "icon",
+     "icon": "material:person-fill",
+     "box": [
+      578,
+      256,
+      32,
+      32
+     ],
+     "color": "#1F3F7A"
+    },
+    {
+     "type": "roundRect",
+     "box": [
+      614,
+      248,
+      150,
+      112
+     ],
+     "radius_px": 6,
+     "fill": "#FFFFFF",
+     "line": {
+      "color": "#3A5F8F",
+      "width_px": 1.5
+     },
+     "paras": [
+      [
+       {
+        "text": "質問入力",
+        "size_px": 15.5,
+        "bold": true,
+        "color": "#1F3A6E"
+       }
+      ],
+      [
+       {
+        "text": "例：",
+        "size_px": 12.5
+       }
+      ],
+      [
+       {
+        "text": "「過去に類似工程で",
+        "size_px": 12
+       }
+      ],
+      [
+       {
+        "text": "使われたTOSを",
+        "size_px": 12
+       }
+      ],
+      [
+       {
+        "text": "探したい」",
+        "size_px": 12
+       }
+      ]
+     ],
+     "color": "#33466A",
+     "align": "l",
+     "valign": "t",
+     "line_pitch_px": 19,
+     "inset_px": [
+      10,
+      6,
+      6,
+      4
+     ]
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       764,
+       289
+      ],
+      [
+       782,
+       289
+      ]
+     ],
+     "color": "#1F3A6E",
+     "width_px": 2.2,
+     "head": "end"
+    },
+    {
+     "type": "roundRect",
+     "box": [
+      782,
+      248,
+      236,
+      82
+     ],
+     "radius_px": 6,
+     "fill": "#EEF5FC",
+     "line": {
+      "color": "#3A5F8F",
+      "width_px": 1.5
+     },
+     "paras": [
+      [
+       {
+        "text": "質問解釈",
+        "size_px": 15,
+        "bold": true,
+        "color": "#1F3A6E"
+       }
+      ],
+      [
+       {
+        "text": "（LLMでJSON抽出）",
+        "size_px": 12.5,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "keywords, free_text",
+        "size_px": 12.5,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "intent=similar_search",
+        "size_px": 12.5,
+        "color": "#33466A"
+       }
+      ]
+     ],
+     "align": "c",
+     "color": "#33466A",
+     "line_pitch_px": 17,
+     "inset_px": [
+      8,
+      2,
+      8,
+      2
+     ]
+    },
+    {
+     "type": "roundRect",
+     "box": [
+      782,
+      350,
+      236,
+      70
+     ],
+     "radius_px": 6,
+     "fill": "#FFF3D6",
+     "line": {
+      "color": "#E0B85A",
+      "width_px": 1.5
+     },
+     "paras": [
+      [
+       {
+        "text": "用語辞書で正規化・拡張",
+        "size_px": 15,
+        "bold": true,
+        "color": "#1F3A6E"
+       }
+      ],
+      [
+       {
+        "text": "（工程名、作業内容、略語 等）",
+        "size_px": 12,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "例：穴あけ ＝ 穴加工、ドリル 等",
+        "size_px": 12,
+        "color": "#33466A"
+       }
+      ]
+     ],
+     "align": "c",
+     "color": "#33466A",
+     "line_pitch_px": 17,
+     "inset_px": [
+      8,
+      2,
+      8,
+      2
+     ]
+    },
+    {
+     "type": "roundRect",
+     "box": [
+      782,
+      440,
+      236,
+      106
+     ],
+     "radius_px": 6,
+     "fill": "#DCEBFA",
+     "line": {
+      "color": "#5B8FD0",
+      "width_px": 1.5
+     },
+     "paras": [
+      [
+       {
+        "text": "ハイブリッド検索",
+        "size_px": 15,
+        "bold": true,
+        "color": "#1F3A6E"
+       }
+      ],
+      [
+       {
+        "text": "・全文検索（BM25：kuromoji）",
+        "size_px": 12.5,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "・ベクトル検索（工程文脈テキスト）",
+        "size_px": 12.5,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "・RRF統合 ＋ 必須条件フィルタ",
+        "size_px": 12.5,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "　　（リランク：任意）",
+        "size_px": 12.5,
+        "color": "#33466A"
+       }
+      ]
+     ],
+     "align": "l",
+     "color": "#33466A",
+     "line_pitch_px": 19,
+     "inset_px": [
+      8,
+      2,
+      8,
+      2
+     ]
+    },
+    {
+     "type": "roundRect",
+     "box": [
+      582,
+      458,
+      172,
+      70
+     ],
+     "fill": "#FFFFFF",
+     "line": {
+      "color": "#5B8FD0",
+      "width_px": 1.5
+     },
+     "radius_px": 6
+    },
+    {
+     "type": "icon",
+     "icon": "material:database-fill",
+     "box": [
+      588,
+      471,
+      42,
+      44
+     ],
+     "color": "#2A5CA8"
+    },
+    {
+     "type": "text",
+     "box": [
+      632,
+      462,
+      120,
+      62
+     ],
+     "paras": [
+      [
+       {
+        "text": "N-PLUS",
+        "size_px": 13.5,
+        "bold": true
+       }
+      ],
+      [
+       {
+        "text": "（TOS／Sequence／",
+        "size_px": 11
+       }
+      ],
+      [
+       {
+        "text": "　MakeProcess 等）",
+        "size_px": 11
+       }
+      ]
+     ],
+     "color": "#33466A",
+     "align": "l",
+     "valign": "m",
+     "line_pitch_px": 18
+    },
+    {
+     "type": "roundRect",
+     "box": [
+      598,
+      578,
+      250,
+      90
+     ],
+     "radius_px": 6,
+     "fill": "#FFF3D6",
+     "line": {
+      "color": "#E0B85A",
+      "width_px": 1.5
+     },
+     "paras": [
+      [
+       {
+        "text": "版・適用判定",
+        "size_px": 15,
+        "bold": true,
+        "color": "#1F3A6E"
+       }
+      ],
+      [
+       {
+        "text": "（第6章のルール）",
+        "size_px": 13,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "・適用範囲の確認",
+        "size_px": 13,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "・旧版・適用外の除外／警告",
+        "size_px": 13,
+        "color": "#33466A"
+       }
+      ]
+     ],
+     "align": "c",
+     "color": "#33466A",
+     "line_pitch_px": 19,
+     "inset_px": [
+      8,
+      2,
+      8,
+      2
+     ]
+    },
+    {
+     "type": "roundRect",
+     "box": [
+      868,
+      570,
+      220,
+      112
+     ],
+     "radius_px": 6,
+     "fill": "#EEF5FC",
+     "line": {
+      "color": "#3A5F8F",
+      "width_px": 1.5
+     },
+     "paras": [
+      [
+       {
+        "text": "LLMで説明・比較生成",
+        "size_px": 14,
+        "bold": true,
+        "color": "#1F3A6E"
+       }
+      ],
+      [
+       {
+        "text": "（参照ID付き）",
+        "size_px": 12.5,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "・作業内容の要約",
+        "size_px": 12.5,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "・類似点／相違点",
+        "size_px": 12.5,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "・適用上の注意 等",
+        "size_px": 12.5,
+        "color": "#33466A"
+       }
+      ]
+     ],
+     "align": "c",
+     "color": "#33466A",
+     "line_pitch_px": 19,
+     "inset_px": [
+      8,
+      2,
+      8,
+      2
+     ]
+    },
+    {
+     "type": "roundRect",
+     "box": [
+      598,
+      740,
+      490,
+      168
+     ],
+     "radius_px": 6,
+     "fill": "#E3F2DC",
+     "line": {
+      "color": "#8CC27A",
+      "width_px": 1.5
+     },
+     "paras": [
+      [
+       {
+        "text": "結果表示（候補一覧＋比較）",
+        "size_px": 16,
+        "bold": true,
+        "color": "#1F3A6E"
+       }
+      ],
+      [
+       {
+        "text": "・類似TOSの候補一覧（スコア順）",
+        "size_px": 14,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "・主要項目の比較（作業内容・工程・工数 等）",
+        "size_px": 14,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "・根拠／類似する点／未確認事項",
+        "size_px": 14,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "・原本リンク（N-PLUS画面）",
+        "size_px": 14,
+        "color": "#33466A"
+       }
+      ]
+     ],
+     "align": "l",
+     "color": "#33466A",
+     "line_pitch_px": 25,
+     "inset_px": [
+      8,
+      2,
+      8,
+      2
+     ]
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       900,
+       330
+      ],
+      [
+       900,
+       350
+      ]
+     ],
+     "color": "#1F3A6E",
+     "width_px": 2.2,
+     "head": "end"
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       900,
+       420
+      ],
+      [
+       900,
+       440
+      ]
+     ],
+     "color": "#1F3A6E",
+     "width_px": 2.2,
+     "head": "end"
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       754,
+       493
+      ],
+      [
+       782,
+       493
+      ]
+     ],
+     "color": "#1F3A6E",
+     "width_px": 2.2,
+     "head": "end"
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       900,
+       546
+      ],
+      [
+       900,
+       560
+      ],
+      [
+       723,
+       560
+      ],
+      [
+       723,
+       578
+      ]
+     ],
+     "color": "#1F3A6E",
+     "width_px": 2.2,
+     "head": "end"
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       848,
+       623
+      ],
+      [
+       868,
+       623
+      ]
+     ],
+     "color": "#1F3A6E",
+     "width_px": 2.2,
+     "head": "end"
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       723,
+       668
+      ],
+      [
+       723,
+       740
+      ]
+     ],
+     "color": "#1F3A6E",
+     "width_px": 2.2,
+     "head": "end"
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       978,
+       682
+      ],
+      [
+       978,
+       740
+      ]
+     ],
+     "color": "#1F3A6E",
+     "width_px": 2.2,
+     "head": "end"
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       689,
+       360
+      ],
+      [
+       689,
+       450
+      ],
+      [
+       782,
+       450
+      ]
+     ],
+     "color": "#1F3A6E",
+     "width_px": 1.4,
+     "head": "both",
+     "dash": "dash"
+    },
+    {
+     "type": "rect",
+     "box": [
+      1112,
+      138,
+      536,
+      786
+     ],
+     "fill": "#FFFFFF",
+     "line": {
+      "color": "#1F3F7A",
+      "width_px": 1.5
+     }
+    },
+    {
+     "type": "rect",
+     "box": [
+      1112,
+      138,
+      536,
+      44
+     ],
+     "fill": "#1F3F7A",
+     "line": null
+    },
+    {
+     "type": "text",
+     "box": [
+      1126,
+      138,
+      516,
+      44
+     ],
+     "text": "パターン3：部品・工程 ＋ 作業内容の併用検索",
+     "size_px": 19.5,
+     "bold": true,
+     "color": "#FFFFFF",
+     "align": "l",
+     "valign": "m"
+    },
+    {
+     "type": "text",
+     "box": [
+      1126,
+      186,
+      512,
+      50
+     ],
+     "text": "部品番号や工程番号などの確定キーで検索範囲を絞り込み、\n作業内容の類似度を用いて関連するTOSを探索する。",
+     "size_px": 15.5,
+     "bold": false,
+     "color": "#1E2A44",
+     "align": "l",
+     "valign": "m",
+     "line_pitch_px": 23
+    },
+    {
+     "type": "icon",
+     "icon": "material:person-fill",
+     "box": [
+      1122,
+      256,
+      32,
+      32
+     ],
+     "color": "#1F3F7A"
+    },
+    {
+     "type": "roundRect",
+     "box": [
+      1158,
+      248,
+      150,
+      112
+     ],
+     "radius_px": 6,
+     "fill": "#FFFFFF",
+     "line": {
+      "color": "#3A5F8F",
+      "width_px": 1.5
+     },
+     "paras": [
+      [
+       {
+        "text": "質問入力",
+        "size_px": 15.5,
+        "bold": true,
+        "color": "#1F3A6E"
+       }
+      ],
+      [
+       {
+        "text": "例：",
+        "size_px": 12.5
+       }
+      ],
+      [
+       {
+        "text": "「部品番号Aで、溶接",
+        "size_px": 12
+       }
+      ],
+      [
+       {
+        "text": "工程に近い過去の",
+        "size_px": 12
+       }
+      ],
+      [
+       {
+        "text": "TOSを探したい」",
+        "size_px": 12
+       }
+      ]
+     ],
+     "color": "#33466A",
+     "align": "l",
+     "valign": "t",
+     "line_pitch_px": 19,
+     "inset_px": [
+      10,
+      6,
+      6,
+      4
+     ]
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       1308,
+       289
+      ],
+      [
+       1326,
+       289
+      ]
+     ],
+     "color": "#1F3A6E",
+     "width_px": 2.2,
+     "head": "end"
+    },
+    {
+     "type": "roundRect",
+     "box": [
+      1326,
+      248,
+      236,
+      82
+     ],
+     "radius_px": 6,
+     "fill": "#EEF5FC",
+     "line": {
+      "color": "#3A5F8F",
+      "width_px": 1.5
+     },
+     "paras": [
+      [
+       {
+        "text": "質問解釈",
+        "size_px": 15,
+        "bold": true,
+        "color": "#1F3A6E"
+       }
+      ],
+      [
+       {
+        "text": "（LLMでJSON抽出）",
+        "size_px": 12.5,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "part_no, keywords",
+        "size_px": 12.5,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "intent=hybrid_search",
+        "size_px": 12.5,
+        "color": "#33466A"
+       }
+      ]
+     ],
+     "align": "c",
+     "color": "#33466A",
+     "line_pitch_px": 17,
+     "inset_px": [
+      8,
+      2,
+      8,
+      2
+     ]
+    },
+    {
+     "type": "roundRect",
+     "box": [
+      1326,
+      350,
+      236,
+      66
+     ],
+     "radius_px": 6,
+     "fill": "#FFF3D6",
+     "line": {
+      "color": "#E0B85A",
+      "width_px": 1.5
+     },
+     "paras": [
+      [
+       {
+        "text": "コード検証・正規化",
+        "size_px": 15,
+        "bold": true,
+        "color": "#1F3A6E"
+       }
+      ],
+      [
+       {
+        "text": "・部品番号の実在チェック",
+        "size_px": 13,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "・用語辞書で正規化・拡張",
+        "size_px": 13,
+        "color": "#33466A"
+       }
+      ]
+     ],
+     "align": "c",
+     "color": "#33466A",
+     "line_pitch_px": 19,
+     "inset_px": [
+      8,
+      2,
+      8,
+      2
+     ]
+    },
+    {
+     "type": "diamond",
+     "box": [
+      1382,
+      434,
+      124,
+      78
+     ],
+     "fill": "#DCEBFA",
+     "line": {
+      "color": "#5B8FD0",
+      "width_px": 1.5
+     },
+     "text": "部品番号は\nマスタに実在？",
+     "size_px": 12.5,
+     "bold": true,
+     "color": "#1F3A6E",
+     "line_pitch_px": 16.9
+    },
+    {
+     "type": "roundRect",
+     "box": [
+      1522,
+      433,
+      120,
+      80
+     ],
+     "radius_px": 6,
+     "fill": "#FBDDE2",
+     "line": {
+      "color": "#D9707F",
+      "width_px": 1.5
+     },
+     "paras": [
+      [
+       {
+        "text": "該当なし",
+        "size_px": 15,
+        "bold": true,
+        "color": "#1F3A6E"
+       }
+      ],
+      [
+       {
+        "text": "（類似で埋めない）",
+        "size_px": 11,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "・入力キーの",
+        "size_px": 11,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "　再確認を依頼",
+        "size_px": 11,
+        "color": "#33466A"
+       }
+      ]
+     ],
+     "align": "c",
+     "color": "#33466A",
+     "line_pitch_px": 16,
+     "inset_px": [
+      8,
+      2,
+      8,
+      2
+     ]
+    },
+    {
+     "type": "roundRect",
+     "box": [
+      1326,
+      532,
+      236,
+      80
+     ],
+     "radius_px": 6,
+     "fill": "#DCEBFA",
+     "line": {
+      "color": "#5B8FD0",
+      "width_px": 1.5
+     },
+     "paras": [
+      [
+       {
+        "text": "構造化で絞り込み",
+        "size_px": 15,
+        "bold": true,
+        "color": "#1F3A6E"
+       }
+      ],
+      [
+       {
+        "text": "（部品番号で候補を限定）",
+        "size_px": 12.5,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "SELECT … WHERE part_no=?",
+        "size_px": 12.5,
+        "color": "#33466A"
+       }
+      ]
+     ],
+     "align": "c",
+     "color": "#33466A",
+     "line_pitch_px": 18,
+     "inset_px": [
+      8,
+      2,
+      8,
+      2
+     ]
+    },
+    {
+     "type": "roundRect",
+     "box": [
+      1126,
+      537,
+      172,
+      70
+     ],
+     "fill": "#FFFFFF",
+     "line": {
+      "color": "#5B8FD0",
+      "width_px": 1.5
+     },
+     "radius_px": 6
+    },
+    {
+     "type": "icon",
+     "icon": "material:database-fill",
+     "box": [
+      1132,
+      550,
+      42,
+      44
+     ],
+     "color": "#2A5CA8"
+    },
+    {
+     "type": "text",
+     "box": [
+      1176,
+      541,
+      120,
+      62
+     ],
+     "paras": [
+      [
+       {
+        "text": "N-PLUS",
+        "size_px": 13.5,
+        "bold": true
+       }
+      ],
+      [
+       {
+        "text": "（TOS／Sequence／",
+        "size_px": 11
+       }
+      ],
+      [
+       {
+        "text": "　MakeProcess 等）",
+        "size_px": 11
+       }
+      ]
+     ],
+     "color": "#33466A",
+     "align": "l",
+     "valign": "m",
+     "line_pitch_px": 18
+    },
+    {
+     "type": "roundRect",
+     "box": [
+      1142,
+      642,
+      250,
+      90
+     ],
+     "radius_px": 6,
+     "fill": "#DCEBFA",
+     "line": {
+      "color": "#5B8FD0",
+      "width_px": 1.5
+     },
+     "paras": [
+      [
+       {
+        "text": "全文 ＋ ベクトル検索",
+        "size_px": 15,
+        "bold": true,
+        "color": "#1F3A6E"
+       }
+      ],
+      [
+       {
+        "text": "（工程・作業内容の類似検索）",
+        "size_px": 12.5,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "RRF統合 ＋ 必須条件フィルタ",
+        "size_px": 12.5,
+        "color": "#33466A"
+       }
+      ]
+     ],
+     "align": "c",
+     "color": "#33466A",
+     "line_pitch_px": 19,
+     "inset_px": [
+      8,
+      2,
+      8,
+      2
+     ]
+    },
+    {
+     "type": "roundRect",
+     "box": [
+      1412,
+      632,
+      220,
+      112
+     ],
+     "radius_px": 6,
+     "fill": "#EEF5FC",
+     "line": {
+      "color": "#3A5F8F",
+      "width_px": 1.5
+     },
+     "paras": [
+      [
+       {
+        "text": "LLMで説明・比較生成",
+        "size_px": 14,
+        "bold": true,
+        "color": "#1F3A6E"
+       }
+      ],
+      [
+       {
+        "text": "（参照ID付き）",
+        "size_px": 12.5,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "・類似工程の理由",
+        "size_px": 12.5,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "・候補の比較",
+        "size_px": 12.5,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "・適用上の注意 等",
+        "size_px": 12.5,
+        "color": "#33466A"
+       }
+      ]
+     ],
+     "align": "c",
+     "color": "#33466A",
+     "line_pitch_px": 19,
+     "inset_px": [
+      8,
+      2,
+      8,
+      2
+     ]
+    },
+    {
+     "type": "roundRect",
+     "box": [
+      1142,
+      770,
+      490,
+      136
+     ],
+     "radius_px": 6,
+     "fill": "#E3F2DC",
+     "line": {
+      "color": "#8CC27A",
+      "width_px": 1.5
+     },
+     "paras": [
+      [
+       {
+        "text": "結果表示（絞り込み後の候補一覧＋比較）",
+        "size_px": 16,
+        "bold": true,
+        "color": "#1F3A6E"
+       }
+      ],
+      [
+       {
+        "text": "・候補一覧（類似度順）",
+        "size_px": 14,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "・一致した条件／類似する点／未確認事項",
+        "size_px": 14,
+        "color": "#33466A"
+       }
+      ],
+      [
+       {
+        "text": "・原本リンク（N-PLUS画面）",
+        "size_px": 14,
+        "color": "#33466A"
+       }
+      ]
+     ],
+     "align": "l",
+     "color": "#33466A",
+     "line_pitch_px": 25,
+     "inset_px": [
+      8,
+      2,
+      8,
+      2
+     ]
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       1444,
+       330
+      ],
+      [
+       1444,
+       350
+      ]
+     ],
+     "color": "#1F3A6E",
+     "width_px": 2.2,
+     "head": "end"
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       1444,
+       416
+      ],
+      [
+       1444,
+       434
+      ]
+     ],
+     "color": "#1F3A6E",
+     "width_px": 2.2,
+     "head": "end"
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       1444,
+       512
+      ],
+      [
+       1444,
+       532
+      ]
+     ],
+     "color": "#1F3A6E",
+     "width_px": 2.2,
+     "head": "end"
+    },
+    {
+     "type": "text",
+     "box": [
+      1452,
+      512,
+      80,
+      20
+     ],
+     "text": "存在する",
+     "size_px": 12.5,
+     "bold": false,
+     "color": "#1E2A44",
+     "align": "l",
+     "valign": "m"
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       1506,
+       473
+      ],
+      [
+       1522,
+       473
+      ]
+     ],
+     "color": "#1F3A6E",
+     "width_px": 2.2,
+     "head": "end"
+    },
+    {
+     "type": "text",
+     "box": [
+      1522,
+      412,
+      120,
+      20
+     ],
+     "text": "存在しない",
+     "size_px": 12,
+     "bold": false,
+     "color": "#1E2A44",
+     "align": "c",
+     "valign": "m"
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       1382,
+       473
+      ],
+      [
+       1233,
+       473
+      ],
+      [
+       1233,
+       360
+      ]
+     ],
+     "color": "#1F3A6E",
+     "width_px": 1.4,
+     "head": "end",
+     "dash": "dash"
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       1298,
+       572
+      ],
+      [
+       1326,
+       572
+      ]
+     ],
+     "color": "#1F3A6E",
+     "width_px": 2.2,
+     "head": "end"
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       1444,
+       612
+      ],
+      [
+       1444,
+       626
+      ],
+      [
+       1267,
+       626
+      ],
+      [
+       1267,
+       642
+      ]
+     ],
+     "color": "#1F3A6E",
+     "width_px": 2.2,
+     "head": "end"
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       1392,
+       687
+      ],
+      [
+       1412,
+       687
+      ]
+     ],
+     "color": "#1F3A6E",
+     "width_px": 2.2,
+     "head": "end"
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       1267,
+       732
+      ],
+      [
+       1267,
+       770
+      ]
+     ],
+     "color": "#1F3A6E",
+     "width_px": 2.2,
+     "head": "end"
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       1522,
+       744
+      ],
+      [
+       1522,
+       770
+      ]
+     ],
+     "color": "#1F3A6E",
+     "width_px": 2.2,
+     "head": "end"
+    }
+   ]
+  },
+  {
+   "background": "#FFFFFF",
+   "elements": [
+    {
+     "type": "text",
+     "box": [
+      30,
+      10,
+      1612,
+      54
+     ],
+     "text": "4.3  UC2：N-PLUS／TOS検索の出力イメージ（図4-3）",
+     "size_px": 34,
+     "bold": true,
+     "color": "#1F3A6E",
+     "align": "l",
+     "valign": "m",
+     "name": "title"
+    },
+    {
+     "type": "rect",
+     "box": [
+      24,
+      72,
+      1624,
+      318
+     ],
+     "fill": "#FFFFFF",
+     "line": {
+      "color": "#1F3F7A",
+      "width_px": 1.5
+     }
+    },
+    {
+     "type": "rect",
+     "box": [
+      24,
+      72,
+      1624,
+      42
+     ],
+     "fill": "#1F3F7A",
+     "line": null
+    },
+    {
+     "type": "text",
+     "box": [
+      40,
+      72,
+      1604,
+      42
+     ],
+     "text": "パターン1：部品・工程指定（取得データの直接表示）",
+     "size_px": 19,
+     "bold": true,
+     "color": "#FFFFFF",
+     "align": "l",
+     "valign": "m"
+    },
+    {
+     "type": "rect",
+     "box": [
+      44,
+      126,
+      6,
+      30
+     ],
+     "fill": "#1F3F7A",
+     "line": null
+    },
+    {
+     "type": "text",
+     "box": [
+      58,
+      126,
+      586,
+      30
+     ],
+     "text": "TOS 基本情報",
+     "size_px": 17,
+     "bold": true,
+     "color": "#1F3A6E",
+     "align": "l",
+     "valign": "m"
+    },
+    {
+     "type": "table",
+     "box": [
+      44,
+      162,
+      640,
+      216
+     ],
+     "col_widths_px": [
+      150,
+      490
+     ],
+     "row_heights_px": [
+      24,
+      24,
+      24,
+      24,
+      24,
+      24,
+      24,
+      24,
+      24
+     ],
+     "cells": [
+      [
+       {
+        "text": "LTS",
+        "bold": true,
+        "color": "#1F3A6E",
+        "fill": "#F3F6FA"
+       },
+       {
+        "text": "LTS-000123"
+       }
+      ],
+      [
+       {
+        "text": "TOS",
+        "bold": true,
+        "color": "#1F3A6E",
+        "fill": "#F3F6FA"
+       },
+       {
+        "text": "TOS-456789"
+       }
+      ],
+      [
+       {
+        "text": "部品番号",
+        "bold": true,
+        "color": "#1F3A6E",
+        "fill": "#F3F6FA"
+       },
+       {
+        "text": "A123-45678"
+       }
+      ],
+      [
+       {
+        "text": "工程番号",
+        "bold": true,
+        "color": "#1F3A6E",
+        "fill": "#F3F6FA"
+       },
+       {
+        "text": "100"
+       }
+      ],
+      [
+       {
+        "text": "作業内容",
+        "bold": true,
+        "color": "#1F3A6E",
+        "fill": "#F3F6FA"
+       },
+       {
+        "text": "穴あけ加工"
+       }
+      ],
+      [
+       {
+        "text": "ステータス",
+        "bold": true,
+        "color": "#1F3A6E",
+        "fill": "#F3F6FA"
+       },
+       {
+        "text": "有効"
+       }
+      ],
+      [
+       {
+        "text": "版",
+        "bold": true,
+        "color": "#1F3A6E",
+        "fill": "#F3F6FA"
+       },
+       {
+        "text": "Rev.3（2024/10/01）"
+       }
+      ],
+      [
+       {
+        "text": "適用範囲",
+        "bold": true,
+        "color": "#1F3A6E",
+        "fill": "#F3F6FA"
+       },
+       {
+        "text": "S/N 001～100"
+       }
+      ],
+      [
+       {
+        "text": "原本リンク",
+        "bold": true,
+        "color": "#1F3A6E",
+        "fill": "#F3F6FA"
+       },
+       {
+        "text": "N-PLUSで開く",
+        "color": "#1F5FD0"
+       }
+      ]
+     ],
+     "size_px": 14,
+     "align": "l",
+     "color": "#1E2A44",
+     "border": {
+      "color": "#DDE5EF",
+      "width_px": 1
+     },
+     "cell_pad_px": 10
+    },
+    {
+     "type": "rect",
+     "box": [
+      724,
+      126,
+      6,
+      30
+     ],
+     "fill": "#1F3F7A",
+     "line": null
+    },
+    {
+     "type": "text",
+     "box": [
+      738,
+      126,
+      886,
+      30
+     ],
+     "text": "関連シーケンス／工程一覧",
+     "size_px": 17,
+     "bold": true,
+     "color": "#1F3A6E",
+     "align": "l",
+     "valign": "m"
+    },
+    {
+     "type": "table",
+     "box": [
+      724,
+      162,
+      900,
+      150
+     ],
+     "col_widths_px": [
+      110,
+      200,
+      400,
+      190
+     ],
+     "row_heights_px": [
+      30,
+      30,
+      30,
+      30,
+      30
+     ],
+     "cells": [
+      [
+       {
+        "text": "Seq",
+        "bold": true,
+        "fill": "#E6EEF8",
+        "color": "#1F3A6E"
+       },
+       {
+        "text": "工程番号",
+        "bold": true,
+        "fill": "#E6EEF8",
+        "color": "#1F3A6E"
+       },
+       {
+        "text": "作業内容",
+        "bold": true,
+        "fill": "#E6EEF8",
+        "color": "#1F3A6E"
+       },
+       {
+        "text": "工数(h)",
+        "bold": true,
+        "fill": "#E6EEF8",
+        "color": "#1F3A6E"
+       }
+      ],
+      [
+       "1",
+       "100",
+       {
+        "text": "穴あけ加工",
+        "align": "l"
+       },
+       "2.0"
+      ],
+      [
+       "1",
+       "110",
+       {
+        "text": "面取り",
+        "align": "l"
+       },
+       "0.5"
+      ],
+      [
+       "1",
+       "120",
+       {
+        "text": "検査",
+        "align": "l"
+       },
+       "0.3"
+      ],
+      [
+       "…",
+       "",
+       "",
+       ""
+      ]
+     ],
+     "size_px": 15,
+     "align": "c",
+     "color": "#1E2A44",
+     "border": {
+      "color": "#C9D6E6",
+      "width_px": 1
+     },
+     "cell_pad_px": 8
+    },
+    {
+     "type": "rect",
+     "box": [
+      24,
+      404,
+      806,
+      520
+     ],
+     "fill": "#FFFFFF",
+     "line": {
+      "color": "#1F3F7A",
+      "width_px": 1.5
+     }
+    },
+    {
+     "type": "rect",
+     "box": [
+      24,
+      404,
+      806,
+      42
+     ],
+     "fill": "#1F3F7A",
+     "line": null
+    },
+    {
+     "type": "text",
+     "box": [
+      40,
+      404,
+      786,
+      42
+     ],
+     "text": "パターン2：類似作業工程探索（候補一覧＋比較）",
+     "size_px": 19,
+     "bold": true,
+     "color": "#FFFFFF",
+     "align": "l",
+     "valign": "m"
+    },
+    {
+     "type": "rect",
+     "box": [
+      44,
+      458,
+      6,
+      30
+     ],
+     "fill": "#1F3F7A",
+     "line": null
+    },
+    {
+     "type": "text",
+     "box": [
+      58,
+      458,
+      752,
+      30
+     ],
+     "text": "類似 TOS 候補一覧",
+     "size_px": 17,
+     "bold": true,
+     "color": "#1F3A6E",
+     "align": "l",
+     "valign": "m"
+    },
+    {
+     "type": "table",
+     "box": [
+      44,
+      494,
+      766,
+      176
+     ],
+     "col_widths_px": [
+      50,
+      124,
+      90,
+      212,
+      86,
+      90,
+      114
+     ],
+     "row_heights_px": [
+      36,
+      35,
+      35,
+      35,
+      35
+     ],
+     "cells": [
+      [
+       {
+        "text": "No.",
+        "bold": true,
+        "fill": "#E6EEF8",
+        "color": "#1F3A6E"
+       },
+       {
+        "text": "部品番号",
+        "bold": true,
+        "fill": "#E6EEF8",
+        "color": "#1F3A6E"
+       },
+       {
+        "text": "工程番号",
+        "bold": true,
+        "fill": "#E6EEF8",
+        "color": "#1F3A6E"
+       },
+       {
+        "text": "作業内容（要約）",
+        "bold": true,
+        "fill": "#E6EEF8",
+        "color": "#1F3A6E"
+       },
+       {
+        "text": "類似度",
+        "bold": true,
+        "fill": "#E6EEF8",
+        "color": "#1F3A6E"
+       },
+       {
+        "text": "版",
+        "bold": true,
+        "fill": "#E6EEF8",
+        "color": "#1F3A6E"
+       },
+       {
+        "text": "適用範囲",
+        "bold": true,
+        "fill": "#E6EEF8",
+        "color": "#1F3A6E"
+       }
+      ],
+      [
+       "1",
+       "B987-65432",
+       "100",
+       {
+        "text": "穴あけ加工（治具使用）",
+        "align": "l"
+       },
+       "0.92",
+       "Rev.2",
+       "001～"
+      ],
+      [
+       "2",
+       "A123-45678",
+       "120",
+       {
+        "text": "穴明け・リーマ",
+        "align": "l"
+       },
+       "0.87",
+       "Rev.3",
+       "001～"
+      ],
+      [
+       "3",
+       "C111-22222",
+       "100",
+       {
+        "text": "穴あけ加工",
+        "align": "l"
+       },
+       "0.82",
+       "Rev.1",
+       "050～"
+      ],
+      [
+       "…",
+       "",
+       "",
+       "",
+       "",
+       "",
+       ""
+      ]
+     ],
+     "size_px": 14.5,
+     "align": "c",
+     "color": "#1E2A44",
+     "border": {
+      "color": "#C9D6E6",
+      "width_px": 1
+     },
+     "cell_pad_px": 6
+    },
+    {
+     "type": "rect",
+     "box": [
+      44,
+      694,
+      6,
+      30
+     ],
+     "fill": "#1F3F7A",
+     "line": null
+    },
+    {
+     "type": "text",
+     "box": [
+      58,
+      694,
+      752,
+      30
+     ],
+     "text": "LLMによる比較説明（抜粋）",
+     "size_px": 17,
+     "bold": true,
+     "color": "#1F3A6E",
+     "align": "l",
+     "valign": "m"
+    },
+    {
+     "type": "text",
+     "box": [
+      52,
+      732,
+      750,
+      180
+     ],
+     "text": "No.1は治具を使用した穴あけ加工で、工程条件が近似しています。\u000b（参照：TOS-xxxxx）\nNo.2は同一部品の類似工程で、作業手順が参考になります。\u000b（参照：TOS-xxxxx）\nNo.3は材質が異なるため、適用可否の確認が必要です。\u000b（参照：TOS-xxxxx）",
+     "size_px": 15,
+     "color": "#1E2A44",
+     "valign": "t",
+     "bullet": true,
+     "line_pitch_px": 23,
+     "para_space_px": 6,
+     "bullet_indent_px": 20
+    },
+    {
+     "type": "rect",
+     "box": [
+      842,
+      404,
+      806,
+      520
+     ],
+     "fill": "#FFFFFF",
+     "line": {
+      "color": "#1F3F7A",
+      "width_px": 1.5
+     }
+    },
+    {
+     "type": "rect",
+     "box": [
+      842,
+      404,
+      806,
+      42
+     ],
+     "fill": "#1F3F7A",
+     "line": null
+    },
+    {
+     "type": "text",
+     "box": [
+      858,
+      404,
+      786,
+      42
+     ],
+     "text": "パターン3：部品・工程＋作業内容（絞り込み後の候補一覧＋比較）",
+     "size_px": 19,
+     "bold": true,
+     "color": "#FFFFFF",
+     "align": "l",
+     "valign": "m"
+    },
+    {
+     "type": "rect",
+     "box": [
+      862,
+      458,
+      6,
+      30
+     ],
+     "fill": "#1F3F7A",
+     "line": null
+    },
+    {
+     "type": "text",
+     "box": [
+      876,
+      458,
+      752,
+      30
+     ],
+     "text": "絞り込み後の類似 TOS 候補",
+     "size_px": 17,
+     "bold": true,
+     "color": "#1F3A6E",
+     "align": "l",
+     "valign": "m"
+    },
+    {
+     "type": "table",
+     "box": [
+      862,
+      494,
+      766,
+      176
+     ],
+     "col_widths_px": [
+      50,
+      124,
+      90,
+      212,
+      86,
+      90,
+      114
+     ],
+     "row_heights_px": [
+      36,
+      35,
+      35,
+      35,
+      35
+     ],
+     "cells": [
+      [
+       {
+        "text": "No.",
+        "bold": true,
+        "fill": "#E6EEF8",
+        "color": "#1F3A6E"
+       },
+       {
+        "text": "TOS",
+        "bold": true,
+        "fill": "#E6EEF8",
+        "color": "#1F3A6E"
+       },
+       {
+        "text": "工程番号",
+        "bold": true,
+        "fill": "#E6EEF8",
+        "color": "#1F3A6E"
+       },
+       {
+        "text": "作業内容（要約）",
+        "bold": true,
+        "fill": "#E6EEF8",
+        "color": "#1F3A6E"
+       },
+       {
+        "text": "類似度",
+        "bold": true,
+        "fill": "#E6EEF8",
+        "color": "#1F3A6E"
+       },
+       {
+        "text": "版",
+        "bold": true,
+        "fill": "#E6EEF8",
+        "color": "#1F3A6E"
+       },
+       {
+        "text": "適用範囲",
+        "bold": true,
+        "fill": "#E6EEF8",
+        "color": "#1F3A6E"
+       }
+      ],
+      [
+       "1",
+       "TOS-456789",
+       "200",
+       {
+        "text": "溶接（TIG）",
+        "align": "l"
+       },
+       "0.95",
+       "Rev.3",
+       "001～"
+      ],
+      [
+       "2",
+       "TOS-123456",
+       "210",
+       {
+        "text": "溶接（スポット）",
+        "align": "l"
+       },
+       "0.88",
+       "Rev.2",
+       "001～"
+      ],
+      [
+       "3",
+       "TOS-789012",
+       "200",
+       {
+        "text": "溶接（TIG・治具）",
+        "align": "l"
+       },
+       "0.83",
+       "Rev.1",
+       "050～"
+      ],
+      [
+       "…",
+       "",
+       "",
+       "",
+       "",
+       "",
+       ""
+      ]
+     ],
+     "size_px": 14.5,
+     "align": "c",
+     "color": "#1E2A44",
+     "border": {
+      "color": "#C9D6E6",
+      "width_px": 1
+     },
+     "cell_pad_px": 6
+    },
+    {
+     "type": "rect",
+     "box": [
+      862,
+      694,
+      6,
+      30
+     ],
+     "fill": "#1F3F7A",
+     "line": null
+    },
+    {
+     "type": "text",
+     "box": [
+      876,
+      694,
+      752,
+      30
+     ],
+     "text": "LLMによる比較説明（抜粋）",
+     "size_px": 17,
+     "bold": true,
+     "color": "#1F3A6E",
+     "align": "l",
+     "valign": "m"
+    },
+    {
+     "type": "text",
+     "box": [
+      870,
+      732,
+      750,
+      180
+     ],
+     "text": "No.1は同一部品番号で溶接工程の作業条件が最も近いです。\u000b（参照：TOS-xxxxx）\nNo.2は工程番号が異なりますが、作業内容が類似しています。\u000b（参照：TOS-xxxxx）\n治具の有無や適用範囲が異なるため、適用可否の確認が必要です。",
+     "size_px": 15,
+     "color": "#1E2A44",
+     "valign": "t",
+     "bullet": true,
+     "line_pitch_px": 23,
+     "para_space_px": 6,
+     "bullet_indent_px": 20
+    }
+   ]
+  }
+ ]
+}
