@@ -66,7 +66,8 @@ process band), `triangle`, `diamond`, `hexagon`, `parallelogram`, `can` (cylinde
 | `valign` | `m` | `t m b` |
 | `wrap` | false | true = wrap inside box width; false = one line per paragraph (safer for labels) |
 | `inset_px` | 0 | inner padding, number or `[l, t, r, b]` |
-| `line_spacing` | | multiplier, e.g. 1.0 |
+| `line_spacing` | | multiplier, e.g. 1.0 (depends on font metrics; Meiryo lines are tall) |
+| `line_pitch_px` | | exact distance between lines in source px (measure baseline to baseline). Prefer this for multi-line blocks and bullet lists |
 | `vertical` | false | vertical (tategaki) text |
 | `font`, `font_latin` | spec font | per-element override |
 

@@ -178,7 +178,9 @@ class Builder:
         for i, runs in enumerate(paras):
             p = tf.paragraphs[0] if i == 0 else tf.add_paragraph()
             p.alignment = ALIGN[el.get("align", "l")]
-            if el.get("line_spacing"):
+            if el.get("line_pitch_px"):  # exact baseline-to-baseline distance, font-independent
+                p.line_spacing = self.pt(el["line_pitch_px"])
+            elif el.get("line_spacing"):
                 p.line_spacing = el["line_spacing"]
             for rs in runs:
                 r = p.add_run()
