@@ -182,19 +182,46 @@ class Builder:
                 p.line_spacing = self.pt(el["line_pitch_px"])
             elif el.get("line_spacing"):
                 p.line_spacing = el["line_spacing"]
+            if i and el.get("para_space_px"):
+                p.space_before = self.pt(el["para_space_px"])
+            if el.get("bullet"):
+                self._bullet(p, el)
             for rs in runs:
-                r = p.add_run()
-                r.text = rs.get("text", "")
-                f = r.font
-                f.size = self.pt(rs.get("size_px", el.get("size_px", 16)))
-                f.bold = rs.get("bold", el.get("bold", False))
-                f.italic = rs.get("italic", el.get("italic", False))
-                f.color.rgb = self.rgb(rs.get("color", el.get("color", "#000000")))
-                font = rs.get("font", el.get("font", self.font))
-                f.name = rs.get("font_latin", el.get("font_latin", self.font_latin if font == self.font else font))
-                rpr = r._r.get_or_add_rPr()  # noqa: SLF001
-                for tag in ("a:ea", "a:cs"):
-                    etree.SubElement(rpr, qn(tag), typeface=font)
+                # "\v" inside text = line break within the same paragraph (keeps bullet/indent)
+                for k, chunk in enumerate(str(rs.get("text", "")).split("\v")):
+                    if k:
+                        p.add_line_break()
+                    self._run(p, chunk, rs, el)
+
+    def _bullet(self, p, el):
+        """Native PowerPoint bullet with hanging indent (continuation lines align with text)."""
+        size = el.get("size_px", 16)
+        indent = self.e(el.get("bullet_indent_px", size * 1.1))
+        ppr = p._p.get_or_add_pPr()  # noqa: SLF001
+        ppr.set("marL", str(int(indent)))
+        ppr.set("indent", str(-int(indent)))
+        for tag in ("a:buClr", "a:buSzPct", "a:buFont", "a:buNone", "a:buChar"):
+            for old in ppr.findall(qn(tag)):
+                ppr.remove(old)
+        if el.get("bullet_color"):
+            clr = etree.SubElement(ppr, qn("a:buClr"))
+            etree.SubElement(clr, qn("a:srgbClr"), val=el["bullet_color"].lstrip("#"))
+        etree.SubElement(ppr, qn("a:buFont"), typeface="Arial")
+        etree.SubElement(ppr, qn("a:buChar"), char=el["bullet"] if isinstance(el["bullet"], str) else "•")
+
+    def _run(self, p, text, rs, el):
+        r = p.add_run()
+        r.text = text
+        f = r.font
+        f.size = self.pt(rs.get("size_px", el.get("size_px", 16)))
+        f.bold = rs.get("bold", el.get("bold", False))
+        f.italic = rs.get("italic", el.get("italic", False))
+        f.color.rgb = self.rgb(rs.get("color", el.get("color", "#000000")))
+        font = rs.get("font", el.get("font", self.font))
+        f.name = rs.get("font_latin", el.get("font_latin", self.font_latin if font == self.font else font))
+        rpr = r._r.get_or_add_rPr()  # noqa: SLF001
+        for tag in ("a:ea", "a:cs"):
+            etree.SubElement(rpr, qn(tag), typeface=font)
 
     # ---- element builders ------------------------------------------------
     def add_shape(self, slide, el):

@@ -68,7 +68,14 @@ process band), `triangle`, `diamond`, `hexagon`, `parallelogram`, `can` (cylinde
 | `inset_px` | 0 | inner padding, number or `[l, t, r, b]` |
 | `line_spacing` | | multiplier, e.g. 1.0 (depends on font metrics; Meiryo lines are tall) |
 | `line_pitch_px` | | exact distance between lines in source px (measure baseline to baseline). Prefer this for multi-line blocks and bullet lists |
+| `bullet` | | `true` (•) or a character: native PowerPoint bullets with hanging indent on every paragraph. Don't type "• " into the text |
+| `bullet_indent_px`, `bullet_color` | ≈1.1 × size, text color | hanging indent width; bullet color |
+| `para_space_px` | | extra space before each paragraph after the first (gap between bullets) |
 | `vertical` | false | vertical (tategaki) text |
+
+Line breaks: `\n` starts a new paragraph (new bullet); `\v` breaks the line inside the same
+paragraph (continuation line stays aligned under the bullet text). Reproduce the source's line
+breaks with `\v` and keep `wrap: false`, so the result doesn't depend on font width.
 | `font`, `font_latin` | spec font | per-element override |
 
 **Font size:** `size_px` is the em-size. For Japanese, the visible height of a full-width
