@@ -312,7 +312,12 @@ class Builder:
                     cell.fill.background()
                 sp = {**base, **({"bold": True, "color": el.get("header_color", base["color"])} if r == 0 and el.get("header_fill") else {}), **cell_spec}
                 pad = el.get("cell_pad_px", 4)
-                self._text(cell.text_frame, {"inset_px": [pad, 2, pad, 2], **sp})
+                ins = sp.get("inset_px", [pad, 2, pad, 2])
+                if isinstance(ins, (int, float)):
+                    ins = [ins] * 4
+                self._text(cell.text_frame, sp)
+                # table cells ignore bodyPr insets; padding lives on the cell (tcPr marL/marT/...)
+                cell.margin_left, cell.margin_top, cell.margin_right, cell.margin_bottom = (self.e(v) for v in ins)
                 cell.vertical_anchor = VALIGN[sp.get("valign", "m")]
                 tc_pr = cell._tc.get_or_add_tcPr()  # noqa: SLF001
                 for side in ("a:lnL", "a:lnR", "a:lnT", "a:lnB"):

@@ -119,6 +119,14 @@ default, so make the box the text's line box (glyph box plus ~15% top/bottom).
 A cell is a string or an object with any text field plus `fill` and `span: [rows, cols]`. Cells
 covered by a span are `null`.
 
+- `inset_px` on a cell sets its padding. Use a large left inset to leave room for an icon placed
+  over the cell (icons are separate `icon` elements listed after the table).
+- Table cells always wrap to the column width, and a row grows when its text doesn't fit —
+  that pushes every row below it down. Size cell text so the longest line fits with slack
+  (`line_pitch_px` keeps multi-line cells at the source height).
+- Tables with icons, colored layer cells and bullet lists are still one native table: merged
+  cells for the layer column, per-cell `fill`, icons overlaid.
+
 ## Images (non-icon raster content)
 
 ```json
